@@ -14,7 +14,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: "#FD4F00",
+        emLight:{
+          dark: "#010101",
+         DEFAULT: "#ECEBF1",
+         light: "#ECEBF1"
+        },
+        emOrange:{
+          dark: "F89118",
+          light: "#FBBF24",
+          DEFAULT: "F89118"
+        }
+      },
+      fontFamily:{
+        brand: ["Signika", "sans-serif"]
+      },
+      fontWeight:{
+        regular: "normal",
+        bold: "bold",
+        medium: "medium"
       }
     },
   },

@@ -3,3 +3,29 @@
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+@font-face{
+  font-family: "Signika";
+  src: url("/fonts/static/Signika-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Signika";
+  src: url("/fonts/static/Signika-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Signika";
+  src: url("/fonts/static/Signika-Medium.ttf");
+  font-weight: medium;
+  font-style: normal;
+}
+
+body{
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
