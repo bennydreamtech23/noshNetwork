@@ -17,10 +17,10 @@ module.exports = {
         emLight:{
           dark: "#010101",
          DEFAULT: "#ECEBF1",
-         light: "#ECEBF1"
+         light: "#F2EBE3"
         },
         emOrange:{
-          dark: "F89118",
+          dark: "#F89118",
           light: "#FBBF24",
           DEFAULT: "F89118"
         }
