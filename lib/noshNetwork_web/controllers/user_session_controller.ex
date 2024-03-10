@@ -5,7 +5,9 @@ defmodule NoshNetworkWeb.UserSessionController do
   alias NoshNetworkWeb.UserAuth
 
   def create(conn, %{"_action" => "registered"} = params) do
-    create(conn, params, "Account created successfully!")
+    conn
+    |> put_session(:user_return_to, ~p"/users/welcome")
+    |> create(params, "Account created successfully!")
   end
 
   def create(conn, %{"_action" => "password_updated"} = params) do
@@ -30,7 +32,7 @@ defmodule NoshNetworkWeb.UserSessionController do
       conn
       |> put_flash(:error, "Invalid email or password")
       |> put_flash(:email, String.slice(email, 0, 160))
-      |> redirect(to: ~p"/users/log_in")
+      |> redirect(to: ~p"/auth/log_in")
     end
   end
 

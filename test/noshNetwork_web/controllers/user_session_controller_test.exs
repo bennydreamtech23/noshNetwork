@@ -43,7 +43,7 @@ defmodule NoshNetworkWeb.UserSessionControllerTest do
       conn =
         conn
         |> init_test_session(user_return_to: "/foo/bar")
-        |> post(~p"/users/log_in", %{
+        |> post(~p"/auth/log_in", %{
           "user" => %{
             "email" => user.email,
             "password" => valid_user_password()
@@ -72,7 +72,7 @@ defmodule NoshNetworkWeb.UserSessionControllerTest do
     test "login following password update", %{conn: conn, user: user} do
       conn =
         conn
-        |> post(~p"/users/log_in", %{
+        |> post(~p"/auth/log_in", %{
           "_action" => "password_updated",
           "user" => %{
             "email" => user.email,
@@ -86,7 +86,7 @@ defmodule NoshNetworkWeb.UserSessionControllerTest do
 
     test "redirects to login page with invalid credentials", %{conn: conn} do
       conn =
-        post(conn, ~p"/users/log_in", %{
+        post(conn, ~p"/auth/log_in", %{
           "user" => %{"email" => "invalid@email.com", "password" => "invalid_password"}
         })
 

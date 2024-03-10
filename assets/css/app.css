@@ -2,6 +2,20 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  /* Prevents scrollbars and hides any content overflowing the viewport */
+}
+
 /* This file is for your main application CSS */
 @font-face{
   font-family: "Signika";

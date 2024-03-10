@@ -3,11 +3,44 @@ defmodule NoshNetwork.Data.Schema.User do
   import Ecto.Changeset
   @primary_key {:id, :binary_id, autogenerate: true}
   @foreign_key_type :binary_id
+
+  @required_fields ~w|
+email
+    password
+    hashed_password
+    name
+    username
+    role
+  |a
+
+  @optional_fields ~w|
+  confirmed_at
+  phone_number
+  business_name
+  address
+  profile_picture
+  is_notification
+  country
+  state
+  |a
+
+  @all_fields @required_fields ++ @optional_fields
+
   schema "users" do
     field :email, :string
     field :password, :string, virtual: true, redact: true
     field :hashed_password, :string, redact: true
     field :confirmed_at, :naive_datetime
+    field :username, :string
+    field :name, :string
+    field :phone_number, :string
+    field :role, :string
+    field :business_name, :string
+    field :address, :string
+    field :profile_picture, :string
+    field :is_notification, :boolean
+    field :country, :string
+    field :state, :string
 
     timestamps(type: :utc_datetime)
   end
@@ -37,9 +70,17 @@ defmodule NoshNetwork.Data.Schema.User do
   """
   def registration_changeset(user, attrs, opts \\ []) do
     user
-    |> cast(attrs, [:email, :password])
+    |> cast(attrs, @all_fields)
     |> validate_email(opts)
     |> validate_password(opts)
+  end
+
+  def user_changeset(user, attrs \\ []) do
+    user
+    |> cast(attrs, @all_fields)
+    |> validate_required([:phone_number, :address, :country, :state],
+      message: "This field is required"
+    )
   end
 
   defp validate_email(changeset, opts) do

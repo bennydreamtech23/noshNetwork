@@ -1,21 +1,34 @@
 <header class="px-4 sm:px-6 lg:px-8 bg-black text-white">
   <div class="flex items-center justify-between border-b border-zinc-100 py-3 text-sm">
     <div class="flex items-center gap-4 font-brand">
-      <a href="/">
-        NoshNetwork
+      <a href={~p"/"} class="w-2/12 ">
+        <img src="/images/logo3.png" alt="img" />
       </a>
     </div>
     <div class="flex items-center gap-4 font-medium leading-6 font-brand">
-      <a class="hover:text-emOrange-dark" href={~p"/users/register"}>
-        Sign up / Log in
-      </a>
+      <%= if @current_user do %>
+        <.link class="hover:text-emOrange-dark" href={~p"/users/dashboard"}>
+          Dashboard
+        </.link>
+        <.link class="hover:text-emOrange-dark" href={~p"/users/settings"}>
+          settings
+        </.link>
 
-      <a
-        href="https://hexdocs.pm/phoenix/overview.html"
-        class="rounded-lg bg-emOrange-dark px-2 py-1 hover:bg-white hover:text-black text-white"
-      >
-        Become a Nosh Cater<span aria-hidden="true">&rarr;</span>
-      </a>
+        <.link class="hover:text-emOrange-dark" href={~p"/users/log_out"} method="delete">
+          Logout
+        </.link>
+      <% else %>
+        <a class="hover:text-emOrange-dark" href={~p"/auth/signup"}>
+          Sign up / Log in
+        </a>
+
+        <a
+          href={~p"/auth/caters_signup"}
+          class="rounded-lg bg-emOrange-dark px-2 py-1 hover:bg-white hover:text-black text-white"
+        >
+          Become a Nosh Cater<span aria-hidden="true">&rarr;</span>
+        </a>
+      <% end %>
     </div>
   </div>
 </header>
