@@ -70,6 +70,7 @@ defmodule NoshNetworkWeb.UserAuth do
 
   It clears all session data for safety. See renew_session.
   """
+
   def log_out_user(conn) do
     user_token = get_session(conn, :user_token)
     user_token && Users.delete_user_session_token(user_token)
@@ -156,7 +157,7 @@ defmodule NoshNetworkWeb.UserAuth do
       socket =
         socket
         |> Phoenix.LiveView.put_flash(:error, "You must log in to access this page.")
-        |> Phoenix.LiveView.redirect(to: ~p"/users/log_in")
+        |> Phoenix.LiveView.redirect(to: ~p"/auth/log_in")
 
       {:halt, socket}
     end
@@ -206,7 +207,7 @@ defmodule NoshNetworkWeb.UserAuth do
       conn
       |> put_flash(:error, "You must log in to access this page.")
       |> maybe_store_return_to()
-      |> redirect(to: ~p"/users/log_in")
+      |> redirect(to: ~p"/auth/log_in")
       |> halt()
     end
   end
@@ -223,5 +224,5 @@ defmodule NoshNetworkWeb.UserAuth do
 
   defp maybe_store_return_to(conn), do: conn
 
-  defp signed_in_path(_conn), do: ~p"/"
+  defp signed_in_path(_conn), do: ~p"/users/welcome"
 end

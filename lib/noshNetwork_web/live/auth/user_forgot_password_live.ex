@@ -1,4 +1,4 @@
-defmodule NoshNetworkWeb.UserForgotPasswordLive do
+defmodule NoshNetworkWeb.Auth.UserForgotPasswordLive do
   use NoshNetworkWeb, :live_view
 
   alias NoshNetwork.Data.Context.Users
@@ -20,8 +20,8 @@ defmodule NoshNetworkWeb.UserForgotPasswordLive do
         </:actions>
       </.simple_form>
       <p class="text-center text-sm mt-4">
-        <.link href={~p"/users/register"}>Register</.link>
-        | <.link href={~p"/users/log_in"}>Log in</.link>
+        <.link href={~p"/auth/register"}>Register</.link>
+        | <.link href={~p"/auth/log_in"}>Log in</.link>
       </p>
     </div>
     """
@@ -35,7 +35,7 @@ defmodule NoshNetworkWeb.UserForgotPasswordLive do
     if user = Users.get_user_by_email(email) do
       Users.deliver_user_reset_password_instructions(
         user,
-        &url(~p"/users/reset_password/#{&1}")
+        &url(~p"/auth/reset_password/#{&1}")
       )
     end
 

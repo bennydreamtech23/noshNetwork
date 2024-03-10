@@ -1,0 +1,89 @@
+<div class="mx-auto max-w-sm">
+  <.header class="text-center">
+    Contact person details
+  </.header>
+
+  <div class="py-4 px-2">
+    <.simple_form
+      for={@form}
+      id="user_contact_form"
+      phx-submit="update-user"
+      phx-change="validate"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <.error :if={@check_errors}>
+          Oops, something went wrong! Please check the errors below.
+        </.error>
+        <%= if @current_user.role == "cater" do %>
+          <div>
+            <.input
+              field={@form[:business_name]}
+              type="text"
+              label="Business Name"
+              autocomplete="off"
+            />
+          </div>
+        <% end %>
+        <div>
+          <.input field={@form[:address]} type="text" label="Address" autocomplete="off" />
+          <.input field={@form[:country]} type="text" label="country" autocomplete="off" />
+        </div>
+        <div>
+          <.input
+            field={@form[:state]}
+            type="text"
+            label="state"
+            class="w-full"
+            autocomplete="off"
+          />
+          <.input
+            field={@form[:phone_number]}
+            type="text"
+            label="Phone Number"
+            class="w-full"
+            autocomplete="off"
+          />
+        </div>
+        <.live_file_input upload={@uploads.profile_picture} />
+      </div>
+      <%= if @current_user == "user" do %>
+        <.button phx-disable-with="updating account..." class="w-full ">
+          Proceed
+        </.button>
+      <% else %>
+        <.button phx-disable-with="updating account..." class="w-full ">
+          Next
+        </.button>
+      <% end %>
+    </.simple_form>
+  </div>
+
+  <%= if @current_user.role == "cater" do %>
+    <.simple_form
+      for={@form}
+      id="user_contact_form"
+      phx-submit="update-cater"
+      phx-change="validate"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <.error :if={@check_errors}>
+          Oops, something went wrong! Please check the errors below.
+        </.error>
+        <%= if @current_user.role == "cater" do %>
+          <div>
+            <.input field={@form[:about]} type="text" label="About" autocomplete="off" />
+          </div>
+        <% end %>
+        <div>
+          <.input field={@form[:specialties]} type="text" label="specialties" autocomplete="off" />
+        </div>
+      </div>
+
+      <:actions>
+        <.button phx-disable-with="updating account..." class="w-full ">
+          Proceed
+        </.button>
+      </:actions>
+    </.simple_form>
+  <% end %>
+</div>

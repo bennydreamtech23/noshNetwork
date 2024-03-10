@@ -93,6 +93,17 @@ defmodule NoshNetwork.Data.Context.Users do
     User.registration_changeset(user, attrs, hash_password: false, validate_email: false)
   end
 
+  # update the user
+  def update_user_profile(%User{} = user, attrs \\ %{}) do
+    user
+    |> User.user_changeset(attrs)
+    |> Repo.update()
+  end
+
+  def change_user_profile(%User{} = user, attrs \\ %{}) do
+    User.user_changeset(user, attrs)
+  end
+
   ## Settings
 
   @doc """
@@ -229,9 +240,22 @@ defmodule NoshNetwork.Data.Context.Users do
   @doc """
   Gets the user with the given signed token.
   """
+
+  # def get_user_by_session_token(token) do
+  #   {:ok, query} = UserToken.verify_session_token_query(token)
+  #   Repo.one(query)
+  # end
+
   def get_user_by_session_token(token) do
-    {:ok, query} = UserToken.verify_session_token_query(token)
-    Repo.one(query)
+    case UserToken.verify_session_token_query(token) do
+      {:ok, query} ->
+        Repo.one(query)
+
+      {:error, reason} ->
+        # Handle the error gracefully, for example, log the reason or return a default value
+        IO.puts("Error getting user by session token: #{reason}")
+        nil
+    end
   end
 
   @doc """

@@ -5,6 +5,22 @@ defmodule NoshNetwork.Data.Schema.Cater do
 
   @primary_key {:id, :binary_id, autogenerate: true}
   @foreign_key_type :binary_id
+  @required_fields ~w|
+about
+specialties
+user_id
+business_policies
+  |a
+
+  @optional_fields ~w|
+gallery
+social_media
+average_rating
+  availability
+
+  |a
+
+  @all_fields @required_fields ++ @optional_fields
   schema "caters" do
     field :about, :string
     field :gallery, :map
@@ -21,7 +37,7 @@ defmodule NoshNetwork.Data.Schema.Cater do
   @doc false
   def changeset(cater, attrs) do
     cater
-    |> cast(attrs, [:about, :gallery, :social_media])
-    |> validate_required([:about])
+    |> cast(attrs, @all_fields)
+    |> validate_required(@required_fields, message: "This field is required")
   end
 end

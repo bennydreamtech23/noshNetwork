@@ -1,4 +1,4 @@
-defmodule NoshNetworkWeb.UserConfirmationLive do
+defmodule NoshNetworkWeb.Auth.UserConfirmationLive do
   use NoshNetworkWeb, :live_view
 
   alias NoshNetwork.Data.Context.Users
@@ -16,8 +16,8 @@ defmodule NoshNetworkWeb.UserConfirmationLive do
       </.simple_form>
 
       <p class="text-center mt-4">
-        <.link href={~p"/users/register"}>Register</.link>
-        | <.link href={~p"/users/log_in"}>Log in</.link>
+        <.link href={~p"/auth/register"}>Register</.link>
+        | <.link href={~p"/auth/log_in"}>Log in</.link>
       </p>
     </div>
     """

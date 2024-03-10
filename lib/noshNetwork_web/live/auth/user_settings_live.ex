@@ -1,4 +1,4 @@
-defmodule NoshNetworkWeb.UserSettingsLive do
+defmodule NoshNetworkWeb.Auth.UserSettingsLive do
   use NoshNetworkWeb, :live_view
 
   alias NoshNetwork.Data.Context.Users
@@ -37,7 +37,7 @@ defmodule NoshNetworkWeb.UserSettingsLive do
         <.simple_form
           for={@password_form}
           id="password_form"
-          action={~p"/users/log_in?_action=password_updated"}
+          action={~p"/auth/log_in?_action=password_updated"}
           method="post"
           phx-change="validate_password"
           phx-submit="update_password"

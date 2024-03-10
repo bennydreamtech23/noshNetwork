@@ -47,27 +47,32 @@ defmodule NoshNetworkWeb.Router do
 
   ## Authentication routes
 
-  scope "/", NoshNetworkWeb do
+  scope "/auth", NoshNetworkWeb do
     pipe_through [:browser, :redirect_if_user_is_authenticated]
 
     live_session :redirect_if_user_is_authenticated,
       on_mount: [{NoshNetworkWeb.UserAuth, :redirect_if_user_is_authenticated}] do
-      live "/users/register", UserRegistrationLive, :new
-      live "/users/log_in", UserLoginLive, :new
-      live "/users/reset_password", UserForgotPasswordLive, :new
-      live "/users/reset_password/:token", UserResetPasswordLive, :edit
+      live "/signup", SignupLogin.Index
+      live "/caters_signup", CatersSignupLive.Index
+      live "/register", Auth.UserRegistrationLive, :new
+      live "/log_in", Auth.UserLoginLive, :new
+      live "/reset_password", Auth.UserForgotPasswordLive, :new
+      live "/reset_password/:token", Auth.UserResetPasswordLive, :edit
     end
 
-    post "/users/log_in", UserSessionController, :create
+    post "/log_in", UserSessionController, :create
   end
 
-  scope "/", NoshNetworkWeb do
+  scope "/users", NoshNetworkWeb do
     pipe_through [:browser, :require_authenticated_user]
 
     live_session :require_authenticated_user,
       on_mount: [{NoshNetworkWeb.UserAuth, :ensure_authenticated}] do
-      live "/users/settings", UserSettingsLive, :edit
-      live "/users/settings/confirm_email/:token", UserSettingsLive, :confirm_email
+      live "/dashboard", DashboardLive.Index
+      live "/welcome", WelcomeLive.Welcome
+      live "/onboarding", OnboardingLive.Index
+      live "/settings", Auth.UserSettingsLive, :edit
+      live "/settings/confirm_email/:token", Auth.UserSettingsLive, :confirm_email
     end
   end
 
@@ -78,8 +83,8 @@ defmodule NoshNetworkWeb.Router do
 
     live_session :current_user,
       on_mount: [{NoshNetworkWeb.UserAuth, :mount_current_user}] do
-      live "/users/confirm/:token", UserConfirmationLive, :edit
-      live "/users/confirm", UserConfirmationInstructionsLive, :new
+      live "/users/confirm/:token", Auth.UserConfirmationLive, :edit
+      live "/users/confirm", Auth.UserConfirmationInstructionsLive, :new
     end
   end
 end

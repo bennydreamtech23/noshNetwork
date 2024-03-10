@@ -56,6 +56,9 @@ defmodule NoshNetwork.Data.Context.Users.UserToken do
   The token is valid if it matches the value in the database and it has
   not expired (after @session_validity_in_days).
   """
+
+  def verify_session_token_query(nil), do: {:error, "Invalid token: nil"}
+
   def verify_session_token_query(token) do
     query =
       from token in by_token_and_context_query(token, "session"),
