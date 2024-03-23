@@ -1,0 +1,45 @@
+research
+
+ <div class="container">
+    <div class="card">
+      <p>
+        Claymorphism and Glassmorphism, when <strong>mixed carefully</strong>, look delicious together.
+      </p>
+
+      <p class="card-footer">Created by Rahul C.</p>
+    </div>
+  </div>
+
+  css
+  .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  min-height: 100vh;
+  padding: 2em;
+  }
+  
+  .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  max-width: 550px;
+  min-height: 350px;
+  padding: 50px;
+  border-radius: 50px;
+  
+  background-color: hsl(350deg 20% 95% / 50%);
+  backdrop-filter: blur(10px);
+  box-shadow:
+  34px 34px 68px 0px hsl(350deg 10% 50%),
+  inset -8px -8px 16px 0px hsl(350deg 20% 50% / 70%),
+  inset 0px 14px 28px 0px hsl(350deg 20% 95%);
+  }
+  
+  .card-footer {
+  font-size: .75em;
+  color: hsl(350deg 25% 40%);
+  } 

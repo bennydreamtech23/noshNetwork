@@ -58,8 +58,13 @@ defmodule NoshNetwork.Data.Context.Users do
       ** (Ecto.NoResultsError)
 
   """
-  def get_user!(id), do: Repo.get!(User, id)
 
+  # def get_user!(id) do
+  #   Repo.get!(User, id)
+  #   |> Repo.preload()
+  # end
+
+  def get_user!(id), do: Repo.get!(User, id)
   ## User registration
 
   @doc """
