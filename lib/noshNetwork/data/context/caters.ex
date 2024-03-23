@@ -7,6 +7,7 @@ defmodule NoshNetwork.Data.Context.Caters do
   alias NoshNetwork.Repo
 
   alias NoshNetwork.Data.Schema.Cater
+  alias NoshNetwork.Data.Schema.User
 
   @doc """
   Returns the list of caters.
@@ -49,11 +50,19 @@ defmodule NoshNetwork.Data.Context.Caters do
       {:error, %Ecto.Changeset{}}
 
   """
+
   def create_cater(attrs \\ %{}) do
     %Cater{}
     |> Cater.changeset(attrs)
     |> Repo.insert()
   end
+
+  # def create_cater(user, attrs \\ %{}) do
+  #   user
+  #   |> Ecto.build_assoc(:caters)
+  #   |> Cater.changeset(attrs)
+  #   |> Repo.insert()
+  # end
 
   @doc """
   Updates a cater.
@@ -67,6 +76,7 @@ defmodule NoshNetwork.Data.Context.Caters do
       {:error, %Ecto.Changeset{}}
 
   """
+
   def update_cater(%Cater{} = cater, attrs) do
     cater
     |> Cater.changeset(attrs)
@@ -85,6 +95,7 @@ defmodule NoshNetwork.Data.Context.Caters do
       {:error, %Ecto.Changeset{}}
 
   """
+
   def delete_cater(%Cater{} = cater) do
     Repo.delete(cater)
   end

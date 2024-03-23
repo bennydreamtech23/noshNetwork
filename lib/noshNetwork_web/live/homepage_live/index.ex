@@ -3,9 +3,12 @@ defmodule NoshNetworkWeb.HomepageLive.Index do
   alias NoshNetwork.Data.Context.Users
 
   def mount(_params, session, socket) do
+    cusine = "nigeria"
+
     socket =
       socket
       |> assign(:current_user, Users.get_user_by_session_token(session["user_token"]))
+      |> assign(:cusine, cusine)
 
     {:ok, socket}
   end

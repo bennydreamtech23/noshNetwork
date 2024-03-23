@@ -1,6 +1,7 @@
 defmodule NoshNetwork.Data.Schema.User do
   use Ecto.Schema
   import Ecto.Changeset
+  alias NoshNetwork.Data.Schema.Cater
   @primary_key {:id, :binary_id, autogenerate: true}
   @foreign_key_type :binary_id
 
@@ -41,6 +42,11 @@ email
     field :is_notification, :boolean
     field :country, :string
     field :state, :string
+
+    has_one :caters, Cater,
+      foreign_key: :user_id,
+      on_delete: :delete_all,
+      on_replace: :update
 
     timestamps(type: :utc_datetime)
   end
