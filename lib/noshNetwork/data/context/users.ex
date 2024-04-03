@@ -42,7 +42,7 @@ defmodule NoshNetwork.Data.Context.Users do
   # get caters details
 
   def get_all_caters() do
-   from(u in User, where: u.role == "cater")
+    from(u in User, where: u.role == "cater")
     |> Repo.all()
     |> Repo.preload(:caters)
   end

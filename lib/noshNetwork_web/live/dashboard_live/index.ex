@@ -7,8 +7,6 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
 
     caters = Users.get_all_caters()
 
-
-
     socket =
       socket
       |> assign(:current_user, current_user)

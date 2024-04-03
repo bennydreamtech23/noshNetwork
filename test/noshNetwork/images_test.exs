@@ -35,7 +35,12 @@ defmodule NoshNetwork.ImagesTest do
 
     test "update_image/2 with valid data updates the image" do
       image = image_fixture()
-      update_attrs = %{image: "some updated image", title: "some updated title", type: "some updated type"}
+
+      update_attrs = %{
+        image: "some updated image",
+        title: "some updated title",
+        type: "some updated type"
+      }
 
       assert {:ok, %Image{} = image} = Images.update_image(image, update_attrs)
       assert image.image == "some updated image"

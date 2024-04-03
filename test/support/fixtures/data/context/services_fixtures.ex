@@ -10,9 +10,7 @@ defmodule NoshNetwork.Data.Context.ServicesFixtures do
   def service_fixture(attrs \\ %{}) do
     {:ok, service} =
       attrs
-      |> Enum.into(%{
-
-      })
+      |> Enum.into(%{})
       |> NoshNetwork.Data.Context.Services.create_service()
 
     service

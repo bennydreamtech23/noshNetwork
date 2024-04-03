@@ -17,7 +17,7 @@ defmodule NoshNetwork.Data.Context.Gallerys do
       [%Gallery{}, ...]
 
   """
- def list_galleries(search_string \\ nil) do
+  def list_galleries(search_string \\ nil) do
     search_string = search_string && String.downcase(search_string)
 
     query =
@@ -66,7 +66,7 @@ defmodule NoshNetwork.Data.Context.Gallerys do
   """
 
   def get_gallery_by_name(gallery_name), do: Repo.get_by(Gallery, gallery_name: gallery_name)
-  
+
   def create_gallery(attrs \\ %{}) do
     %Gallery{}
     |> Gallery.changeset(attrs)

@@ -82,7 +82,6 @@ defmodule NoshNetworkWeb.Auth.UserRegistrationLive do
   defp assign_form(socket, %Ecto.Changeset{} = changeset) do
     form = to_form(changeset, as: "user")
 
-
     if changeset.valid? do
       assign(socket, form: form, check_errors: false)
     else
