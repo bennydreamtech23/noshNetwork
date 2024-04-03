@@ -1,1 +1,46 @@
-<div>dashboard</div>
+<section>
+  <%= if @current_user.role == "user" do %>
+    <section class="m-auto max-w-screen-xl p-6 overflow-hidden">
+      <%!-- header --%>
+      <header class="flex md:justify-between flex-col-reverse md:flex-row md:items-center gap-3">
+        <div>
+          <form phx-change="search">
+            <input
+              type="text"
+              name="query"
+              phx-debounce="300"
+              class="form-control w-full"
+              placeholder="Search caters"
+            />
+          </form>
+        </div>
+      </header>
+
+      <%= if @caters== [] do %>
+        <div>No record found</div>
+      <% else %>
+        <div class="grid grid-cols-3 gap-3 my-3">
+          <%= for cater <- :lists.reverse(@caters) do %>
+            <div class="flex flex-col items-center w-[300px]">
+              <div class="relative inline-block border-x border-t">
+                <img src={cater.caters.photo} alt="Outer Image" class="block w-[300px]" />
+                <img
+                  src={cater.profile_picture}
+                  alt="Inner Image"
+                  class="absolute bottom-0 left-0 -mb-5 ml-2 w-[100px] h-[100px] rounded-full border border-white shadow-sm"
+                />
+              </div>
+              <div class="flex flex-col bg-white w-full py-6 px-3 rounded-b-sm">
+                <h1 class="font-brand font-bold text-xl"><%= cater.business_name %></h1>
+                <h1><%= cater.address %> <%= cater.state %>
+                  <%= cater.country %></h1>
+
+                <p><%= cater.phone_number %></p>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </section>
+  <% end %>
+</section>

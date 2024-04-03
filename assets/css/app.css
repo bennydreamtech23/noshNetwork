@@ -43,6 +43,59 @@ body{
   width: 100vw;
   height: 100vh;
 }
+
+input {
+  border-width: 1px;
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  background-color: #f7f8f7;
+  border-color: #e0e2e5 !important;
+}
+
+input::placeholder {
+  font-size: 0.875rem;
+  /* text-sm */
+  color: #a0aec0;
+  /* placeholder:text-neutral-400 */
+  font-weight: 300;
+  /* placeholder:font-light */
+}
+
+input:focus {
+  outline: none;
+  border-width: 0.6px;
+  border-color: rgb(87 107 114 / 1);
+  /* focus:border-figHover */
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.form-control {
+  border-width: 1px;
+  height: 3rem;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  background-color: #f7f8f7;
+  border-color: #e0e2e5 !important;
+}
+
+.form-control::placeholder {
+  font-size: 0.875rem;
+  /* text-sm */
+  color: #a0aec0;
+  /* placeholder:text-neutral-400 */
+  font-weight: 300;
+  /* placeholder:font-light */
+}
+
+.form-control:focus {
+  outline: none;
+  border-width: 0.6px;
+  border-color: rgb(87 107 114 / 1);
+  /* focus:border-figHover */
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
 .dropdown-menu-arrow::before{
   content: "";
   position: absolute;
@@ -77,10 +130,10 @@ right: 9px;
 .neumorphic {
   box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.15),
     -12px -12px 24px 0 rgba(255, 255, 255, 0.25);
-
+/* 
    width: 250px;
-  height: 250px; 
-  border-radius: 40px;
+  height: 250px;   */
+  border-radius: 16px;
   overflow: hidden;
   display: flex;
   flex-direction: column;

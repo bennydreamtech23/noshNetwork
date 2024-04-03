@@ -7,7 +7,7 @@ defmodule NoshNetwork.Data.Context.Users do
   alias NoshNetwork.Repo
 
   alias NoshNetwork.Data.Context.Users.{UserToken, UserNotifier}
-  alias NoshNetwork.Data.Schema.User
+  alias NoshNetwork.Data.Schema.{User, Cater}
   ## Database getters
 
   @doc """
@@ -38,6 +38,15 @@ defmodule NoshNetwork.Data.Context.Users do
       nil
 
   """
+
+  # get caters details
+
+  def get_all_caters() do
+    from(u in User, where: u.role == "cater")
+    |> Repo.all()
+    |> Repo.preload(:caters)
+  end
+
   def get_user_by_email_and_password(email, password)
       when is_binary(email) and is_binary(password) do
     user = Repo.get_by(User, email: email)
@@ -64,7 +73,10 @@ defmodule NoshNetwork.Data.Context.Users do
   #   |> Repo.preload()
   # end
 
-  def get_user!(id), do: Repo.get!(User, id)
+  # def get_user!(id), do: Repo.get!(User, id)
+
+  def get_user!(id, preloads \\ []), do: Repo.get!(User, id) |> Repo.preload(preloads)
+  def get_user(id, preloads \\ []), do: Repo.get(User, id) |> Repo.preload(preloads)
   ## User registration
 
   @doc """
