@@ -8,29 +8,29 @@ defmodule NoshNetwork.Data.Schema.Cater do
   @required_fields ~w|
 about
 user_id
-
+  business_policies
+    specialties
   |a
 
   @optional_fields ~w|
-gallery
+
 social_media
 average_rating
   availability
-  specialties
-  business_policies
-
+      photo
   |a
 
   @all_fields @required_fields ++ @optional_fields
   schema "caters" do
     field :about, :string
-    field :gallery, :map
-    field :social_media, :map
+    field :photo, :string
+    field :social_media, {:map, :string}
     field :specialties, {:array, :string}
     field :average_rating, :float
-    field :availability, :map
-    field :business_policies, :map
+    field :availability, {:map, :string}
+    field :business_policies, :string
     # field :user_id, :binary_id
+
     belongs_to :users, User, foreign_key: :user_id, type: :binary_id
     has_many :services, Service
     timestamps(type: :utc_datetime)

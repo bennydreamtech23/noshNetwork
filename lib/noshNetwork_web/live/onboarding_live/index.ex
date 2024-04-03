@@ -9,8 +9,6 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
   @impl true
   def mount(_params, _session, socket) do
     current_user = socket.assigns.current_user
-    # new_cater = %Cater{}
-    # cater_changeset = Cater.cater_changeset(new_cater)
 
     changeset =
       apply(
@@ -27,9 +25,17 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
       |> assign(check_errors: false)
       |> assign_form(changeset)
       |> assign(:cater_form, to_form(Caters.change_cater(%Cater{})))
-      |> allow_upload(:profile_picture, accept: ~w(.png .jpg), max_entries: 1)
+      |> allow_upload(:profile_picture, accept: ~w(.png .jpeg .jpg), max_entries: 1)
+      |> allow_upload(:photo, accept: ~w(.png .jpeg .jpg), max_entries: 1)
       |> assign(:valid, false)
       |> assign(:user_id, nil)
+      |> assign(:specilaities_choice, [
+        "Nigerian Cusine",
+        "Chinese Cuisine",
+        "Americian Cuisine",
+        "Italian Cuisine",
+        "Japanese Cuisine"
+      ])
 
     {:ok, socket}
   end
@@ -73,7 +79,8 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
           {:noreply, socket}
 
         {:ok, _user} ->
-          {:noreply, socket |> put_flash(:info, "Contact Info is succesfully")}
+          {:noreply,
+           socket |> put_flash(:info, "Contact Info is succesfully") |> assign(:valid, false)}
 
         {:error, %Ecto.Changeset{} = changeset} ->
           {:noreply, assign_form(socket, changeset)}
@@ -85,21 +92,44 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
 
   # caters validation and creation
   @impl true
-  def handle_event("validate-cater", %{"cater" => cater_params}, socket) do
-    cater_params = cater_params |> Map.put("user_id", socket.assigns.current_user.id)
+  def handle_event(
+        "validate-cater",
+        %{
+          "cater" => cater_params,
+          "social_media" => social_media_params,
+          "availability" => availabilty_params
+        },
+        socket
+      ) do
+    cater_params =
+      cater_params
+      |> Map.put("user_id", socket.assigns.current_user.id)
+      |> Map.put("social_media", social_media_params)
+      |> Map.put("availability", availabilty_params)
 
     changeset =
       %Cater{}
       |> Caters.change_cater(cater_params)
       |> Map.put(:action, :validate)
 
-    {:noreply, assign(socket, :cater_form, to_form(changeset))}
+    {:noreply,
+     socket |> assign(:valid, changeset.valid?) |> assign(:cater_form, to_form(changeset))}
   end
 
   @impl true
-  def handle_event("update-cater", %{"cater" => cater_params}, socket) do
-    cater_params = cater_params |> Map.put("user_id", socket.assigns.current_user.id)
-    IO.inspect(cater_params, label: 'hello')
+  def handle_event("update-cater", params, socket) do
+    %{
+      "cater" => cater_params,
+      "social_media" => social_media_params,
+      "availability" => availabilty_params
+    } = params
+
+    cater_params =
+      cater_params
+      |> Map.put("user_id", socket.assigns.current_user.id)
+      |> Map.put("social_media", social_media_params)
+      |> Map.put("availability", availabilty_params)
+      |> Map.put("photo", List.first(consume_file(socket)))
 
     case Caters.create_cater(cater_params) do
       {:ok, _cater} ->
@@ -107,7 +137,7 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
 
         socket =
           socket
-          |> put_flash(:info, "cater onboarded successfully")
+          |> put_flash(:info, "Cater onboarded successfully")
           |> push_navigate(to: ~p"/users/dashboard")
           |> assign(:cater_form, to_form(changeset))
 
@@ -120,6 +150,15 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
 
   defp consume_files(socket) do
     consume_uploaded_entries(socket, :profile_picture, fn %{path: path}, _entry ->
+      dest = Path.join([:code.priv_dir(:noshNetwork), "static", "uploads", Path.basename(path)])
+
+      File.cp!(path, dest)
+      {:postpone, ~p"/uploads/#{Path.basename(dest)}"}
+    end)
+  end
+
+  defp consume_file(socket) do
+    consume_uploaded_entries(socket, :photo, fn %{path: path}, _entry ->
       dest = Path.join([:code.priv_dir(:noshNetwork), "static", "uploads", Path.basename(path)])
 
       File.cp!(path, dest)
