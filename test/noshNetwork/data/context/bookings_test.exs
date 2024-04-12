@@ -21,7 +21,12 @@ defmodule NoshNetwork.Data.Context.BookingsTest do
     end
 
     test "create_reservation/1 with valid data creates a reservation" do
-      valid_attrs = %{event_date: ~N[2024-04-11 20:53:00], event_duration: 42, event_type: "some event_type", num_guests: 42}
+      valid_attrs = %{
+        event_date: ~N[2024-04-11 20:53:00],
+        event_duration: 42,
+        event_type: "some event_type",
+        num_guests: 42
+      }
 
       assert {:ok, %Reservation{} = reservation} = Bookings.create_reservation(valid_attrs)
       assert reservation.event_date == ~N[2024-04-11 20:53:00]
@@ -36,9 +41,17 @@ defmodule NoshNetwork.Data.Context.BookingsTest do
 
     test "update_reservation/2 with valid data updates the reservation" do
       reservation = reservation_fixture()
-      update_attrs = %{event_date: ~N[2024-04-12 20:53:00], event_duration: 43, event_type: "some updated event_type", num_guests: 43}
 
-      assert {:ok, %Reservation{} = reservation} = Bookings.update_reservation(reservation, update_attrs)
+      update_attrs = %{
+        event_date: ~N[2024-04-12 20:53:00],
+        event_duration: 43,
+        event_type: "some updated event_type",
+        num_guests: 43
+      }
+
+      assert {:ok, %Reservation{} = reservation} =
+               Bookings.update_reservation(reservation, update_attrs)
+
       assert reservation.event_date == ~N[2024-04-12 20:53:00]
       assert reservation.event_duration == 43
       assert reservation.event_type == "some updated event_type"
@@ -47,7 +60,10 @@ defmodule NoshNetwork.Data.Context.BookingsTest do
 
     test "update_reservation/2 with invalid data returns error changeset" do
       reservation = reservation_fixture()
-      assert {:error, %Ecto.Changeset{}} = Bookings.update_reservation(reservation, @invalid_attrs)
+
+      assert {:error, %Ecto.Changeset{}} =
+               Bookings.update_reservation(reservation, @invalid_attrs)
+
       assert reservation == Bookings.get_reservation!(reservation.id)
     end
 
@@ -81,7 +97,12 @@ defmodule NoshNetwork.Data.Context.BookingsTest do
     end
 
     test "create_booking/1 with valid data creates a booking" do
-      valid_attrs = %{event_date: ~N[2024-04-11 22:23:00], event_duration: 42, event_type: "some event_type", num_guests: 42}
+      valid_attrs = %{
+        event_date: ~N[2024-04-11 22:23:00],
+        event_duration: 42,
+        event_type: "some event_type",
+        num_guests: 42
+      }
 
       assert {:ok, %Booking{} = booking} = Bookings.create_booking(valid_attrs)
       assert booking.event_date == ~N[2024-04-11 22:23:00]
@@ -96,7 +117,13 @@ defmodule NoshNetwork.Data.Context.BookingsTest do
 
     test "update_booking/2 with valid data updates the booking" do
       booking = booking_fixture()
-      update_attrs = %{event_date: ~N[2024-04-12 22:23:00], event_duration: 43, event_type: "some updated event_type", num_guests: 43}
+
+      update_attrs = %{
+        event_date: ~N[2024-04-12 22:23:00],
+        event_duration: 43,
+        event_type: "some updated event_type",
+        num_guests: 43
+      }
 
       assert {:ok, %Booking{} = booking} = Bookings.update_booking(booking, update_attrs)
       assert booking.event_date == ~N[2024-04-12 22:23:00]

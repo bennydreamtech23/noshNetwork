@@ -47,9 +47,10 @@ defmodule NoshNetwork.Data.Context.Users do
     |> Repo.preload(:caters)
   end
 
-   def get_cater(id) do
+  def get_cater(id) do
     from(u in User, where: u.role == "cater")
-      Repo.get!(User, id)
+
+    Repo.get!(User, id)
     |> Repo.preload(:caters)
   end
 
