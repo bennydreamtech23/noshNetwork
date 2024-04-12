@@ -47,6 +47,12 @@ defmodule NoshNetwork.Data.Context.Users do
     |> Repo.preload(:caters)
   end
 
+   def get_cater(id) do
+    from(u in User, where: u.role == "cater")
+      Repo.get!(User, id)
+    |> Repo.preload(:caters)
+  end
+
   def get_user_by_email_and_password(email, password)
       when is_binary(email) and is_binary(password) do
     user = Repo.get_by(User, email: email)

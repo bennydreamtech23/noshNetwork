@@ -1,0 +1,71 @@
+<section class="m-auto max-w-screen-xl p-6 overflow-hidden">
+  <.simple_form for={@form} phx-change="validate" phx-submit="save_booking">
+    <div class="flex  flex-col gap-4">
+      <label>Event Type</label>
+      <%= select(@form, :event_type, @event_type) %>
+    </div>
+    <div class="flex  flex-col gap-4">
+      <.input field={@form[:event_date]} type="date" label="Event date" autocomplete="off" />
+    </div>
+    <div class="flex  flex-col gap-4">
+      <.input
+        field={@form[:event_duration]}
+        type="number"
+        label="Event Duration"
+        autocomplete="off"
+      />
+    </div>
+    <div class="flex  flex-col gap-4">
+      <.input
+        field={@form[:num_guests]}
+        type="number"
+        label="Number of Guests"
+        autocomplete="off"
+      />
+    </div>
+    <div class="flex  flex-col gap-4">
+      <label>Cusine Preference</label>
+      <%= multiple_select(@form, :cusine_preference, @cusine_preference) %>
+    </div>
+    <div class="flex  flex-col gap-4">
+      <label>Service Type</label>
+      <%= multiple_select(@form, :service_type, @service_type) %>
+    </div>
+    <div class="flex  flex-col gap-4">
+      <.input
+        field={@form[:venue_location]}
+        type="text"
+        label="Venue Location"
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="flex  flex-col gap-4">
+      <.input field={@form[:budget]} type="text" label="Budget" autocomplete="off" />
+    </div>
+
+    <div class="flex  flex-col gap-4">
+      <.input
+        field={@form[:special_request]}
+        type="text"
+        label="Special Request"
+        autocomplete="off"
+      />
+    </div>
+    <div class="flex  flex-col gap-4">
+      <.input
+        field={@form[:additional_service]}
+        type="text"
+        label="Additional Service"
+        autocomplete="off"
+      />
+    </div>
+    <button
+      phx-disable-with="creating booking..."
+      class={[button_valid(@valid), "w-full text-white"]}
+      disabled={@valid !== true}
+    >
+      Create Booking
+    </button>
+  </.simple_form>
+</section>

@@ -38,7 +38,7 @@ defmodule NoshNetworkWeb.CatersSignupLive.Index do
 
   defp assign_form(socket, %Ecto.Changeset{} = changeset) do
     form = to_form(changeset, as: "user")
-    IO.inspect(form)
+
 
     if changeset.valid? do
       assign(socket, form: form, check_errors: false)
