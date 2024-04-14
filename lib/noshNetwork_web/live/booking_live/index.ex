@@ -3,12 +3,14 @@ defmodule NoshNetworkWeb.BookingLive.Index do
 
   alias NoshNetwork.Data.Context.Bookings
   alias NoshNetwork.Data.Schema.Booking
+  alias NoshNetwork.Data.Context.Caters
   import Phoenix.HTML.Form
 
-  def mount(_params, _session, socket) do
+  def mount(%{"id" => id}, _session, socket) do
     changeset = Bookings.change_booking(%Booking{})
     user_id = socket.assigns.current_user.id
-    IO.inspect(user_id, label: "hello")
+    cater_id = Caters.get_cater!(id)
+    IO.inspect(cater_id.id, label: "hello ooo")
 
     socket =
       socket
@@ -38,7 +40,21 @@ defmodule NoshNetworkWeb.BookingLive.Index do
         "Food truck",
         "Boxed Meals"
       ])
+      |> assign(:dietary_restriction, [
+        "Amala & Ewedu",
+        "Pepper soup",
+        "Fish"
+      ])
+      |> assign(:specific_dishes, [
+        "Amala & Ewedu",
+        "Pepper soup",
+        "Fish",
+        "Fried Rice",
+        "Jollof Rice"
+      ])
       |> assign(:valid, false)
+      |> assign(:cater_id, cater_id.id)
+      |> assign(:user_id, user_id)
 
     {:ok, socket}
   end
@@ -47,6 +63,8 @@ defmodule NoshNetworkWeb.BookingLive.Index do
     params =
       params
       |> Map.put("status", "pending")
+      |> Map.put("user_id", socket.assigns.user_id)
+      |> Map.put("cater_id", socket.assigns.cater_id)
 
     changeset =
       Booking.changeset(%Booking{}, params)
@@ -60,14 +78,20 @@ defmodule NoshNetworkWeb.BookingLive.Index do
       params
       |> Map.put("status", "pending")
 
+    params =
+      params
+      |> Map.put("status", "under review")
+      |> Map.put("user_id", socket.assigns.user_id)
+      |> Map.put("cater_id", socket.assigns.cater_id)
+
     case Bookings.create_booking(params) do
       {:ok, _booking} ->
-        changeset = changeset = Bookings.change_booking(%Booking{})
+        changeset = Bookings.change_booking(%Booking{})
 
         socket =
           socket
           |> put_flash(:info, "Booking created successfully")
-          |> push_navigate(to: ~p"/users/dashboard")
+          |> push_navigate(to: ~p"/users/user_booking")
           |> assign(:valid, false)
 
         {:noreply, socket}

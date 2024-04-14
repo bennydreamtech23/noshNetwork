@@ -37,6 +37,13 @@ defmodule NoshNetwork.Data.Context.Bookings do
   """
   def get_booking!(id), do: Repo.get!(Booking, id)
 
+  # get by user_id
+  def get_bookings_by_user_id(user_id) do
+    Booking
+    |> where([b], b.user_id == ^user_id)
+    |> Repo.all()
+  end
+
   @doc """
   Creates a booking.
 

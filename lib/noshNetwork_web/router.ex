@@ -71,6 +71,7 @@ defmodule NoshNetworkWeb.Router do
       live "/dashboard", DashboardLive.Index
       live "/cater", CaterLive.Index
       live "/booking", BookingLive.Index
+      live "/user_booking", ShowUserBookingLive.Index
       live "/welcome", WelcomeLive.Welcome
       live "/onboarding", OnboardingLive.Index
       live "/settings", Auth.UserSettingsLive, :edit

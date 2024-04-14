@@ -5,7 +5,12 @@
       <%= select(@form, :event_type, @event_type) %>
     </div>
     <div class="flex  flex-col gap-4">
-      <.input field={@form[:event_date]} type="date" label="Event date" autocomplete="off" />
+      <.input
+        field={@form[:event_date]}
+        type="datetime-local"
+        label="Event date"
+        autocomplete="off"
+      />
     </div>
     <div class="flex  flex-col gap-4">
       <.input
@@ -28,8 +33,16 @@
       <%= multiple_select(@form, :cusine_preference, @cusine_preference) %>
     </div>
     <div class="flex  flex-col gap-4">
+      <label>Specific Dishes</label>
+      <%= multiple_select(@form, :specific_dishes, @specific_dishes) %>
+    </div>
+    <div class="flex  flex-col gap-4">
+      <label>Dietary Restriction</label>
+      <%= multiple_select(@form, :dietary_restriction, @dietary_restriction) %>
+    </div>
+    <div class="flex  flex-col gap-4">
       <label>Service Type</label>
-      <%= multiple_select(@form, :service_type, @service_type) %>
+      <%= multiple_select(@form, :service_type, @service_type, class: "js-example-basic-multiple") %>
     </div>
     <div class="flex  flex-col gap-4">
       <.input

@@ -9,10 +9,10 @@ defmodule NoshNetworkWeb.CaterLive.Index do
   end
 
   @impl true
-  def handle_event("booking_action", _params, socket) do
+  def handle_event("booking_action", %{"id" => id}, socket) do
     socket =
       socket
-      |> push_navigate(to: ~p"/users/booking")
+      |> push_navigate(to: ~p"/users/booking?#{[id: id]}")
 
     {:noreply, socket}
   end
