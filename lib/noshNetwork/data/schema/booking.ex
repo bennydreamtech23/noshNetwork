@@ -25,8 +25,8 @@ additional_service
 indoor_outdoor
 budget_constraints
 special_request
-
-
+specific_dishes
+dietary_restriction
   |a
   @all_fields @required_fields ++ @optional_fields
   schema "bookings" do
@@ -36,6 +36,8 @@ special_request
     field :num_guests, :integer
     field :cusine_preference, {:array, :string}
     field :service_type, {:array, :string}
+    field :dietary_restriction, {:array, :string}
+    field :specific_dishes, {:array, :string}
     field :additional_service, :string
     field :venue_location, :string
     field :indoor_outdoor, :boolean, default: false

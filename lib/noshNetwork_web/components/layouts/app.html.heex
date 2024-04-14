@@ -21,7 +21,7 @@
     </button>
     <div
       id="dropdown_menu"
-      class="dropdown-menu-arrow absolute right right-0 mt-2 py-2 w-48 rounded-lg shadow-xl border border-white bg-black text-white"
+      class="dropdown-menu-arrow absolute right right-0 mt-2 py-2 w-48 rounded-lg shadow-xl border border-white bg-black text-white z-50"
       hidden="true"
     >
       <%= if @current_user do %>
@@ -34,6 +34,17 @@
         >
           Dashboard
         </.link>
+        <%= if @current_user.role == "user" do %>
+          <.link
+            class="menu-item"
+            href={~p"/users/user_booking"}
+            class=" menu-item border-b border-white border-opacity-50"
+            tabindex="-1"
+            id="user-menu-0"
+          >
+            Booking
+          </.link>
+        <% end %>
         <.link
           class="menu-item border-b border-white border-opacity-50"
           href={~p"/users/settings"}
