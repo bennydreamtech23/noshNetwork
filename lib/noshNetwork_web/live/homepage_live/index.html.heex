@@ -7,7 +7,11 @@
     <div>
       <h1 class="font-brand font-bold lg:text-5xl text-2xl text-center lg:text-left lg:mx-0 mx-6">
         Your Ultimate Resource for Exceptional
-        Catering Services Directory
+        Catering
+        <strong class="border-[2px] border-white text-white rounded-[100%] px-3 py-2 border-opacity-100">
+          Services
+        </strong>
+        Directory
       </h1>
       <p class="lg:text-left text-sm my-4 font-normal font-brand  lg:text-lg text-center lg:mx-0 mx-6">
         Explore our catering directory for the best caterers, dedicated to making your event exceptional with top-notch service and delicious cuisine.
@@ -47,7 +51,7 @@
               "bg-emOrange-dark rounded-md px-2 py-3 shadow-slate-200 shadow-md"
           ]}
           type="button"
-        >
+       phx-click='update_cusine' phx-value-cusine='nigeria'>
           Nigeria Cuisine
         </button>
       </div>
@@ -56,7 +60,7 @@
           " text-white text-lg",
           @cusine == "italian" &&
             "bg-emOrange-dark rounded-md px-2 py-3 shadow-slate-200 shadow-md"
-        ]}>
+        ]}  phx-click='update_cusine' phx-value-cusine='italian'>
           Italian cuisine
         </button>
       </div>
@@ -126,6 +130,18 @@
       </div>
     </div>
   </div>
+ <%!-- the bottom aspect --%>
+  <div>
+    <%= case @cusine do %>
+      <% "nigeria" -> %>
+        <div>Nigeria food is here</div>
+      <% "italian" -> %>
+      <div>italian food is here</div>
+      <% "under review" -> %>
+        <p>more information</p>
+      <% _ -> %>
+        <p></p>
+    <% end %></div>
 
   <%!-- about us part --%>
   <div class="lg:flex justify-normal items-center mt-8 p-6">

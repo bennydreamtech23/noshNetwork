@@ -1,16 +1,23 @@
 defmodule NoshNetworkWeb.DashboardLive.Index do
   use NoshNetworkWeb, :live_view
   alias NoshNetwork.Data.Context.Users
+  alias NoshNetwork.Data.Context.{Bookings, Caters}
+
   @impl true
   def mount(_params, _session, socket) do
     current_user = socket.assigns.current_user
 
     caters = Users.get_all_caters()
 
+    cater_id = Caters.get_cater_by_user_id(current_user.id)
+
+    user_booking = Bookings.get_bookings_by_cater_id(cater_id.id)
+
     socket =
       socket
       |> assign(:current_user, current_user)
       |> assign(:caters, caters)
+      |> assign(:user_booking, user_booking)
 
     {:ok, socket}
   end
