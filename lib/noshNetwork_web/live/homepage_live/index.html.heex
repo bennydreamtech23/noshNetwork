@@ -1,291 +1,102 @@
 <.flash_group flash={@flash} />
-
-<section>
-  <%!-- hero section --%>
-
-  <div class="lg:flex-row flex justify-between gap-3 items-center flex-col-reverse p-6  w-full">
-    <div>
-      <h1 class="font-brand font-bold lg:text-5xl text-2xl text-center lg:text-left lg:mx-0 mx-6">
-        Your Ultimate Resource for Exceptional
-        Catering
-        <strong class="border-[2px] border-white text-white rounded-[100%] px-3 py-2 border-opacity-100">
-          Services
-        </strong>
-        Directory
-      </h1>
-      <p class="lg:text-left text-sm my-4 font-normal font-brand  lg:text-lg text-center lg:mx-0 mx-6">
-        Explore our catering directory for the best caterers, dedicated to making your event exceptional with top-notch service and delicious cuisine.
-      </p>
-      <div class="flex justify-normal items-center gap-4 my-3">
-        <div class="bg-emLight-dark px-4 py-3 shadow-sm shadow-white rounded-md">
-          <i class="fa-brands fa-whatsapp text-2xl text-white"></i>
-        </div>
-        <div class="bg-emLight-dark px-4 py-3 shadow-sm shadow-white rounded-md">
-          <i class="fa-brands fa-facebook-f text-2xl text-white"></i>
-        </div>
-        <div class="bg-emLight-dark px-4 py-3 shadow-sm shadow-white rounded-md">
-          <i class="fa-brands fa-instagram text-2xl  text-white"></i>
-        </div>
-        <div class="bg-emLight-dark px-4 py-3 shadow-sm shadow-white rounded-md">
-          <i class="fa-brands fa-twitter text-2xl text-white"></i>
-        </div>
-        <div class="bg-emLight-dark px-4 py-3 shadow-sm shadow-white rounded-md">
-          <i class="fa-brands fa-tiktok text-2xl text-white"></i>
-        </div>
-      </div>
+<section class="m-auto max-w-screen-xl overflow-hidden font-brand">
+  <div class="relative h-screen">
+    <!-- Background image covering half of the page -->
+    <div
+      class="absolute inset-0 w-full h-full overflow-hidden"
+      style="background-image: url('/images/NIGERIAN FEAST - CHRISTMAS MEAL INSPIRATION.jpeg'); background-size: cover; background-position: center;"
+    >
     </div>
-    <div>
-      <img src="/images/hero_img.png" alt="img" />
-    </div>
-  </div>
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+    <!-- Content centered on top of the image -->
+    <div class="absolute inset-0 flex justify-center items-center z-10">
+      <div class="text-white text-center">
+        <!-- Your content goes here -->
+        <h1 class="text-6xl font-bold pb-6">Nosh Network</h1>
+        <div class="flex gap-8 items-start justify-between mt-12 mb-6">
+          <div class="mx-auto w-[350px]">
+            <h2 class="font-bold">Booking System</h2>
+            <p class="font-normal">
+              We provide the best fast and reliable booking system, where you can contact a cater as fast as possible
+            </p>
+          </div>
 
-  <%!-- cusines part in homepage --%>
+          <div class="mx-auto w-[350px]">
+            <h2 class="font-bold">Mediation Services</h2>
+            <p class="font-normal">
+              Mediation services to facilitate communication between customers and caterers in case of disputes.
+              Neutral third-party intervention to resolve conflicts and reach amicable solutions.
+            </p>
+          </div>
 
-  <div class="bg-emLight-dark text-white rounded-md font-bold font-brand items-center p-6">
-    <div style="white-space:nowrap;" id="col">
-      <div class="scrolling-col-nigeria">
-        <button
-          class={[
-            " text-white text-lg",
-            @cusine == "nigeria" &&
-              "bg-emOrange-dark rounded-md px-2 py-3 shadow-slate-200 shadow-md"
-          ]}
-          type="button"
-       phx-click='update_cusine' phx-value-cusine='nigeria'>
-          Nigeria Cuisine
-        </button>
-      </div>
-      <div class="scrolling-col-italian">
-        <button class={[
-          " text-white text-lg",
-          @cusine == "italian" &&
-            "bg-emOrange-dark rounded-md px-2 py-3 shadow-slate-200 shadow-md"
-        ]}  phx-click='update_cusine' phx-value-cusine='italian'>
-          Italian cuisine
-        </button>
-      </div>
-      <div class="scrolling-col-chinese">
-        <button class={[
-          " text-white text-lg",
-          @cusine == "chinese" &&
-            "bg-emOrange-dark rounded-md px-2 py-3 shadow-slate-200 shadow-md"
-        ]}>
-          Chinese Cuisine
-        </button>
-      </div>
-
-      <div class="scrolling-col-japanese">
-        <button class={[
-          " text-white text-lg",
-          @cusine == "japanese" &&
-            "bg-emOrange-dark rounded-md px-2 py-3 shadow-slate-200 shadow-md"
-        ]}>
-          Japanese Cuisine
-        </button>
-      </div>
-      <div class="scrolling-col-french">
-        <button class={[
-          " text-white text-lg",
-          @cusine == "french" &&
-            "bg-emOrange-dark rounded-md px-2 py-3 shadow-slate-200 shadow-md"
-        ]}>
-          French cuisine
-        </button>
-      </div>
-      <div class="scrolling-col-indian">
-        <button class={[
-          " text-white text-lg",
-          @cusine == "indian" &&
-            "bg-emOrange-dark rounded-md px-2 py-3 shadow-slate-200 shadow-md"
-        ]}>
-          Indian Cuisine
-        </button>
-      </div>
-      <div class="scrolling-col-american">
-        <button class={[
-          " text-white text-lg",
-          @cusine == "american" &&
-            "bg-emOrange-dark rounded-md px-2 py-3 shadow-slate-200 shadow-md"
-        ]}>
-          American Cuisine
-        </button>
-      </div>
-      <div class="scrolling-col-ghanaian">
-        <button class={[
-          " text-white text-lg",
-          @cusine == "ghanaian" &&
-            "bg-emOrange-dark rounded-md px-2 py-3 shadow-slate-200 shadow-md"
-        ]}>
-          Ghanaian Cuisine
-        </button>
-      </div>
-      <div class="scrolling-col-south">
-        <button class={[
-          " text-white text-lg",
-          @cusine == "south" &&
-            "bg-emOrange-dark rounded-md px-2 py-3 shadow-slate-200 shadow-md"
-        ]}>
-          South African Cuisine
-        </button>
+          <div class="mx-auto w-[350px]">
+            <h2 class="font-bold">Quality Assurance</h2>
+            <p class="font-normal">
+              Quality assurance measures to ensure listed caterers meet certain standards of hygiene, safety, and professionalism.
+              Regular audits and inspections to maintain the credibility of the directory.
+            </p>
+          </div>
+        </div>
+        <div class="text-white font-bold">
+          <marquee
+            behavior="scroll"
+            direction="right"
+            scrollamount="8"
+            class="flex flex-row flex-wrap gap-x-"
+          >
+            <button class="text-white text-lg">
+              Nigeria Cuisine
+            </button>
+            <button class="text-white text-lg">
+              Italian cuisine
+            </button>
+            <button class="text-white text-lg">
+              Chinese Cuisine
+            </button>
+            <button class="text-white text-lg">
+              Japanese Cuisine
+            </button>
+            <button class="text-white text-lg">
+              French cuisine
+            </button>
+            <button class="text-white text-lg">
+              Indian Cuisine
+            </button>
+            <button class="text-white text-lg">
+              American Cuisine
+            </button>
+            <button class="text-white text-lg">
+              Ghanaian Cuisine
+            </button>
+            <button class="text-white text-lg">
+              South African Cuisine
+            </button>
+          </marquee>
+        </div>
       </div>
     </div>
   </div>
- <%!-- the bottom aspect --%>
-  <div>
-    <%= case @cusine do %>
-      <% "nigeria" -> %>
-        <div>Nigeria food is here</div>
-      <% "italian" -> %>
-      <div>italian food is here</div>
-      <% "under review" -> %>
-        <p>more information</p>
-      <% _ -> %>
-        <p></p>
-    <% end %></div>
-
-  <%!-- about us part --%>
-  <div class="lg:flex justify-normal items-center mt-8 p-6">
-    <div>
-      <img src="/images/hero_img1.png" alt="about" class="object-contain w-2/3" />
-    </div>
-    <div>
-      <h3 class="font-brand font-bold lg:text-3xl text-2xl">
-        We provide the most capable hands for your event
-      </h3>
-      <p class="font-brand font-medium">
-        let make your event memorable by providing a verified caters and event planners
-      </p>
-    </div>
-  </div>
-  <div class="lg:flex justify-normal items-center flex-row-reverse p-6">
-    <div>
-      <img src="/images/hero_img2.png" alt="about" class="object-contain w-2/3" />
-    </div>
-    <div>
-      <h3 class="font-brand font-bold lg:text-3xl text-2xl">
-        We provide the most capable hands for your event
-      </h3>
-      <p class="font-brand font-medium">
-        let make your event memorable by providing a verified caters and event planners
-      </p>
-    </div>
-  </div>
-
-  <%!-- services part --%>
-  <h1 class="text-center font-bold font-brand lg:text-4xl text-2xl my-3">
-    Our <span class="text-white">Services</span>
-  </h1>
 
   <div
-    class="grid lg:grid-cols-4 grid-cols-1 justify-center mx-auto gap-4 p-6"
+    class="grid lg:grid-cols-4 grid-cols-1 justify-center mx-auto gap-4 p-6 border-b border-gray-300 my-6"
     style="align-items:unset"
   >
-    <div class=" bg-black shadow-sm text-white p-6 rounded-md shadow-white">
-      <i class="fa fa-check-circle text-4xl my-4" aria-hidden="true"></i>
-      <h4 class="text-white font-bold font-brand text-2xl mt-2">Affordable Caters</h4>
-      <p class="font-brand font-medium">
-        Get the best caters at negotiable rate. Duscuss with caters freely
-      </p>
+    <div class="mx-auto">
+      <h2>24/7</h2>
+      <p>Customer Care</p>
     </div>
-    <div class="  bg-black shadow-sm text-white p-6 rounded-md shadow-white">
-      <i class="fa fa-check-circle text-4xl my-4" aria-hidden="true"></i>
-      <h4 class="text-white font-bold font-brand text-2xl mt-2">Affordable Caters</h4>
-      <p class="font-brand font-medium">
-        Get the best caters at negotiable rate. Duscuss with caters freely
-      </p>
+    <div class="mx-auto">
+      <h2>100+</h2>
+      <p>Clients</p>
     </div>
-    <div class=" bg-black shadow-sm text-white p-6 rounded-md shadow-white">
-      <i class="fa fa-check-circle text-4xl my-4" aria-hidden="true"></i>
-      <h4 class="text-white font-bold font-brand text-2xl mt-2">Affordable Caters</h4>
-      <p class="font-brand font-medium">
-        Get the best caters at negotiable rate. Duscuss with caters freely
-      </p>
+    <div class="mx-auto">
+      <h2>20</h2>
+      <p>Caters</p>
     </div>
-    <div class=" bg-black shadow-sm text-white p-6 rounded-md shadow-white">
-      <i class="fa fa-check-circle text-4xl my-4" aria-hidden="true"></i>
-      <h4 class="text-white font-bold font-brand text-2xl mt-2">Affordable Caters</h4>
-      <p class="font-brand font-medium">
-        Get the best caters at negotiable rate. Duscuss with caters freely
-      </p>
+    <div class="mx-auto">
+      <h2>80+</h2>
+      <p>Reviews</p>
     </div>
   </div>
-
-  <%!-- testimonal part --%>
-  <section class="p-6">
-    <h2 class="lg:text-4xl text-2xl text-white text-center font-brand font-bold my-8">
-      See what Customers are saying about CatersHub
-    </h2>
-    <div
-      class="grid lg:grid-cols-3 grid-cols-1 justify-center mx-auto gap-4 p-6"
-      style="align-items:unset"
-    >
-      <div>
-        <h3 class="font-bold lg:text-2xl text-xl">Kevin Uzoma</h3>
-        <p>
-          I couldn't have asked for a better catering service for my wedding! The attention to detail and the exquisite taste of the dishes surpassed all expectations. The team not only met but exceeded our needs, making our special day truly unforgettable. I highly recommend this service for anyone looking to elevate their event with exceptional catering
-        </p>
-      </div>
-
-      <div>
-        <h3 class="font-bold lg:text-2xl text-xl">Jennie House</h3>
-        <p>
-          As a busy event planner, finding reliable and outstanding catering services is crucial. I stumbled upon this directory, and it has been a game-changer for me. The caterers recommended here have consistently delivered exceptional service, making each event a success. The variety of cuisines and the attention to dietary preferences make them my go-to choice every time.
-        </p>
-      </div>
-      <div>
-        <h3 class="font-bold lg:text-2xl text-xl">Jennie House</h3>
-        <p>
-          Absolutely fantastic experience with the caterers recommended by this directory! From the initial consultation to the final bite, every aspect was handled with professionalism and expertise. The menu was diverse, and the flavors were exquisite. Our guests were raving about the food, and I owe it all to the amazing caterers suggested by this service. I highly endorse and appreciate the impact they had on our event.
-        </p>
-      </div>
-    </div>
-  </section>
-  <%!-- contact us part --%>
-  <section class="p-6">
-    <div class="flex lg:flex-row flex-col lg:items-center items-start justify-between lg:gap-4 gap-2 font-brand">
-      <div class="flex gap-2 flex-col">
-        <h3 class="text-base lg:text-lg font-normal">LET'S TALK</h3>
-        <h2 class="font-bold lg:text-2xl text-xl text-white">Want to Book a Catering service?</h2>
-      </div>
-      <.button>Contact us now</.button>
-    </div>
-    <div class="w-full h-[1px] bg-white  bg-opacity-50 my-3" />
-    <p class="font-brand text-sm">
-      We're a team of professional researcher, bridging the gap between caters and clients, bringing the best caters been scrutinize by us to your doorstep
-    </p>
-  </section>
-  <%!-- contact us part --%>
-  <footer class="bg-black text-white">
-    <div
-      class="grid lg:grid-cols-4 grid-cols-1 justify-center mx-auto gap-4 p-6 font-brand"
-      style="align-items:unset"
-    >
-      <div>
-        <a href={~p"/"}>
-          <img src="/images/logo.png" alt="img" class="w-9/12" />
-        </a>
-      </div>
-
-      <div>
-        <p>Our Services</p>
-        <ul>
-          <li>pricing</li>
-          <li>Tracking</li>
-          <li>Report a Bug</li>
-          <li>Terms of service</li>
-        </ul>
-      </div>
-      <div>
-        <p>Our Company</p>
-        <ul>
-          <li>About</li>
-          <li>Get in touch</li>
-        </ul>
-      </div>
-
-      <div>
-        <p>Addresss</p>
-      </div>
-    </div>
-  </footer>
 </section>

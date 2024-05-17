@@ -21,7 +21,7 @@
       <% else %>
         <div class="grid md:grid-cols-3 grid_cols-1 mx-auto my-3">
           <%= for cater <- :lists.reverse(@caters) do %>
-            <div class="flex flex-col items-center w-[300px] shadow-sm">
+            <div class="flex flex-col items-center w-[300px] shadow-sm mx-auto">
               <div class="relative inline-block border-x border-t rounded-t-md">
                 <img src={cater.caters.photo} alt="Outer Image" class="block w-[300px]" />
                 <img
@@ -34,7 +34,7 @@
                 <h1
                   class="font-brand font-bold text-xl cursor-pointer"
                   phx-click="cater_show"
-                  phx-value-id={cater.caters.id}
+                  phx-value-id={cater.id}
                 >
                   <%= cater.business_name %>
                 </h1>
