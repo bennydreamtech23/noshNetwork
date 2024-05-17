@@ -38,6 +38,10 @@ defmodule NoshNetwork.Data.Context.Caters do
   """
   def get_cater!(id), do: Repo.get!(Cater, id)
 
+  def get_cater_by_user_id(user_id) do
+    Repo.get_by(Cater, user_id: user_id)
+  end
+
   @doc """
   Creates a cater.
 

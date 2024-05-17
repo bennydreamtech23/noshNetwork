@@ -102,7 +102,7 @@ input:focus {
   top: -9px;
 right: 9px;
   border-width: 0px 5px 5px 5px;
-  border-color: transparent transparent white transparent;
+  border-color: transparent transparent black transparent;
 }
 .menu-item{
   @apply block px-4 py-2 text-sm text-white font-brand font-regular
@@ -123,7 +123,7 @@ right: 9px;
   top: 45%;
   transform: translateY(-50%);
   border-width: 5px 5px 0px 5px;
-  border-color: white transparent transparent transparent;
+  border-color: black transparent transparent transparent;
   border-style: solid;
 }
 

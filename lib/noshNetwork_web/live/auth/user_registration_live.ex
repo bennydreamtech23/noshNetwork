@@ -6,12 +6,20 @@ defmodule NoshNetworkWeb.Auth.UserRegistrationLive do
 
   def render(assigns) do
     ~H"""
-    <div class="mx-auto max-w-sm">
-      <.header class="text-center">
+    <div class="mx-auto max-w-sm p-6 font-brand">
+      <div class="mx-auto flex itmes-center justify-center">
+        <a href={~p"/"}>
+          <img src="/images/transparent_logo.png" alt="img" class="w-[150px]" />
+        </a>
+      </div>
+      <.header class="text-center text-black lg:text-3xl text-2xl">
         Register for an account
         <:subtitle>
           Already registered?
-          <.link navigate={~p"/auth/log_in"} class="font-semibold text-brand hover:underline ">
+          <.link
+            navigate={~p"/auth/log_in"}
+            class="text-lg font-semibold text-brand hover:underline "
+          >
             Sign in
           </.link>
           to your account now.
@@ -26,6 +34,7 @@ defmodule NoshNetworkWeb.Auth.UserRegistrationLive do
         phx-trigger-action={@trigger_submit}
         action={~p"/auth/log_in?_action=registered"}
         method="post"
+        class="bg-white bg-opacity-50 p-6 rounded-md shadow-sm shadow-gray-200 my-4"
       >
         <.error :if={@check_errors}>
           Oops, something went wrong! Please check the errors below.
@@ -39,7 +48,9 @@ defmodule NoshNetworkWeb.Auth.UserRegistrationLive do
         <.input field={@form[:role]} type="hidden" required value="user" />
 
         <:actions>
-          <.button phx-disable-with="Creating account..." class="w-full">Create an account</.button>
+          <.button phx-disable-with="Creating account..." class="w-full my-3">
+            Create an account
+          </.button>
         </:actions>
       </.simple_form>
     </div>
