@@ -1,0 +1,73 @@
+<div
+  id="confirmation_modal"
+  tabindex="-1"
+  aria-hidden="true"
+  class={["modal animation_smooth", @show_quotation_modal == false && "hidden"]}
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div
+        phx-click="back"
+        data-toggle="modal"
+        style="justify-content: end;"
+        class="modal-header cursor-pointer"
+        phx-target={@myself}
+      >
+        <img src="/assets/images/icons/cancelicon.svg" alt="x" />
+      </div>
+      <div class="modal-body">
+        <button phx-click="add-item" phx-target={@myself}>Add Item</button>
+
+        <%= if @show_item do %>
+          <.simple_form
+            for={@form}
+            id="item-form"
+            phx-change="validate"
+            phx-submit="save"
+            phx-target={@myself}
+          >
+            <div class="flex gap-3 justify-between">
+              <.input field={@form[:name]} type="text" label="Item Name" autocomplete="off" />
+
+              <.input
+                field={@form[:price]}
+                type="text"
+                placeholder="Price"
+                required
+                label="Price"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="flex gap-3 justify-between">
+              <.input
+                field={@form[:quantity]}
+                type="text"
+                placeholder="Quantity"
+                required
+                label="Quantity"
+                autocomplete="off"
+              />
+              <.input
+                field={@form[:description]}
+                type="text"
+                placeholder="Item description"
+                required
+                label="Description"
+                autocomplete="off"
+              />
+            </div>
+
+            <button
+              phx-disable-with="creating booking..."
+              class={[button_valid(@valid), "w-full text-white"]}
+              disabled={@valid !== true}
+            >
+              Create Booking
+            </button>
+          </.simple_form>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

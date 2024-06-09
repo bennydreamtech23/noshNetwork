@@ -93,6 +93,7 @@ defmodule NoshNetworkWeb.BookingLive.Index do
           |> put_flash(:info, "Booking created successfully")
           |> push_navigate(to: ~p"/users/user_booking")
           |> assign(:valid, false)
+          |> assign_form(changeset)
 
         {:noreply, socket}
 
