@@ -4,26 +4,33 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
   alias NoshNetwork.Data.Context.{Bookings, Caters}
 
   @impl true
-  def mount(%{"cater" => _} = params, session, socket) do
+  def mount(params, _session, socket) do
     current_user = socket.assigns.current_user
-
-    cater_id = Caters.get_cater_by_user_id(current_user.id)
-    user_booking = Bookings.get_bookings_by_cater_id(cater_id.id)
+    IO.inspect(current_user, label: "Current User")
 
     socket =
-      socket
-      |> assign(:current_user, current_user)
-      |> assign(:user_booking, user_booking)
+      if current_user.role == "cater" do
+        # Fetch cater information based on the current user
+        cater = Caters.get_cater_by_user_id(current_user.id)
+
+        user_booking = if cater, do: Bookings.get_bookings_by_cater_id(cater.id), else: []
+
+        socket
+        |> assign(:current_user, current_user)
+        |> assign(:user_booking, user_booking)
+        |> assign(:show_quotation_modal, false)
+        |> assign(:caters, [])
+      else
+        # For non-cater users, fetch all caters
+        caters = Users.get_all_caters()
+
+        socket
+        |> assign(:current_user, current_user)
+        |> assign(:caters, caters)
+        |> assign(:user_booking, [])
+      end
 
     {:ok, socket}
-  end
-
-  @impl true
-  def mount(_params, _session, socket) do
-    current_user = socket.assigns.current_user
-    caters = Users.get_all_caters()
-
-    {:ok, socket |> assign(:current_user, current_user) |> assign(:caters, caters)}
   end
 
   @impl true
@@ -44,5 +51,11 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
       |> push_navigate(to: ~p"/users/booking?#{[id: id]}")
 
     {:noreply, socket}
+  end
+
+  @impl true
+  ##### approve functionality
+  def handle_event("approve", _params, socket) do
+    {:noreply, assign(socket, :show_quotation_modal, true)}
   end
 end
