@@ -59,13 +59,47 @@
             </div>
 
             <button
-              phx-disable-with="creating booking..."
+              phx-disable-with="saving...."
               class={[button_valid(@valid), "w-full text-white"]}
               disabled={@valid !== true}
             >
-              Create Booking
+              Save
             </button>
           </.simple_form>
+        <% end %>
+
+        <%= if @items != [] do %>
+          <div>
+            <table class="table-auto w-full mt-5">
+              <thead>
+                <tr>
+                  <th class="px-4 py-2">Name</th>
+                  <th class="px-4 py-2">Price</th>
+                  <th class="px-4 py-2">Quantity</th>
+                  <th class="px-4 py-2">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <%= for item <- @items do %>
+                  <tr>
+                    <td class="border px-4 py-2"><%= item.name %></td>
+                    <td class="border px-4 py-2"><%= item.price %></td>
+                    <td class="border px-4 py-2"><%= item.quantity %></td>
+                    <td class="border px-4 py-2"><%= item.description %></td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+
+            <div class="mt-5">
+              <p>Subtotal: <%= @subtotal %></p>
+              <p>Fee: <%= @fee %></p>
+              <p>Total: <%= @total %></p>
+              <p>Note: <%= @note %></p>
+            </div>
+          </div>
+        <% else %>
+          <div>No items added yet.</div>
         <% end %>
       </div>
     </div>
