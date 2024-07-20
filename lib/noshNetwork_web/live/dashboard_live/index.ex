@@ -6,18 +6,18 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
   @impl true
   def mount(params, _session, socket) do
     current_user = socket.assigns.current_user
-    IO.inspect(current_user, label: "Current User")
 
     socket =
       if current_user.role == "cater" do
         # Fetch cater information based on the current user
         cater = Caters.get_cater_by_user_id(current_user.id)
-
+cater_id = cater.id
         user_booking = if cater, do: Bookings.get_bookings_by_cater_id(cater.id), else: []
 
         socket
         |> assign(:current_user, current_user)
         |> assign(:user_booking, user_booking)
+        |> assign(:cater_id, cater_id)
         |> assign(:show_quotation_modal, false)
         |> assign(:caters, [])
       else

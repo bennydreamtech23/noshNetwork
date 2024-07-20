@@ -296,7 +296,7 @@ display: inline;
 
 .modal-dialog{
   min-height: calc(100% - (1.75rem * 2));
-  max-width: 500px;
+  max-width: 1200px;
   margin: 1.75rem auto;
   display: flex;
   align-items: center;

@@ -162,15 +162,18 @@
       </section>
     <% else %>
       <div>
-        <h2>No Beneficiaries Added</h2>
-        <p>You haven't added any beneficiaries yet.</p>
-        <button class="btn-primary">Add Beneficiary</button>
+        <h2>No Booking  Added</h2>
+        <p>You haven't added any booking yet.</p>
       </div>
     <% end %>
   <% end %>
 
   <%= if @show_quotation_modal do %>
-   <.live_component id="quotation" module={NoshNetworkWeb.Components.Modal.Index} show_quotation_modal={@show_quotation_modal}/>
-
+    <.live_component
+      id="quotation"
+      module={NoshNetworkWeb.Components.Modal.Index}
+      show_quotation_modal={@show_quotation_modal}
+      cater_id={@cater_id}
+    />
   <% end %>
 </section>

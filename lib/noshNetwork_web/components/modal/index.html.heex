@@ -7,7 +7,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div
-        phx-click="back"
+        phx-click={JS.navigate(~p"/users/dashboard")}
         data-toggle="modal"
         style="justify-content: end;"
         class="modal-header cursor-pointer"
@@ -16,90 +16,457 @@
         <img src="/assets/images/icons/cancelicon.svg" alt="x" />
       </div>
       <div class="modal-body">
-        <button phx-click="add-item" phx-target={@myself}>Add Item</button>
+        <!--- Table start -->
+        <div class="overflow-x-auto p-3">
+          <table class="min-w-full divide-gray-200">
+            <thead>
+              <tr class="border-b border-t">
+                <th></th>
+                <th class=" whitespace-nowrap py-3 px-4 text-left font-medium text-sm" scope="col">
+                  ITEM DESCRIPTION
+                </th>
+                <th class=" whitespace-nowrap py-3 px-4 text-left font-medium text-sm" scope="col">
+                  QUANTITY
+                </th>
+                <th class=" whitespace-nowrap py-3 px-4 text-left font-medium text-sm" scope="col">
+                  UNIT PRICE
+                </th>
 
-        <%= if @show_item do %>
-          <.simple_form
-            for={@form}
-            id="item-form"
-            phx-change="validate"
-            phx-submit="save"
-            phx-target={@myself}
-          >
-            <div class="flex gap-3 justify-between">
-              <.input field={@form[:name]} type="text" label="Item Name" autocomplete="off" />
+                <th class=" whitespace-nowrap py-3 px-4 text-left font-medium text-sm" scope="col">
+                  SUB TOTAL
+                </th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-gray-200">
+              <%= if @quotation_items != []  do %>
+                <%= for item <- @quotation_items do %>
+                  <tr id={item.id} class="">
+                    <td>
+                      <button
+                        phx-click="delete_item"
+                        phx-value-item-id={item.id}
+                        phx-target={@myself}
+                        class="bg-figcolor bg-opacity-[0.5] p-2 rounded-lg"
+                      >
+                        <svg
+                          width="20"
+                          height="20"
+                          fill="none"
+                          stroke="#e01515"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path d="M3 6h18M5 6v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                          </path>
+                          <path d="M14 11v6"></path>
+                          <path d="M10 11v6"></path>
+                        </svg>
+                      </button>
+                    </td>
+                    <td class="py-2 px-4 w-[270px] font-light text-sm">
+                      <p style="font-size: 16px"><%= item.name %></p>
+                    </td>
 
-              <.input
-                field={@form[:price]}
-                type="text"
-                placeholder="Price"
-                required
-                label="Price"
-                autocomplete="off"
-              />
-            </div>
+                    <td class="py-2 px-4 font-light text-sm">
+                      <form
+                        id="change_quantity"
+                        name="change_quantity"
+                        phx-change="change_quantity"
+                        phx-target={@myself}
+                      >
+                        <input
+                          class="hidden"
+                          type="text"
+                          value={item.id}
+                          name="change_quantity[item_id]"
+                        />
+                        <input
+                          class="border h-10 rounded-md p-3 w-[94px]"
+                          type="number"
+                          value={item.quantity}
+                          name="change_quantity[item_quantity]"
+                        />
+                      </form>
+                    </td>
+                    <td class="py-2 px-4 font-light text-sm">
+                      <input
+                        class="border h-10 rounded-md w-full p-3"
+                        type="text"
+                        value={
+                          Number.Delimit.number_to_delimited(
+                            :erlang.float_to_binary(item.price, [
+                              :compact,
+                              {:decimals, 10}
+                            ])
+                          )
+                        }
+                        name="item_price"
+                        readonly
+                      />
+                    </td>
 
-            <div class="flex gap-3 justify-between">
-              <.input
-                field={@form[:quantity]}
-                type="text"
-                placeholder="Quantity"
-                required
-                label="Quantity"
-                autocomplete="off"
-              />
-              <.input
-                field={@form[:description]}
-                type="text"
-                placeholder="Item description"
-                required
-                label="Description"
-                autocomplete="off"
-              />
-            </div>
-
-            <button
-              phx-disable-with="saving...."
-              class={[button_valid(@valid), "w-full text-white"]}
-              disabled={@valid !== true}
-            >
-              Save
-            </button>
-          </.simple_form>
-        <% end %>
-
-        <%= if @items != [] do %>
-          <div>
-            <table class="table-auto w-full mt-5">
-              <thead>
-                <tr>
-                  <th class="px-4 py-2">Name</th>
-                  <th class="px-4 py-2">Price</th>
-                  <th class="px-4 py-2">Quantity</th>
-                  <th class="px-4 py-2">Description</th>
-                </tr>
-              </thead>
-              <tbody>
-                <%= for item <- @items do %>
-                  <tr>
-                    <td class="border px-4 py-2"><%= item.name %></td>
-                    <td class="border px-4 py-2"><%= item.price %></td>
-                    <td class="border px-4 py-2"><%= item.quantity %></td>
-                    <td class="border px-4 py-2"><%= item.description %></td>
+                    <td class="py-2 px-4 font-light text-sm">
+                      <input
+                        class="border h-10 rounded-md w-full p-3"
+                        type="text"
+                        value={
+                          Number.Delimit.number_to_delimited(
+                            :erlang.float_to_binary(item.subtotal, [
+                              :compact,
+                              {:decimals, 10}
+                            ])
+                          )
+                        }
+                        name="change_quantity[item_price]"
+                        readonly
+                      />
+                    </td>
                   </tr>
                 <% end %>
-              </tbody>
-            </table>
+              <% end %>
+              <tr class="">
+                <td>
+                  <button
+                    data-toggle="modal"
+                    phx-click="display_item_form"
+                    phx-value-status="true"
+                    phx-target={@myself}
+                    class="bg-figYellowNormal flex justify-center items-center bg-opacity-[0.6] rounded-md w-8 h-8"
+                  >
+                    +
+                  </button>
+                </td>
 
-            <div class="mt-5">
-              <p>Subtotal: <%= @subtotal %></p>
-              <p>Fee: <%= @fee %></p>
-              <p>Total: <%= @total %></p>
-              <p>Note: <%= @note %></p>
+                <td class="py-2 px-4 w-[270px] font-light text-sm">
+                  <form
+                    id="search_items_form"
+                    name="search_items_form"
+                    phx-change="search_item"
+                    phx-target={@myself}
+                  >
+                    <input
+                      placeholder="Search an Item"
+                      name="search_item_phrase"
+                      phx-debounce="500"
+                      class="flex  w-full border-b border-b-figGreyLight relative"
+                      type="text"
+                    />
+                    <%= if @search_item_results != [] do %>
+                      <div class="relative">
+                        <div class="absolute z-50 left-0 right-0 rounded border border-gray-100 shadow py-2 bg-white">
+                          <%= for search_item_result <- @search_item_results do %>
+                            <div
+                              class="cursor-pointer p-2 hover:bg-gray-200 focus:bg-gray-200"
+                              phx-target={@myself}
+                              phx-click="pick_item"
+                              phx-value-name={search_item_result}
+                            >
+                              <%= search_item_result %>
+                            </div>
+                          <% end %>
+                        </div>
+                      </div>
+                    <% end %>
+                  </form>
+                  <p style="color: red; font-size: 12px;">
+                    <%= Map.get(@error_map, :item, "") %>
+                  </p>
+                </td>
+                <%= if @selected_item == nil do %>
+                  <td class="py-2 px-4 font-light text-sm ">
+                    <input
+                      placeholder="Qty"
+                      class="border h-10 rounded-md p-3 w-[94px]"
+                      type="text"
+                    />
+                  </td>
+                  <td class="py-2 px-4 font-light text-sm">
+                    <input
+                      placeholder="Unit Price"
+                      class="border h-10 rounded-md w-full p-3"
+                      type="text"
+                      style=" min-width: 150px;"
+                    />
+                  </td>
+                <% else %>
+                  <td class="py-2 px-4 font-light text-sm ">
+                    <input
+                      placeholder="Qty"
+                      class="border h-10 rounded-md p-3 w-[94px]"
+                      type="text"
+                      phx-target={@myself}
+                      phx-click="change_quantity_step"
+                      phx-value-step="quantity_changed"
+                      style=" min-width: 150px;"
+                    />
+                  </td>
+                  <td class="py-2 px-4 font-light text-sm">
+                    <input
+                      placeholder="Unit Price"
+                      class="border h-10 rounded-md w-full p-3"
+                      type="text"
+                    />
+                  </td>
+                <% end %>
+              </tr>
+              <!-- Repeat the above row for other items -->
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td colspan="4" class="py-2 px-4" class="text-right font-light text-sm">
+                  <div class="flex flex-wrap">
+                    <div class="w-[60%] flex-col pr-[0.5rem]">
+                      <form
+                        id="create_invoice_form"
+                        phx-target={@myself}
+                        phx-change="add_description"
+                      >
+                        <div class="flex flex-col gap-3">
+                          <label class="text-sm" for="">
+                            Add Description / Note
+                          </label>
+                          <textarea
+                            name="description"
+                            rows="4"
+                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500  dark:focus:border-blue-500"
+                            placeholder="Add note / description.."
+                          >
+                                        </textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="w-[40%] pr-[0.5rem] pl-[0.5rem]">
+                      <div class="  flex flex-col p-2 rounded-md space-y-4">
+                        <%= if @selected_item != nil do %>
+                          <ul class="space-y-3">
+                            <li class="flex justify-between">
+                              <p class="text-sm">Subtotal</p>
+                              <p class="text-sm">
+                                <%= Number.Delimit.number_to_delimited(
+                                  :erlang.float_to_binary(@quotation_subtotal, [
+                                    :compact,
+                                    {:decimals, 10}
+                                  ])
+                                ) %>
+                              </p>
+                            </li>
+                            <li class="flex justify-between">
+                              <p class="text-sm">
+                                Include Fee
+                                <form id="change_tax" phx-change="change_tax" phx-target={@myself}>
+                                  <input
+                                    name="change_tax"
+                                    placeholder="0.0"
+                                    value={@fee}
+                                    type="number"
+                                    style="width: 60px;"
+                                  />
+                                  <p style="color: red; font-size: 12px;">
+                                    <%= Map.get(@error_map, :vat_error, "") %>
+                                  </p>
+                                </form>
+                              </p>
+                              <p class="text-sm">
+                                <%= Number.Delimit.number_to_delimited(
+                                  :erlang.float_to_binary(
+                                    @quotation_subtotal * @fee / 100,
+                                    [
+                                      :compact,
+                                      {:decimals, 10}
+                                    ]
+                                  )
+                                ) %>
+                              </p>
+                            </li>
+                            <li class="flex justify-between border-t py-4">
+                              <p class="text-sm">Total</p>
+                              <p class="text-sm">
+                                <%= Number.Delimit.number_to_delimited(
+                                  :erlang.float_to_binary(@quotation_total, [
+                                    :compact,
+                                    {:decimals, 10}
+                                  ])
+                                ) %>
+                              </p>
+                            </li>
+                            <li class="flex justify-between">
+                              <p class="text-sm font-medium">Amount Due</p>
+                              <p class="text-sm">
+                                <%= Number.Delimit.number_to_delimited(
+                                  :erlang.float_to_binary(@quotation_total, [
+                                    :compact,
+                                    {:decimals, 10}
+                                  ])
+                                ) %>
+                              </p>
+                            </li>
+                            <li><button class='btn' phx-target={@myself} phx-click='submit_quotation'>Submit</button></li>
+                          </ul>
+                        <% else %>
+                          <ul class="space-y-3">
+                            <li class="flex justify-between">
+                              <p class="text-sm">Subtotal</p>
+                              <p class="text-sm">
+                                <%= Number.Delimit.number_to_delimited(
+                                  :erlang.float_to_binary(@quotation_subtotal, [
+                                    :compact,
+                                    {:decimals, 10}
+                                  ])
+                                ) %>
+                              </p>
+                            </li>
+                            <li class="flex justify-between">
+                              <div class="flex  flex-col">
+                                <p class="text-xs">
+                                  Include VAT(%)
+                                </p>
+                                <form id="change_tax" phx-change="change_fee" phx-target={@myself}>
+                                  <input
+                                    class="form-control"
+                                    name="change_tax"
+                                    placeholder="0.0"
+                                    value={@fee}
+                                    type="number"
+                                    style="width: 60px; height: 33px;"
+                                  />
+                                  <p style="color: red; font-size: 12px;">
+                                    <%= Map.get(@error_map, :vat_error, "") %>
+                                  </p>
+                                </form>
+                              </div>
+
+                              <p class="text-sm">
+                                <%= Number.Delimit.number_to_delimited(
+                                  :erlang.float_to_binary(
+                                    @quotation_subtotal * @fee / 100,
+                                    [
+                                      :compact,
+                                      {:decimals, 10}
+                                    ]
+                                  )
+                                ) %>
+                              </p>
+                            </li>
+                            <li class="flex justify-between border-t py-4">
+                              <p class="text-sm">Total</p>
+                              <p class="text-sm">
+                                <%= Number.Delimit.number_to_delimited(
+                                  :erlang.float_to_binary(
+                                    @quotation_subtotal * @fee / 100,
+                                    [
+                                      :compact,
+                                      {:decimals, 10}
+                                    ]
+                                  )
+                                ) %>
+                              </p>
+                            </li>
+                            <li class="flex justify-between">
+                              <p class="text-sm font-medium">Amount Due</p>
+                              <p class="text-sm">
+                                <%= Number.Delimit.number_to_delimited(
+                                  :erlang.float_to_binary(
+                                    @quotation_total,
+                                    [
+                                      :compact,
+                                      {:decimals, 10}
+                                    ]
+                                  )
+                                ) %>
+                              </p>
+                            </li>
+                          </ul>
+                        <% end %>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <!-- Table end -->
+        <%!-- item form  --%>
+        <%= if @item_form == "true" do %>
+          <div
+            id="add_item"
+            phx-click="display_item_form"
+            data-toggle="modal"
+            class={["modal animation_smooth"]}
+            phx-target={@myself}
+          >
+            <div class="modal-dialog !max-w-[600px]">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="modal-header">
+                    <p class="font-semibold">Add item</p>
+                  </div>
+
+                  <div class="bg-white md:p-6 p-1 my-4 space-y-4">
+                    <form
+                      id="add_item_form"
+                      name="item_form"
+                      phx-target={@myself}
+                      phx-submit="save_item_form"
+                      phx-change="validate_item_form"
+                    >
+                      <div class="grid grid-cols-2 gap-4">
+                        <div class="flex flex-col col-span-2">
+                          <label class="text-sm" for="">Item Name</label>
+                          <input
+                            type="text"
+                            name="item_name"
+                            value={@item_details["name"]}
+                            class="border h-10 rounded-md p-4"
+                          />
+                          <p style="color: red; font-size: 12px;">
+                            <%= Map.get(@error_map_items, "item_name", "") %>
+                          </p>
+                        </div>
+                        <div class="flex flex-col col-span-2">
+                          <label class="text-sm" for="">Amount</label>
+                          <input
+                            type="text"
+                            name="item_price"
+                            value={@item_details["price"]}
+                            class="border h-10 rounded-md p-4"
+                          />
+                          <p style="color: red; font-size: 12px;">
+                            <%= Map.get(@error_map_items, "item_price", "") %>
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="modal-footer gap-4">
+                        <button
+                          value="close"
+                          name="status"
+                          class="btn-outline !px-9 "
+                          phx-target={@myself}
+                        >
+                          Close
+                        </button>
+
+                        <button
+                          value="false"
+                          name="status"
+                          class={[button_valid(@valid), "!px-9"]}
+                          disabled={@valid !== true}
+                          phx-target={@myself}
+                        >
+                          Save
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        <% else %>
-          <div>No items added yet.</div>
         <% end %>
       </div>
     </div>
