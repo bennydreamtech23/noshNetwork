@@ -6,19 +6,22 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
   @impl true
   def mount(params, _session, socket) do
     current_user = socket.assigns.current_user
-    IO.inspect(current_user, label: "Current User")
 
     socket =
       if current_user.role == "cater" do
         # Fetch cater information based on the current user
         cater = Caters.get_cater_by_user_id(current_user.id)
-
+        cater_id = cater.id
         user_booking = if cater, do: Bookings.get_bookings_by_cater_id(cater.id), else: []
 
         socket
         |> assign(:current_user, current_user)
         |> assign(:user_booking, user_booking)
+        |> assign(:cater_id, cater_id)
+        |> assign(:booking_id, nil)
+        |> assign(:booking_details, nil)
         |> assign(:show_quotation_modal, false)
+        |> assign(:show_more, false)
         |> assign(:caters, [])
       else
         # For non-cater users, fetch all caters
@@ -55,7 +58,35 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
 
   @impl true
   ##### approve functionality
-  def handle_event("approve", _params, socket) do
-    {:noreply, assign(socket, :show_quotation_modal, true)}
+  def handle_event("approve", %{"id" => id}, socket) do
+    bookings = socket.assigns[:user_booking]
+
+    booking =
+      Enum.find(
+        bookings,
+        fn booking ->
+          booking.id == id
+        end
+      )
+
+    status = "approved"
+
+    Bookings.update_booking_status(booking, status)
+
+    {
+      :noreply,
+      socket
+      |> assign(:booking_details, booking)
+      |> assign(:show_quotation_modal, true)
+    }
+  end
+
+  def handle_event("show_more", %{"id" => id}, socket) do
+    {
+      :noreply,
+      socket
+      |> assign(:booking_id, id)
+      |> assign(:show_more, true)
+    }
   end
 end

@@ -57,4 +57,12 @@ dietary_restriction
     |> cast(attrs, @all_fields)
     |> validate_required(@required_fields, message: "This field is required")
   end
+
+  def status_changeset(booking, attrs) do
+    booking
+    # Note that [:status] is a list containing the :status atom
+    |> cast(attrs, [:status])
+    |> validate_required([:status], message: "This field is required")
+  end
+
 end

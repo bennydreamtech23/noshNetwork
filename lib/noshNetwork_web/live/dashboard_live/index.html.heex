@@ -117,28 +117,52 @@
           <%= for booking <- :lists.reverse(@user_booking) do %>
             <tbody>
               <tr class="py-20 border-b">
-                <td class="px-5 py-6 text-left text-xs text-primaryColor whitespace-nowrap cursor-pointer">
+                <td
+                  class="px-5 py-6 text-left text-xs text-primaryColor whitespace-nowrap cursor-pointer"
+                  phx-click="show_more"
+                  phx-value-id={booking.id}
+                >
                   <%= booking.event_date |> Calendar.strftime("%d %b, %Y") %>
                 </td>
 
-                <td class="px-5 py-6 text-left text-xs text-primaryColor whitespace-nowrap">
+                <td
+                  class="px-5 py-6 text-left text-xs text-primaryColor whitespace-nowrap cursor-pointer"
+                  phx-click="show_more"
+                  phx-value-id={booking.id}
+                >
                   <%= String.capitalize(booking.event_type) %>
                 </td>
-                <td class="px-5 py-6 text-left text-xs text-primaryColor whitespace-nowrap">
+                <td
+                  class="px-5 py-6 text-left text-xs text-primaryColor whitespace-nowrap cursor-pointer"
+                  phx-click="show_more"
+                  phx-value-id={booking.id}
+                >
                   <%= booking.event_duration %>
                 </td>
-                <td class="px-5 py-6 text-left text-xs text-primaryColor whitespace-nowrap">
+                <td
+                  class="px-5 py-6 text-left text-xs text-primaryColor whitespace-nowrap cursor-pointer"
+                  phx-click="show_more"
+                  phx-value-id={booking.id}
+                >
                   <%= String.capitalize(booking.venue_location) %>
                 </td>
 
-                <td class="px-5 py-6 text-left text-xs text-primaryColor whitespace-nowrap">
+                <td
+                  class="px-5 py-6 text-left text-xs text-primaryColor whitespace-nowrap cursor-pointer"
+                  phx-click="show_more"
+                  phx-value-id={booking.id}
+                >
                   <%= booking.budget %>
                 </td>
-                <td class="px-5 py-6 text-left text-xs text-primaryColor whitespace-nowrap">
+                <td
+                  class="px-5 py-6 text-left text-xs text-primaryColor whitespace-nowrap cursor-pointer"
+                  phx-click="show_more"
+                  phx-value-id={booking.id}
+                >
                   <%= String.capitalize(booking.status) %>
                 </td>
 
-                <td class="px-5 py-6 text-left text-xs text-primaryColor whitespace-nowrap">
+                <td class="px-5 py-6 text-left text-xs text-primaryColor whitespace-nowrap ">
                   <%= booking.inserted_at |> Calendar.strftime("%d %b, %Y") %>
                 </td>
                 <td class="px-5 py-6 text-left text-xs text-primaryColor">
@@ -146,6 +170,7 @@
                     <button
                       class="bg-black text-white p-3 rounded-md shadow-sm"
                       phx-click="approve"
+                      phx-value-id={booking.id}
                     >
                       Approved
                     </button>
@@ -162,15 +187,27 @@
       </section>
     <% else %>
       <div>
-        <h2>No Beneficiaries Added</h2>
-        <p>You haven't added any beneficiaries yet.</p>
-        <button class="btn-primary">Add Beneficiary</button>
+        <h2>No Booking  Added</h2>
+        <p>You haven't added any booking yet.</p>
       </div>
     <% end %>
   <% end %>
 
   <%= if @show_quotation_modal do %>
-   <.live_component id="quotation" module={NoshNetworkWeb.Components.Modal.Index} show_quotation_modal={@show_quotation_modal}/>
+    <.live_component
+      id="quotation"
+      module={NoshNetworkWeb.Components.QuotationModal.Index}
+      show_quotation_modal={@show_quotation_modal}
+      cater_id={@cater_id}
+      booking_details={@booking_details}
+    />
+  <% end %>
 
+  <%= if @show_more do %>
+    <.live_component
+      id="booking_details"
+      module={NoshNetworkWeb.Components.BookingDetails}
+      booking_id={@booking_id}
+    />
   <% end %>
 </section>

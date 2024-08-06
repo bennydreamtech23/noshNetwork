@@ -12,8 +12,8 @@ defmodule NoshNetwork.Data.Schema.Quotation do
     field :total, :string
     field :note, :string
 
-    belongs_to :cater, NoshNetwork.Data.Schema.Cater, type: :binary_id
-    belongs_to :user, NoshNetwork.Data.Schema.User, type: :binary_id
+    belongs_to :assigned_to, NoshNetwork.Data.Schema.Cater, foreign_key: :cater_id
+    belongs_to :requested_by, NoshNetwork.Data.Schema.User, foreign_key: :user_id
 
     has_many :items, Item
 
@@ -23,7 +23,15 @@ defmodule NoshNetwork.Data.Schema.Quotation do
   @doc false
   def changeset(quotation, attrs) do
     quotation
-    |> cast(attrs, [:reference_id, :subtotal, :fee, :total, :note, :cater_id, :user_id])
-    |> validate_required([:reference_id, :subtotal, :fee, :total, :note, :cater_id, :user_id])
+    |> cast(attrs, [:reference_id, :subtotal, :fee, :total, :note, :assigned_to, :requested_by])
+    |> validate_required([
+      :reference_id,
+      :subtotal,
+      :fee,
+      :total,
+      :note,
+      :assigned_to,
+      :requested_by
+    ])
   end
 end

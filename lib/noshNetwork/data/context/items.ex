@@ -73,6 +73,24 @@ defmodule NoshNetwork.Data.Context.Items do
     |> Repo.update()
   end
 
+    def get_item(item_id) do
+    from(i in Item, where: i.id == ^item_id)
+    |> Repo.one()
+  end
+
+
+   def get_all_items_by_name(cater_id) do
+    Item
+    |> where([i, ...], i.cater_id == ^cater_id)
+    |> select([i], %{name: i.name})
+    |> Repo.all()
+  end
+
+
+  def get_item_by_name(item_name, cater_id) do
+    from(i in Item, where: i.name == ^item_name and i.cater_id == ^cater_id)
+    |> Repo.all()
+  end
   @doc """
   Deletes a item.
 
