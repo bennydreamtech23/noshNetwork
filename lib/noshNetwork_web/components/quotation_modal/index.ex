@@ -1,11 +1,13 @@
-defmodule NoshNetworkWeb.Components.Modal.Index do
+defmodule NoshNetworkWeb.Components.QuotationModal.Index do
   use NoshNetworkWeb, :live_component
   alias NoshNetwork.Data.Context.{Items, Quotations}
-  alias NoshNetwork.Data.Schema.Item
+  alias NoshNetwork.Data.Schema.{Item, Quotation}
 
   @impl true
   def update(assigns, socket) do
+    # IO.inspect(assigns, label: "assigns ppppppppp")
     cater_id = assigns.cater_id
+    booking_details = assigns.booking_details
 
     socket =
       socket
@@ -38,6 +40,7 @@ defmodule NoshNetworkWeb.Components.Modal.Index do
       )
       |> assign(:valid, false)
       |> assign(:cater_id, cater_id)
+      |> assign(:booking_details, booking_details)
 
     {:ok, socket}
   end
@@ -141,39 +144,31 @@ defmodule NoshNetworkWeb.Components.Modal.Index do
     end
   end
 
-  # def handle_event("submit_quotation", data, socket) do
-    # {invoice_subtotal, invoice_total} =
-    #   calculate_invoice_total(
-    #     socket.assigns.quotation_items,
-    #     socket.assigns.fee
-    #   )
+  def handle_event("submit_quotation", data, socket) do
+    {quotation_subtotal, quotation_total} =
+      calculate_invoice_total(
+        socket.assigns.quotation_items,
+        socket.assigns.fee
+      )
 
-    # invoice_params = %Invoice{
-    #   invoice_number: Invoices.get_new_invoice_number(socket.assigns.user_id),
-    #   invoice_date: socket.assigns.invoice_date,
-    #   invoice_from: socket.assigns.invoice_from,
-    #   due_date: socket.assigns.due_date,
-    #   invoice_amount: invoice_total,
-    #   currency: socket.assigns.invoice_currency_and_wallet.currency,
-    #   receiver_wallet: receiver_wallet,
-    #   user_id: socket.assigns.user_id,
-    #   is_template: false,
-    #   status: "draft",
-    #   customer: customer,
-    #   items: remove_item_ids_for_new_invoice(socket.assigns.invoice_items),
-    #   logo: socket.assigns.selected_logo,
-    #   description: socket.assigns.invoice_description,
-    #   tax: socket.assigns.tax
-    # }
+    invoice_params = %Quotation{
+      # invoice_number: Invoices.get_new_invoice_number(socket.assigns.user_id),
+
+      total: quotation_total
+
+      # items: remove_item_ids_for_new_invoice(socket.assigns.invoice_items),
+    }
 
     # Invoices.create_invoice_new(invoice_params)
 
-  #   {:noreply,
-  #    socket
-  #    |> assign(:invoice_created, invoice)
-  #    |> assign(:invoice_subtotal, invoice_subtotal)
-  #    |> assign(:error_map, %{vat_error: ""})}
-  # end
+    {
+      :noreply,
+      socket
+      #  |> assign(:invoice_created, invoice)
+      #  |> assign(:invoice_subtotal, invoice_subtotal)
+      #  |> assign(:error_map, %{vat_error: ""})
+    }
+  end
 
   def handle_event("add_item_step", %{"step" => "add_item", "value" => _add}, socket) do
     {:noreply, socket |> assign(:add_item, true)}
@@ -203,19 +198,19 @@ defmodule NoshNetworkWeb.Components.Modal.Index do
     {:noreply, socket |> assign(:save_as_template, !socket.assigns.save_as_template)}
   end
 
-  def handle_event("send_invoice", %{"save_template" => value}, socket) do
-    invoice = socket.assigns.invoice_created
+  # def handle_event("send_invoice", %{"save_template" => value}, socket) do
+  #   invoice = socket.assigns.invoice_created
 
-    case invoice.is_template do
-      false ->
-        Invoices.update_invoice(invoice, %{status: "unpaid", is_template: value})
+  #   case invoice.is_template do
+  #     false ->
+  #       Invoices.update_invoice(invoice, %{status: "unpaid", is_template: value})
 
-      true ->
-        Invoices.update_invoice(invoice, %{status: "unpaid"})
-    end
+  #     true ->
+  #       Invoices.update_invoice(invoice, %{status: "unpaid"})
+  #   end
 
-    send_invoice(socket, socket.assigns.action, invoice)
-  end
+  #   send_invoice(socket, socket.assigns.action, invoice)
+  # end
 
   def handle_event("cancel_invoice", _data, socket) do
     invoice = socket.assigns.invoice_created
@@ -391,15 +386,15 @@ defmodule NoshNetworkWeb.Components.Modal.Index do
      |> assign(:error_map, %{vat_error: ""})}
   end
 
-  def handle_event("send_invoice_sms", _, socket) do
-    send_sms =
-      case socket.assigns.send_invoice_sms do
-        true -> false
-        false -> true
-      end
+  # def handle_event("send_invoice_sms", _, socket) do
+  #   send_sms =
+  #     case socket.assigns.send_invoice_sms do
+  #       true -> false
+  #       false -> true
+  #     end
 
-    {:noreply, socket |> assign(:send_invoice_sms, send_sms)}
-  end
+  #   {:noreply, socket |> assign(:send_invoice_sms, send_sms)}
+  # end
 
   def handle_event(_event, _data, socket) do
     {:noreply, socket}
@@ -521,6 +516,13 @@ defmodule NoshNetworkWeb.Components.Modal.Index do
 
   defp maybe_update_invoice_with_currency_and_wallet(invoice, currency, wallet_number) do
     Invoices.update_invoice(invoice, %{currency: currency, receiver_wallet: wallet_number})
+  end
+
+    defp calculate_invoice_total(items, fee) do
+    subtotal = Enum.reduce(items, 0.0, fn item, acc -> item.subtotal + acc end)
+    vat = subtotal * fee / 100
+    total = subtotal + vat
+    {subtotal, total}
   end
 
   defp button_valid(true), do: "btn-primary"

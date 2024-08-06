@@ -340,6 +340,49 @@ display: inline;
   /* border-top: 1px solid #e9ecef; */
 }
 
+
+/* slider css */
+/* Styles for the overlay */
+
+.slider-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent overlay color */
+  z-index: 9999;
+  /* Ensure the overlay covers other content */
+}
+
+/* Base styles for the slider container */
+
+.slider-container {
+  position: fixed;
+  top: 0;
+  right: 0px;
+  /* Adjust the initial position as needed */
+  max-width: 500px;
+  /* Adjust the width as needed */
+  height: 100%;
+  background-color: white;
+  /* Background color for the slider */
+  color: black;
+  /* Text color */
+  transition: right 0.3s ease-in-out;
+  /* Animation transition */
+  z-index: 1000;
+  /* Ensure it's above other content */
+  width: 100%;
+  overflow-y: auto;
+}
+
+/* Styles for the slider content */
+
+.slider-content {
+  padding: 20px;
+}
 /* css for column */
 .row {
   --bs-gutter-x: 0.5rem;

@@ -49,6 +49,7 @@ defmodule NoshNetwork.Data.Context.Bookings do
     |> where([b], b.cater_id == ^cater_id)
     |> Repo.all()
   end
+
   @doc """
   Creates a booking.
 
@@ -82,6 +83,12 @@ defmodule NoshNetwork.Data.Context.Bookings do
   def update_booking(%Booking{} = booking, attrs) do
     booking
     |> Booking.changeset(attrs)
+    |> Repo.update()
+  end
+
+  def update_booking_status(booking, status) do
+    booking
+    |> Booking.status_changeset(%{status: status})
     |> Repo.update()
   end
 

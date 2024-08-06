@@ -13,7 +13,7 @@
         class="modal-header cursor-pointer"
         phx-target={@myself}
       >
-        <img src="/assets/images/icons/cancelicon.svg" alt="x" />
+        <i class="fa-regular fa-xmark"></i>
       </div>
       <div class="modal-body">
         <!--- Table start -->
@@ -304,7 +304,15 @@
                                 ) %>
                               </p>
                             </li>
-                            <li><button class='btn' phx-target={@myself} phx-click='submit_quotation'>Submit</button></li>
+                            <li>
+                              <button
+                                class="btn"
+                                phx-target={@myself}
+                                phx-click="submit_quotation"
+                              >
+                                Submit
+                              </button>
+                            </li>
                           </ul>
                         <% else %>
                           <ul class="space-y-3">
