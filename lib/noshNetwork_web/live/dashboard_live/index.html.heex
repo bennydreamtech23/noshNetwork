@@ -193,7 +193,7 @@
     <% end %>
   <% end %>
 
-  <%= if @show_quotation_modal do %>
+  <%= if @show_quotation_modal && @cater_id do %>
     <.live_component
       id="quotation"
       module={NoshNetworkWeb.Components.QuotationModal.Index}
@@ -203,10 +203,10 @@
     />
   <% end %>
 
-  <%= if @show_more do %>
+  <%= if @show_more && @cater_id do %>
     <.live_component
       id="booking_details"
-      module={NoshNetworkWeb.Components.BookingDetails}
+      module={NoshNetworkWeb.DashboardLive.Components.BookingDetails}
       booking_id={@booking_id}
     />
   <% end %>

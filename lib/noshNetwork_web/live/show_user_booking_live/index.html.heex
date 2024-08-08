@@ -1,4 +1,7 @@
 <div class="m-auto max-w-screen-xl p-6 overflow-hidden">
+
+<%= if !@show_quotation do %>
+
   <div>
     <p class="text-black font-medium text-lg">
       Booking
@@ -80,7 +83,9 @@
                     </a>
                     <%= case booking.status do %>
                       <% "approved" -> %>
-                        <button>View Quotation</button>
+                        <button phx-click="view_quotation" phx-value-id={booking.id}>
+                          View Quotation
+                        </button>
                       <% "rejected" -> %>
                         <p>Reasons</p>
                       <% "under review" -> %>
@@ -97,10 +102,17 @@
       </section>
     <% else %>
       <div>
-        <h2>No Beneficiaries Added</h2>
-        <p>You haven't added any beneficiaries yet.</p>
-        <button class="btn-primary">Add Beneficiary</button>
+        <h2>No Booking Added</h2>
+        <p>You haven't added any bookings yet.</p>
       </div>
     <% end %>
   </div>
+<% else %>
+
+    <.live_component
+      id="quotation_template"
+      module={NoshNetworkWeb.ShowUserBookingLive.Components.QuotationTemplate}
+      booking_id={@booking_id}
+    />
+  <% end %>
 </div>

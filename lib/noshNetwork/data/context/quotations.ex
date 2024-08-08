@@ -37,6 +37,17 @@ defmodule NoshNetwork.Data.Context.Quotations do
   """
   def get_quotation!(id), do: Repo.get!(Quotation, id)
 
+  # Function to get a quotation by booking_id
+  def get_quotation_by_booking_id(booking_id) do
+    query =
+      from q in Quotation,
+        where: q.booking_id == ^booking_id,
+        # Limit to 1 to ensure only one result is fetched
+        limit: 1
+
+    Repo.one(query)
+  end
+
   @doc """
   Creates a quotation.
 
@@ -53,6 +64,10 @@ defmodule NoshNetwork.Data.Context.Quotations do
     %Quotation{}
     |> Quotation.changeset(attrs)
     |> Repo.insert()
+  end
+
+  def get_new_quotation_number() do
+    "#{:rand.uniform(99_99_99)}"
   end
 
   @doc """
