@@ -16,6 +16,44 @@
         <i class="fa-regular fa-xmark"></i>
       </div>
       <div class="modal-body">
+        <div class="flex flex-col-reverse md:flex-row md:justify-between my-4">
+          <div class="flex flex-col gap-2 my-4">
+            <label class="text-sm" for="">Quotation Date</label>
+            <form
+              id="set_quotation_date"
+              name="set_quotation_date"
+              phx-change="set_quotation_date"
+              phx-target={@myself}
+            >
+              <input
+                value={@quotation_date}
+                class="form-control !bg-transparent !border-x-0 !rounded-none !border-t-0"
+                name="quotation_date"
+                type="date"
+              />
+            </form>
+            <p style="color: red; font-size: 12px;">
+              <%= Map.get(@error_map, :quotation_date, "") %>
+            </p>
+            <label class="text-sm" for="">Due Date</label>
+            <form
+              id="set_due_date"
+              name="set_due_date"
+              phx-change="set_due_date"
+              phx-target={@myself}
+            >
+              <input
+                class="form-control !bg-transparent !border-x-0 !rounded-none !border-t-0"
+                value={@due_date}
+                name="due_date"
+                type="date"
+              />
+            </form>
+            <p style="color: red; font-size: 12px;">
+              <%= Map.get(@error_map, :due_date, "") %>
+            </p>
+          </div>
+        </div>
         <!--- Table start -->
         <div class="overflow-x-auto p-3">
           <table class="min-w-full divide-gray-200">
@@ -191,6 +229,15 @@
                       style=" min-width: 150px;"
                     />
                   </td>
+
+                  <td class="py-2 px-4 font-light text-sm">
+                    <input
+                      style=" min-width: 150px;"
+                      placeholder="Sub Total"
+                      class="border h-10 rounded-md w-full p-3"
+                      type="text"
+                    />
+                  </td>
                 <% else %>
                   <td class="py-2 px-4 font-light text-sm ">
                     <input
@@ -206,6 +253,14 @@
                   <td class="py-2 px-4 font-light text-sm">
                     <input
                       placeholder="Unit Price"
+                      class="border h-10 rounded-md w-full p-3"
+                      type="text"
+                    />
+                  </td>
+
+                  <td class="py-2 px-4 font-light text-sm">
+                    <input
+                      placeholder="Sub Total"
                       class="border h-10 rounded-md w-full p-3"
                       type="text"
                     />
@@ -230,7 +285,7 @@
                             Add Description / Note
                           </label>
                           <textarea
-                            name="description"
+                            name="note"
                             rows="4"
                             class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500  dark:focus:border-blue-500"
                             placeholder="Add note / description.."
@@ -257,9 +312,9 @@
                             <li class="flex justify-between">
                               <p class="text-sm">
                                 Include Fee
-                                <form id="change_tax" phx-change="change_tax" phx-target={@myself}>
+                                <%!-- <form id="change_fee" phx-change="change_fee" phx-target={@myself}>
                                   <input
-                                    name="change_tax"
+                                    name="change_fee"
                                     placeholder="0.0"
                                     value={@fee}
                                     type="number"
@@ -268,12 +323,12 @@
                                   <p style="color: red; font-size: 12px;">
                                     <%= Map.get(@error_map, :vat_error, "") %>
                                   </p>
-                                </form>
+                                </form> --%>
                               </p>
                               <p class="text-sm">
                                 <%= Number.Delimit.number_to_delimited(
                                   :erlang.float_to_binary(
-                                    @quotation_subtotal * @fee / 100,
+                                    @fee,
                                     [
                                       :compact,
                                       {:decimals, 10}
@@ -332,10 +387,10 @@
                                 <p class="text-xs">
                                   Include VAT(%)
                                 </p>
-                                <form id="change_tax" phx-change="change_fee" phx-target={@myself}>
+                                <%!-- <form id="change_fee" phx-change="change_fee" phx-target={@myself}>
                                   <input
                                     class="form-control"
-                                    name="change_tax"
+                                    name="change_fee"
                                     placeholder="0.0"
                                     value={@fee}
                                     type="number"
@@ -344,13 +399,13 @@
                                   <p style="color: red; font-size: 12px;">
                                     <%= Map.get(@error_map, :vat_error, "") %>
                                   </p>
-                                </form>
+                                </form> --%>
                               </div>
 
                               <p class="text-sm">
                                 <%= Number.Delimit.number_to_delimited(
                                   :erlang.float_to_binary(
-                                    @quotation_subtotal * @fee / 100,
+                                    @fee,
                                     [
                                       :compact,
                                       {:decimals, 10}
@@ -364,7 +419,7 @@
                               <p class="text-sm">
                                 <%= Number.Delimit.number_to_delimited(
                                   :erlang.float_to_binary(
-                                    @quotation_subtotal * @fee / 100,
+                                    @fee,
                                     [
                                       :compact,
                                       {:decimals, 10}

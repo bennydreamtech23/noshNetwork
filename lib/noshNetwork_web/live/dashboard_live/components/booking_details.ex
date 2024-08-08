@@ -1,4 +1,4 @@
-defmodule NoshNetworkWeb.Components.BookingDetails do
+defmodule NoshNetworkWeb.DashboardLive.Components.BookingDetails do
   use NoshNetworkWeb, :live_component
   alias NoshNetwork.Repo
   alias NoshNetwork.Data.Context.{Bookings, Users}

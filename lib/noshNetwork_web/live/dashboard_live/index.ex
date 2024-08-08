@@ -30,6 +30,8 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
         socket
         |> assign(:current_user, current_user)
         |> assign(:caters, caters)
+        |> assign(:show_quotation_modal, false)
+        |> assign(:show_more, false)
         |> assign(:user_booking, [])
       end
 

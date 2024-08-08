@@ -6,9 +6,9 @@ defmodule NoshNetwork.Repo.Migrations.CreateItems do
       add :id, :binary_id, primary_key: true
       add :name, :string
       add :description, :string
-      add :price, :string
+      add :price, :float
       add :quantity, :integer
-      add :subtotal, :string
+      add :subtotal, :float
       add :quotation_id, references(:quotations, on_delete: :delete_all, type: :binary_id)
 
       timestamps(type: :utc_datetime)

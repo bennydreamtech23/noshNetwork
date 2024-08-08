@@ -10,7 +10,18 @@ defmodule NoshNetworkWeb.ShowUserBookingLive.Index do
     socket =
       socket
       |> assign(:user_booking, user_booking)
+      |> assign(:booking_id, nil)
+      |> assign(:show_quotation, false)
 
     {:ok, socket}
+  end
+
+  def handle_event("view_quotation", %{"id" => id}, socket) do
+    {
+      :noreply,
+      socket
+      |> assign(:booking_id, id)
+      |> assign(:show_quotation, true)
+    }
   end
 end
