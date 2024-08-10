@@ -105,7 +105,14 @@
                       </button>
                     </td>
                     <td class="py-2 px-4 w-[270px] font-light text-sm">
-                      <p style="font-size: 16px"><%= item.name %></p>
+                      <p style="font-size: 16px">
+                        <%= item.name %> <br />
+                        <%= if item.description do %>
+                          <%= item.description %>
+                        <% else %>
+                          <p>No description provided</p>
+                        <% end %>
+                      </p>
                     </td>
 
                     <td class="py-2 px-4 font-light text-sm">
@@ -500,6 +507,19 @@
                           />
                           <p style="color: red; font-size: 12px;">
                             <%= Map.get(@error_map_items, "item_price", "") %>
+                          </p>
+                        </div>
+
+                        <div class="flex flex-col col-span-2">
+                          <label class="text-sm" for="">Description</label>
+                          <input
+                            type="text"
+                            name="item_description"
+                            value={@item_details["description"]}
+                            class="border h-10 rounded-md p-4"
+                          />
+                          <p style="color: red; font-size: 12px;">
+                            <%= Map.get(@error_map_items, "item_description", "") %>
                           </p>
                         </div>
                       </div>

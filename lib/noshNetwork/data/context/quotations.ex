@@ -38,6 +38,7 @@ defmodule NoshNetwork.Data.Context.Quotations do
   def get_quotation!(id), do: Repo.get!(Quotation, id)
 
   # Function to get a quotation by booking_id
+
   def get_quotation_by_booking_id(booking_id) do
     query =
       from q in Quotation,
@@ -45,7 +46,9 @@ defmodule NoshNetwork.Data.Context.Quotations do
         # Limit to 1 to ensure only one result is fetched
         limit: 1
 
-    Repo.one(query)
+    query
+    |> Repo.one()
+    |> Repo.preload(:items)
   end
 
   @doc """
@@ -64,6 +67,11 @@ defmodule NoshNetwork.Data.Context.Quotations do
     %Quotation{}
     |> Quotation.changeset(attrs)
     |> Repo.insert()
+  end
+
+  def create_quotation_new(quotation) do
+    IO.inspect(quotation, label: "what does this function do")
+    Repo.insert!(quotation)
   end
 
   def get_new_quotation_number() do

@@ -27,12 +27,11 @@ defmodule NoshNetworkWeb.Components.QuotationModal.Index do
       |> assign(:search_phrase, "")
       |> assign(:invoice_created, nil)
       |> assign(:search_item_results, [])
-      # |> assign(:id, nil)
+      |> assign(:quotation_id, nil)
       |> assign(:search_item_phrase, "")
       |> assign(:due_date, to_string(Date.utc_today()))
       |> assign(:quotation_date, to_string(Date.utc_today()))
       |> assign(:item_form, false)
-      |> assign(:quotation_created, nil)
       |> assign(:error_map_items, %{})
       |> assign(
         :item_details,
@@ -150,8 +149,6 @@ defmodule NoshNetworkWeb.Components.QuotationModal.Index do
   end
 
   def handle_event("submit_quotation", data, socket) do
-    IO.inspect(data, label: "data")
-
     case socket.assigns.due_date do
       "" ->
         {:noreply, socket |> assign(:error_map, %{due_date: "*Due date cannot be empty"})}
@@ -169,9 +166,9 @@ defmodule NoshNetworkWeb.Components.QuotationModal.Index do
               )
 
             booking_details = socket.assigns.booking_details
+            items = remove_item_ids_for_new_invoice(socket.assigns.quotation_items)
 
-
-            quotation_params = %{
+            quotation_params = %Quotation{
               reference_id: Quotations.get_new_quotation_number(),
               total: quotation_total,
               requested_by_id: booking_details.user_id,
@@ -182,22 +179,51 @@ defmodule NoshNetworkWeb.Components.QuotationModal.Index do
               due_date: socket.assigns.due_date,
               note: socket.assigns.quotation_note,
               fee: socket.assigns.fee,
-              items: remove_item_ids_for_new_invoice(socket.assigns.quotation_items)
+              items: items
             }
 
-            quotation = Quotations.create_quotation(quotation_params)
+            quotation =
+              case socket.assigns.quotation_id do
+                nil ->
+                  new_quotation = Quotations.create_quotation_new(quotation_params)
+                  IO.inspect(new_quotation, label: "what new invoice created")
+
+                quotation_id ->
+                  quotation = Quotations.get_quotation!(quotation_id)
+                  Quotations.delete_quotation(quotation)
+
+                  # Regenerate quotation parameters if necessary
+                  quotation_params = %Quotation{
+                    reference_id: Quotations.get_new_quotation_number(),
+                    total: quotation_total,
+                    requested_by_id: booking_details.user_id,
+                    assigned_by_id: booking_details.cater_id,
+                    booking_id: booking_details.id,
+                    status: "draft",
+                    quotation_date: socket.assigns.quotation_date,
+                    due_date: socket.assigns.due_date,
+                    note: socket.assigns.quotation_note,
+                    fee: socket.assigns.fee,
+                    items: items
+                  }
+
+                  Quotations.create_quotation_new(quotation_params)
+              end
 
             {
               :noreply,
               socket
               |> assign(:quotation_created, quotation)
-              |> put_flash(:success, "Quotation created successful")
               |> assign(:quotation_subtotal, quotation_subtotal)
               |> assign(:show_quotation_modal, false)
               |> assign(:error_map, %{vat_error: ""})
+              |> put_flash(:info, "Quotation created successful")
             }
         end
     end
+
+    #  {:noreply,
+    #   socket}
   end
 
   def handle_event("add_item_step", %{"step" => "add_item", "value" => _add}, socket) do
@@ -414,7 +440,8 @@ defmodule NoshNetworkWeb.Components.QuotationModal.Index do
             quantity: x.quantity,
             subtotal: x.subtotal,
             description: x.description,
-            cater_id: x.cater_id
+            cater_id: x.cater_id,
+            quotation_id: x.quotation_id
           }
         ]
     end)
@@ -461,7 +488,7 @@ defmodule NoshNetworkWeb.Components.QuotationModal.Index do
 
   defp calculate_invoice_total(items, fee) do
     subtotal = Enum.reduce(items, 0.0, fn item, acc -> item.subtotal + acc end)
-    vat = subtotal * fee / 100
+    vat = fee
     total = subtotal + vat
     {subtotal, total}
   end
