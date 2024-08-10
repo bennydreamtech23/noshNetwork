@@ -31,7 +31,7 @@ average_rating
     field :business_policies, :string
     # field :user_id, :binary_id
 
-    belongs_to :users, User, foreign_key: :user_id, type: :binary_id
+    belongs_to :user, User, foreign_key: :user_id, type: :binary_id
     has_many :services, Service
     timestamps(type: :utc_datetime)
   end
