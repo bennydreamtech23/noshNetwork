@@ -64,5 +64,4 @@ dietary_restriction
     |> cast(attrs, [:status])
     |> validate_required([:status], message: "This field is required")
   end
-
 end

@@ -21,7 +21,13 @@ defmodule NoshNetwork.QuotationsTest do
     end
 
     test "create_quotation/1 with valid data creates a quotation" do
-      valid_attrs = %{fee: "some fee", note: "some note", reference_id: "some reference_id", subtotal: "some subtotal", total: "some total"}
+      valid_attrs = %{
+        fee: "some fee",
+        note: "some note",
+        reference_id: "some reference_id",
+        subtotal: "some subtotal",
+        total: "some total"
+      }
 
       assert {:ok, %Quotation{} = quotation} = Quotations.create_quotation(valid_attrs)
       assert quotation.fee == "some fee"
@@ -37,9 +43,18 @@ defmodule NoshNetwork.QuotationsTest do
 
     test "update_quotation/2 with valid data updates the quotation" do
       quotation = quotation_fixture()
-      update_attrs = %{fee: "some updated fee", note: "some updated note", reference_id: "some updated reference_id", subtotal: "some updated subtotal", total: "some updated total"}
 
-      assert {:ok, %Quotation{} = quotation} = Quotations.update_quotation(quotation, update_attrs)
+      update_attrs = %{
+        fee: "some updated fee",
+        note: "some updated note",
+        reference_id: "some updated reference_id",
+        subtotal: "some updated subtotal",
+        total: "some updated total"
+      }
+
+      assert {:ok, %Quotation{} = quotation} =
+               Quotations.update_quotation(quotation, update_attrs)
+
       assert quotation.fee == "some updated fee"
       assert quotation.note == "some updated note"
       assert quotation.reference_id == "some updated reference_id"

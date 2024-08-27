@@ -21,7 +21,13 @@ defmodule NoshNetwork.ItemsTest do
     end
 
     test "create_item/1 with valid data creates a item" do
-      valid_attrs = %{description: "some description", name: "some name", price: "some price", quantity: 42, subtotal: "some subtotal"}
+      valid_attrs = %{
+        description: "some description",
+        name: "some name",
+        price: "some price",
+        quantity: 42,
+        subtotal: "some subtotal"
+      }
 
       assert {:ok, %Item{} = item} = Items.create_item(valid_attrs)
       assert item.description == "some description"
@@ -37,7 +43,14 @@ defmodule NoshNetwork.ItemsTest do
 
     test "update_item/2 with valid data updates the item" do
       item = item_fixture()
-      update_attrs = %{description: "some updated description", name: "some updated name", price: "some updated price", quantity: 43, subtotal: "some updated subtotal"}
+
+      update_attrs = %{
+        description: "some updated description",
+        name: "some updated name",
+        price: "some updated price",
+        quantity: 43,
+        subtotal: "some updated subtotal"
+      }
 
       assert {:ok, %Item{} = item} = Items.update_item(item, update_attrs)
       assert item.description == "some updated description"

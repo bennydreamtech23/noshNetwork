@@ -184,7 +184,7 @@ defmodule NoshNetworkWeb.ShowUserBookingLive.Components.QuotationTemplate do
           <% end %>
 
           <div>
-            <button>Pay</button>
+            <button phx-click="pay_quotation_money" phx-target={@myself}>Pay</button>
             <button>Request Negotation</button>
           </div>
 
@@ -211,7 +211,6 @@ defmodule NoshNetworkWeb.ShowUserBookingLive.Components.QuotationTemplate do
       |> Repo.preload(assigned_by: :user)
       |> Repo.preload(:requested_by)
 
-    IO.inspect(quotations_details, label: "quotations_details ooo")
     quotation_subtotal = quotations_details.total - quotations_details.fee
 
     socket =
@@ -221,5 +220,34 @@ defmodule NoshNetworkWeb.ShowUserBookingLive.Components.QuotationTemplate do
       |> assign(:quotation_subtotal, quotation_subtotal)
 
     {:ok, socket}
+  end
+
+  @impl Phoenix.LiveView
+  def handle_event("pay_quotation_money", _unsigned_params, socket) do
+    # Extract user and amount from socket assigns
+    user = socket.assigns.current_user
+    amount_total = socket.assigns.quotations_details.total
+
+    # Convert the float to an integer safely
+    amount =
+      amount_total
+      |> Float.round()
+      |> Kernel.trunc()
+
+    # Call the initialize_paystack function
+    case NoshNetwork.Data.Context.PaystackProvider.initialize_paystack(user, amount) do
+      {:ok, paystack_trans} ->
+        paystack_url = paystack_trans["authorization_url"]
+        IO.inspect(paystack_url, label: 'url')
+        # Redirect to Paystack checkout
+        {:noreply,
+         socket
+         |> redirect(external: paystack_url)}
+
+      {:error, _reason} ->
+        {:noreply,
+         socket
+         |> put_flash(:info, "Error initializing Paystack payment.")}
+    end
   end
 end
