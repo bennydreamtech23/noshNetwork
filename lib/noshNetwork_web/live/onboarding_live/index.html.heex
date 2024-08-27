@@ -1,9 +1,9 @@
-<div class="mx-auto max-w-sm">
-  <.header class="text-center">
+<div class="mx-auto max-w-sm my-4">
+  <.header class="text-center text-[#0b4927] font-bold lg:text-2xl text-lg">
     <%= if @current_user.role == "user" do %>
-      User contact details
+      User Onboarding
     <% else %>
-      Caters Contact details
+      Caters Onboarding
     <% end %>
   </.header>
 
@@ -14,6 +14,7 @@
       id="user_contact_form"
       phx-submit="update-user"
       phx-change="validate"
+      class="bg-white p-4 rounded-md shadow-md border-0"
     >
       <div class="grid grid-cols-2 md:grid-cols-1  gap-3">
         <.error :if={@check_errors}>
@@ -30,17 +31,6 @@
           </div>
         <% end %>
         <div>
-          <.input field={@form[:address]} type="text" label="Address" autocomplete="off" />
-          <.input field={@form[:country]} type="text" label="country" autocomplete="off" />
-        </div>
-        <div>
-          <.input
-            field={@form[:state]}
-            type="text"
-            label="state"
-            class="w-full"
-            autocomplete="off"
-          />
           <.input
             field={@form[:phone_number]}
             type="text"
@@ -48,13 +38,24 @@
             class="w-full"
             autocomplete="off"
           />
+          <.input field={@form[:address]} type="text" label="Address" autocomplete="off" />
+
+          <.input
+            field={@form[:state]}
+            type="text"
+            label="state"
+            class="w-full"
+            autocomplete="off"
+          />
+
+          <.input field={@form[:country]} type="text" label="country" autocomplete="off" />
         </div>
         <.live_file_input upload={@uploads.profile_picture} />
       </div>
       <%= if @current_user.role == "user" do %>
         <button
           phx-disable-with="updating account..."
-          class={[button_valid(@valid), "w-full text-white"]}
+          class={[button_valid(@valid), ""]}
           disabled={@valid !== true}
         >
           Proceed
@@ -62,7 +63,7 @@
       <% else %>
         <button
           phx-disable-with="updating account..."
-          class={[button_valid(@valid), "bg-black w-full text-white"]}
+          class={[button_valid(@valid)]}
           disabled={@valid !== true}
         >
           Next

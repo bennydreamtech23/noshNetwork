@@ -12,6 +12,8 @@ email
     name
     username
     role
+is_active
+is_verified
   |a
 
   @optional_fields ~w|
@@ -42,6 +44,8 @@ email
     field :is_notification, :boolean
     field :country, :string
     field :state, :string
+    field :is_active, :boolean, default: false
+    field :is_verified, :boolean, default: false
 
     has_one :caters, Cater,
       foreign_key: :user_id,

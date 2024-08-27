@@ -176,6 +176,6 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
     end
   end
 
-  defp button_valid(true), do: "bg-emOrange-dark"
-  defp button_valid(false), do: "bg-zinc-600"
+  defp button_valid(true), do: "btn-secondary"
+  defp button_valid(false), do: "bg-zinc-600 rounded-md py-4 px-3 w-full text-white"
 end

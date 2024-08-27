@@ -8,6 +8,12 @@ import Config
 config :noshNetwork, NoshNetworkWeb.Endpoint,
   cache_static_manifest: "priv/static/cache_manifest.json"
 
+config :noshNetwork,
+  paystack_config: [
+    secret_key: "sk_test_38bfad036e3e593234dc207fd109ff8461b70816",
+    public_key: "pk_test_4df7a65972e448e5f9a211f5c626e0acfe341da0"
+  ]
+
 # Configures Swoosh API Client
 config :swoosh, api_client: Swoosh.ApiClient.Finch, finch_name: NoshNetwork.Finch
 

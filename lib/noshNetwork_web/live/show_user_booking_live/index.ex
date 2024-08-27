@@ -4,7 +4,7 @@ defmodule NoshNetworkWeb.ShowUserBookingLive.Index do
 
   def mount(_session, _params, socket) do
     user_id = socket.assigns.current_user.id
-
+    current_user = socket.assigns.current_user
     user_booking = Bookings.get_bookings_by_user_id(user_id)
 
     socket =
@@ -12,6 +12,7 @@ defmodule NoshNetworkWeb.ShowUserBookingLive.Index do
       |> assign(:user_booking, user_booking)
       |> assign(:booking_id, nil)
       |> assign(:show_quotation, false)
+      |> assign(:current_user, current_user)
 
     {:ok, socket}
   end

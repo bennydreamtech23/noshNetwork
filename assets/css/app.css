@@ -105,10 +105,10 @@ right: 9px;
   border-color: transparent transparent black transparent;
 }
 .menu-item{
-  @apply block px-4 py-2 text-sm text-white font-brand font-regular
+  @apply block px-4 py-2 text-sm text-[#0B4927] font-brand font-regular
 }
 .menu-item:hover{
-  @apply hover:text-emOrange-dark
+  @apply hover:text-[#960E0E]
 }
 .round-image-padding{
   border-radius: 50%;
@@ -125,6 +125,22 @@ right: 9px;
   border-width: 5px 5px 0px 5px;
   border-color: black transparent transparent transparent;
   border-style: solid;
+}
+
+
+.btn-primary{
+  @apply px-4 py-2 bg-transparent text-[#960e0e] border border-[#960e0e]  rounded 
+}
+.btn-primary:hover{
+  @apply hover:bg-[#960e0e] hover:text-white
+}
+
+.btn-secondary{
+    @apply px-4 py-2 bg-transparent text-[#0B4927] border border-[#0b4927]  rounded 
+}
+
+.btn-secondary:hover{
+  @apply hover:bg-[#0b4927] hover:text-white
 }
 
 .neumorphic {
@@ -277,6 +293,9 @@ display: inline;
     transform: translateX(-40%);
   }
 }
+
+
+
 
 /* End of scrolling section*/
 

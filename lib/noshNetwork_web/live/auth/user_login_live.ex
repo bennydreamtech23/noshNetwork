@@ -4,18 +4,13 @@ defmodule NoshNetworkWeb.Auth.UserLoginLive do
   def render(assigns) do
     ~H"""
     <div class="mx-auto max-w-sm p-6 font-brand">
-      <div class="mx-auto flex itmes-center justify-center">
-        <a href={~p"/"}>
-          <img src="/images/transparent_logo.png" alt="img" class="w-[150px]" />
-        </a>
-      </div>
       <.header class="text-center text-black lg:text-3xl text-2xl">
         Sign in to account
         <:subtitle>
           Don't have an account?
           <.link
             navigate={~p"/auth/register"}
-            class="font-semibold text-brand text-white hover:underline"
+            class="text-base font-semibold text-[#0b4927] hover:underline hover:text-[#960e0e]"
           >
             Sign up
           </.link>
