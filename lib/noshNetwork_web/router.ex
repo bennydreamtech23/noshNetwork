@@ -5,6 +5,7 @@ defmodule NoshNetworkWeb.Router do
 
   pipeline :browser do
     plug :accepts, ["html"]
+    plug(NoshNetworkWeb.Plugs.UserAgentLogger)
     plug :fetch_session
     plug :fetch_live_flash
     plug :put_root_layout, html: {NoshNetworkWeb.Layouts, :root}

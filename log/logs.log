@@ -1,0 +1,832 @@
+15:26:02.094 [info]     :alarm_handler: {:set, {:system_memory_high_watermark, []}}
+15:26:02.165 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/bare/5'}, []}}
+15:26:02.165 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2823'}, []}}
+15:26:02.165 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2829'}, []}}
+15:26:02.165 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1621'}, []}}
+15:26:02.166 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1612'}, []}}
+15:26:02.166 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/gtk-common-themes/1535'}, []}}
+15:26:02.166 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/184'}, []}}
+15:26:02.166 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/189'}, []}}
+15:26:02.166 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21465'}, []}}
+15:26:02.166 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+15:26:02.166 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1284'}, []}}
+15:26:02.166 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1286'}, []}}
+15:32:58.620 [info]     :alarm_handler: {:set, {:system_memory_high_watermark, []}}
+15:32:58.655 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/bare/5'}, []}}
+15:32:58.655 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2823'}, []}}
+15:32:58.655 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2829'}, []}}
+15:32:58.695 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1621'}, []}}
+15:32:58.696 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1612'}, []}}
+15:32:58.696 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/gtk-common-themes/1535'}, []}}
+15:32:58.696 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/184'}, []}}
+15:32:58.696 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/189'}, []}}
+15:32:58.696 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21465'}, []}}
+15:32:58.696 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+15:32:58.696 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1284'}, []}}
+15:32:58.696 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1286'}, []}}
+15:32:59.694 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+15:32:59.705 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+15:33:05.570 [info] CONNECTED TO Phoenix.LiveView.Socket in 118µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Dy0PCU89QgYsfxtvaw5mPDwqACsgTAIjclWY7yw3j7T-2t0qOErjSukh", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+15:33:25.390 [info] GET /dev/dashboard/home
+15:33:25.429 [info] GET request to /dev/dashboard/home by User: anonymous at 2024-09-26 14:33:25.425852Z
+15:33:25.577 [info] GET request to /dev/dashboard/home by User: anonymous at 2024-09-26 14:33:25.425852Z was successful.
+Status: 200
+
+15:33:25.577 [info] Sent 200 in 187ms
+15:33:27.466 [info] CONNECTED TO Phoenix.LiveView.Socket in 126µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "B0o5BisleSMLAi8jFXohOj44bkRoZ2QW79uwOi7KqjZuSJuLsP4wEW7C", "vsn" => "2.0.0"}
+15:37:45.346 [info] CONNECTED TO Phoenix.LiveView.Socket in 94µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Dy0PCU89QgYsfxtvaw5mPDwqACsgTAIjclWY7yw3j7T-2t0qOErjSukh", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+15:37:46.748 [info] GET /
+15:37:46.776 [info] GET request to / by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 14:37:46.775955Z
+15:37:46.811 [info] GET request to / by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 14:37:46.775955Z was successful.
+Status: 200
+
+15:37:46.811 [info] Sent 200 in 63ms
+15:37:47.504 [info] CONNECTED TO Phoenix.LiveView.Socket in 114µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "JDUrMg10AWUfMBcjMxACBxYdNwIXZiopHtsbu04PYxXajjTJerECd_Cb", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+15:43:56.067 [info]     :alarm_handler: {:set, {:system_memory_high_watermark, []}}
+15:43:56.225 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/bare/5'}, []}}
+15:43:56.225 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2823'}, []}}
+15:43:56.225 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2829'}, []}}
+15:43:56.226 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1621'}, []}}
+15:43:56.226 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1612'}, []}}
+15:43:56.226 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/gtk-common-themes/1535'}, []}}
+15:43:56.226 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/184'}, []}}
+15:43:56.226 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/189'}, []}}
+15:43:56.226 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21465'}, []}}
+15:43:56.226 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+15:43:56.226 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1284'}, []}}
+15:43:56.226 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1286'}, []}}
+15:44:01.123 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+15:44:01.149 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+15:44:02.143 [info] CONNECTED TO Phoenix.LiveView.Socket in 186µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "JDUrMg10AWUfMBcjMxACBxYdNwIXZiopHtsbu04PYxXajjTJerECd_Cb", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+15:44:02.195 [info] GET /dev/dashboard/request_logger
+15:44:02.479 [info] Sent 200 in 284ms
+15:44:07.021 [info] GET /dev/dashboard/home
+15:44:07.173 [info] GET /live/longpoll
+15:44:07.337 [info] Sent 200 in 316ms
+15:44:11.307 [info] CONNECTED TO Phoenix.LiveView.Socket in 263µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Ux8WECItKh9MIgUiKmk6Gx8GGV4ZaCQaclZaFadw6JptlYnmRnCm4XwO", "vsn" => "2.0.0"}
+15:44:24.181 [info] GET /users/dashboard
+15:44:24.247 [info] Sent 200 in 65ms
+15:44:25.343 [info] CONNECTED TO Phoenix.LiveView.Socket in 298µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "OwpoGClyWXx_EiAPYAIkejYHNw8pXTslWK0HQ6lI9ZoM9xr7EhENZdRn", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+15:44:39.419 [info] GET /users/dashboard/
+15:44:39.439 [info] Sent 200 in 19ms
+15:44:40.263 [info] CONNECTED TO Phoenix.LiveView.Socket in 68µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "CTAdJEAlYABrMTt3OjEOGDAICwYBcjskeqEt8aU5-yt5cKXUCgyGrKRo", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+15:44:45.825 [info] GET /dev/dashboard/request_logger
+15:44:45.834 [info] Sent 200 in 9ms
+15:44:46.155 [info] CONNECTED TO Phoenix.LiveView.Socket in 72µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "QQIWMxM_OzojXRAbDXsEBD8dNnUVWhccqqZBwsuRY5eMKKPrrulF8jDI", "vsn" => "2.0.0"}
+15:44:51.980 [info] GET /users/dashboard/
+15:44:51.992 [info] Sent 200 in 12ms
+15:44:52.780 [info] CONNECTED TO Phoenix.LiveView.Socket in 131µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "WDYeIVUocXYXKjswajYyIjo9EykJTz0O4wFq-lDCQbtr3LdoIRahzvTE", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+15:45:30.778 [info] GET /users/dashboard/request_logger=SFMyNTY.g2gDbQAAAAR1Y3BibgYAHjnKLpIBYgABUYA.pGOCqI5e3vdDFfLlU3j1GkbOHGtIpzhq0_bKzP00NVQ
+15:45:36.536 [info] GET /users/dashboard
+15:45:36.549 [info] Sent 200 in 13ms
+15:45:37.432 [info] CONNECTED TO Phoenix.LiveView.Socket in 97µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IC40fR4qBWxzHQw4CTlmfCElHy4LSjkxLol-fn0Y5UCzPC01RJmoxsPz", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+15:46:02.481 [info]     :alarm_handler: {:set, {:system_memory_high_watermark, []}}
+15:46:02.525 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/bare/5'}, []}}
+15:46:02.526 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2823'}, []}}
+15:46:02.526 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2829'}, []}}
+15:46:02.526 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1621'}, []}}
+15:46:02.526 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1612'}, []}}
+15:46:02.526 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/gtk-common-themes/1535'}, []}}
+15:46:02.526 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/184'}, []}}
+15:46:02.526 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/189'}, []}}
+15:46:02.526 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21465'}, []}}
+15:46:02.527 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+15:46:02.527 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1284'}, []}}
+15:46:02.527 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1286'}, []}}
+15:46:04.151 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+15:46:04.163 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+15:46:04.665 [info] CONNECTED TO Phoenix.LiveView.Socket in 211µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IC40fR4qBWxzHQw4CTlmfCElHy4LSjkxLol-fn0Y5UCzPC01RJmoxsPz", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+15:46:05.151 [info] CONNECTED TO Phoenix.LiveView.Socket in 105µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "QQIWMxM_OzojXRAbDXsEBD8dNnUVWhccqqZBwsuRY5eMKKPrrulF8jDI", "vsn" => "2.0.0"}
+15:53:02.554 [info] GET /
+15:53:02.767 [info] GET request to / by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 14:53:02.758474Z
+15:53:02.981 [info] GET request to / by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 14:53:02.758474Z was successful.
+Status: 200
+
+15:53:02.981 [info] Sent 200 in 432ms
+15:53:05.827 [info] CONNECTED TO Phoenix.LiveView.Socket in 2ms
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HzIrHwwKWGcsETYlNSASJBUiHGwJVQUnsssOtNmRjYyglZDifMn-zlll", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+16:00:19.547 [info]     :alarm_handler: {:set, {:system_memory_high_watermark, []}}
+16:00:19.825 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/bare/5'}, []}}
+16:00:19.825 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2823'}, []}}
+16:00:19.825 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2829'}, []}}
+16:00:19.825 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1621'}, []}}
+16:00:19.826 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1612'}, []}}
+16:00:19.826 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/gtk-common-themes/1535'}, []}}
+16:00:19.826 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/184'}, []}}
+16:00:19.826 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/189'}, []}}
+16:00:19.826 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21465'}, []}}
+16:00:19.826 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+16:00:19.826 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1284'}, []}}
+16:00:19.826 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1286'}, []}}
+16:00:24.319 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+16:00:24.367 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+16:00:26.420 [info] GET /dev/dashboard/os_mon
+16:00:26.492 [info] GET request to /dev/dashboard/os_mon by User: anonymous at 2024-09-26 15:00:26.479160Z
+16:00:26.872 [info] GET request to /dev/dashboard/os_mon by User: anonymous at 2024-09-26 15:00:26.479160Z was successful.
+Status: 200
+
+16:00:26.872 [info] Sent 200 in 452ms
+16:00:29.350 [info] CONNECTED TO Phoenix.LiveView.Socket in 140µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HzIrHwwKWGcsETYlNSASJBUiHGwJVQUnsssOtNmRjYyglZDifMn-zlll", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+16:00:30.581 [info] CONNECTED TO Phoenix.LiveView.Socket in 68µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "fxR4RgF4CVEMEBsydnEMBy4rGUZHAwoCOg47e4G9vxnd0AXqcCCuj3YW", "vsn" => "2.0.0"}
+16:17:42.748 [info] GET /dev/dashboard
+16:17:42.916 [info] GET request to /dev/dashboard by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 15:17:42.916864Z
+16:17:42.995 [info] GET request to /dev/dashboard by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 15:17:42.916864Z was successful.
+Status: 302
+
+16:17:42.995 [info] Sent 302 in 250ms
+16:17:43.369 [info] GET /dev/dashboard/home
+16:17:43.446 [info] GET request to /dev/dashboard/home by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 15:17:43.446810Z
+16:17:43.771 [info] GET request to /dev/dashboard/home by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 15:17:43.446810Z was successful.
+Status: 200
+
+16:17:43.771 [info] Sent 200 in 406ms
+16:17:47.166 [info] CONNECTED TO Phoenix.LiveView.Socket in 3ms
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Cw86Mh4MAmc1BwYraEkCPiYGPSseCj4ZgNbbfH7RsOIi13TsUiOjm3WR", "vsn" => "2.0.0"}
+16:17:58.186 [info] GET /contact
+16:17:58.198 [info] GET request to /contact by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 15:17:58.198383Z
+16:18:44.862 [info] GET /
+16:18:44.862 [info] GET request to / by User: anonymous at 2024-09-26 15:18:44.862396Z
+16:18:44.882 [info] GET request to / by User: anonymous at 2024-09-26 15:18:44.862396Z was successful.
+Status: 200
+
+16:18:44.882 [info] Sent 200 in 20ms
+16:18:59.290 [info] CONNECTED TO Phoenix.LiveView.Socket in 270µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "QSojPFwgcVAoLxIGaAsjDTlPBRpWLwsv8ggz9S67lmaG2XyTmbgPcfAD", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "https://f090-105-112-192-37.ngrok-free.app/assets/app.css", "1" => "https://f090-105-112-192-37.ngrok-free.app/assets/app.js"}, "vsn" => "2.0.0"}
+16:19:14.073 [info] GET /auth/signup
+16:19:14.074 [info] GET request to /auth/signup by User: anonymous at 2024-09-26 15:19:14.074100Z
+16:19:14.104 [info] GET request to /auth/signup by User: anonymous at 2024-09-26 15:19:14.074100Z was successful.
+Status: 200
+
+16:19:14.104 [info] Sent 200 in 31ms
+16:19:16.873 [info] CONNECTED TO Phoenix.LiveView.Socket in 628µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "G3wwdB85c1M8JSkRGDQVaCIUKyMNDHwJb1t2zJ44xgZPBgO1v9Ii8E6b", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "https://f090-105-112-192-37.ngrok-free.app/assets/app.css", "1" => "https://f090-105-112-192-37.ngrok-free.app/assets/app.js"}, "vsn" => "2.0.0"}
+16:19:40.587 [info] CONNECTED TO Phoenix.LiveView.Socket in 251µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HzIrHwwKWGcsETYlNSASJBUiHGwJVQUnsssOtNmRjYyglZDifMn-zlll", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+16:19:42.832 [info] GET /users/dashboard
+16:19:42.848 [info] GET request to /users/dashboard by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 15:19:42.848010Z
+16:19:43.145 [info] GET request to /users/dashboard by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 15:19:42.848010Z was successful.
+Status: 200
+
+16:19:43.146 [info] Sent 200 in 316ms
+16:19:44.512 [info] CONNECTED TO Phoenix.LiveView.Socket in 317µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IiIAaCIxfGMxOSMGKzsyCQQOJRUaVxEgNcX8ZuIVwqlDrAdDwaWTinxk", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+16:22:23.971 [info] GET /
+16:22:23.974 [info] GET request to / by User: anonymous at 2024-09-26 15:22:23.973400Z
+16:22:24.031 [info] GET request to / by User: anonymous at 2024-09-26 15:22:23.973400Z was successful.
+Status: 200
+
+16:22:24.031 [info] Sent 200 in 61ms
+16:22:32.281 [info] GET /contact
+16:22:32.282 [info] GET request to /contact by User: anonymous at 2024-09-26 15:22:32.282282Z
+16:22:40.392 [info] GET /auth/register
+16:22:40.393 [info] GET request to /auth/register by User: anonymous at 2024-09-26 15:22:40.393040Z
+16:22:40.557 [info] GET request to /auth/register by User: anonymous at 2024-09-26 15:22:40.393040Z was successful.
+Status: 200
+
+16:22:40.557 [info] Sent 200 in 166ms
+16:22:44.464 [info] CONNECTED TO Phoenix.LiveView.Socket in 238µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "OglyAw9DBDd2FjEgCBYsdD59VTMBHDARCD6Ej0CP2TBaREv-jP7y4Uzz", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "https://f090-105-112-192-37.ngrok-free.app/assets/app.css", "1" => "https://f090-105-112-192-37.ngrok-free.app/assets/app.js"}, "vsn" => "2.0.0"}
+16:22:57.950 [info] GET /contact
+16:22:57.950 [info] GET request to /contact by User: anonymous at 2024-09-26 15:22:57.950525Z
+16:23:39.869 [info] GET /
+16:23:39.869 [info] GET request to / by User: anonymous at 2024-09-26 15:23:39.869806Z
+16:23:39.885 [info] GET request to / by User: anonymous at 2024-09-26 15:23:39.869806Z was successful.
+Status: 200
+
+16:23:39.885 [info] Sent 200 in 16ms
+16:23:42.776 [info] CONNECTED TO Phoenix.LiveView.Socket in 133µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HQdpdTEsBSobMSoMPD4wbzxgEDp9Cxg-dJ-3T_BM_sYMfmj6hMrpHBRU", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "https://f090-105-112-192-37.ngrok-free.app/assets/app.css", "1" => "https://f090-105-112-192-37.ngrok-free.app/assets/app.js"}, "vsn" => "2.0.0"}
+16:24:06.530 [info] GET /dev/dashboard/request_logger
+16:24:06.641 [info] GET request to /dev/dashboard/request_logger by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 15:24:06.641350Z
+16:24:06.694 [info] GET request to /dev/dashboard/request_logger by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 15:24:06.641350Z was successful.
+Status: 200
+
+16:24:06.694 [info] Sent 200 in 166ms
+16:24:08.888 [info] CONNECTED TO Phoenix.LiveView.Socket in 326µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "NggVJjkbRWFrGx4sERESI145EDsfUjM9ZIMvA_pT-SQnHkDn-VbzlkZv", "vsn" => "2.0.0"}
+16:24:17.859 [info] GET /auth/signup
+16:24:17.860 [info] GET request to /auth/signup by User: anonymous at 2024-09-26 15:24:17.860203Z
+16:24:17.873 [info] GET request to /auth/signup by User: anonymous at 2024-09-26 15:24:17.860203Z was successful.
+Status: 200
+
+16:24:17.873 [info] Sent 200 in 13ms
+16:24:21.170 [info] CONNECTED TO Phoenix.LiveView.Socket in 202µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MSgPKQweDiE8ATwYPzEODSJjFAF6HysoHeKoimIFxCOYebTTvNvKOVaC", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "https://f090-105-112-192-37.ngrok-free.app/assets/app.css", "1" => "https://f090-105-112-192-37.ngrok-free.app/assets/app.js"}, "vsn" => "2.0.0"}
+16:24:39.634 [info] GET /
+16:24:39.665 [info] GET request to / by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 15:24:39.665681Z
+16:24:39.713 [info] GET request to / by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 15:24:39.665681Z was successful.
+Status: 200
+
+16:24:39.713 [info] Sent 200 in 80ms
+16:24:41.735 [info] CONNECTED TO Phoenix.LiveView.Socket in 243µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "OhU0E0EJd3oACmIgCBknGh0AJSk1cA87VTlC9MBOFB-bQcqWnoWhFIfp", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+16:25:17.767 [info] CONNECTED TO Phoenix.LiveView.Socket in 201µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ACkkFi9oMBozQEd8FwY_P3E8dS8wRAwlRHHNuPyoX5-OVHrODdLwhwOp", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "https://f090-105-112-192-37.ngrok-free.app/assets/app.css", "1" => "https://f090-105-112-192-37.ngrok-free.app/assets/app.js"}, "vsn" => "2.0.0"}
+16:25:43.493 [info] GET /auth/log_in
+16:25:43.493 [info] GET request to /auth/log_in by User: anonymous at 2024-09-26 15:25:43.493512Z
+16:25:43.531 [info] GET request to /auth/log_in by User: anonymous at 2024-09-26 15:25:43.493512Z was successful.
+Status: 200
+
+16:25:43.531 [info] Sent 200 in 38ms
+16:25:45.811 [info] CONNECTED TO Phoenix.LiveView.Socket in 291µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "CgYnPDlrJS1SAw9ncRgGCnQddC4JQy8lXgKdcSlX9veT0VKzAEMvQplp", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "https://f090-105-112-192-37.ngrok-free.app/assets/app.css", "1" => "https://f090-105-112-192-37.ngrok-free.app/assets/app.js"}, "vsn" => "2.0.0"}
+16:26:59.707 [info] POST /users/log_out
+16:26:59.722 [info] DELETE request to /users/log_out by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 15:26:59.722115Z
+16:26:59.875 [info] DELETE request to /users/log_out by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-26 15:26:59.722115Z was successful.
+Status: 302
+
+16:26:59.876 [info] Sent 302 in 170ms
+16:27:00.100 [info] GET /
+16:27:00.100 [info] GET request to / by User: anonymous at 2024-09-26 15:27:00.100602Z
+16:27:00.120 [info] GET request to / by User: anonymous at 2024-09-26 15:27:00.100602Z was successful.
+Status: 200
+
+16:27:00.120 [info] Sent 200 in 20ms
+16:27:02.146 [info] CONNECTED TO Phoenix.LiveView.Socket in 193µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Vw4qfRohPDZjQBsVFi5WIyI9GVcuWhM9eEP9YnrO3rHJdF8MKnv6q9pX", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+16:27:05.839 [info] GET /dev/dashboard/request_logger
+16:27:05.839 [info] GET request to /dev/dashboard/request_logger by User: anonymous at 2024-09-26 15:27:05.839539Z
+16:27:05.856 [info] GET request to /dev/dashboard/request_logger by User: anonymous at 2024-09-26 15:27:05.839539Z was successful.
+Status: 200
+
+16:27:05.857 [info] Sent 200 in 17ms
+16:27:06.981 [info] CONNECTED TO Phoenix.LiveView.Socket in 261µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Qh4fEggVeDJkaws7FlBcAz1nKAIGPBAWpUeVKZ6K4YXdd82mT4GcY_ss", "vsn" => "2.0.0"}
+16:31:51.825 [info] GET /contact
+16:31:51.827 [info] GET request to /contact by User: anonymous at 2024-09-26 15:31:51.826288Z
+16:31:57.948 [info] CONNECTED TO Phoenix.LiveView.Socket in 212µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Vw4qfRohPDZjQBsVFi5WIyI9GVcuWhM9eEP9YnrO3rHJdF8MKnv6q9pX", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+12:43:11.824 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/bare/5'}, []}}
+12:43:12.224 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2829'}, []}}
+12:43:12.224 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2823'}, []}}
+12:43:12.224 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1612'}, []}}
+12:43:12.224 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1621'}, []}}
+12:43:12.224 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/gtk-common-themes/1535'}, []}}
+12:43:12.224 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/184'}, []}}
+12:43:12.224 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/189'}, []}}
+12:43:12.224 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21465'}, []}}
+12:43:12.224 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1284'}, []}}
+12:43:12.225 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+12:43:12.225 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1286'}, []}}
+12:43:15.395 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+12:43:15.438 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+12:43:44.083 [info] GET /
+12:43:44.238 [info] GET request to / by User: anonymous at 2024-09-27 11:43:44.211489Z
+12:43:44.995 [info] GET request to / by User: anonymous at 2024-09-27 11:43:44.211489Z was successful.
+Status: 200
+
+12:43:44.997 [info] Sent 200 in 914ms
+12:43:49.055 [info] CONNECTED TO Phoenix.LiveView.Socket in 7ms
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BT0XEyYAYl47MxcULGokLhE8DltAMTp2hEoycDRfMbpAVRejRvYkrKNF", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:15:11.716 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/bare/5'}, []}}
+13:15:11.747 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2829'}, []}}
+13:15:11.747 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2823'}, []}}
+13:15:11.747 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1612'}, []}}
+13:15:11.747 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1621'}, []}}
+13:15:11.747 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/gtk-common-themes/1535'}, []}}
+13:15:11.747 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/184'}, []}}
+13:15:11.747 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/189'}, []}}
+13:15:11.747 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21465'}, []}}
+13:15:11.747 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1284'}, []}}
+13:15:11.747 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+13:15:11.747 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1286'}, []}}
+13:15:13.734 [error] Error when calling MFA defined by measurement: NoshNetworkWeb.Telemetry :count_users []
+Class=:error
+Reason=%RuntimeError{
+  message: "could not lookup Ecto repo NoshNetwork.Repo because it was not started or it does not exist"
+}
+Stacktrace=[
+  {Ecto.Repo.Registry, :lookup, 1,
+   [
+     file: 'lib/ecto/repo/registry.ex',
+     line: 22,
+     error_info: %{module: Exception}
+   ]},
+  {Ecto.Repo.Supervisor, :tuplet, 2,
+   [file: 'lib/ecto/repo/supervisor.ex', line: 160]},
+  {NoshNetwork.Repo, :aggregate, 3, [file: 'lib/noshNetwork/repo.ex', line: 2]},
+  {NoshNetworkWeb.Telemetry, :count_users, 0,
+   [file: 'lib/noshNetwork_web/telemetry.ex', line: 89]},
+  {:telemetry_poller, :make_measurement, 1,
+   [
+     file: '/home/ijeoma/noshNetwork/deps/telemetry_poller/src/telemetry_poller.erl',
+     line: 322
+   ]},
+  {:telemetry_poller, :"-make_measurements_and_filter_misbehaving/1-lc$^0/1-0-",
+   1,
+   [
+     file: '/home/ijeoma/noshNetwork/deps/telemetry_poller/src/telemetry_poller.erl',
+     line: 318
+   ]},
+  {:telemetry_poller, :handle_info, 2,
+   [
+     file: '/home/ijeoma/noshNetwork/deps/telemetry_poller/src/telemetry_poller.erl',
+     line: 340
+   ]},
+  {:gen_server, :try_dispatch, 4, [file: 'gen_server.erl', line: 1123]},
+  {:gen_server, :handle_msg, 6, [file: 'gen_server.erl', line: 1200]},
+  {:proc_lib, :init_p_do_apply, 3, [file: 'proc_lib.erl', line: 240]}
+]
+
+13:15:13.982 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+13:15:13.994 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+13:15:19.593 [info] CONNECTED TO Phoenix.LiveView.Socket in 92µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BT0XEyYAYl47MxcULGokLhE8DltAMTp2hEoycDRfMbpAVRejRvYkrKNF", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:18:01.318 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/bare/5'}, []}}
+13:18:01.352 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2829'}, []}}
+13:18:01.352 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2823'}, []}}
+13:18:01.352 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1612'}, []}}
+13:18:01.352 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1621'}, []}}
+13:18:01.352 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/gtk-common-themes/1535'}, []}}
+13:18:01.353 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/184'}, []}}
+13:18:01.353 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/189'}, []}}
+13:18:01.353 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21465'}, []}}
+13:18:01.353 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1284'}, []}}
+13:18:01.353 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+13:18:01.353 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1286'}, []}}
+13:18:02.293 [error] Error when calling MFA defined by measurement: NoshNetworkWeb.Telemetry :count_users []
+Class=:error
+Reason=%Protocol.UndefinedError{
+  protocol: Ecto.Queryable,
+  value: NoshNetwork.Accounts.User,
+  description: "the given module does not exist"
+}
+Stacktrace=[
+  {Ecto.Queryable.Atom, :to_query, 1, [file: 'lib/ecto/queryable.ex', line: 41]},
+  {Ecto.Repo.Queryable, :prepare_for_aggregate, 1,
+   [file: 'lib/ecto/repo/queryable.ex', line: 552]},
+  {Ecto.Repo.Queryable, :query_for_aggregate, 3,
+   [file: 'lib/ecto/repo/queryable.ex', line: 532]},
+  {Ecto.Repo.Queryable, :aggregate, 5,
+   [file: 'lib/ecto/repo/queryable.ex', line: 123]},
+  {NoshNetworkWeb.Telemetry, :count_users, 0,
+   [file: 'lib/noshNetwork_web/telemetry.ex', line: 89]},
+  {:telemetry_poller, :make_measurement, 1,
+   [
+     file: '/home/ijeoma/noshNetwork/deps/telemetry_poller/src/telemetry_poller.erl',
+     line: 322
+   ]},
+  {:telemetry_poller, :"-make_measurements_and_filter_misbehaving/1-lc$^0/1-0-",
+   1,
+   [
+     file: '/home/ijeoma/noshNetwork/deps/telemetry_poller/src/telemetry_poller.erl',
+     line: 318
+   ]},
+  {:telemetry_poller, :handle_info, 2,
+   [
+     file: '/home/ijeoma/noshNetwork/deps/telemetry_poller/src/telemetry_poller.erl',
+     line: 340
+   ]},
+  {:gen_server, :try_dispatch, 4, [file: 'gen_server.erl', line: 1123]},
+  {:gen_server, :handle_msg, 6, [file: 'gen_server.erl', line: 1200]},
+  {:proc_lib, :init_p_do_apply, 3, [file: 'proc_lib.erl', line: 240]}
+]
+
+13:18:02.385 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+13:18:02.394 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+13:19:01.261 [info]     :alarm_handler: {:set, {:system_memory_high_watermark, []}}
+13:19:25.804 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/bare/5'}, []}}
+13:19:25.875 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2829'}, []}}
+13:19:25.875 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2823'}, []}}
+13:19:25.875 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1612'}, []}}
+13:19:25.875 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1621'}, []}}
+13:19:25.875 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/gtk-common-themes/1535'}, []}}
+13:19:25.875 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/184'}, []}}
+13:19:25.875 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/189'}, []}}
+13:19:25.875 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21465'}, []}}
+13:19:25.876 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1284'}, []}}
+13:19:25.876 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+13:19:25.876 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1286'}, []}}
+13:19:26.803 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+13:19:26.813 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+13:19:33.843 [info] CONNECTED TO Phoenix.LiveView.Socket in 122µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BT0XEyYAYl47MxcULGokLhE8DltAMTp2hEoycDRfMbpAVRejRvYkrKNF", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:19:34.614 [info] GET /
+13:19:34.719 [info] GET request to / by User: anonymous at 2024-09-27 12:19:34.681338Z
+13:19:35.018 [info] GET request to / by User: anonymous at 2024-09-27 12:19:34.681338Z was successful.
+Status: 200
+
+13:19:35.019 [info] Sent 200 in 404ms
+13:19:35.975 [info] CONNECTED TO Phoenix.LiveView.Socket in 123µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "WwgVWA8XU10GJgYYP24xdi8yGWl7Vz9i6pm2JScepwaMEVp2lxNYI-KR", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:19:42.923 [info] GET /dev/dashboard
+13:19:42.923 [info] GET request to /dev/dashboard by User: anonymous at 2024-09-27 12:19:42.923736Z
+13:19:42.987 [info] GET request to /dev/dashboard by User: anonymous at 2024-09-27 12:19:42.923736Z was successful.
+Status: 302
+
+13:19:42.987 [info] Sent 302 in 64ms
+13:19:43.053 [info] GET /dev/dashboard/home
+13:19:43.053 [info] GET request to /dev/dashboard/home by User: anonymous at 2024-09-27 12:19:43.053938Z
+13:19:43.110 [info] GET request to /dev/dashboard/home by User: anonymous at 2024-09-27 12:19:43.053938Z was successful.
+Status: 200
+
+13:19:43.110 [info] Sent 200 in 57ms
+13:19:44.499 [info] CONNECTED TO Phoenix.LiveView.Socket in 109µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Bh0rJiIRb3wbJlJtAF4pLA8oYUhTEjFYkeSLgU_Dmw58zfhhLb6xahEh", "vsn" => "2.0.0"}
+13:20:17.930 [info] GET /dev/dashboard/metrics
+13:20:17.930 [info] GET request to /dev/dashboard/metrics by User: anonymous at 2024-09-27 12:20:17.930421Z
+13:20:17.938 [info] GET request to /dev/dashboard/metrics by User: anonymous at 2024-09-27 12:20:17.930421Z was successful.
+Status: 200
+
+13:20:17.938 [info] Sent 200 in 8ms
+13:20:18.561 [info] CONNECTED TO Phoenix.LiveView.Socket in 117µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "C0oqOjJ2SmEmAF42JVESfHELGAJZMkJRf2RPw2zYPQ9c_iS82AO2kH6a", "vsn" => "2.0.0"}
+13:20:23.973 [info] GET /dev/dashboard/metrics
+13:20:23.973 [info] GET request to /dev/dashboard/metrics by User: anonymous at 2024-09-27 12:20:23.973970Z
+13:20:23.983 [info] GET request to /dev/dashboard/metrics by User: anonymous at 2024-09-27 12:20:23.973970Z was successful.
+Status: 200
+
+13:20:23.984 [info] Sent 200 in 10ms
+13:20:24.601 [info] CONNECTED TO Phoenix.LiveView.Socket in 158µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "WxU6Kw4OB1kcGSN4P1c5BnoECHEKPytz6mBAKJ7ajHD-EoxB9N_A8E_C", "vsn" => "2.0.0"}
+13:20:25.786 [info]     :alarm_handler: {:set, {:system_memory_high_watermark, []}}
+13:20:47.836 [info] GET /dev/dashboard/metrics
+13:20:47.837 [info] GET request to /dev/dashboard/metrics by User: anonymous at 2024-09-27 12:20:47.837151Z
+13:20:47.846 [info] GET request to /dev/dashboard/metrics by User: anonymous at 2024-09-27 12:20:47.837151Z was successful.
+Status: 200
+
+13:20:47.846 [info] Sent 200 in 9ms
+13:20:48.401 [info] GET /dev/dashboard/metrics
+13:20:48.401 [info] GET request to /dev/dashboard/metrics by User: anonymous at 2024-09-27 12:20:48.401942Z
+13:20:48.416 [info] GET request to /dev/dashboard/metrics by User: anonymous at 2024-09-27 12:20:48.401942Z was successful.
+Status: 200
+
+13:20:48.416 [info] Sent 200 in 15ms
+13:20:48.485 [info] CONNECTED TO Phoenix.LiveView.Socket in 192µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GC5AMxEqb1IdGhI6GV8SHnQCBHxfPRh2uV8YTn_jkKuocgSZ7HSLmGlF", "vsn" => "2.0.0"}
+13:20:49.307 [info] CONNECTED TO Phoenix.LiveView.Socket in 81µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IEE9XS4lclVOPzBlCFFyFCB-enkFDkRdM9E7kaBm8nW0ri3Pc4-I7t0m", "vsn" => "2.0.0"}
+13:21:03.290 [info] GET /auth/log_in
+13:21:03.290 [info] GET request to /auth/log_in by User: anonymous at 2024-09-27 12:21:03.290194Z
+13:21:03.310 [info] GET request to /auth/log_in by User: anonymous at 2024-09-27 12:21:03.290194Z was successful.
+Status: 200
+
+13:21:03.310 [info] Sent 200 in 20ms
+13:21:04.284 [info] CONNECTED TO Phoenix.LiveView.Socket in 116µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "XwFJATQic305Ay4XHUoCNBEwYWN1TDto2y1kqfCEORIBgrCpRz6SG6OX", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:21:15.322 [info] POST /auth/log_in
+13:21:15.322 [info] POST request to /auth/log_in by User: anonymous at 2024-09-27 12:21:15.322736Z
+13:21:15.787 [info] POST request to /auth/log_in by User: anonymous at 2024-09-27 12:21:15.322736Z was successful.
+Status: 302
+
+13:21:15.787 [info] Sent 302 in 465ms
+13:21:15.883 [info] GET /users/welcome
+13:21:15.933 [info] GET request to /users/welcome by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:21:15.933301Z
+13:21:15.943 [info] GET request to /users/welcome by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:21:15.933301Z was successful.
+Status: 200
+
+13:21:15.943 [info] Sent 200 in 60ms
+13:21:16.780 [info] CONNECTED TO Phoenix.LiveView.Socket in 132µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "LC0HXgItAh5hciE8OTVscj0lPC4nGnonjtN33zxHVBDdLBYAtrjxSJC_", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:21:18.364 [info] GET /users/dashboard
+13:21:18.376 [info] GET request to /users/dashboard by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:21:18.376656Z
+13:21:18.441 [info] GET request to /users/dashboard by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:21:18.376656Z was successful.
+Status: 200
+
+13:21:18.441 [info] Sent 200 in 76ms
+13:21:19.249 [info] CONNECTED TO Phoenix.LiveView.Socket in 95µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MCB8FHwdSj5mVAAuIgV_WCdnJwQ2Ig0wvy5yMJ0hQdevWrJkn0qRBr4H", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:21:32.097 [info] GET /dev/dashboard/metrics
+13:21:32.102 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:21:32.102371Z
+13:21:32.109 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:21:32.102371Z was successful.
+Status: 200
+
+13:21:32.109 [info] Sent 200 in 11ms
+13:21:32.790 [info] CONNECTED TO Phoenix.LiveView.Socket in 107µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Dg8hOWgGN2FmVygiMgUGdy1jHx8_CQwoHVhTYQM7QgMzGr3Dd4IIKY5P", "vsn" => "2.0.0"}
+13:21:34.327 [info] GET /dev/dashboard/metrics
+13:21:34.336 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:21:34.336828Z
+13:21:34.351 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:21:34.336828Z was successful.
+Status: 200
+
+13:21:34.352 [info] Sent 200 in 24ms
+13:21:35.008 [info] CONNECTED TO Phoenix.LiveView.Socket in 80µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "azR8PFNnPydWZBQrRz97Wh0HLgU_P1ZK-m5Qb0EqaTqs2HNiTPxSKoo2", "vsn" => "2.0.0"}
+13:21:39.495 [info] GET /dev/dashboard/metrics
+13:21:39.501 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:21:39.501436Z
+13:21:39.507 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:21:39.501436Z was successful.
+Status: 200
+
+13:21:39.507 [info] Sent 200 in 12ms
+13:21:40.134 [info] CONNECTED TO Phoenix.LiveView.Socket in 131µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "LDIBO0AOAyxCVCggFAVWBAQlNyM3B20WjkHVqYyzudMxarc7MrauCWTn", "vsn" => "2.0.0"}
+13:21:41.573 [info] GET /dev/dashboard/metrics
+13:21:41.579 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:21:41.579559Z
+13:21:41.584 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:21:41.579559Z was successful.
+Status: 200
+
+13:21:41.584 [info] Sent 200 in 11ms
+13:21:42.346 [info] CONNECTED TO Phoenix.LiveView.Socket in 187µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HDMeNHglLxRSR1ACPzxxWCNiZB8aB3QBZjWYIrUBew5ZJKDkj52InWMy", "vsn" => "2.0.0"}
+13:21:43.766 [info] GET /dev/dashboard/metrics
+13:21:43.775 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:21:43.775266Z
+13:21:43.782 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:21:43.775266Z was successful.
+Status: 200
+
+13:21:43.782 [info] Sent 200 in 15ms
+13:21:44.497 [info] CONNECTED TO Phoenix.LiveView.Socket in 126µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "KiEsHgZmESNRUVQ-NCd-AnplEAUGZHpOlxes71kufa1fAPK132FSr4C6", "vsn" => "2.0.0"}
+13:21:49.424 [info] GET /
+13:21:49.430 [info] GET request to / by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:21:49.430388Z
+13:21:49.438 [info] GET request to / by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:21:49.430388Z was successful.
+Status: 200
+
+13:21:49.438 [info] Sent 200 in 14ms
+13:21:50.463 [info] CONNECTED TO Phoenix.LiveView.Socket in 204µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "LBATGwIxFzEBaR0PDRReUjgCJw4sO18ujIZv3fmg6YxWxckaqUqXXkfV", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:23:00.339 [info] GET /dev/dashboard/metrics
+13:23:00.343 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:23:00.343701Z
+13:23:00.350 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:23:00.343701Z was successful.
+Status: 200
+
+13:23:00.351 [info] Sent 200 in 11ms
+13:23:01.035 [info] CONNECTED TO Phoenix.LiveView.Socket in 86µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "FRcTJUEADjVjVQc8GB9YcCAhFTsTE1VKSNZHpWtcTebdmhmCivCmgCl2", "vsn" => "2.0.0"}
+13:23:51.418 [info] GET /dev/dashboard/metrics
+13:23:51.422 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:23:51.422972Z
+13:23:51.431 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:23:51.422972Z was successful.
+Status: 200
+
+13:23:51.431 [info] Sent 200 in 12ms
+13:23:52.038 [info] GET /dev/dashboard/metrics
+13:23:52.051 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:23:52.051826Z
+13:23:52.064 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:23:52.051826Z was successful.
+Status: 200
+
+13:23:52.064 [info] Sent 200 in 25ms
+13:23:52.138 [info] CONNECTED TO Phoenix.LiveView.Socket in 89µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "E2pxI14ILjcEdAxhPTkMWisVEnscYwg6U38No_Ta3Di9HN9ibBD-h31B", "vsn" => "2.0.0"}
+13:23:52.796 [info] CONNECTED TO Phoenix.LiveView.Socket in 109µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BSoFCXoOIi58fV0ZDR14VwdhIjk5AFs9CsLdKYXxKM8AxjMdN6toMPbE", "vsn" => "2.0.0"}
+13:23:56.541 [info] GET /dev/dashboard/metrics
+13:23:56.545 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:23:56.545708Z
+13:23:56.552 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:23:56.545708Z was successful.
+Status: 200
+
+13:23:56.553 [info] Sent 200 in 11ms
+13:23:57.176 [info] CONNECTED TO Phoenix.LiveView.Socket in 177µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BQ0gL2ESOBl4bwwCExVBBzsRFyEYPg4rCTiBPEBOO_iZfbt4rFAwln7S", "vsn" => "2.0.0"}
+13:23:57.551 [info] GET /dev/dashboard/metrics
+13:23:57.566 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:23:57.566628Z
+13:23:57.575 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:23:57.566628Z was successful.
+Status: 200
+
+13:23:57.575 [info] Sent 200 in 23ms
+13:23:58.270 [info] CONNECTED TO Phoenix.LiveView.Socket in 59µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "fh8KOGIeHQB8cV0pIkFQUHkmJiwQFl8n8FCUSIgVKA8qW6ec0qpzdFf_", "vsn" => "2.0.0"}
+13:24:15.636 [info] GET /users/user_booking
+13:24:15.643 [info] GET request to /users/user_booking by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:24:15.643308Z
+13:24:15.667 [info] GET request to /users/user_booking by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:24:15.643308Z was successful.
+Status: 200
+
+13:24:15.667 [info] Sent 200 in 31ms
+13:24:16.506 [info] CONNECTED TO Phoenix.LiveView.Socket in 93µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "FW8jPwRgCBp_BjZqP0RHV3sfFwAaY3dVS6jR57rLH6S2J3rd2HAVn3N-", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:24:39.015 [info] GET /
+13:24:39.023 [info] GET request to / by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:24:39.023739Z
+13:24:39.029 [info] GET request to / by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:24:39.023739Z was successful.
+Status: 200
+
+13:24:39.029 [info] Sent 200 in 14ms
+13:24:40.119 [info] CONNECTED TO Phoenix.LiveView.Socket in 114µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Iyt5OVMuQjpTZicpQENSRTE1NzxENlMser0Tby8ldVBq54gvxbaj0fjT", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:24:50.818 [info] GET /contact
+13:24:50.826 [info] GET request to /contact by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:24:50.826234Z
+13:33:22.969 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/bare/5'}, []}}
+13:33:23.044 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2829'}, []}}
+13:33:23.045 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2823'}, []}}
+13:33:23.045 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1612'}, []}}
+13:33:23.045 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core22/1621'}, []}}
+13:33:23.045 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/gtk-common-themes/1535'}, []}}
+13:33:23.045 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/184'}, []}}
+13:33:23.045 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/189'}, []}}
+13:33:23.045 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21465'}, []}}
+13:33:23.045 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1284'}, []}}
+13:33:23.045 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+13:33:23.047 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ubuntu-desktop-installer/1286'}, []}}
+13:33:24.225 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+13:33:24.239 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+13:33:30.634 [info] CONNECTED TO Phoenix.LiveView.Socket in 129µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "fh8KOGIeHQB8cV0pIkFQUHkmJiwQFl8n8FCUSIgVKA8qW6ec0qpzdFf_", "vsn" => "2.0.0"}
+13:33:39.264 [info] GET /dev/dashboard/metrics
+13:33:39.362 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:33:39.361093Z
+13:33:39.403 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:33:39.361093Z was successful.
+Status: 200
+
+13:33:39.403 [info] Sent 200 in 139ms
+13:33:40.527 [info] CONNECTED TO Phoenix.LiveView.Socket in 130µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "KzB5X38ZCx9Yex8eDxh2SQUQJiA1HUoami02NNqIoKzFzoCzLGpvAMsb", "vsn" => "2.0.0"}
+13:33:43.994 [info] GET /dev/dashboard/metrics
+13:33:44.001 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:33:44.001177Z
+13:33:44.010 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:33:44.001177Z was successful.
+Status: 200
+
+13:33:44.010 [info] Sent 200 in 15ms
+13:33:44.650 [info] CONNECTED TO Phoenix.LiveView.Socket in 112µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HDIwGVwNIjNaaCY_RTtvd38ZZRAFHmgKZkytmZXemXCg0LZD6N3FqNQr", "vsn" => "2.0.0"}
+13:33:49.860 [info] GET /dev/dashboard/metrics
+13:33:49.863 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:33:49.863869Z
+13:33:49.871 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:33:49.863869Z was successful.
+Status: 200
+
+13:33:49.871 [info] Sent 200 in 10ms
+13:33:50.551 [info] CONNECTED TO Phoenix.LiveView.Socket in 108µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "djxxQEY6TB1kczUfNxBESXkaLhc-NV0d0e8-wm6KSCPGBgqz0MxAJede", "vsn" => "2.0.0"}
+13:33:52.743 [info] GET /dev/dashboard/metrics
+13:33:52.750 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:33:52.750541Z
+13:33:52.761 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:33:52.750541Z was successful.
+Status: 200
+
+13:33:52.761 [info] Sent 200 in 18ms
+13:33:53.369 [info] CONNECTED TO Phoenix.LiveView.Socket in 78µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "CDJ9IlYHDQBWCAcHBUYBa3g6b24tN1Q5Nk4OgPwVa8b_p14X1m98YgmA", "vsn" => "2.0.0"}
+13:33:56.392 [info] GET /dev/dashboard/metrics
+13:33:56.400 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:33:56.400409Z
+13:33:56.406 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:33:56.400409Z was successful.
+Status: 200
+
+13:33:56.406 [info] Sent 200 in 13ms
+13:33:57.091 [info] CONNECTED TO Phoenix.LiveView.Socket in 127µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Lg0wJmluHCxtUwYoEzF7ZQ1hNAUAP1RVhTyKX9fzZccpfFNVD6bStom-", "vsn" => "2.0.0"}
+13:33:59.304 [info] GET /dev/dashboard/metrics
+13:33:59.307 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:33:59.307855Z
+13:33:59.318 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:33:59.307855Z was successful.
+Status: 200
+
+13:33:59.318 [info] Sent 200 in 14ms
+13:33:59.924 [info] CONNECTED TO Phoenix.LiveView.Socket in 158µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ExU7WwYRMSUHY1MTNjJqcg47PgAXElY5ULr67FKs0S6KCE_AGlhVcBoA", "vsn" => "2.0.0"}
+13:34:09.583 [info] GET /dev/dashboard/metrics
+13:34:09.587 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:34:09.587064Z
+13:34:09.595 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:34:09.587064Z was successful.
+Status: 200
+
+13:34:09.595 [info] Sent 200 in 12ms
+13:34:10.229 [info] CONNECTED TO Phoenix.LiveView.Socket in 75µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "DjQsXn0BMx0Hey8TODNbXA4FYjweOw0dHme3LVIK0KJKMDnoGR4jjk4e", "vsn" => "2.0.0"}
+13:34:22.937 [info]     :alarm_handler: {:set, {:system_memory_high_watermark, []}}
+13:34:25.113 [info] GET /dev/dashboard/metrics
+13:34:25.117 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:34:25.117609Z
+13:34:25.123 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:34:25.117609Z was successful.
+Status: 200
+
+13:34:25.123 [info] Sent 200 in 9ms
+13:34:25.743 [info] CONNECTED TO Phoenix.LiveView.Socket in 113µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "FRMEHVxuIB50eF1oERl7BBA7YgYjOBQ-SJMpm9ZHCH80dnN7Yl4PWh-F", "vsn" => "2.0.0"}
+13:34:25.942 [info] GET /dev/dashboard/metrics
+13:34:25.955 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:34:25.955648Z
+13:34:25.966 [info] GET request to /dev/dashboard/metrics by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:34:25.955648Z was successful.
+Status: 200
+
+13:34:25.966 [info] Sent 200 in 24ms
+13:34:26.056 [info] GET /live/longpoll
+13:34:26.062 [info] GET request to /live/longpoll by User: 0c7124f1-dbf6-4b12-b022-917fecf01aff at 2024-09-27 12:34:26.062074Z
+13:34:26.820 [info] CONNECTED TO Phoenix.LiveView.Socket in 82µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "cy88GHcIAB98XFcJACMMYAx6LB4BImtI5vuuF_zIKl2QuT9SE-zHurR0", "vsn" => "2.0.0"}

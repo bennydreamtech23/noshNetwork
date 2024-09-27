@@ -116,7 +116,7 @@ right: 9px;
   padding: 4px;
 }
 
-.img-down-arrow::after{
+/* .img-down-arrow::after{
   content: "";
   position:absolute;
   right: -12px;
@@ -125,7 +125,7 @@ right: 9px;
   border-width: 5px 5px 0px 5px;
   border-color: black transparent transparent transparent;
   border-style: solid;
-}
+} */
 
 
 .btn-primary{

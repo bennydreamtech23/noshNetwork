@@ -19,7 +19,7 @@ defmodule NoshNetwork.MixProject do
   def application do
     [
       mod: {NoshNetwork.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :os_mon]
     ]
   end
 
@@ -48,6 +48,7 @@ defmodule NoshNetwork.MixProject do
       {:finch, "~> 0.13"},
       {:telemetry_metrics, "~> 0.6"},
       {:telemetry_poller, "~> 1.0"},
+       {:logger_file_backend, "~> 0.0.10"},
       {:gettext, "~> 0.20"},
       {:number, "~> 1.0.1"},
       {:jason, "~> 1.2"},

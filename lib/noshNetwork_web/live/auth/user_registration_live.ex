@@ -8,7 +8,7 @@ defmodule NoshNetworkWeb.Auth.UserRegistrationLive do
     ~H"""
     <div class="mx-auto max-w-sm p-6 font-brand">
       <.header class="text-center text-black lg:text-3xl text-2xl">
-        Register
+        Register User
         <:subtitle>
           Already registered?
           <.link
@@ -34,13 +34,13 @@ defmodule NoshNetworkWeb.Auth.UserRegistrationLive do
         <.error :if={@check_errors}>
           Oops, something went wrong! Please check the errors below.
         </.error>
-        <.input field={@form[:name]} type="text" label="Name" required />
-        <.input field={@form[:username]} type="text" label="Username" required />
-        <.input field={@form[:email]} type="email" label="Email" required />
+        <.input field={@form[:name]} type="text" label="Name" />
+        <.input field={@form[:username]} type="text" label="Username" />
+        <.input field={@form[:email]} type="email" label="Email" />
 
-        <.input field={@form[:password]} type="password" label="Password" required />
+        <.input field={@form[:password]} type="password" label="Password" />
 
-        <.input field={@form[:role]} type="hidden" required value="user" />
+        <.input field={@form[:role]} type="hidden" value="user" />
 
         <:actions>
           <.button phx-disable-with="Creating account..." class="w-full my-3">
@@ -64,6 +64,8 @@ defmodule NoshNetworkWeb.Auth.UserRegistrationLive do
   end
 
   def handle_event("save", %{"user" => user_params}, socket) do
+    user_params = Map.put(user_params, "is_active", true)
+
     case Users.register_user(user_params) do
       {:ok, user} ->
         {:ok, _} =
