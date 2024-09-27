@@ -24,8 +24,8 @@ defmodule NoshNetworkWeb.Auth.UserLoginLive do
         action={~p"/auth/log_in"}
         class="bg-white bg-opacity-50 p-6 rounded-md shadow-sm shadow-gray-200 my-4"
       >
-        <.input field={@form[:email]} type="email" label="Email" required />
-        <.input field={@form[:password]} type="password" label="Password" required />
+        <.input field={@form[:email]} type="email" label="Email" />
+        <.input field={@form[:password]} type="password" label="Password" />
 
         <:actions>
           <.input field={@form[:remember_me]} type="checkbox" label="Keep me logged in" />

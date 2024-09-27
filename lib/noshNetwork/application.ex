@@ -8,8 +8,8 @@ defmodule NoshNetwork.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      NoshNetworkWeb.Telemetry,
       NoshNetwork.Repo,
+      NoshNetworkWeb.Telemetry,
       {DNSCluster, query: Application.get_env(:noshNetwork, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: NoshNetwork.PubSub},
       # Start the Finch HTTP client for sending emails

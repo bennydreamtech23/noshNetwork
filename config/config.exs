@@ -54,9 +54,29 @@ config :tailwind,
   ]
 
 # Configures Elixir's Logger
+config :logger,
+  backends: [:console, {LoggerFileBackend, :file}],
+  handlers: [{LoggerFileBackend, :file}]
+
+config :logger, :file,
+  path: "log/error_success.log",
+  level: :info,
+  format: "$time $metadata[$level] $message\n",
+  metadata: [:request_id, :user_id, :status]
+
+# Set up a different log level for errors
+config :logger, :error_file,
+  path: "log/error.log",
+  level: :error
+
+# Add a custom logger for success
+config :logger, :success_file,
+  path: "log/success.log",
+  level: :info
+
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
-  metadata: [:request_id]
+  metadata: [:request_id, :user_id]
 
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason

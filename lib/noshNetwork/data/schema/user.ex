@@ -12,8 +12,7 @@ email
     name
     username
     role
-is_active
-is_verified
+
   |a
 
   @optional_fields ~w|
@@ -25,6 +24,8 @@ is_verified
   is_notification
   country
   state
+  is_active
+is_verified
   |a
 
   @all_fields @required_fields ++ @optional_fields
@@ -83,6 +84,9 @@ is_verified
     |> cast(attrs, @all_fields)
     |> validate_email(opts)
     |> validate_password(opts)
+    |> validate_required([:username, :email, :name],
+      message: "This field is required"
+    )
   end
 
   def user_changeset(user, attrs \\ []) do
@@ -106,9 +110,11 @@ is_verified
     |> validate_required([:password])
     |> validate_length(:password, min: 12, max: 72)
     # Examples of additional password validation:
-    # |> validate_format(:password, ~r/[a-z]/, message: "at least one lower case character")
-    # |> validate_format(:password, ~r/[A-Z]/, message: "at least one upper case character")
-    # |> validate_format(:password, ~r/[!?@#$%^&*_0-9]/, message: "at least one digit or punctuation character")
+    |> validate_format(:password, ~r/[a-z]/, message: "at least one lower case character")
+    |> validate_format(:password, ~r/[A-Z]/, message: "at least one upper case character")
+    |> validate_format(:password, ~r/[!?@#$%^&*_0-9]/,
+      message: "at least one digit or punctuation character"
+    )
     |> maybe_hash_password(opts)
   end
 

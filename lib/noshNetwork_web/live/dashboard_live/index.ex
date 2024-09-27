@@ -5,6 +5,7 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
 
   @impl true
   def mount(params, _session, socket) do
+    IO.inspect(socket, label: "socket available")
     current_user = socket.assigns.current_user
 
     socket =
@@ -40,22 +41,42 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
 
   @impl true
   def handle_event("cater_show", %{"id" => id}, socket) do
-    IO.inspect(id, label: "id of what is happening here")
+    current_user = socket.assigns.current_user
 
-    socket =
-      socket
-      |> push_navigate(to: ~p"/users/cater?#{[id: id]}")
+    if current_user.is_verified and current_user.is_active do
+      socket =
+        socket
+        |> push_navigate(to: ~p"/users/cater?#{[id: id]}")
 
-    {:noreply, socket}
+      {:noreply, socket}
+    else
+      socket =
+        socket
+        |> put_flash(:error, "Please complete the onboarding process to proceed with booking.")
+        |> push_navigate(to: ~p"/users/onboarding")
+
+      {:noreply, socket}
+    end
   end
 
   @impl true
   def handle_event("booking_action", %{"id" => id}, socket) do
-    socket =
-      socket
-      |> push_navigate(to: ~p"/users/booking?#{[id: id]}")
+    current_user = socket.assigns.current_user
 
-    {:noreply, socket}
+    if current_user.is_verified and current_user.is_active do
+      socket =
+        socket
+        |> push_navigate(to: ~p"/users/booking?#{[id: id]}")
+
+      {:noreply, socket}
+    else
+      socket =
+        socket
+        |> put_flash(:error, "Please complete the onboarding process to proceed with booking.")
+        |> push_navigate(to: ~p"/users/onboarding")
+
+      {:noreply, socket}
+    end
   end
 
   @impl true

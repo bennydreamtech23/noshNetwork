@@ -54,7 +54,9 @@ defmodule NoshNetwork.Data.Context.UsersTest do
 
       assert %{
                password: ["can't be blank"],
-               email: ["can't be blank"]
+               email: ["can't be blank"],
+               username: ["can't be blank"],
+               name: ["can't be blank"]
              } = errors_on(changeset)
     end
 

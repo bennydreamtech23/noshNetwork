@@ -1,9 +1,7 @@
 defmodule NoshNetworkWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :noshNetwork
 
-  # The session will be stored in the cookie and signed,
-  # this means its contents can be read but not tampered with.
-  # Set :encryption_salt if you would also like to encrypt it.
+  # The session will be stored in the cookie and signed
   @session_options [
     store: :cookie,
     key: "_noshNetwork_key",
@@ -13,18 +11,12 @@ defmodule NoshNetworkWeb.Endpoint do
 
   socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
 
-  # Serve at "/" the static files from "priv/static" directory.
-  #
-  # You should set gzip to true if you are running phx.digest
-  # when deploying your static files in production.
   plug Plug.Static,
     at: "/",
     from: :noshNetwork,
     gzip: false,
     only: NoshNetworkWeb.static_paths()
 
-  # Code reloading can be explicitly enabled under the
-  # :code_reloader configuration of your endpoint.
   if code_reloading? do
     socket "/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket
     plug Phoenix.LiveReloader
@@ -46,6 +38,12 @@ defmodule NoshNetworkWeb.Endpoint do
 
   plug Plug.MethodOverride
   plug Plug.Head
+
+  # Initialize the session before using RequestLogger
   plug Plug.Session, @session_options
+
+  # Move the RequestLogger after Plug.Session
+  plug NoshNetworkWeb.Plugs.RequestLogger
+
   plug NoshNetworkWeb.Router
 end
