@@ -544,3 +544,269 @@ Status: 200
   Transport: :websocket
   Serializer: Phoenix.Socket.V2.JSONSerializer
   Parameters: %{"_csrf_token" => "KxAAHXwqeAdvckE3DBoDXkYlMAw2CFQxHsOH1G1XBBrAg-q-7sh9PF-s", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+12:50:22.400 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core20/2434'}, []}}
+12:50:22.429 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+12:50:22.872 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+12:50:22.877 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+12:50:24.020 [info] CONNECTED TO Phoenix.LiveView.Socket in 94µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "OFlFHVsQJTkIInEABx0GWy5dV0EgDwVdMk7w6IshEE9KwOebL9o4zIKe", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://127.0.0.1:4000/assets/dashboard.css", "1" => "http://127.0.0.1:4000/assets/app.js"}, "vsn" => "2.0.0"}
+12:50:24.193 [error] #PID<0.707.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.706.0>, stream id 1) terminated
+Server: 127.0.0.1:4000 (http)
+Request: GET /user/dashboard
+** (exit) an exception was raised:
+    ** (Phoenix.Ecto.PendingMigrationError) there are pending migrations for repo: NoshNetwork.Repo. Try running `mix ecto.migrate` in the command line to migrate it
+        (phoenix_ecto 4.4.3) lib/phoenix_ecto/check_repo_status.ex:67: Phoenix.Ecto.CheckRepoStatus.check_pending_migrations!/2
+        (phoenix_ecto 4.4.3) lib/phoenix_ecto/check_repo_status.ex:31: anonymous fn/3 in Phoenix.Ecto.CheckRepoStatus.call/2
+        (elixir 1.14.4) lib/enum.ex:2468: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_ecto 4.4.3) lib/phoenix_ecto/check_repo_status.ex:30: Phoenix.Ecto.CheckRepoStatus.call/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.11) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.0) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /root/noshNetwork/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+12:50:33.086 [info] == Running 20240328202210 NoshNetwork.Repo.Migrations.CreateImages.change/0 forward
+12:50:33.087 [info] create table images
+12:50:33.155 [error] #PID<0.718.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.706.0>, stream id 3) terminated
+Server: 127.0.0.1:4000 (http)
+Request: POST /__plug__/debugger/action
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 42P01 (undefined_table) relation "gallery_id" does not exist
+        (ecto_sql 3.11.1) lib/ecto/adapters/sql.ex:1054: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (elixir 1.14.4) lib/enum.ex:1658: Enum."-map/2-lists^map/1-0-"/2
+        (ecto_sql 3.11.1) lib/ecto/adapters/sql.ex:1161: Ecto.Adapters.SQL.execute_ddl/4
+        (ecto_sql 3.11.1) lib/ecto/migration/runner.ex:348: Ecto.Migration.Runner.log_and_execute_ddl/3
+        (ecto_sql 3.11.1) lib/ecto/migration/runner.ex:117: anonymous fn/6 in Ecto.Migration.Runner.flush/0
+        (elixir 1.14.4) lib/enum.ex:2468: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (ecto_sql 3.11.1) lib/ecto/migration/runner.ex:116: Ecto.Migration.Runner.flush/0
+        (ecto_sql 3.11.1) lib/ecto/migration/runner.ex:311: Ecto.Migration.Runner.perform_operation/3
+        (stdlib 4.3) timer.erl:235: :timer.tc/1
+        (ecto_sql 3.11.1) lib/ecto/migration/runner.ex:25: Ecto.Migration.Runner.run/8
+        (ecto_sql 3.11.1) lib/ecto/migrator.ex:365: Ecto.Migrator.attempt/8
+        (ecto_sql 3.11.1) lib/ecto/migrator.ex:283: anonymous fn/5 in Ecto.Migrator.do_up/5
+        (ecto_sql 3.11.1) lib/ecto/migrator.ex:337: anonymous fn/6 in Ecto.Migrator.async_migrate_maybe_in_transaction/7
+        (ecto_sql 3.11.1) lib/ecto/adapters/sql.ex:1358: anonymous fn/3 in Ecto.Adapters.SQL.checkout_or_transaction/4
+        (db_connection 2.6.0) lib/db_connection.ex:1710: DBConnection.run_transaction/4
+        (ecto_sql 3.11.1) lib/ecto/migrator.ex:354: Ecto.Migrator.run_maybe_in_transaction/5
+        (elixir 1.14.4) lib/task/supervised.ex:89: Task.Supervised.invoke_mfa/2
+        (elixir 1.14.4) lib/task/supervised.ex:34: Task.Supervised.reply/4
+        (stdlib 4.3) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+12:50:35.380 [error] #PID<0.787.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.786.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /auth/signup
+** (exit) an exception was raised:
+    ** (Phoenix.Ecto.PendingMigrationError) there are pending migrations for repo: NoshNetwork.Repo. Try running `mix ecto.migrate` in the command line to migrate it
+        (phoenix_ecto 4.4.3) lib/phoenix_ecto/check_repo_status.ex:67: Phoenix.Ecto.CheckRepoStatus.check_pending_migrations!/2
+        (phoenix_ecto 4.4.3) lib/phoenix_ecto/check_repo_status.ex:31: anonymous fn/3 in Phoenix.Ecto.CheckRepoStatus.call/2
+        (elixir 1.14.4) lib/enum.ex:2468: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_ecto 4.4.3) lib/phoenix_ecto/check_repo_status.ex:30: Phoenix.Ecto.CheckRepoStatus.call/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.11) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.0) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /root/noshNetwork/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+12:52:52.476 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core20/2434'}, []}}
+12:52:52.519 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+12:52:52.925 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+12:52:52.932 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+12:52:57.515 [error] #PID<0.692.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.691.0>, stream id 1) terminated
+Server: 127.0.0.1:4000 (http)
+Request: GET /
+** (exit) an exception was raised:
+    ** (Phoenix.Ecto.PendingMigrationError) there are pending migrations for repo: NoshNetwork.Repo. Try running `mix ecto.migrate` in the command line to migrate it
+        (phoenix_ecto 4.4.3) lib/phoenix_ecto/check_repo_status.ex:67: Phoenix.Ecto.CheckRepoStatus.check_pending_migrations!/2
+        (phoenix_ecto 4.4.3) lib/phoenix_ecto/check_repo_status.ex:31: anonymous fn/3 in Phoenix.Ecto.CheckRepoStatus.call/2
+        (elixir 1.14.4) lib/enum.ex:2468: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_ecto 4.4.3) lib/phoenix_ecto/check_repo_status.ex:30: Phoenix.Ecto.CheckRepoStatus.call/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.11) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.0) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /root/noshNetwork/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+12:52:59.863 [info] == Running 20240328202210 NoshNetwork.Repo.Migrations.CreateImages.change/0 forward
+12:52:59.863 [info] create table images
+12:52:59.928 [error] #PID<0.698.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.691.0>, stream id 3) terminated
+Server: 127.0.0.1:4000 (http)
+Request: POST /__plug__/debugger/action
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 42P01 (undefined_table) relation "gallery_id" does not exist
+        (ecto_sql 3.11.1) lib/ecto/adapters/sql.ex:1054: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (elixir 1.14.4) lib/enum.ex:1658: Enum."-map/2-lists^map/1-0-"/2
+        (ecto_sql 3.11.1) lib/ecto/adapters/sql.ex:1161: Ecto.Adapters.SQL.execute_ddl/4
+        (ecto_sql 3.11.1) lib/ecto/migration/runner.ex:348: Ecto.Migration.Runner.log_and_execute_ddl/3
+        (ecto_sql 3.11.1) lib/ecto/migration/runner.ex:117: anonymous fn/6 in Ecto.Migration.Runner.flush/0
+        (elixir 1.14.4) lib/enum.ex:2468: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (ecto_sql 3.11.1) lib/ecto/migration/runner.ex:116: Ecto.Migration.Runner.flush/0
+        (ecto_sql 3.11.1) lib/ecto/migration/runner.ex:311: Ecto.Migration.Runner.perform_operation/3
+        (stdlib 4.3) timer.erl:235: :timer.tc/1
+        (ecto_sql 3.11.1) lib/ecto/migration/runner.ex:25: Ecto.Migration.Runner.run/8
+        (ecto_sql 3.11.1) lib/ecto/migrator.ex:365: Ecto.Migrator.attempt/8
+        (ecto_sql 3.11.1) lib/ecto/migrator.ex:283: anonymous fn/5 in Ecto.Migrator.do_up/5
+        (ecto_sql 3.11.1) lib/ecto/migrator.ex:337: anonymous fn/6 in Ecto.Migrator.async_migrate_maybe_in_transaction/7
+        (ecto_sql 3.11.1) lib/ecto/adapters/sql.ex:1358: anonymous fn/3 in Ecto.Adapters.SQL.checkout_or_transaction/4
+        (db_connection 2.6.0) lib/db_connection.ex:1710: DBConnection.run_transaction/4
+        (ecto_sql 3.11.1) lib/ecto/migrator.ex:354: Ecto.Migrator.run_maybe_in_transaction/5
+        (elixir 1.14.4) lib/task/supervised.ex:89: Task.Supervised.invoke_mfa/2
+        (elixir 1.14.4) lib/task/supervised.ex:34: Task.Supervised.reply/4
+        (stdlib 4.3) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+14:04:47.848 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core20/2434'}, []}}
+14:04:47.929 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+14:04:47.929 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2846'}, []}}
+14:04:47.930 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/211'}, []}}
+14:04:48.915 [error] Failed to start Ranch listener NoshNetworkWeb.Endpoint.HTTP in :ranch_tcp:listen([cacerts: :..., key: :..., cert: :..., ip: {127, 0, 0, 1}, port: 4000]) for reason :eaddrinuse (address already in use)
+
+14:04:48.949 [error] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at http failed, port already in use
+14:04:48.951 [info] Application noshNetwork exited: NoshNetwork.Application.start(:normal, []) returned an error: shutdown: failed to start child: NoshNetworkWeb.Endpoint
+    ** (EXIT) shutdown: failed to start child: {:ranch_listener_sup, NoshNetworkWeb.Endpoint.HTTP}
+        ** (EXIT) shutdown: failed to start child: :ranch_acceptors_sup
+            ** (EXIT) {:listen_error, NoshNetworkWeb.Endpoint.HTTP, :eaddrinuse}
+14:04:48.953 [info] Application plug_cowboy exited: :stopped
+14:04:48.953 [info] Application cowboy_telemetry exited: :stopped
+14:04:48.956 [info] Application cowboy exited: :stopped
+14:04:48.958 [info] Application ranch exited: :stopped
+14:04:48.958 [info] Application cowlib exited: :stopped
+14:04:48.958 [info] Application dns_cluster exited: :stopped
+14:04:48.958 [info] Application httpoison exited: :stopped
+14:04:48.960 [info] Application hackney exited: :stopped
+14:04:48.960 [info] Application metrics exited: :stopped
+14:04:48.960 [info] Application ssl_verify_fun exited: :stopped
+14:04:48.960 [info] Application parse_trans exited: :stopped
+14:04:48.960 [info] Application syntax_tools exited: :stopped
+14:04:48.960 [info] Application certifi exited: :stopped
+14:04:48.960 [info] Application mimerl exited: :stopped
+14:04:48.960 [info] Application idna exited: :stopped
+14:04:48.960 [info] Application unicode_util_compat exited: :stopped
+14:04:48.961 [info] Application number exited: :stopped
+14:04:48.962 [info] Application gettext exited: :stopped
+14:04:48.962 [info] Application expo exited: :stopped
+14:04:48.962 [info] Application logger_file_backend exited: :stopped
+14:04:48.965 [info] Application telemetry_poller exited: :stopped
+14:04:48.965 [info] Application finch exited: :stopped
+14:04:48.965 [info] Application nimble_options exited: :stopped
+14:04:48.967 [info] Application nimble_pool exited: :stopped
+14:04:48.969 [info] Application mint exited: :stopped
+14:04:48.969 [info] Application hpax exited: :stopped
+14:04:48.972 [info] Application swoosh exited: :stopped
+14:04:48.972 [info] Application xmerl exited: :stopped
+14:04:48.973 [info] Application tailwind exited: :stopped
+14:04:48.975 [info] Application esbuild exited: :stopped
+14:04:48.975 [info] Application jason exited: :stopped
+14:04:48.976 [info] Application phoenix_live_dashboard exited: :stopped
+14:04:48.976 [info] Application telemetry_metrics exited: :stopped
+14:04:48.978 [info] Application phoenix_live_view exited: :stopped
+14:04:48.980 [info] Application phoenix_live_reload exited: :stopped
+14:04:48.980 [info] Application file_system exited: :stopped
+14:04:48.980 [info] Application phoenix_html exited: :stopped
+14:04:48.983 [info] Application postgrex exited: :stopped
+14:04:48.985 [info] Application ecto_sql exited: :stopped
+14:04:48.987 [info] Postgrex.Protocol (#PID<0.526.0>) missed message: {:EXIT, #PID<0.550.0>, :shutdown}
+14:04:48.987 [info] Postgrex.Protocol (#PID<0.523.0>) missed message: {:EXIT, #PID<0.550.0>, :shutdown}
+14:04:48.987 [info] Postgrex.Protocol (#PID<0.527.0>) missed message: {:EXIT, #PID<0.550.0>, :shutdown}
+14:04:48.987 [info] Postgrex.Protocol (#PID<0.522.0>) missed message: {:EXIT, #PID<0.550.0>, :shutdown}
+14:04:48.988 [info] Postgrex.Protocol (#PID<0.525.0>) missed message: {:EXIT, #PID<0.550.0>, :shutdown}
+14:04:48.988 [info] Postgrex.Protocol (#PID<0.524.0>) missed message: {:EXIT, #PID<0.550.0>, :shutdown}
+14:04:49.024 [info] Application db_connection exited: :stopped
+14:04:49.025 [info] Application phoenix_ecto exited: :stopped
+14:04:49.027 [info] Application ecto exited: :stopped
+14:04:49.027 [info] Application decimal exited: :stopped
+14:04:49.030 [info] Application phoenix exited: :stopped
+14:04:49.031 [info] Application castore exited: :stopped
+14:04:49.032 [info] Application websock_adapter exited: :stopped
+14:04:49.032 [info] Application websock exited: :stopped
+14:04:49.032 [info] Application phoenix_template exited: :stopped
+14:04:49.034 [info] Application phoenix_pubsub exited: :stopped
+14:04:49.036 [info] Application plug exited: :stopped
+14:04:49.037 [info] Application telemetry exited: :stopped
+14:04:49.038 [info] Application plug_crypto exited: :stopped
+14:04:49.038 [info] Application mime exited: :stopped
+14:04:49.038 [info] Application eex exited: :stopped
+14:04:49.038 [info] Application bcrypt_elixir exited: :stopped
+14:04:49.039 [info] Application comeonin exited: :stopped
+14:04:49.039 [info]     :alarm_handler: {:clear, {:disk_almost_full, '/snap/core18/2846'}}
+14:04:49.039 [info]     :alarm_handler: {:clear, {:disk_almost_full, '/snap/core20/2434'}}
+14:04:49.039 [info]     :alarm_handler: {:clear, {:disk_almost_full, '/snap/snapd/21759'}}
+14:04:49.040 [info]     :alarm_handler: {:clear, {:disk_almost_full, '/snap/ngrok/211'}}
+14:04:49.041 [info] Application os_mon exited: :stopped
+14:04:49.042 [info] Application sasl exited: :stopped
+14:04:49.045 [info] Application runtime_tools exited: :stopped
+14:43:49.063 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core20/2434'}, []}}
+14:43:49.093 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+14:43:49.093 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2846'}, []}}
+14:43:49.093 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/211'}, []}}
+14:43:49.488 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+14:43:49.500 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+14:43:54.974 [error] #PID<0.706.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.705.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /assets/fonts/poppins/Poppins-Regular.ttf
+** (exit) an exception was raised:
+    ** (Phoenix.Ecto.PendingMigrationError) there are pending migrations for repo: NoshNetwork.Repo. Try running `mix ecto.migrate` in the command line to migrate it
+        (phoenix_ecto 4.4.3) lib/phoenix_ecto/check_repo_status.ex:67: Phoenix.Ecto.CheckRepoStatus.check_pending_migrations!/2
+        (phoenix_ecto 4.4.3) lib/phoenix_ecto/check_repo_status.ex:31: anonymous fn/3 in Phoenix.Ecto.CheckRepoStatus.call/2
+        (elixir 1.14.4) lib/enum.ex:2468: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_ecto 4.4.3) lib/phoenix_ecto/check_repo_status.ex:30: Phoenix.Ecto.CheckRepoStatus.call/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.11) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.0) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /root/noshNetwork/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+14:43:56.961 [error] #PID<0.712.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.705.0>, stream id 2) terminated
+Server: localhost:4000 (http)
+Request: GET /
+** (exit) an exception was raised:
+    ** (Phoenix.Ecto.PendingMigrationError) there are pending migrations for repo: NoshNetwork.Repo. Try running `mix ecto.migrate` in the command line to migrate it
+        (phoenix_ecto 4.4.3) lib/phoenix_ecto/check_repo_status.ex:67: Phoenix.Ecto.CheckRepoStatus.check_pending_migrations!/2
+        (phoenix_ecto 4.4.3) lib/phoenix_ecto/check_repo_status.ex:31: anonymous fn/3 in Phoenix.Ecto.CheckRepoStatus.call/2
+        (elixir 1.14.4) lib/enum.ex:2468: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_ecto 4.4.3) lib/phoenix_ecto/check_repo_status.ex:30: Phoenix.Ecto.CheckRepoStatus.call/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.11) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.0) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.10.0) /root/noshNetwork/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.10.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.10.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 4.3) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+14:45:35.167 [info] == Running 20240328202210 NoshNetwork.Repo.Migrations.CreateImages.change/0 forward
+14:45:35.167 [info] create table images
+14:45:35.260 [error] #PID<0.719.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.718.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: POST /__plug__/debugger/action
+** (exit) an exception was raised:
+    ** (Postgrex.Error) ERROR 42P01 (undefined_table) relation "gallery_id" does not exist
+        (ecto_sql 3.11.1) lib/ecto/adapters/sql.ex:1054: Ecto.Adapters.SQL.raise_sql_call_error/1
+        (elixir 1.14.4) lib/enum.ex:1658: Enum."-map/2-lists^map/1-0-"/2
+        (ecto_sql 3.11.1) lib/ecto/adapters/sql.ex:1161: Ecto.Adapters.SQL.execute_ddl/4
+        (ecto_sql 3.11.1) lib/ecto/migration/runner.ex:348: Ecto.Migration.Runner.log_and_execute_ddl/3
+        (ecto_sql 3.11.1) lib/ecto/migration/runner.ex:117: anonymous fn/6 in Ecto.Migration.Runner.flush/0
+        (elixir 1.14.4) lib/enum.ex:2468: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (ecto_sql 3.11.1) lib/ecto/migration/runner.ex:116: Ecto.Migration.Runner.flush/0
+        (ecto_sql 3.11.1) lib/ecto/migration/runner.ex:311: Ecto.Migration.Runner.perform_operation/3
+        (stdlib 4.3) timer.erl:235: :timer.tc/1
+        (ecto_sql 3.11.1) lib/ecto/migration/runner.ex:25: Ecto.Migration.Runner.run/8
+        (ecto_sql 3.11.1) lib/ecto/migrator.ex:365: Ecto.Migrator.attempt/8
+        (ecto_sql 3.11.1) lib/ecto/migrator.ex:283: anonymous fn/5 in Ecto.Migrator.do_up/5
+        (ecto_sql 3.11.1) lib/ecto/migrator.ex:337: anonymous fn/6 in Ecto.Migrator.async_migrate_maybe_in_transaction/7
+        (ecto_sql 3.11.1) lib/ecto/adapters/sql.ex:1358: anonymous fn/3 in Ecto.Adapters.SQL.checkout_or_transaction/4
+        (db_connection 2.6.0) lib/db_connection.ex:1710: DBConnection.run_transaction/4
+        (ecto_sql 3.11.1) lib/ecto/migrator.ex:354: Ecto.Migrator.run_maybe_in_transaction/5
+        (elixir 1.14.4) lib/task/supervised.ex:89: Task.Supervised.invoke_mfa/2
+        (elixir 1.14.4) lib/task/supervised.ex:34: Task.Supervised.reply/4
+        (stdlib 4.3) proc_lib.erl:240: :proc_lib.init_p_do_apply/3

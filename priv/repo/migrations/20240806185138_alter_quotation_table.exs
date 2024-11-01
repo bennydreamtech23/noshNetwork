@@ -9,7 +9,6 @@ defmodule NoshNetwork.Repo.Migrations.AlterQuotationTable do
       add :quotation_date, :string, null: false
       add :due_date, :string, null: false
       add :amount_paid, :float
-      add :total, :float
       add :fee, :float
     end
   end
