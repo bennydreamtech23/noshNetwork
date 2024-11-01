@@ -4,7 +4,6 @@ defmodule NoshNetwork.Repo.Migrations.ModifyItems do
   def change do
     alter table(:items) do
       add :subtotal, :float
-      remove :currency, :string
     end
   end
 end

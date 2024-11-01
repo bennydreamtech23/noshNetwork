@@ -1,11 +1,10 @@
 defmodule NoshNetwork.Repo.Migrations.CreateCaters do
   use Ecto.Migration
 
-  def change do
+  def up do
     create table(:caters, primary_key: false) do
       add :id, :binary_id, primary_key: true
       add :about, :string
-      add :gallery, :map
       add :social_media, :map
       add :services, {:array, :string}
       add :specialties, {:array, :string}
@@ -19,5 +18,9 @@ defmodule NoshNetwork.Repo.Migrations.CreateCaters do
     end
 
     create index(:caters, [:user_id])
+  end
+
+  def down do
+    drop table(:caters)
   end
 end
