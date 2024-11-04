@@ -60,7 +60,8 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
     updated_user_params =
       user_params
       |> Map.put("profile_picture", List.first(consume_files(socket)))
-
+      |> Map.put("is_verified", true)
+      |> Map.put("is_active", true)
     if socket.assigns.valid do
       case apply(
              Users,
@@ -80,7 +81,7 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
 
         {:ok, _user} ->
           {:noreply,
-           socket |> put_flash(:info, "Contact Info is succesfully") |> assign(:valid, false)}
+           socket |> put_flash(:info, "Cater updated succesfully") |> assign(:valid, false)}
 
         {:error, %Ecto.Changeset{} = changeset} ->
           {:noreply, assign_form(socket, changeset)}
