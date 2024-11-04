@@ -810,3 +810,796 @@ Request: POST /__plug__/debugger/action
         (elixir 1.14.4) lib/task/supervised.ex:89: Task.Supervised.invoke_mfa/2
         (elixir 1.14.4) lib/task/supervised.ex:34: Task.Supervised.reply/4
         (stdlib 4.3) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+12:50:06.412 request_id=GARy-84X1AOUH24AAASi [info] GET /
+12:50:06.415 request_id=GARy-84X1AOUH24AAASi [info] GET request to / by User: anonymous at 2024-11-03 11:50:06.415227Z
+12:50:06.423 request_id=GARy-84X1AOUH24AAASi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+12:50:06.441 request_id=GARy-84X1AOUH24AAASi [info] GET request to / by User: anonymous at 2024-11-03 11:50:06.415227Z was successful.
+Status: 200
+
+12:50:06.441 request_id=GARy-84X1AOUH24AAASi [info] Sent 200 in 29ms
+12:50:08.006 [info] CONNECTED TO Phoenix.LiveView.Socket in 104µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BCAhDFM0eFMrZ20-Nhc3OD8-PB1aO3w4GyOFdg2gm_8livmNjXXt6i0H", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+12:50:12.847 request_id=GARy_VFZmg2YbpIAAATi [info] GET /
+12:50:12.847 request_id=GARy_VFZmg2YbpIAAATi [info] GET request to / by User: anonymous at 2024-11-03 11:50:12.847188Z
+12:50:12.847 request_id=GARy_VFZmg2YbpIAAATi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+12:50:12.849 request_id=GARy_VFZmg2YbpIAAATi [info] GET request to / by User: anonymous at 2024-11-03 11:50:12.847188Z was successful.
+Status: 200
+
+12:50:12.849 request_id=GARy_VFZmg2YbpIAAATi [info] Sent 200 in 2ms
+12:50:14.209 [info] CONNECTED TO Phoenix.LiveView.Socket in 163µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "cQYEIVYKFQQoWwJhDigWAjlTMSA2JQ422_jkaY_0ncW3QILtl5UIZwBF", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+12:51:19.358 request_id=GARzC5RIPqjyyRoAAAUC [info] GET /
+12:51:19.361 request_id=GARzC5RIPqjyyRoAAAUC [info] GET request to / by User: anonymous at 2024-11-03 11:51:19.361636Z
+12:51:19.365 request_id=GARzC5RIPqjyyRoAAAUC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+12:51:19.375 request_id=GARzC5RIPqjyyRoAAAUC [info] GET request to / by User: anonymous at 2024-11-03 11:51:19.361636Z was successful.
+Status: 200
+
+12:51:19.375 request_id=GARzC5RIPqjyyRoAAAUC [info] Sent 200 in 16ms
+12:51:20.974 [info] CONNECTED TO Phoenix.LiveView.Socket in 121µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GxM7AVN-OVYSThwXFDs7RhskCRs8NhQIXJUKd-sbTvIEKZa0NBmrPdXx", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+12:51:25.219 request_id=GARzDPT8xiMIqoUAAALj [info] GET /
+12:51:25.221 request_id=GARzDPT8xiMIqoUAAALj [info] GET request to / by User: anonymous at 2024-11-03 11:51:25.221016Z
+12:51:25.225 request_id=GARzDPT8xiMIqoUAAALj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+12:51:25.238 request_id=GARzDPT8xiMIqoUAAALj [info] GET request to / by User: anonymous at 2024-11-03 11:51:25.221016Z was successful.
+Status: 200
+
+12:51:25.239 request_id=GARzDPT8xiMIqoUAAALj [info] Sent 200 in 20ms
+12:51:26.031 [info] CONNECTED TO Phoenix.LiveView.Socket in 83µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BS8YAA8aDWIQbgczFEwvPwYBAB0DARQvFvvJ8IGVVVRaK-uISgdtoSX_", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+12:51:58.026 request_id=GARzE_ghyVF-8I0AAAHB [info] GET /
+12:51:58.028 request_id=GARzE_ghyVF-8I0AAAHB [info] GET request to / by User: anonymous at 2024-11-03 11:51:58.028255Z
+12:51:58.030 request_id=GARzE_ghyVF-8I0AAAHB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+12:51:58.039 request_id=GARzE_ghyVF-8I0AAAHB [info] GET request to / by User: anonymous at 2024-11-03 11:51:58.028255Z was successful.
+Status: 200
+
+12:51:58.039 request_id=GARzE_ghyVF-8I0AAAHB [info] Sent 200 in 12ms
+12:51:59.182 [info] CONNECTED TO Phoenix.LiveView.Socket in 141µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "cxwFIUU5JBknayEjKhsyLyccNx8mIh9I0Ekkrjn-aStquzhYrzSvJpS8", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+12:52:31.197 request_id=GARzGxPJWO0TIe4AAAIh [info] GET /
+12:52:31.199 request_id=GARzGxPJWO0TIe4AAAIh [info] GET request to / by User: anonymous at 2024-11-03 11:52:31.199921Z
+12:52:31.202 request_id=GARzGxPJWO0TIe4AAAIh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+12:52:31.209 request_id=GARzGxPJWO0TIe4AAAIh [info] GET request to / by User: anonymous at 2024-11-03 11:52:31.199921Z was successful.
+Status: 200
+
+12:52:31.209 request_id=GARzGxPJWO0TIe4AAAIh [info] Sent 200 in 11ms
+12:52:32.339 [info] CONNECTED TO Phoenix.LiveView.Socket in 32µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "dBMnEHMhJ2xwchsGbyx3JgoLVC4cJHRG7JIZDrmX6JNT0M-P_m0Gpv86", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+12:52:35.213 request_id=GARzHAV-eZKWwZUAAAVi [info] GET /
+12:52:35.215 request_id=GARzHAV-eZKWwZUAAAVi [info] GET request to / by User: anonymous at 2024-11-03 11:52:35.215895Z
+12:52:35.222 request_id=GARzHAV-eZKWwZUAAAVi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+12:52:35.236 request_id=GARzHAV-eZKWwZUAAAVi [info] GET request to / by User: anonymous at 2024-11-03 11:52:35.215895Z was successful.
+Status: 200
+
+12:52:35.236 request_id=GARzHAV-eZKWwZUAAAVi [info] Sent 200 in 22ms
+12:52:35.871 [info] CONNECTED TO Phoenix.LiveView.Socket in 162µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Bz0jL3ESP2cSTxoKFFUsAA0cJiwBKn0aDdMeFAuSTwOXK4vvXzBEmx1j", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+12:52:50.953 request_id=GARzHwjmwly3lkoAAAKh [info] GET /
+12:52:50.960 request_id=GARzHwjmwly3lkoAAAKh [info] GET request to / by User: anonymous at 2024-11-03 11:52:50.960929Z
+12:52:50.963 request_id=GARzHwjmwly3lkoAAAKh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+12:52:50.982 request_id=GARzHwjmwly3lkoAAAKh [info] GET request to / by User: anonymous at 2024-11-03 11:52:50.960929Z was successful.
+Status: 200
+
+12:52:50.982 request_id=GARzHwjmwly3lkoAAAKh [info] Sent 200 in 29ms
+12:52:52.151 [info] CONNECTED TO Phoenix.LiveView.Socket in 96µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ERUWD1gQIVJ2eywDZzMjPDlWFDogPQQKRLxEoCkf0CyQ8RyJl0pSLoHz", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+12:53:22.963 request_id=GARzJd59ARl-bm0AAAGE [info] GET /
+12:53:22.965 request_id=GARzJd59ARl-bm0AAAGE [info] GET request to / by User: anonymous at 2024-11-03 11:53:22.965344Z
+12:53:22.967 request_id=GARzJd59ARl-bm0AAAGE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+12:53:22.975 request_id=GARzJd59ARl-bm0AAAGE [info] GET request to / by User: anonymous at 2024-11-03 11:53:22.965344Z was successful.
+Status: 200
+
+12:53:22.975 request_id=GARzJd59ARl-bm0AAAGE [info] Sent 200 in 11ms
+12:53:23.963 [info] CONNECTED TO Phoenix.LiveView.Socket in 111µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "JRgBOls6eEUTdjAUJgovQDkXLDggBAg6fAopli2qUNeFyku6lqHQLVDJ", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+12:53:36.614 request_id=GARzKRQWgMeJ-SwAAAOB [info] GET /
+12:53:36.616 request_id=GARzKRQWgMeJ-SwAAAOB [info] GET request to / by User: anonymous at 2024-11-03 11:53:36.616130Z
+12:53:36.617 request_id=GARzKRQWgMeJ-SwAAAOB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+12:53:36.624 request_id=GARzKRQWgMeJ-SwAAAOB [info] GET request to / by User: anonymous at 2024-11-03 11:53:36.616130Z was successful.
+Status: 200
+
+12:53:36.624 request_id=GARzKRQWgMeJ-SwAAAOB [info] Sent 200 in 10ms
+12:53:37.329 [info] CONNECTED TO Phoenix.LiveView.Socket in 103µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "LhQAcl4VHERwfj4qClYwEx1XUh1da3U_mMn8iFVp6FkxU7jeH16t199O", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+12:53:44.875 request_id=GARzKwVPhs66aiYAAAPD [info] GET /
+12:53:44.877 request_id=GARzKwVPhs66aiYAAAPD [info] GET request to / by User: anonymous at 2024-11-03 11:53:44.877556Z
+12:53:44.879 request_id=GARzKwVPhs66aiYAAAPD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+12:53:44.887 request_id=GARzKwVPhs66aiYAAAPD [info] GET request to / by User: anonymous at 2024-11-03 11:53:44.877556Z was successful.
+Status: 200
+
+12:53:44.887 request_id=GARzKwVPhs66aiYAAAPD [info] Sent 200 in 11ms
+12:53:45.971 [info] CONNECTED TO Phoenix.LiveView.Socket in 55µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "DmgGOmYHLm0DQDcNEBsqGCIAMV8bBRgmM1hpQTdYExb_OzpnwfU6wWTV", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+12:53:52.261 request_id=GARzLMHaOzha0MUAAAXC [info] GET /
+12:53:52.263 request_id=GARzLMHaOzha0MUAAAXC [info] GET request to / by User: anonymous at 2024-11-03 11:53:52.263795Z
+12:53:52.265 request_id=GARzLMHaOzha0MUAAAXC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+12:53:52.271 request_id=GARzLMHaOzha0MUAAAXC [info] GET request to / by User: anonymous at 2024-11-03 11:53:52.263795Z was successful.
+Status: 200
+
+12:53:52.271 request_id=GARzLMHaOzha0MUAAAXC [info] Sent 200 in 10ms
+12:53:56.119 [info] CONNECTED TO Phoenix.LiveView.Socket in 179µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IB4gHho6CGU_ZwQ9bRI1PR8sIgwzZ30ycGNT-iBQy_Qo2soKJJFe_51B", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:00:16.483 request_id=GARzf5xMW0qFTBUAAAJE [info] GET /
+13:00:16.485 request_id=GARzf5xMW0qFTBUAAAJE [info] GET request to / by User: anonymous at 2024-11-03 12:00:16.485848Z
+13:00:16.487 request_id=GARzf5xMW0qFTBUAAAJE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:00:16.495 request_id=GARzf5xMW0qFTBUAAAJE [info] GET request to / by User: anonymous at 2024-11-03 12:00:16.485848Z was successful.
+Status: 200
+
+13:00:16.495 request_id=GARzf5xMW0qFTBUAAAJE [info] Sent 200 in 12ms
+13:00:18.329 [info] CONNECTED TO Phoenix.LiveView.Socket in 55µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "F28ADn0JM0AVaWEnLQlqMhIDKDwkAAMIT6nDJZytSQ4urh0DGeLUHROx", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:00:46.358 request_id=GARzhqJehdw2XiQAAAai [info] GET /
+13:00:46.359 request_id=GARzhqJehdw2XiQAAAai [info] GET request to / by User: anonymous at 2024-11-03 12:00:46.359772Z
+13:00:46.361 request_id=GARzhqJehdw2XiQAAAai [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:00:46.368 request_id=GARzhqJehdw2XiQAAAai [info] GET request to / by User: anonymous at 2024-11-03 12:00:46.359772Z was successful.
+Status: 200
+
+13:00:46.368 request_id=GARzhqJehdw2XiQAAAai [info] Sent 200 in 10ms
+13:00:47.351 [info] CONNECTED TO Phoenix.LiveView.Socket in 140µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Cw4CPgIQc1UnCxIKaBRiMxNVUCIPZSIZHWlt5C9aa3GX7u8EF34Kc7ni", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:01:24.406 request_id=GARzj5RiiWD9Yp8AAAKk [info] GET /
+13:01:24.409 request_id=GARzj5RiiWD9Yp8AAAKk [info] GET request to / by User: anonymous at 2024-11-03 12:01:24.409385Z
+13:01:24.412 request_id=GARzj5RiiWD9Yp8AAAKk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:01:24.418 request_id=GARzj5RiiWD9Yp8AAAKk [info] GET request to / by User: anonymous at 2024-11-03 12:01:24.409385Z was successful.
+Status: 200
+
+13:01:24.418 request_id=GARzj5RiiWD9Yp8AAAKk [info] Sent 200 in 12ms
+13:01:31.134 [info] CONNECTED TO Phoenix.LiveView.Socket in 199µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "NxtZAA4_Ol0pcSMZPCkLJBkqJjM7FX8itB7J9lpioIvKcHQRLLBZWG3R", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:01:41.651 [error] Task #PID<0.677.0> started from NoshNetworkWeb.Endpoint terminating
+** (RuntimeError) Couldn't fetch https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64: {:error, {:failed_connect, [{:to_address, {'objects.githubusercontent.com', 443}}, {:inet, [:inet], :closed}]}}
+
+This typically means we cannot reach the source or you are behind a proxy.
+You can try again later and, if that does not work, you might:
+
+  1. If behind a proxy, ensure your proxy is configured and that
+     your certificates are set via the cacerts_path configuration
+
+  2. Manually download the executable from the URL above and
+     place it inside "_build/tailwind-linux-x64"
+
+  3. Install and use Tailwind from npmJS. See our module documentation
+     to learn more: https://hexdocs.pm/tailwind
+
+    (tailwind 0.2.2) lib/tailwind.ex:303: Tailwind.fetch_body!/1
+    (tailwind 0.2.2) lib/tailwind.ex:224: Tailwind.install/1
+    (tailwind 0.2.2) lib/tailwind.ex:205: Tailwind.install_and_run/2
+    (phoenix 1.7.11) lib/phoenix/endpoint/watcher.ex:19: Phoenix.Endpoint.Watcher.watch/2
+    (elixir 1.14.4) lib/task/supervised.ex:89: Task.Supervised.invoke_mfa/2
+    (stdlib 4.3) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+Function: &Phoenix.Endpoint.Watcher.watch/2
+    Args: ["tailwind", {Tailwind, :install_and_run, [:default, ["--watch"]]}]
+13:03:39.605 request_id=GARzrRbWl4djGR0AAAQD [info] GET /
+13:03:39.607 request_id=GARzrRbWl4djGR0AAAQD [info] GET request to / by User: anonymous at 2024-11-03 12:03:39.607612Z
+13:03:39.609 request_id=GARzrRbWl4djGR0AAAQD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:03:39.615 request_id=GARzrRbWl4djGR0AAAQD [info] GET request to / by User: anonymous at 2024-11-03 12:03:39.607612Z was successful.
+Status: 200
+
+13:03:39.615 request_id=GARzrRbWl4djGR0AAAQD [info] Sent 200 in 9ms
+13:03:40.982 [info] CONNECTED TO Phoenix.LiveView.Socket in 124µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HBUHOHgdHlULATQmcgUdLAANAB0qGgEp_LirONTaM9at-dGZUkdtFHMY", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:04:50.940 request_id=GARzvHyCKGvO8pMAAAIF [info] GET /
+13:04:50.943 request_id=GARzvHyCKGvO8pMAAAIF [info] GET request to / by User: anonymous at 2024-11-03 12:04:50.943044Z
+13:04:50.945 request_id=GARzvHyCKGvO8pMAAAIF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:04:50.952 request_id=GARzvHyCKGvO8pMAAAIF [info] GET request to / by User: anonymous at 2024-11-03 12:04:50.943044Z was successful.
+Status: 200
+
+13:04:50.952 request_id=GARzvHyCKGvO8pMAAAIF [info] Sent 200 in 12ms
+13:04:52.088 [info] CONNECTED TO Phoenix.LiveView.Socket in 30µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "bjBdJXVjOwYRYTBkLDYUOhYrDTAaID87-i3oB0q2WYe6sWNLCMiYvrsK", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:04:53.867 request_id=GARzvSyvJJOyOCwAAAcC [info] GET /
+13:04:53.869 request_id=GARzvSyvJJOyOCwAAAcC [info] GET request to / by User: anonymous at 2024-11-03 12:04:53.869671Z
+13:04:53.875 request_id=GARzvSyvJJOyOCwAAAcC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:04:53.888 request_id=GARzvSyvJJOyOCwAAAcC [info] GET request to / by User: anonymous at 2024-11-03 12:04:53.869671Z was successful.
+Status: 200
+
+13:04:53.888 request_id=GARzvSyvJJOyOCwAAAcC [info] Sent 200 in 21ms
+13:04:54.548 [info] CONNECTED TO Phoenix.LiveView.Socket in 132µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "AB0_AXI6HX0UXBofMTE9QAAIUj84YnUkCDQKEiWIRdOMnPg6Un6VT09T", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:05:20.162 request_id=GARzwqmp3evH3R8AAAKF [info] GET /
+13:05:20.164 request_id=GARzwqmp3evH3R8AAAKF [info] GET request to / by User: anonymous at 2024-11-03 12:05:20.164355Z
+13:05:20.167 request_id=GARzwqmp3evH3R8AAAKF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:05:20.174 request_id=GARzwqmp3evH3R8AAAKF [info] GET request to / by User: anonymous at 2024-11-03 12:05:20.164355Z was successful.
+Status: 200
+
+13:05:20.174 request_id=GARzwqmp3evH3R8AAAKF [info] Sent 200 in 11ms
+13:05:21.911 [info] CONNECTED TO Phoenix.LiveView.Socket in 34µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "KA8MEGA_HV0QajF_HiQvRWVLLV5dYiFGkVbZWlWiVRd-AEu30-I710m6", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:09:01.557 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core20/2434'}, []}}
+13:09:01.589 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2846'}, []}}
+13:09:01.590 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/211'}, []}}
+13:09:01.590 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+13:09:01.900 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+13:09:01.910 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+13:09:10.017 request_id=GAR0CvA8c5OPpEsAAAAF [info] GET /
+13:09:10.049 request_id=GAR0CvA8c5OPpEsAAAAF [info] GET request to / by User: anonymous at 2024-11-03 12:09:10.043512Z
+13:09:10.065 request_id=GAR0CvA8c5OPpEsAAAAF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:09:10.164 request_id=GAR0CvA8c5OPpEsAAAAF [info] GET request to / by User: anonymous at 2024-11-03 12:09:10.043512Z was successful.
+Status: 200
+
+13:09:10.164 request_id=GAR0CvA8c5OPpEsAAAAF [info] Sent 200 in 148ms
+13:09:14.469 request_id=GAR0C_xDojXdnXEAAAAl [info] GET /
+13:09:14.469 request_id=GAR0C_xDojXdnXEAAAAl [info] GET request to / by User: anonymous at 2024-11-03 12:09:14.469366Z
+13:09:14.470 request_id=GAR0C_xDojXdnXEAAAAl [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:09:14.474 request_id=GAR0C_xDojXdnXEAAAAl [info] GET request to / by User: anonymous at 2024-11-03 12:09:14.469366Z was successful.
+Status: 200
+
+13:09:14.474 request_id=GAR0C_xDojXdnXEAAAAl [info] Sent 200 in 5ms
+13:09:16.249 [info] CONNECTED TO Phoenix.LiveView.Socket in 113µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HD86HV8nDBlwZyUBJRgoMBlSEDYkGhlI_fTWhtF-6_pSzyrFL4t_HHU8", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:09:51.105 request_id=GAR0E-e2_Xd2HioAAAIk [info] GET /
+13:09:51.105 request_id=GAR0E-e2_Xd2HioAAAIk [info] GET request to / by User: anonymous at 2024-11-03 12:09:51.105224Z
+13:09:51.105 request_id=GAR0E-e2_Xd2HioAAAIk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:09:51.108 request_id=GAR0E-e2_Xd2HioAAAIk [info] GET request to / by User: anonymous at 2024-11-03 12:09:51.105224Z was successful.
+Status: 200
+
+13:09:51.108 request_id=GAR0E-e2_Xd2HioAAAIk [info] Sent 200 in 3ms
+13:09:52.319 [info] CONNECTED TO Phoenix.LiveView.Socket in 161µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "EwooH2URB3csaQQxPjkcM2JVEyQkOS8cPSFURBMCjQQcaXFE73wMHkcl", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:10:09.515 request_id=GAR0GDvKy_TpE5oAAAJE [info] GET /
+13:10:09.517 request_id=GAR0GDvKy_TpE5oAAAJE [info] GET request to / by User: anonymous at 2024-11-03 12:10:09.517537Z
+13:10:09.519 request_id=GAR0GDvKy_TpE5oAAAJE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:10:09.528 request_id=GAR0GDvKy_TpE5oAAAJE [info] GET request to / by User: anonymous at 2024-11-03 12:10:09.517537Z was successful.
+Status: 200
+
+13:10:09.528 request_id=GAR0GDvKy_TpE5oAAAJE [info] Sent 200 in 12ms
+13:10:10.838 [info] CONNECTED TO Phoenix.LiveView.Socket in 174µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IBM5EHEZJQwIbDE7NBM5QWYTDhsqah4ScJWZFJo8NTdikrc73ujrF8Rb", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:10:17.787 request_id=GAR0GX1CIcY9xvYAAABi [info] GET /
+13:10:17.788 request_id=GAR0GX1CIcY9xvYAAABi [info] GET request to / by User: anonymous at 2024-11-03 12:10:17.788656Z
+13:10:17.793 request_id=GAR0GX1CIcY9xvYAAABi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:10:17.811 request_id=GAR0GX1CIcY9xvYAAABi [info] GET request to / by User: anonymous at 2024-11-03 12:10:17.788656Z was successful.
+Status: 200
+
+13:10:17.811 request_id=GAR0GX1CIcY9xvYAAABi [info] Sent 200 in 25ms
+13:10:18.377 [info] CONNECTED TO Phoenix.LiveView.Socket in 87µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ADhYGQ8dfUwWTBtrBSwzRxJVHCtZCz4WCa6S8N7xPtN9ZMi1G3xB5Yrf", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:10:23.311 request_id=GAR0Gsm-SC2ZbjIAAAKk [info] GET /
+13:10:23.311 request_id=GAR0Gsm-SC2ZbjIAAAKk [info] GET request to / by User: anonymous at 2024-11-03 12:10:23.311507Z
+13:10:23.311 request_id=GAR0Gsm-SC2ZbjIAAAKk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:10:23.315 request_id=GAR0Gsm-SC2ZbjIAAAKk [info] GET request to / by User: anonymous at 2024-11-03 12:10:23.311507Z was successful.
+Status: 200
+
+13:10:23.315 request_id=GAR0Gsm-SC2ZbjIAAAKk [info] Sent 200 in 3ms
+13:10:24.188 [info] CONNECTED TO Phoenix.LiveView.Socket in 135µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ejMae1gJeX0OcTARBgcJKRkoUzgnJCge9jt1oZ3IHIeCYfS_LN7QKvdn", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:14:12.998 request_id=GAR0TKv5pDgeEMYAAAQD [info] GET /
+13:14:13.000 request_id=GAR0TKv5pDgeEMYAAAQD [info] GET request to / by User: anonymous at 2024-11-03 12:14:13.000919Z
+13:14:13.002 request_id=GAR0TKv5pDgeEMYAAAQD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:14:13.011 request_id=GAR0TKv5pDgeEMYAAAQD [info] GET request to / by User: anonymous at 2024-11-03 12:14:13.000919Z was successful.
+Status: 200
+
+13:14:13.011 request_id=GAR0TKv5pDgeEMYAAAQD [info] Sent 200 in 12ms
+13:14:14.301 [info] CONNECTED TO Phoenix.LiveView.Socket in 193µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "DioHKQUeKFInUTQnBRUFOWNTNwgLPmFCMsic2MbfaiauZt_O65Sagl-2", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:14:15.745 request_id=GAR0TVFKWwYrNeMAAAQj [info] GET /
+13:14:15.747 request_id=GAR0TVFKWwYrNeMAAAQj [info] GET request to / by User: anonymous at 2024-11-03 12:14:15.747422Z
+13:14:15.753 request_id=GAR0TVFKWwYrNeMAAAQj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:14:15.766 request_id=GAR0TVFKWwYrNeMAAAQj [info] GET request to / by User: anonymous at 2024-11-03 12:14:15.747422Z was successful.
+Status: 200
+
+13:14:15.766 request_id=GAR0TVFKWwYrNeMAAAQj [info] Sent 200 in 21ms
+13:14:16.458 [info] CONNECTED TO Phoenix.LiveView.Socket in 116µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BTgDGmQQI3USTGEjaQYVFwMCLQ8qYwMUFamPSCiATt4q6gOaVdIfF1Od", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:15:23.125 request_id=GAR0W8B5tvHj7m8AAAHh [info] GET /
+13:15:23.128 request_id=GAR0W8B5tvHj7m8AAAHh [info] GET request to / by User: anonymous at 2024-11-03 12:15:23.128329Z
+13:15:23.130 request_id=GAR0W8B5tvHj7m8AAAHh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:15:23.140 request_id=GAR0W8B5tvHj7m8AAAHh [info] GET request to / by User: anonymous at 2024-11-03 12:15:23.128329Z was successful.
+Status: 200
+
+13:15:23.140 request_id=GAR0W8B5tvHj7m8AAAHh [info] Sent 200 in 15ms
+13:15:24.357 [info] CONNECTED TO Phoenix.LiveView.Socket in 243µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BWtXMEJiEE0jQAE4bSQJJWYBES8pZhMFF29zu1ZyexTj2ESS3guFE4_u", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:42:20.497 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core20/2434'}, []}}
+13:42:20.537 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2846'}, []}}
+13:42:20.537 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/211'}, []}}
+13:42:20.537 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+13:42:20.975 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+13:42:20.986 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+13:42:25.711 request_id=GAR13EPmxs6PpEsAAALB [info] GET /
+13:42:25.757 request_id=GAR13EPmxs6PpEsAAALB [info] GET request to / by User: anonymous at 2024-11-03 12:42:25.751111Z
+13:42:25.779 request_id=GAR13EPmxs6PpEsAAALB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:42:25.873 request_id=GAR13EPmxs6PpEsAAALB [info] GET request to / by User: anonymous at 2024-11-03 12:42:25.751111Z was successful.
+Status: 200
+
+13:42:25.873 request_id=GAR13EPmxs6PpEsAAALB [info] Sent 200 in 162ms
+13:42:26.989 [info] CONNECTED TO Phoenix.LiveView.Socket in 77µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "KTMhDAc2CGUSXgwaMxAeOSYLN1EKGCEajjOF0eBQTfYHlqDOsmS8fJmj", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:44:59.361 request_id=GAR1_OhWTwWa6AkAAAMB [info] GET /
+13:44:59.361 request_id=GAR1_OhWTwWa6AkAAAMB [info] GET request to / by User: anonymous at 2024-11-03 12:44:59.361894Z
+13:44:59.362 request_id=GAR1_OhWTwWa6AkAAAMB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:44:59.364 request_id=GAR1_OhWTwWa6AkAAAMB [info] GET request to / by User: anonymous at 2024-11-03 12:44:59.361894Z was successful.
+Status: 200
+
+13:44:59.364 request_id=GAR1_OhWTwWa6AkAAAMB [info] Sent 200 in 2ms
+13:45:00.822 [info] CONNECTED TO Phoenix.LiveView.Socket in 81µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "KCoxKV4nf3trfxhnPiAQEBgUCTYBDT0Jks_cit5O-GM5aAJfMrm_m_qy", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:50:26.698 request_id=GAR2Q5x_Zy5N-C8AAAMC [info] GET /
+13:50:26.700 request_id=GAR2Q5x_Zy5N-C8AAAMC [info] GET request to / by User: anonymous at 2024-11-03 12:50:26.700812Z
+13:50:26.702 request_id=GAR2Q5x_Zy5N-C8AAAMC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:50:26.712 request_id=GAR2Q5x_Zy5N-C8AAAMC [info] GET request to / by User: anonymous at 2024-11-03 12:50:26.700812Z was successful.
+Status: 200
+
+13:50:26.713 request_id=GAR2Q5x_Zy5N-C8AAAMC [info] Sent 200 in 14ms
+13:50:28.073 [info] CONNECTED TO Phoenix.LiveView.Socket in 114µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IBYFOWg7HH9wUWwCOBM9Qw8VI1o0Nj4KcOks_hVK6i9Pgrg5ZsG3Xdrz", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:50:58.776 request_id=GAR2SnbNRgTGT0IAAAPi [info] GET /
+13:50:58.780 request_id=GAR2SnbNRgTGT0IAAAPi [info] GET request to / by User: anonymous at 2024-11-03 12:50:58.780200Z
+13:50:58.783 request_id=GAR2SnbNRgTGT0IAAAPi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:50:58.797 request_id=GAR2SnbNRgTGT0IAAAPi [info] GET request to / by User: anonymous at 2024-11-03 12:50:58.780200Z was successful.
+Status: 200
+
+13:50:58.797 request_id=GAR2SnbNRgTGT0IAAAPi [info] Sent 200 in 20ms
+13:50:59.516 [info] CONNECTED TO Phoenix.LiveView.Socket in 119µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "EWw0IGNnKQ0LCBFkJS4MOR42HF5cEyhBR5ZjT4c9M0D6zOVOKPx70Ad1", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:57:02.498 request_id=GAR2mRSalpuZbjIAAACE [info] GET /
+13:57:02.499 request_id=GAR2mRSalpuZbjIAAACE [info] GET request to / by User: anonymous at 2024-11-03 12:57:02.499866Z
+13:57:02.506 request_id=GAR2mRSalpuZbjIAAACE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:57:02.515 request_id=GAR2mRSalpuZbjIAAACE [info] GET request to / by User: anonymous at 2024-11-03 12:57:02.499866Z was successful.
+Status: 200
+
+13:57:02.515 request_id=GAR2mRSalpuZbjIAAACE [info] Sent 200 in 17ms
+13:57:03.586 [info] CONNECTED TO Phoenix.LiveView.Socket in 34µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "DTZcLV0mPUFyTDBqADc0JyE8JyYbOiNFNo2gjuwu4te8_VnQtZCOwho5", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:57:42.906 request_id=GAR2oeacYjg236UAAABj [info] GET /
+13:57:42.906 request_id=GAR2oeacYjg236UAAABj [info] GET request to / by User: anonymous at 2024-11-03 12:57:42.906236Z
+13:57:42.906 request_id=GAR2oeacYjg236UAAABj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:57:42.909 request_id=GAR2oeacYjg236UAAABj [info] GET request to / by User: anonymous at 2024-11-03 12:57:42.906236Z was successful.
+Status: 200
+
+13:57:42.909 request_id=GAR2oeacYjg236UAAABj [info] Sent 200 in 3ms
+13:57:44.576 [info] CONNECTED TO Phoenix.LiveView.Socket in 111µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "dylfGFUHelYtfjEAFA4uAAI-AQxVMSZF4p1RbT0bkFdRKotvWXee9cj5", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:57:46.131 request_id=GAR2oqjDuJ2ViT8AAASC [info] POST /cdn-cgi/rum
+13:57:46.134 request_id=GAR2oqjDuJ2ViT8AAASC [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 12:57:46.134078Z
+14:00:17.884 [error] Task #PID<0.677.0> started from NoshNetworkWeb.Endpoint terminating
+** (RuntimeError) Couldn't fetch https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64: {:error, {:failed_connect, [{:to_address, {'objects.githubusercontent.com', 443}}, {:inet, [:inet], :closed}]}}
+
+This typically means we cannot reach the source or you are behind a proxy.
+You can try again later and, if that does not work, you might:
+
+  1. If behind a proxy, ensure your proxy is configured and that
+     your certificates are set via the cacerts_path configuration
+
+  2. Manually download the executable from the URL above and
+     place it inside "_build/tailwind-linux-x64"
+
+  3. Install and use Tailwind from npmJS. See our module documentation
+     to learn more: https://hexdocs.pm/tailwind
+
+    (tailwind 0.2.2) lib/tailwind.ex:303: Tailwind.fetch_body!/1
+    (tailwind 0.2.2) lib/tailwind.ex:224: Tailwind.install/1
+    (tailwind 0.2.2) lib/tailwind.ex:205: Tailwind.install_and_run/2
+    (phoenix 1.7.11) lib/phoenix/endpoint/watcher.ex:19: Phoenix.Endpoint.Watcher.watch/2
+    (elixir 1.14.4) lib/task/supervised.ex:89: Task.Supervised.invoke_mfa/2
+    (stdlib 4.3) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+Function: &Phoenix.Endpoint.Watcher.watch/2
+    Args: ["tailwind", {Tailwind, :install_and_run, [:default, ["--watch"]]}]
+14:01:10.706 request_id=GAR2zpgkG9wb3XUAAATC [info] GET /
+14:01:10.709 request_id=GAR2zpgkG9wb3XUAAATC [info] GET request to / by User: anonymous at 2024-11-03 13:01:10.708970Z
+14:01:10.711 request_id=GAR2zpgkG9wb3XUAAATC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:01:10.717 request_id=GAR2zpgkG9wb3XUAAATC [info] GET request to / by User: anonymous at 2024-11-03 13:01:10.708970Z was successful.
+Status: 200
+
+14:01:10.717 request_id=GAR2zpgkG9wb3XUAAATC [info] Sent 200 in 10ms
+14:01:12.807 [info] CONNECTED TO Phoenix.LiveView.Socket in 68µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MysjPQciAgcIewMiBwM0DhRXUAgVGA8zprMw0qH3NCVpXbnxA14ayJCC", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:01:17.475 request_id=GAR20C-O2gNvS4QAAAFD [info] GET /
+14:01:17.477 request_id=GAR20C-O2gNvS4QAAAFD [info] GET request to / by User: anonymous at 2024-11-03 13:01:17.477918Z
+14:01:17.483 request_id=GAR20C-O2gNvS4QAAAFD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:01:17.492 request_id=GAR20C-O2gNvS4QAAAFD [info] GET request to / by User: anonymous at 2024-11-03 13:01:17.477918Z was successful.
+Status: 200
+
+14:01:17.493 request_id=GAR20C-O2gNvS4QAAAFD [info] Sent 200 in 17ms
+14:01:17.645 request_id=GAR20Dm8wlzmtRMAAAUi [info] POST /cdn-cgi/rum
+14:01:17.647 request_id=GAR20Dm8wlzmtRMAAAUi [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:01:17.647477Z
+14:01:18.561 [info] CONNECTED TO Phoenix.LiveView.Socket in 140µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "EBoABnYZOwQFfQUbEhgRHT4ODCAtByQ2SCnLAJq0CEPIMyKkkhhIAUhF", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:01:22.637 request_id=GAR20WYwo85vrh0AAAGj [info] POST /cdn-cgi/rum
+14:01:22.639 request_id=GAR20WYwo85vrh0AAAGj [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:01:22.639100Z
+14:01:29.573 request_id=GAR20ljCnSF2EY0AAAHD [info] POST /cdn-cgi/rum
+14:01:29.575 request_id=GAR20ljCnSF2EY0AAAHD [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:01:29.575369Z
+14:02:19.571 request_id=GAR23WhyCilAf58AAADk [info] GET /
+14:02:19.573 request_id=GAR23WhyCilAf58AAADk [info] GET request to / by User: anonymous at 2024-11-03 13:02:19.573533Z
+14:02:19.575 request_id=GAR23WhyCilAf58AAADk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:02:19.584 request_id=GAR23WhyCilAf58AAADk [info] GET request to / by User: anonymous at 2024-11-03 13:02:19.573533Z was successful.
+Status: 200
+
+14:02:19.584 request_id=GAR23WhyCilAf58AAADk [info] Sent 200 in 12ms
+14:02:20.905 [info] CONNECTED TO Phoenix.LiveView.Socket in 118µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ADEAPlMEDVMsUBYKaTkzHTQvIxwYByAhChntdWGgjhCX6XikaIGutUlQ", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:02:21.364 request_id=GAR23dRdUIqEezgAAARh [info] POST /cdn-cgi/rum
+14:02:21.367 request_id=GAR23dRdUIqEezgAAARh [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:02:21.367060Z
+14:02:21.667 request_id=GAR23eaUUixNhccAAAXi [info] GET /
+14:02:21.670 request_id=GAR23eaUUixNhccAAAXi [info] GET request to / by User: anonymous at 2024-11-03 13:02:21.670285Z
+14:02:21.676 request_id=GAR23eaUUixNhccAAAXi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:02:21.689 request_id=GAR23eaUUixNhccAAAXi [info] GET request to / by User: anonymous at 2024-11-03 13:02:21.670285Z was successful.
+Status: 200
+
+14:02:21.689 request_id=GAR23eaUUixNhccAAAXi [info] Sent 200 in 22ms
+14:02:21.874 request_id=GAR23fMKJqmTEKwAAAYC [info] POST /cdn-cgi/rum
+14:02:21.876 request_id=GAR23fMKJqmTEKwAAAYC [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:02:21.876521Z
+14:02:22.440 [info] CONNECTED TO Phoenix.LiveView.Socket in 156µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GgwgKUUSLVwPej4iJxg3GR0pKCA8NA0DYUNcrAghIBkpxymoHOLIPfAs", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:02:27.469 request_id=GAR230PBNDUaWJMAAADl [info] POST /cdn-cgi/rum
+14:02:27.471 request_id=GAR230PBNDUaWJMAAADl [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:02:27.471734Z
+14:02:39.708 request_id=GAR24XRxPewKi44AAAZC [info] GET /
+14:02:39.709 request_id=GAR24XRxPewKi44AAAZC [info] GET request to / by User: anonymous at 2024-11-03 13:02:39.709790Z
+14:02:39.716 request_id=GAR24XRxPewKi44AAAZC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:02:39.724 request_id=GAR24XRxPewKi44AAAZC [info] GET request to / by User: anonymous at 2024-11-03 13:02:39.709790Z was successful.
+Status: 200
+
+14:02:39.724 request_id=GAR24XRxPewKi44AAAZC [info] Sent 200 in 16ms
+14:02:40.481 [info] CONNECTED TO Phoenix.LiveView.Socket in 122µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "cxE_G14rAFwHYBEABTBiPzoqVC8HGANJ0HQQixJhAXDRZQ8IoL0FkJO9", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:02:41.222 request_id=GAR24c-clonFVTYAAAJj [info] POST /cdn-cgi/rum
+14:02:41.224 request_id=GAR24c-clonFVTYAAAJj [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:02:41.224698Z
+14:02:42.727 request_id=GAR24ioqHnR7Ec4AAAZi [info] GET /
+14:02:42.729 request_id=GAR24ioqHnR7Ec4AAAZi [info] GET request to / by User: anonymous at 2024-11-03 13:02:42.729244Z
+14:02:42.734 request_id=GAR24ioqHnR7Ec4AAAZi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:02:42.745 request_id=GAR24ioqHnR7Ec4AAAZi [info] GET request to / by User: anonymous at 2024-11-03 13:02:42.729244Z was successful.
+Status: 200
+
+14:02:42.745 request_id=GAR24ioqHnR7Ec4AAAZi [info] Sent 200 in 18ms
+14:02:42.915 request_id=GAR24jWAnfumR3gAAASh [info] POST /cdn-cgi/rum
+14:02:42.917 request_id=GAR24jWAnfumR3gAAASh [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:02:42.917458Z
+14:02:43.459 [info] CONNECTED TO Phoenix.LiveView.Socket in 114µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "AQ4HCHYxfWctTxY2LBs8OzkfV1AbIC9ABWiBAb7SkwCdszfMly39wrc0", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:02:44.037 request_id=GAR24nkLLtoMiMYAAAKj [info] POST /cdn-cgi/rum
+14:02:44.039 request_id=GAR24nkLLtoMiMYAAAKj [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:02:44.039523Z
+14:02:44.486 request_id=GAR24pQKo4QH_z8AAAai [info] POST /cdn-cgi/rum
+14:02:44.488 request_id=GAR24pQKo4QH_z8AAAai [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:02:44.488104Z
+14:02:53.336 request_id=GAR25KispB2s7nYAAAdC [info] GET /
+14:02:53.338 request_id=GAR25KispB2s7nYAAAdC [info] GET request to / by User: anonymous at 2024-11-03 13:02:53.337965Z
+14:02:53.339 request_id=GAR25KispB2s7nYAAAdC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:02:53.346 request_id=GAR25KispB2s7nYAAAdC [info] GET request to / by User: anonymous at 2024-11-03 13:02:53.337965Z was successful.
+Status: 200
+
+14:02:53.346 request_id=GAR25KispB2s7nYAAAdC [info] Sent 200 in 10ms
+14:02:54.119 [info] CONNECTED TO Phoenix.LiveView.Socket in 126µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MAE7KXoSA0ACUj0BOy0TMR0kJj8jKC8asXUcMAItDjhSdLIGHBBVOzcj", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:02:54.635 request_id=GAR25PbavC0jMeEAAAEF [info] POST /cdn-cgi/rum
+14:02:54.639 request_id=GAR25PbavC0jMeEAAAEF [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:02:54.639044Z
+14:02:57.525 request_id=GAR25aTSxsYbUskAAAeC [info] POST /cdn-cgi/rum
+14:02:57.527 request_id=GAR25aTSxsYbUskAAAeC [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:02:57.527364Z
+14:03:26.827 request_id=GAR269xvNBQEuvIAAAGl [info] GET /
+14:03:26.829 request_id=GAR269xvNBQEuvIAAAGl [info] GET request to / by User: anonymous at 2024-11-03 13:03:26.829494Z
+14:03:26.831 request_id=GAR269xvNBQEuvIAAAGl [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:03:26.838 request_id=GAR269xvNBQEuvIAAAGl [info] GET request to / by User: anonymous at 2024-11-03 13:03:26.829494Z was successful.
+Status: 200
+
+14:03:26.838 request_id=GAR269xvNBQEuvIAAAGl [info] Sent 200 in 10ms
+14:03:27.912 [info] CONNECTED TO Phoenix.LiveView.Socket in 65µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Dh0EJVhgA24BdQIealcTLgctFFsBMAkTMDjoo3IZGMWL56IXRKp2mbEc", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:03:28.363 request_id=GAR27DjbjR2r6G0AAAHl [info] POST /cdn-cgi/rum
+14:03:28.365 request_id=GAR27DjbjR2r6G0AAAHl [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:03:28.365379Z
+14:03:30.238 request_id=GAR27KmzRVUVqOYAAAJE [info] POST /cdn-cgi/rum
+14:03:30.240 request_id=GAR27KmzRVUVqOYAAAJE [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:03:30.240550Z
+14:04:10.104 request_id=GAR29VRFcgKdQfoAAATh [info] GET /
+14:04:10.106 request_id=GAR29VRFcgKdQfoAAATh [info] GET request to / by User: anonymous at 2024-11-03 13:04:10.106436Z
+14:04:10.108 request_id=GAR29VRFcgKdQfoAAATh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:04:10.118 request_id=GAR29VRFcgKdQfoAAATh [info] GET request to / by User: anonymous at 2024-11-03 13:04:10.106436Z was successful.
+Status: 200
+
+14:04:10.118 request_id=GAR29VRFcgKdQfoAAATh [info] Sent 200 in 13ms
+14:04:11.376 [info] CONNECTED TO Phoenix.LiveView.Socket in 106µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "LgwxCVYBE01zdG02JVYbBj5QIVEtPz8gmU_CaRYy5L8dz7Apk6E8AmsP", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:04:13.017 request_id=GAR29gOa4-gtdsUAAAME [info] POST /cdn-cgi/rum
+14:04:13.019 request_id=GAR29gOa4-gtdsUAAAME [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:04:13.019384Z
+14:04:24.973 request_id=GAR2-B-qDMmoHoQAAANj [info] GET /
+14:04:24.975 request_id=GAR2-B-qDMmoHoQAAANj [info] GET request to / by User: anonymous at 2024-11-03 13:04:24.975646Z
+14:04:24.978 request_id=GAR2-B-qDMmoHoQAAANj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:04:24.984 request_id=GAR2-B-qDMmoHoQAAANj [info] GET request to / by User: anonymous at 2024-11-03 13:04:24.975646Z was successful.
+Status: 200
+
+14:04:24.984 request_id=GAR2-B-qDMmoHoQAAANj [info] Sent 200 in 11ms
+14:04:26.082 [info] CONNECTED TO Phoenix.LiveView.Socket in 78µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "CBEkJABhBVkuaREqZxY9HWMUNiodZxQUKHJn72OmhQDx8wgk6rRCq5Xd", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:04:26.566 request_id=GAR2-H-MAO_I__4AAAOD [info] POST /cdn-cgi/rum
+14:04:26.568 request_id=GAR2-H-MAO_I__4AAAOD [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:04:26.568145Z
+14:04:27.625 request_id=GAR2-L9QsgeywD0AAAgi [info] GET /
+14:04:27.627 request_id=GAR2-L9QsgeywD0AAAgi [info] GET request to / by User: anonymous at 2024-11-03 13:04:27.627412Z
+14:04:27.633 request_id=GAR2-L9QsgeywD0AAAgi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:04:27.642 request_id=GAR2-L9QsgeywD0AAAgi [info] GET request to / by User: anonymous at 2024-11-03 13:04:27.627412Z was successful.
+Status: 200
+
+14:04:27.642 request_id=GAR2-L9QsgeywD0AAAgi [info] Sent 200 in 17ms
+14:04:27.788 request_id=GAR2-MkWiftfXQYAAAOE [info] POST /cdn-cgi/rum
+14:04:27.790 request_id=GAR2-MkWiftfXQYAAAOE [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:04:27.790135Z
+14:04:28.589 [info] CONNECTED TO Phoenix.LiveView.Socket in 134µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "JzU6Mk8QGX8fezkjJyYzIhwxSSYgYzgSdlTxxCSKYClqxGiTIW-OL1tb", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:04:30.032 request_id=GAR2-VAm-0lqFagAAAPD [info] POST /cdn-cgi/rum
+14:04:30.033 request_id=GAR2-VAm-0lqFagAAAPD [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:04:30.033811Z
+14:04:34.147 request_id=GAR2-kfRjvrBbxwAAAji [info] GET /
+14:04:34.149 request_id=GAR2-kfRjvrBbxwAAAji [info] GET request to / by User: anonymous at 2024-11-03 13:04:34.149146Z
+14:04:34.150 request_id=GAR2-kfRjvrBbxwAAAji [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:04:34.158 request_id=GAR2-kfRjvrBbxwAAAji [info] GET request to / by User: anonymous at 2024-11-03 13:04:34.149146Z was successful.
+Status: 200
+
+14:04:34.158 request_id=GAR2-kfRjvrBbxwAAAji [info] Sent 200 in 11ms
+14:04:35.144 [info] CONNECTED TO Phoenix.LiveView.Socket in 115µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Nhw7OlwYO20nCxBiGFUSGWcjMFErZC4duEUpkKqYa3E0G4Ho2ET8G6bm", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:04:36.045 request_id=GAR2-roRdZfyPHsAAAki [info] POST /cdn-cgi/rum
+14:04:36.048 request_id=GAR2-roRdZfyPHsAAAki [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:04:36.047965Z
+14:04:37.538 request_id=GAR2-xP06f75E60AAAlC [info] POST /cdn-cgi/rum
+14:04:37.540 request_id=GAR2-xP06f75E60AAAlC [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:04:37.540589Z
+14:09:31.439 request_id=GAR3Oqd2L2bZ6RAAAAUh [info] GET /
+14:09:31.443 request_id=GAR3Oqd2L2bZ6RAAAAUh [info] GET request to / by User: anonymous at 2024-11-03 13:09:31.443265Z
+14:09:31.447 request_id=GAR3Oqd2L2bZ6RAAAAUh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:09:31.463 request_id=GAR3Oqd2L2bZ6RAAAAUh [info] GET request to / by User: anonymous at 2024-11-03 13:09:31.443265Z was successful.
+Status: 200
+
+14:09:31.463 request_id=GAR3Oqd2L2bZ6RAAAAUh [info] Sent 200 in 23ms
+14:09:34.040 [info] CONNECTED TO Phoenix.LiveView.Socket in 139µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MHQsLQRnDgURdRtgEwAXHRgvJzokHzQas-Bg34D1WMN2LaMkMICSHMxj", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:09:35.569 request_id=GAR3O5_8PB3LBO0AAADG [info] POST /cdn-cgi/rum
+14:09:35.573 request_id=GAR3O5_8PB3LBO0AAADG [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:09:35.573479Z
+14:09:36.799 request_id=GAR3O-oF-7WtaRgAAAmi [info] POST /cdn-cgi/rum
+14:09:36.802 request_id=GAR3O-oF-7WtaRgAAAmi [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:09:36.802244Z
+14:13:55.835 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core20/2434'}, []}}
+14:13:55.878 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2846'}, []}}
+14:13:55.878 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/211'}, []}}
+14:13:55.878 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+14:13:56.606 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+14:13:56.617 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+14:13:58.285 [info] CONNECTED TO Phoenix.LiveView.Socket in 309µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MHQsLQRnDgURdRtgEwAXHRgvJzokHzQas-Bg34D1WMN2LaMkMICSHMxj", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:14:08.850 request_id=GAR3l1_J1sLS7GkAAALj [info] GET /
+14:14:08.891 request_id=GAR3l1_J1sLS7GkAAALj [info] GET request to / by User: anonymous at 2024-11-03 13:14:08.884464Z
+14:14:08.897 request_id=GAR3l1_J1sLS7GkAAALj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:14:08.932 request_id=GAR3l1_J1sLS7GkAAALj [info] GET request to / by User: anonymous at 2024-11-03 13:14:08.884464Z was successful.
+Status: 200
+
+14:14:08.932 request_id=GAR3l1_J1sLS7GkAAALj [info] Sent 200 in 81ms
+14:14:10.496 [info] CONNECTED TO Phoenix.LiveView.Socket in 501µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HBcAHGU9AXMiSmAmODgqIhgLHQtbGgUy_NnVRnKGdr5tgYpTMmyb7HIB", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:14:12.062 request_id=GAR3mB9iqbeySL0AAABG [info] POST /cdn-cgi/rum
+14:14:12.063 request_id=GAR3mB9iqbeySL0AAABG [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:14:12.063351Z
+14:14:12.706 request_id=GAR3mEXI2eDRLpsAAAAh [info] GET /
+14:14:12.706 request_id=GAR3mEXI2eDRLpsAAAAh [info] GET request to / by User: anonymous at 2024-11-03 13:14:12.706938Z
+14:14:12.710 request_id=GAR3mEXI2eDRLpsAAAAh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:14:12.714 request_id=GAR3mEXI2eDRLpsAAAAh [info] GET request to / by User: anonymous at 2024-11-03 13:14:12.706938Z was successful.
+Status: 200
+
+14:14:12.714 request_id=GAR3mEXI2eDRLpsAAAAh [info] Sent 200 in 8ms
+14:14:12.842 request_id=GAR3mE3k3Y8dfhMAAACG [info] POST /cdn-cgi/rum
+14:14:12.843 request_id=GAR3mE3k3Y8dfhMAAACG [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:14:12.843066Z
+14:14:13.570 [info] CONNECTED TO Phoenix.LiveView.Socket in 114µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "KAMhHQcbLAQVUmRrEldsTxw2Fy4HMXofkZOW0Hf0Sj19M669IPsGkc6o", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:14:14.733 request_id=GAR3mL6UFECVkwIAAADG [info] GET /
+14:14:14.733 request_id=GAR3mL6UFECVkwIAAADG [info] GET request to / by User: anonymous at 2024-11-03 13:14:14.733519Z
+14:14:14.736 request_id=GAR3mL6UFECVkwIAAADG [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:14:14.741 request_id=GAR3mL6UFECVkwIAAADG [info] GET request to / by User: anonymous at 2024-11-03 13:14:14.733519Z was successful.
+Status: 200
+
+14:14:14.741 request_id=GAR3mL6UFECVkwIAAADG [info] Sent 200 in 8ms
+14:14:15.522 [info] CONNECTED TO Phoenix.LiveView.Socket in 180µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "FQtXe3U0Kww0Vj0nPiI7EW0rKCI6OxkvVR91Bga8rnhuaCag8MLKViU_", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:14:16.454 request_id=GAR3mSUoSNZcmAwAAACB [info] GET /
+14:14:16.454 request_id=GAR3mSUoSNZcmAwAAACB [info] GET request to / by User: anonymous at 2024-11-03 13:14:16.454416Z
+14:14:16.461 request_id=GAR3mSUoSNZcmAwAAACB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:14:16.474 request_id=GAR3mSUoSNZcmAwAAACB [info] GET request to / by User: anonymous at 2024-11-03 13:14:16.454416Z was successful.
+Status: 200
+
+14:14:16.474 request_id=GAR3mSUoSNZcmAwAAACB [info] Sent 200 in 20ms
+14:14:16.656 request_id=GAR3mTEvZfH_ZKcAAAAE [info] POST /cdn-cgi/rum
+14:14:16.656 request_id=GAR3mTEvZfH_ZKcAAAAE [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:14:16.656433Z
+14:14:17.699 [info] CONNECTED TO Phoenix.LiveView.Socket in 81µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ImxWI2hrOnNxbTYUFwsWMSZfFzEtGjkaa58i_8pG7UcFHjLGs9sXAHuj", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:14:18.395 request_id=GAR3mZjc05jLc90AAACl [info] POST /cdn-cgi/rum
+14:14:18.396 request_id=GAR3mZjc05jLc90AAACl [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:14:18.396082Z
+14:14:18.500 request_id=GAR3mZ8h5ZGO-SMAAAND [info] POST /cdn-cgi/rum
+14:14:18.501 request_id=GAR3mZ8h5ZGO-SMAAAND [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:14:18.501232Z
+14:14:23.587 request_id=GAR3mhr9Kn1vHooAAADC [info] POST /cdn-cgi/rum
+14:14:23.587 request_id=GAR3mhr9Kn1vHooAAADC [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:14:23.587925Z
+14:14:32.365 request_id=GAR3nChEV-Cf-kEAAAOD [info] GET /
+14:14:32.365 request_id=GAR3nChEV-Cf-kEAAAOD [info] GET request to / by User: anonymous at 2024-11-03 13:14:32.365798Z
+14:14:32.366 request_id=GAR3nChEV-Cf-kEAAAOD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:14:32.370 request_id=GAR3nChEV-Cf-kEAAAOD [info] GET request to / by User: anonymous at 2024-11-03 13:14:32.365798Z was successful.
+Status: 200
+
+14:14:32.370 request_id=GAR3nChEV-Cf-kEAAAOD [info] Sent 200 in 4ms
+14:14:33.895 request_id=GAR3nIRbU6jCBhAAAADB [info] POST /cdn-cgi/rum
+14:14:33.910 request_id=GAR3nIRbU6jCBhAAAADB [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:14:33.910586Z
+14:14:34.315 [info] CONNECTED TO Phoenix.LiveView.Socket in 271µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "NjQ8M11jMkUyYR4mECM8HxwlJgwiKz4fumRyj0xqtYKtOBfiICBeNyro", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:14:35.193 request_id=GAR3nNJ3p4os5TIAAAPD [info] POST /cdn-cgi/rum
+14:14:35.197 request_id=GAR3nNJ3p4os5TIAAAPD [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:14:35.197268Z
+14:14:35.479 request_id=GAR3nOOzi_Wcx38AAAPj [info] GET /
+14:14:35.480 request_id=GAR3nOOzi_Wcx38AAAPj [info] GET request to / by User: anonymous at 2024-11-03 13:14:35.480049Z
+14:14:35.486 request_id=GAR3nOOzi_Wcx38AAAPj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:14:35.510 request_id=GAR3nOOzi_Wcx38AAAPj [info] GET request to / by User: anonymous at 2024-11-03 13:14:35.480049Z was successful.
+Status: 200
+
+14:14:35.510 request_id=GAR3nOOzi_Wcx38AAAPj [info] Sent 200 in 31ms
+14:14:35.650 request_id=GAR3nO39BLw5eOEAAAQD [info] POST /cdn-cgi/rum
+14:14:35.651 request_id=GAR3nO39BLw5eOEAAAQD [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:14:35.651179Z
+14:14:36.646 [info] CONNECTED TO Phoenix.LiveView.Socket in 194µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "JzwmJEJqOgwkfhYCPVUjOmIkEV8KHXo0deHnu9p8bFCPb4yL7Bu6fO6D", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:14:36.779 request_id=GAR3nTHtgqWFCpoAAAQj [info] POST /cdn-cgi/rum
+14:14:36.779 request_id=GAR3nTHtgqWFCpoAAAQj [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:14:36.779943Z
+14:14:37.837 request_id=GAR3nXGdan5CKQ0AAAGF [info] POST /cdn-cgi/rum
+14:14:37.838 request_id=GAR3nXGdan5CKQ0AAAGF [info] POST request to /cdn-cgi/rum by User: anonymous at 2024-11-03 13:14:37.838253Z
+15:29:39.325 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core20/2434'}, []}}
+15:29:39.400 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2846'}, []}}
+15:29:39.401 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/211'}, []}}
+15:29:39.401 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+15:29:40.244 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+15:29:40.268 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+15:29:44.577 request_id=GAR7t24r9a6PpEsAAAAi [info] GET /
+15:29:44.649 request_id=GAR7t24r9a6PpEsAAAAi [info] GET request to / by User: anonymous at 2024-11-03 14:29:44.638309Z
+15:29:44.685 request_id=GAR7t24r9a6PpEsAAAAi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+15:29:44.831 request_id=GAR7t24r9a6PpEsAAAAi [info] GET request to / by User: anonymous at 2024-11-03 14:29:44.638309Z was successful.
+Status: 200
+
+15:29:44.832 request_id=GAR7t24r9a6PpEsAAAAi [info] Sent 200 in 254ms
+15:29:46.537 [info] CONNECTED TO Phoenix.LiveView.Socket in 101µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "dAEPBWIjAnMBfjo2ZitsFRgMOyw6JAFJ7XaOUpHGGFod9J6cMj_EVvM9", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+15:29:47.077 request_id=GAR7uANTp1BHBzYAAAAD [info] GET /
+15:29:47.077 request_id=GAR7uANTp1BHBzYAAAAD [info] GET request to / by User: anonymous at 2024-11-03 14:29:47.077428Z
+15:29:47.081 request_id=GAR7uANTp1BHBzYAAAAD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+15:29:47.085 request_id=GAR7uANTp1BHBzYAAAAD [info] GET request to / by User: anonymous at 2024-11-03 14:29:47.077428Z was successful.
+Status: 200
+
+15:29:47.085 request_id=GAR7uANTp1BHBzYAAAAD [info] Sent 200 in 8ms
+15:29:48.009 [info] CONNECTED TO Phoenix.LiveView.Socket in 279µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "JhcXOk89AEM2bBcIAFQIOhtfHQsPJDgEeNypxnJwpTBZ_5RLN9ybcvtt", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+15:30:08.318 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core20/2434'}, []}}
+15:30:08.338 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2846'}, []}}
+15:30:08.338 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/211'}, []}}
+15:30:08.338 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+15:36:20.049 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core20/2434'}, []}}
+15:36:20.063 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2846'}, []}}
+15:36:20.063 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/211'}, []}}
+15:36:20.063 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+15:36:52.379 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core20/2434'}, []}}
+15:36:52.394 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2846'}, []}}
+15:36:52.394 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/211'}, []}}
+15:36:52.394 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+08:46:22.628 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2846'}, []}}
+08:46:22.643 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core20/2434'}, []}}
+08:46:22.643 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/211'}, []}}
+08:46:22.643 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+08:51:58.224 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2846'}, []}}
+08:51:58.227 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core20/2434'}, []}}
+08:51:58.227 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/211'}, []}}
+08:51:58.227 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+08:52:48.465 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2846'}, []}}
+08:52:48.492 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core20/2434'}, []}}
+08:52:48.492 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/211'}, []}}
+08:52:48.492 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+08:52:49.334 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+08:52:49.341 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+08:53:15.024 request_id=GAS0qO4rGWPgb_gAAAAF [info] GET /auth/login
+08:53:15.048 request_id=GAS0qO4rGWPgb_gAAAAF [info] GET request to /auth/login by User: anonymous at 2024-11-04 07:53:15.044686Z
+08:53:17.180 request_id=GAS0qW7EQhQpykMAAAAl [info] GET /
+08:53:17.180 request_id=GAS0qW7EQhQpykMAAAAl [info] GET request to / by User: anonymous at 2024-11-04 07:53:17.180946Z
+08:53:17.192 request_id=GAS0qW7EQhQpykMAAAAl [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+08:53:17.254 request_id=GAS0qW7EQhQpykMAAAAl [info] GET request to / by User: anonymous at 2024-11-04 07:53:17.180946Z was successful.
+Status: 200
+
+08:53:17.254 request_id=GAS0qW7EQhQpykMAAAAl [info] Sent 200 in 73ms
+08:53:17.864 [info] CONNECTED TO Phoenix.LiveView.Socket in 60µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BTIVNwB-fnIsGicqLUY5VgczCSYqFH0IUGpxT-N_NsWsd1t26TsSE_Nx", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+08:53:33.611 request_id=GAS0rUo8j9LTD8kAAAEl [info] GET /
+08:53:33.611 request_id=GAS0rUo8j9LTD8kAAAEl [info] GET request to / by User: anonymous at 2024-11-04 07:53:33.611942Z
+08:53:33.612 request_id=GAS0rUo8j9LTD8kAAAEl [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+08:53:33.623 request_id=GAS0rUo8j9LTD8kAAAEl [info] GET request to / by User: anonymous at 2024-11-04 07:53:33.611942Z was successful.
+Status: 200
+
+08:53:33.623 request_id=GAS0rUo8j9LTD8kAAAEl [info] Sent 200 in 11ms
+08:53:34.555 [info] CONNECTED TO Phoenix.LiveView.Socket in 67µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IEAcHwEEA0IIID0pOxkmKgkoKg86Hx4Gp5yPUW3ojIMprnkN8OPzUT-v", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
