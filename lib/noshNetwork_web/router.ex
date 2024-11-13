@@ -22,6 +22,8 @@ defmodule NoshNetworkWeb.Router do
     pipe_through :browser
 
     live "/", HomepageLive.Index
+
+    live "/about", AboutLive.Index
   end
 
   # Other scopes may use custom stacks.
