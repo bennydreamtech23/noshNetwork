@@ -8149,3 +8149,676 @@ Status: 200
   Transport: :websocket
   Serializer: Phoenix.Socket.V2.JSONSerializer
   Parameters: %{"_csrf_token" => "Wit9eSgjfTc_Pw4TOAw5JENLeAhgQA996RI6gv8MIpLGgMqQur5d4m97", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:26:48.538 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core18/2846'}, []}}
+13:26:48.584 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/core20/2434'}, []}}
+13:26:48.584 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/214'}, []}}
+13:26:48.584 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/ngrok/226'}, []}}
+13:26:48.584 [info]     :alarm_handler: {:set, {{:disk_almost_full, '/snap/snapd/21759'}, []}}
+13:26:50.262 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.10.0 at 127.0.0.1:4000 (http)
+13:26:50.280 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+13:27:04.551 request_id=GAjBJbzNwX_gb_gAAABB [info] GET /
+13:27:04.591 request_id=GAjBJbzNwX_gb_gAAABB [info] GET request to / by User: anonymous at 2024-11-17 12:27:04.580665Z
+13:27:04.613 request_id=GAjBJbzNwX_gb_gAAABB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:27:04.736 request_id=GAjBJbzNwX_gb_gAAABB [info] GET request to / by User: anonymous at 2024-11-17 12:27:04.580665Z was successful.
+Status: 200
+
+13:27:04.736 request_id=GAjBJbzNwX_gb_gAAABB [info] Sent 200 in 185ms
+13:27:06.028 [info] CONNECTED TO Phoenix.LiveView.Socket in 306µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "KjsTPSgdIUANXEQ-HhFwcEMLCjksDxQNAUQHPGg7l4q_hsFF4MBaTzN4", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:27:26.690 request_id=GAjBKuSCIiwRgoQAAAKl [info] GET /about
+13:27:26.690 request_id=GAjBKuSCIiwRgoQAAAKl [info] GET request to /about by User: anonymous at 2024-11-17 12:27:26.690623Z
+13:27:26.692 request_id=GAjBKuSCIiwRgoQAAAKl [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:27:26.698 request_id=GAjBKuSCIiwRgoQAAAKl [info] GET request to /about by User: anonymous at 2024-11-17 12:27:26.690623Z was successful.
+Status: 200
+
+13:27:26.698 request_id=GAjBKuSCIiwRgoQAAAKl [info] Sent 200 in 8ms
+13:27:27.429 [info] CONNECTED TO Phoenix.LiveView.Socket in 52µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ODojMFUMKFoyRWcRIg90XwIJPW1LWG1pSTaE-Vn-S-RpTmBiuOu53-7P", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:30:38.490 request_id=GAjBV6WEX9fO24QAAAHj [info] GET /about
+13:30:38.490 request_id=GAjBV6WEX9fO24QAAAHj [info] GET request to /about by User: anonymous at 2024-11-17 12:30:38.490203Z
+13:30:38.493 request_id=GAjBV6WEX9fO24QAAAHj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:30:38.497 request_id=GAjBV6WEX9fO24QAAAHj [info] GET request to /about by User: anonymous at 2024-11-17 12:30:38.490203Z was successful.
+Status: 200
+
+13:30:38.497 request_id=GAjBV6WEX9fO24QAAAHj [info] Sent 200 in 7ms
+13:30:39.785 [info] CONNECTED TO Phoenix.LiveView.Socket in 39µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "E10wEQJrA081EUwFLDd_XwMuGDsWOQBKx3rdz1E8TyydZUIithPcnLZs", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:30:54.466 request_id=GAjBW13FkYCVkwIAAAMl [info] GET /about
+13:30:54.466 request_id=GAjBW13FkYCVkwIAAAMl [info] GET request to /about by User: anonymous at 2024-11-17 12:30:54.466278Z
+13:30:54.469 request_id=GAjBW13FkYCVkwIAAAMl [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:30:54.472 request_id=GAjBW13FkYCVkwIAAAMl [info] GET request to /about by User: anonymous at 2024-11-17 12:30:54.466278Z was successful.
+Status: 200
+
+13:30:54.472 request_id=GAjBW13FkYCVkwIAAAMl [info] Sent 200 in 6ms
+13:30:55.925 [info] CONNECTED TO Phoenix.LiveView.Socket in 49µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "WlsKLxYfMkQ0HgAyRSlTW0M3HGFBQmt615HZnEt3Uv5S3Kem4qT9971C", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:31:44.497 request_id=GAjBZw9lF5GGIn0AAAJD [info] GET /about
+13:31:44.497 request_id=GAjBZw9lF5GGIn0AAAJD [info] GET request to /about by User: anonymous at 2024-11-17 12:31:44.497775Z
+13:31:44.500 request_id=GAjBZw9lF5GGIn0AAAJD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:31:44.503 request_id=GAjBZw9lF5GGIn0AAAJD [info] GET request to /about by User: anonymous at 2024-11-17 12:31:44.497775Z was successful.
+Status: 200
+
+13:31:44.503 request_id=GAjBZw9lF5GGIn0AAAJD [info] Sent 200 in 6ms
+13:31:46.361 [info] CONNECTED TO Phoenix.LiveView.Socket in 834µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GjwLAxA0BE8xKnwkNCpTWx9-PxE-QRhDqRIvhnB8PBIEBHemh8wIF4Bz", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:32:59.938 request_id=GAjBeJAUaigBOqYAAAKj [info] GET /about
+13:32:59.938 request_id=GAjBeJAUaigBOqYAAAKj [info] GET request to /about by User: anonymous at 2024-11-17 12:32:59.938193Z
+13:32:59.938 request_id=GAjBeJAUaigBOqYAAAKj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:32:59.943 request_id=GAjBeJAUaigBOqYAAAKj [info] GET request to /about by User: anonymous at 2024-11-17 12:32:59.938193Z was successful.
+Status: 200
+
+13:32:59.943 request_id=GAjBeJAUaigBOqYAAAKj [info] Sent 200 in 5ms
+13:33:02.378 [info] CONNECTED TO Phoenix.LiveView.Socket in 157µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "WignBhQ9dT8bKU01QTZAdwYwHSoiJB9f1Feslg3HzAxT7TvAqvUrZQEf", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:33:36.239 request_id=GAjBgQlHAlkpkEEAAAMD [info] GET /about
+13:33:36.239 request_id=GAjBgQlHAlkpkEEAAAMD [info] GET request to /about by User: anonymous at 2024-11-17 12:33:36.239784Z
+13:33:36.240 request_id=GAjBgQlHAlkpkEEAAAMD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:33:36.245 request_id=GAjBgQlHAlkpkEEAAAMD [info] GET request to /about by User: anonymous at 2024-11-17 12:33:36.239784Z was successful.
+Status: 200
+
+13:33:36.245 request_id=GAjBgQlHAlkpkEEAAAMD [info] Sent 200 in 5ms
+13:33:39.087 [info] CONNECTED TO Phoenix.LiveView.Socket in 276µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "KRYdDBURNj4qPlQqJS50ej9rJSAKOzZmBx_ymKpIKVaKSLBLH-mxrNl_", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:33:56.918 request_id=GAjBhc3H0Gdw4psAAACE [info] GET /contact
+13:33:56.918 request_id=GAjBhc3H0Gdw4psAAACE [info] GET request to /contact by User: anonymous at 2024-11-17 12:33:56.918291Z
+13:33:56.922 request_id=GAjBhc3H0Gdw4psAAACE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:33:56.929 request_id=GAjBhc3H0Gdw4psAAACE [info] GET request to /contact by User: anonymous at 2024-11-17 12:33:56.918291Z was successful.
+Status: 200
+
+13:33:56.929 request_id=GAjBhc3H0Gdw4psAAACE [info] Sent 200 in 11ms
+13:33:57.741 [info] CONNECTED TO Phoenix.LiveView.Socket in 96µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "DgcNWE80Fzk4EEVUTiVZfRgcDCsgIBR-eiO-7nQNYxp58GoKoZDsXUNG", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:36:19.989 request_id=GAjBpyLssVBcwAYAAAGC [info] GET /contact
+13:36:19.989 request_id=GAjBpyLssVBcwAYAAAGC [info] GET request to /contact by User: anonymous at 2024-11-17 12:36:19.989742Z
+13:36:19.990 request_id=GAjBpyLssVBcwAYAAAGC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:36:19.997 request_id=GAjBpyLssVBcwAYAAAGC [info] GET request to /contact by User: anonymous at 2024-11-17 12:36:19.989742Z was successful.
+Status: 200
+
+13:36:19.997 request_id=GAjBpyLssVBcwAYAAAGC [info] Sent 200 in 7ms
+13:36:22.300 [info] CONNECTED TO Phoenix.LiveView.Socket in 162µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "AzgNDytpay4DGAEqHz17UQNrKR4uMT51hVOzS3-Ybp4Ki_Mgt-aFVDdL", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:36:33.513 request_id=GAjBqkEq7Ki5mCoAAAOD [info] GET /contact
+13:36:33.514 request_id=GAjBqkEq7Ki5mCoAAAOD [info] GET request to /contact by User: anonymous at 2024-11-17 12:36:33.514149Z
+13:36:33.520 request_id=GAjBqkEq7Ki5mCoAAAOD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:36:33.526 request_id=GAjBqkEq7Ki5mCoAAAOD [info] GET request to /contact by User: anonymous at 2024-11-17 12:36:33.514149Z was successful.
+Status: 200
+
+13:36:33.526 request_id=GAjBqkEq7Ki5mCoAAAOD [info] Sent 200 in 12ms
+13:36:35.036 [info] CONNECTED TO Phoenix.LiveView.Socket in 46µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "WFgFNDU1KSIGK3IFBBNwVBwULy9VPgBR36GAMooUgCGdrqFbkRgw-KZh", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:36:55.258 request_id=GAjBr0XNnZZKCEMAAAHi [info] GET /contact
+13:36:55.258 request_id=GAjBr0XNnZZKCEMAAAHi [info] GET request to /contact by User: anonymous at 2024-11-17 12:36:55.258866Z
+13:36:55.259 request_id=GAjBr0XNnZZKCEMAAAHi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:36:55.264 request_id=GAjBr0XNnZZKCEMAAAHi [info] GET request to /contact by User: anonymous at 2024-11-17 12:36:55.258866Z was successful.
+Status: 200
+
+13:36:55.264 request_id=GAjBr0XNnZZKCEMAAAHi [info] Sent 200 in 6ms
+13:36:56.424 [info] CONNECTED TO Phoenix.LiveView.Socket in 91µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BjYFJTsNNA4FGQwDIjN7ARgjAjsPQGxwmXGPCWrydq9bTQM7oeJcw56I", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:37:18.950 request_id=GAjBtOvbasITIe4AAARD [info] GET /contact
+13:37:18.950 request_id=GAjBtOvbasITIe4AAARD [info] GET request to /contact by User: anonymous at 2024-11-17 12:37:18.950743Z
+13:37:18.951 request_id=GAjBtOvbasITIe4AAARD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:37:18.957 request_id=GAjBtOvbasITIe4AAARD [info] GET request to /contact by User: anonymous at 2024-11-17 12:37:18.950743Z was successful.
+Status: 200
+
+13:37:18.965 request_id=GAjBtOvbasITIe4AAARD [info] Sent 200 in 14ms
+13:37:21.087 [info] CONNECTED TO Phoenix.LiveView.Socket in 210µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Phk2RAsIdEQmOHkxMhR9bDAfJzcZFx9tUwt1sR23GPLPDvKZGYooabET", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:37:34.621 request_id=GAjBuKT2uKTNfdgAAAoB [info] GET /contact
+13:37:34.622 request_id=GAjBuKT2uKTNfdgAAAoB [info] GET request to /contact by User: anonymous at 2024-11-17 12:37:34.621960Z
+13:37:34.622 request_id=GAjBuKT2uKTNfdgAAAoB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:37:34.628 request_id=GAjBuKT2uKTNfdgAAAoB [info] GET request to /contact by User: anonymous at 2024-11-17 12:37:34.621960Z was successful.
+Status: 200
+
+13:37:34.628 request_id=GAjBuKT2uKTNfdgAAAoB [info] Sent 200 in 6ms
+13:37:36.743 [info] CONNECTED TO Phoenix.LiveView.Socket in 58µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ACgLGyo9IjAPDWYLGg5jATUOEjAIIzJskFInRgdGneSjllU7BHZhpVhU", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:37:49.217 request_id=GAjBvAJ3L_HZJ9kAAASD [info] GET /contact
+13:37:49.218 request_id=GAjBvAJ3L_HZJ9kAAASD [info] GET request to /contact by User: anonymous at 2024-11-17 12:37:49.218020Z
+13:37:49.224 request_id=GAjBvAJ3L_HZJ9kAAASD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:37:49.229 request_id=GAjBvAJ3L_HZJ9kAAASD [info] GET request to /contact by User: anonymous at 2024-11-17 12:37:49.218020Z was successful.
+Status: 200
+
+13:37:49.229 request_id=GAjBvAJ3L_HZJ9kAAASD [info] Sent 200 in 11ms
+13:37:50.493 [info] CONNECTED TO Phoenix.LiveView.Socket in 68µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "PCIyQQs0LCAkW0YYOStXQhgoOwgWGSBMWLp4snjWE3syOIatonsPnlzu", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:51:09.916 request_id=GAjCdk2Z42jUxcwAAATj [info] GET /contact
+13:51:09.916 request_id=GAjCdk2Z42jUxcwAAATj [info] GET request to /contact by User: anonymous at 2024-11-17 12:51:09.916802Z
+13:51:09.917 request_id=GAjCdk2Z42jUxcwAAATj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:51:09.924 request_id=GAjCdk2Z42jUxcwAAATj [info] GET request to /contact by User: anonymous at 2024-11-17 12:51:09.916802Z was successful.
+Status: 200
+
+13:51:09.924 request_id=GAjCdk2Z42jUxcwAAATj [info] Sent 200 in 7ms
+13:51:11.765 [info] CONNECTED TO Phoenix.LiveView.Socket in 109µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Gh0YETE1IBoYLUAsGQdCBiV-ID9MODkMqsZdIofmyEuMoet0R8hg4Mc5", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:51:37.412 request_id=GAjCfL1-aAKVtK0AAAQF [info] GET /contact
+13:51:37.412 request_id=GAjCfL1-aAKVtK0AAAQF [info] GET request to /contact by User: anonymous at 2024-11-17 12:51:37.412650Z
+13:51:37.412 request_id=GAjCfL1-aAKVtK0AAAQF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:51:37.418 request_id=GAjCfL1-aAKVtK0AAAQF [info] GET request to /contact by User: anonymous at 2024-11-17 12:51:37.412650Z was successful.
+Status: 200
+
+13:51:37.418 request_id=GAjCfL1-aAKVtK0AAAQF [info] Sent 200 in 5ms
+13:51:39.185 [info] CONNECTED TO Phoenix.LiveView.Socket in 122µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HC8wPSkzBBQTEE1RHwx9Xx5-L2onIw5RwArHQiBcrxx0inKii8g2_VTh", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:55:15.671 request_id=GAjCr8qEmySU8nwAAAth [info] GET /contact
+13:55:15.672 request_id=GAjCr8qEmySU8nwAAAth [info] GET request to /contact by User: anonymous at 2024-11-17 12:55:15.672128Z
+13:55:15.672 request_id=GAjCr8qEmySU8nwAAAth [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:55:15.679 request_id=GAjCr8qEmySU8nwAAAth [info] GET request to /contact by User: anonymous at 2024-11-17 12:55:15.672128Z was successful.
+Status: 200
+
+13:55:15.679 request_id=GAjCr8qEmySU8nwAAAth [info] Sent 200 in 7ms
+13:55:18.160 [info] CONNECTED TO Phoenix.LiveView.Socket in 291µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Uy0PRTUsdAAoIlcJKQN0BT8xfxcVJT5g8CM0Mv2wIJbh_aB3Hw7OmPdY", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:56:17.332 request_id=GAjCvjgi13H6uEoAAARl [info] GET /contact
+13:56:17.333 request_id=GAjCvjgi13H6uEoAAARl [info] GET request to /contact by User: anonymous at 2024-11-17 12:56:17.333609Z
+13:56:17.334 request_id=GAjCvjgi13H6uEoAAARl [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:56:17.341 request_id=GAjCvjgi13H6uEoAAARl [info] GET request to /contact by User: anonymous at 2024-11-17 12:56:17.333609Z was successful.
+Status: 200
+
+13:56:17.341 request_id=GAjCvjgi13H6uEoAAARl [info] Sent 200 in 9ms
+13:56:19.919 [info] CONNECTED TO Phoenix.LiveView.Socket in 65µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "XRoTFxcKHyhXN3YLKShcYDMjegouFwwA6tQboPY_6_Cj_JjVDe2RVbV9", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:57:21.523 request_id=GAjCzUADNssjpYcAAAzB [info] GET /contact
+13:57:21.523 request_id=GAjCzUADNssjpYcAAAzB [info] GET request to /contact by User: anonymous at 2024-11-17 12:57:21.523534Z
+13:57:21.523 request_id=GAjCzUADNssjpYcAAAzB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:57:21.529 request_id=GAjCzUADNssjpYcAAAzB [info] GET request to /contact by User: anonymous at 2024-11-17 12:57:21.523534Z was successful.
+Status: 200
+
+13:57:21.529 request_id=GAjCzUADNssjpYcAAAzB [info] Sent 200 in 6ms
+13:57:23.253 [info] CONNECTED TO Phoenix.LiveView.Socket in 116µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "PCQ3Fi0tFQ82K2M3MTgBUFoWJT8tADhsWJucUwSxWCVVGZ7f-PmgUubU", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:58:39.864 request_id=GAjC35DmKEyuePgAAAZj [info] GET /contact
+13:58:39.864 request_id=GAjC35DmKEyuePgAAAZj [info] GET request to /contact by User: anonymous at 2024-11-17 12:58:39.864582Z
+13:58:39.864 request_id=GAjC35DmKEyuePgAAAZj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:58:39.869 request_id=GAjC35DmKEyuePgAAAZj [info] GET request to /contact by User: anonymous at 2024-11-17 12:58:39.864582Z was successful.
+Status: 200
+
+13:58:39.869 request_id=GAjC35DmKEyuePgAAAZj [info] Sent 200 in 4ms
+13:58:41.731 [info] CONNECTED TO Phoenix.LiveView.Socket in 64µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BA01MkkuAjIyP2UoExV0Dj13GzwaFC5socwG1tDESWPIewB8J1SdbatU", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:59:33.382 request_id=GAjC7Bb9QnLKBgwAAAIk [info] GET /contact
+13:59:33.383 request_id=GAjC7Bb9QnLKBgwAAAIk [info] GET request to /contact by User: anonymous at 2024-11-17 12:59:33.383036Z
+13:59:33.383 request_id=GAjC7Bb9QnLKBgwAAAIk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:59:33.388 request_id=GAjC7Bb9QnLKBgwAAAIk [info] GET request to /contact by User: anonymous at 2024-11-17 12:59:33.383036Z was successful.
+Status: 200
+
+13:59:33.388 request_id=GAjC7Bb9QnLKBgwAAAIk [info] Sent 200 in 5ms
+13:59:35.854 [info] CONNECTED TO Phoenix.LiveView.Socket in 246µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "M1gbMggoMw0-UGAGPhphRjAlKTU2PhgPX6YGpruz_8UgHxWpGcamNKB6", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+13:59:56.818 request_id=GAjC8X43HpWFC8gAAAMk [info] GET /contact
+13:59:56.818 request_id=GAjC8X43HpWFC8gAAAMk [info] GET request to /contact by User: anonymous at 2024-11-17 12:59:56.818661Z
+13:59:56.818 request_id=GAjC8X43HpWFC8gAAAMk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+13:59:56.822 request_id=GAjC8X43HpWFC8gAAAMk [info] GET request to /contact by User: anonymous at 2024-11-17 12:59:56.818661Z was successful.
+Status: 200
+
+13:59:56.822 request_id=GAjC8X43HpWFC8gAAAMk [info] Sent 200 in 4ms
+13:59:58.845 [info] CONNECTED TO Phoenix.LiveView.Socket in 295µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "DCJ6HhcIAkESOk84RBF4BjgCGDsdFyBggL8koRD6sRzY2sN0ODPcebzY", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:02:10.332 request_id=GAjDELhA-pFAZw4AAAMi [info] GET /contact
+14:02:10.333 request_id=GAjDELhA-pFAZw4AAAMi [info] GET request to /contact by User: anonymous at 2024-11-17 13:02:10.333071Z
+14:02:10.333 request_id=GAjDELhA-pFAZw4AAAMi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:02:10.339 request_id=GAjDELhA-pFAZw4AAAMi [info] GET request to /contact by User: anonymous at 2024-11-17 13:02:10.333071Z was successful.
+Status: 200
+
+14:02:10.339 request_id=GAjDELhA-pFAZw4AAAMi [info] Sent 200 in 7ms
+14:02:12.932 [info] CONNECTED TO Phoenix.LiveView.Socket in 135µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "LD8JDCswGQIDEUE4HCR7T0QNP2kQGh5fGQKySj_ubytYjFMy3Kw1hoDf", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:03:07.755 request_id=GAjDHg9_U4ioHoQAAAVF [info] GET /contact
+14:03:07.755 request_id=GAjDHg9_U4ioHoQAAAVF [info] GET request to /contact by User: anonymous at 2024-11-17 13:03:07.755798Z
+14:03:07.756 request_id=GAjDHg9_U4ioHoQAAAVF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:03:07.760 request_id=GAjDHg9_U4ioHoQAAAVF [info] GET request to /contact by User: anonymous at 2024-11-17 13:03:07.755798Z was successful.
+Status: 200
+
+14:03:07.761 request_id=GAjDHg9_U4ioHoQAAAVF [info] Sent 200 in 5ms
+14:03:09.339 [info] CONNECTED TO Phoenix.LiveView.Socket in 85µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GjgTDRJpaxsUIEUEITFGXhkRGQkgQjZpqVQxj3-luHpeWSphnWQQX7lP", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:03:21.689 request_id=GAjDIWRomawrF7UAAAPk [info] GET /contact
+14:03:21.689 request_id=GAjDIWRomawrF7UAAAPk [info] GET request to /contact by User: anonymous at 2024-11-17 13:03:21.689893Z
+14:03:21.694 request_id=GAjDIWRomawrF7UAAAPk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:03:21.701 request_id=GAjDIWRomawrF7UAAAPk [info] GET request to /contact by User: anonymous at 2024-11-17 13:03:21.689893Z was successful.
+Status: 200
+
+14:03:21.701 request_id=GAjDIWRomawrF7UAAAPk [info] Sent 200 in 11ms
+14:03:23.597 [info] CONNECTED TO Phoenix.LiveView.Socket in 220µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ISUgRCwKLDsgPQZTTwthTk8lDi9PFC9BJKb1TPjLAU329iWx8cFw7aux", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:03:47.742 request_id=GAjDJ2YeNSxHU3IAAAQk [info] GET /contact
+14:03:47.743 request_id=GAjDJ2YeNSxHU3IAAAQk [info] GET request to /contact by User: anonymous at 2024-11-17 13:03:47.742938Z
+14:03:47.743 request_id=GAjDJ2YeNSxHU3IAAAQk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:03:47.757 request_id=GAjDJ2YeNSxHU3IAAAQk [info] GET request to /contact by User: anonymous at 2024-11-17 13:03:47.742938Z was successful.
+Status: 200
+
+14:03:47.757 request_id=GAjDJ2YeNSxHU3IAAAQk [info] Sent 200 in 15ms
+14:03:48.880 [info] CONNECTED TO Phoenix.LiveView.Socket in 99µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "XQBxMjwdKURVGFQ-PFR-fzERPmhVJgxY6n3GDGo34pa_J6HIFWv0-SVa", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:04:48.701 request_id=GAjDNYwcne8l4wIAAAdD [info] GET /contact
+14:04:48.701 request_id=GAjDNYwcne8l4wIAAAdD [info] GET request to /contact by User: anonymous at 2024-11-17 13:04:48.701606Z
+14:04:48.702 request_id=GAjDNYwcne8l4wIAAAdD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:04:48.708 request_id=GAjDNYwcne8l4wIAAAdD [info] GET request to /contact by User: anonymous at 2024-11-17 13:04:48.701606Z was successful.
+Status: 200
+
+14:04:48.708 request_id=GAjDNYwcne8l4wIAAAdD [info] Sent 200 in 7ms
+14:04:49.497 [info] CONNECTED TO Phoenix.LiveView.Socket in 143µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "O1cbEzoyEiMIBUMFQSAFczIyOCxJLC5xP9YfBhTTimvd7B3EEtpt1YtH", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:05:35.444 request_id=GAjDQIvlyJDXdMIAAAeD [info] GET /contact
+14:05:35.445 request_id=GAjDQIvlyJDXdMIAAAeD [info] GET request to /contact by User: anonymous at 2024-11-17 13:05:35.445118Z
+14:05:35.445 request_id=GAjDQIvlyJDXdMIAAAeD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:05:35.454 request_id=GAjDQIvlyJDXdMIAAAeD [info] GET request to /contact by User: anonymous at 2024-11-17 13:05:35.445118Z was successful.
+Status: 200
+
+14:05:35.454 request_id=GAjDQIvlyJDXdMIAAAeD [info] Sent 200 in 10ms
+14:05:37.715 [info] CONNECTED TO Phoenix.LiveView.Socket in 61µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "XRpvIAFqCiQNB3cIOwZAAyMlLDMoIAx46t-Uy0LSloBiMdv5TcdkPUVA", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:06:22.687 request_id=GAjDS3BFlgEJA7wAAA6B [info] GET /contact
+14:06:22.687 request_id=GAjDS3BFlgEJA7wAAA6B [info] GET request to /contact by User: anonymous at 2024-11-17 13:06:22.687568Z
+14:06:22.688 request_id=GAjDS3BFlgEJA7wAAA6B [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:06:22.695 request_id=GAjDS3BFlgEJA7wAAA6B [info] GET request to /contact by User: anonymous at 2024-11-17 13:06:22.687568Z was successful.
+Status: 200
+
+14:06:22.695 request_id=GAjDS3BFlgEJA7wAAA6B [info] Sent 200 in 7ms
+14:06:24.790 [info] CONNECTED TO Phoenix.LiveView.Socket in 234µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "PicPJwo2BTYDK38pWydnAEAICi8-HTF-UIMRrlCAbCJH-EQ67NBwFhkG", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:06:45.685 request_id=GAjDUNcYORzs2U4AAASC [info] GET /contact
+14:06:45.685 request_id=GAjDUNcYORzs2U4AAASC [info] GET request to /contact by User: anonymous at 2024-11-17 13:06:45.685492Z
+14:06:45.685 request_id=GAjDUNcYORzs2U4AAASC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:06:45.691 request_id=GAjDUNcYORzs2U4AAASC [info] GET request to /contact by User: anonymous at 2024-11-17 13:06:45.685492Z was successful.
+Status: 200
+
+14:06:45.692 request_id=GAjDUNcYORzs2U4AAASC [info] Sent 200 in 6ms
+14:06:47.455 [info] CONNECTED TO Phoenix.LiveView.Socket in 48µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IDgTPDJvAU4mHnACRCRDfTwxGW5BAjx0KVQIJ5G9GvEc2FuKKwQ69wfM", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:11:11.100 request_id=GAjDjvOcIPoHFF0AAATm [info] GET /admin/transaction/internal_account
+14:11:11.100 request_id=GAjDjvOcIPoHFF0AAATm [info] GET request to /admin/transaction/internal_account by User: anonymous at 2024-11-17 13:11:11.100805Z
+14:24:34.669 request_id=GAjES-t4wRF6b7EAAAXl [info] GET /contact
+14:24:34.669 request_id=GAjES-t4wRF6b7EAAAXl [info] GET request to /contact by User: anonymous at 2024-11-17 13:24:34.669557Z
+14:24:34.671 request_id=GAjES-t4wRF6b7EAAAXl [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:24:34.677 request_id=GAjES-t4wRF6b7EAAAXl [info] GET request to /contact by User: anonymous at 2024-11-17 13:24:34.669557Z was successful.
+Status: 200
+
+14:24:34.677 request_id=GAjES-t4wRF6b7EAAAXl [info] Sent 200 in 8ms
+14:24:37.189 [info] CONNECTED TO Phoenix.LiveView.Socket in 381µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "EQAXEzwoLkFMKmVUTiZmZC8gPhU_OWhYznUfDrh6-BP58DPRXfvMGL2a", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:25:59.156 request_id=GAjEX7Lyfttkp4IAAAkD [info] GET /contact
+14:25:59.156 request_id=GAjEX7Lyfttkp4IAAAkD [info] GET request to /contact by User: anonymous at 2024-11-17 13:25:59.156456Z
+14:25:59.157 request_id=GAjEX7Lyfttkp4IAAAkD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:25:59.163 request_id=GAjEX7Lyfttkp4IAAAkD [info] GET request to /contact by User: anonymous at 2024-11-17 13:25:59.156456Z was successful.
+Status: 200
+
+14:25:59.163 request_id=GAjEX7Lyfttkp4IAAAkD [info] Sent 200 in 7ms
+14:26:01.493 [info] CONNECTED TO Phoenix.LiveView.Socket in 258µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BFgDFzcwJxwtWVBYHjtMdUE8LAoQPAlao6AbOjakL1e9hYzC6zdRhISc", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:26:57.428 request_id=GAjEbYKc41P0YGAAAAlD [info] GET /contact
+14:26:57.428 request_id=GAjEbYKc41P0YGAAAAlD [info] GET request to /contact by User: anonymous at 2024-11-17 13:26:57.428451Z
+14:26:57.429 request_id=GAjEbYKc41P0YGAAAAlD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:26:57.437 request_id=GAjEbYKc41P0YGAAAAlD [info] GET request to /contact by User: anonymous at 2024-11-17 13:26:57.428451Z was successful.
+Status: 200
+
+14:26:57.437 request_id=GAjEbYKc41P0YGAAAAlD [info] Sent 200 in 9ms
+14:26:59.740 [info] CONNECTED TO Phoenix.LiveView.Socket in 111µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Hj16Gx8MFSYCW0EKM1AbBhUhHSAXARxbuS8ngVSQc3tkE2-0bgUxotFb", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:27:35.588 request_id=GAjEdndn4xY7TuQAAAoj [info] GET /contact
+14:27:35.590 request_id=GAjEdndn4xY7TuQAAAoj [info] GET request to /contact by User: anonymous at 2024-11-17 13:27:35.590216Z
+14:27:35.590 request_id=GAjEdndn4xY7TuQAAAoj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:27:35.596 request_id=GAjEdndn4xY7TuQAAAoj [info] GET request to /contact by User: anonymous at 2024-11-17 13:27:35.590216Z was successful.
+Status: 200
+
+14:27:35.596 request_id=GAjEdndn4xY7TuQAAAoj [info] Sent 200 in 8ms
+14:27:37.626 [info] CONNECTED TO Phoenix.LiveView.Socket in 64µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "DQQbGA8oJDAkLGUTRi5wYTMDKR4VGyxQfjYmwrbGEDPr0LFWDEaFmnvi", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:28:50.244 request_id=GAjEh_jvzz-Z2XgAAA_h [info] GET /contact
+14:28:50.245 request_id=GAjEh_jvzz-Z2XgAAA_h [info] GET request to /contact by User: anonymous at 2024-11-17 13:28:50.245300Z
+14:28:50.245 request_id=GAjEh_jvzz-Z2XgAAA_h [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:28:50.252 request_id=GAjEh_jvzz-Z2XgAAA_h [info] GET request to /contact by User: anonymous at 2024-11-17 13:28:50.245300Z was successful.
+Status: 200
+
+14:28:50.252 request_id=GAjEh_jvzz-Z2XgAAA_h [info] Sent 200 in 7ms
+14:28:52.406 [info] CONNECTED TO Phoenix.LiveView.Socket in 61µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "OAYTABcjEBIMP1Q3PBFcZjAkGgESPjdIShQuoyVemWaVJsjPGbRYjKmq", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:29:27.813 request_id=GAjEkNErq9ROE9AAAApj [info] GET /contact
+14:29:27.813 request_id=GAjEkNErq9ROE9AAAApj [info] GET request to /contact by User: anonymous at 2024-11-17 13:29:27.813520Z
+14:29:27.813 request_id=GAjEkNErq9ROE9AAAApj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:29:27.818 request_id=GAjEkNErq9ROE9AAAApj [info] GET request to /contact by User: anonymous at 2024-11-17 13:29:27.813520Z was successful.
+Status: 200
+
+14:29:27.818 request_id=GAjEkNErq9ROE9AAAApj [info] Sent 200 in 5ms
+14:29:29.544 [info] CONNECTED TO Phoenix.LiveView.Socket in 64µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GykOOhYAGQQrXA1SEBZjbBI1DAowPAJ_pGLOnZ_sJ483ftUZesDRHIXF", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:29:39.428 request_id=GAjEk6R9pM_pNAIAAAdF [info] GET /contact
+14:29:39.428 request_id=GAjEk6R9pM_pNAIAAAdF [info] GET request to /contact by User: anonymous at 2024-11-17 13:29:39.428658Z
+14:29:39.429 request_id=GAjEk6R9pM_pNAIAAAdF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:29:39.433 request_id=GAjEk6R9pM_pNAIAAAdF [info] GET request to /contact by User: anonymous at 2024-11-17 13:29:39.428658Z was successful.
+Status: 200
+
+14:29:39.433 request_id=GAjEk6R9pM_pNAIAAAdF [info] Sent 200 in 5ms
+14:29:41.459 [info] CONNECTED TO Phoenix.LiveView.Socket in 49µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Hg8VQDVtBTUrLUcGMC1BBwEABjpVMA51uaW5M7CBJErgFOw1vFNb-ETL", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:30:23.857 request_id=GAjEneLPOAYMbRcAAAVE [info] GET /contact
+14:30:23.858 request_id=GAjEneLPOAYMbRcAAAVE [info] GET request to /contact by User: anonymous at 2024-11-17 13:30:23.858011Z
+14:30:23.858 request_id=GAjEneLPOAYMbRcAAAVE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:30:23.862 request_id=GAjEneLPOAYMbRcAAAVE [info] GET request to /contact by User: anonymous at 2024-11-17 13:30:23.858011Z was successful.
+Status: 200
+
+14:30:23.863 request_id=GAjEneLPOAYMbRcAAAVE [info] Sent 200 in 5ms
+14:30:26.113 [info] CONNECTED TO Phoenix.LiveView.Socket in 48µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BgN3PxMjDTVSPkEFQScDUSACMhYBJBcImm5JkyKB3Vtd7E5gWDzNyQM1", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:31:46.936 request_id=GAjEsQpcCDQbu9MAAAtD [info] GET /contact
+14:31:46.937 request_id=GAjEsQpcCDQbu9MAAAtD [info] GET request to /contact by User: anonymous at 2024-11-17 13:31:46.937130Z
+14:31:46.937 request_id=GAjEsQpcCDQbu9MAAAtD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:31:46.943 request_id=GAjEsQpcCDQbu9MAAAtD [info] GET request to /contact by User: anonymous at 2024-11-17 13:31:46.937130Z was successful.
+Status: 200
+
+14:31:46.943 request_id=GAjEsQpcCDQbu9MAAAtD [info] Sent 200 in 6ms
+14:31:49.289 [info] CONNECTED TO Phoenix.LiveView.Socket in 89µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "PT0kH0gfFhkFNwIuAxVFAjx-KhwVLzVmVSfj0EPnd_7Ouws4K8bDmZo_", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:35:07.788 request_id=GAjE34sxpDfqWuwAAAeF [info] GET /contact
+14:35:07.789 request_id=GAjE34sxpDfqWuwAAAeF [info] GET request to /contact by User: anonymous at 2024-11-17 13:35:07.789181Z
+14:35:07.795 request_id=GAjE34sxpDfqWuwAAAeF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:35:07.802 request_id=GAjE34sxpDfqWuwAAAeF [info] GET request to /contact by User: anonymous at 2024-11-17 13:35:07.789181Z was successful.
+Status: 200
+
+14:35:07.803 request_id=GAjE34sxpDfqWuwAAAeF [info] Sent 200 in 14ms
+14:35:09.430 [info] CONNECTED TO Phoenix.LiveView.Socket in 578µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "DAAGOS81Dg0wLGoHJgwAYwczf2ohAzZrgnDLWoHzQD_fPn6Upu72YvlR", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:35:49.933 request_id=GAjE6UKvpF61XWQAAAvD [info] GET /contact
+14:35:49.933 request_id=GAjE6UKvpF61XWQAAAvD [info] GET request to /contact by User: anonymous at 2024-11-17 13:35:49.933933Z
+14:35:49.934 request_id=GAjE6UKvpF61XWQAAAvD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:35:49.940 request_id=GAjE6UKvpF61XWQAAAvD [info] GET request to /contact by User: anonymous at 2024-11-17 13:35:49.933933Z was successful.
+Status: 200
+
+14:35:49.940 request_id=GAjE6UKvpF61XWQAAAvD [info] Sent 200 in 7ms
+14:35:52.793 [info] CONNECTED TO Phoenix.LiveView.Socket in 158µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Ul5yGkoKH0UxMkcYT1t-GwQhJC41GAlY900o2PY2PZry99H-sglvMmSa", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:36:12.519 request_id=GAjE7pOh9J05eCMAAAyj [info] GET /contact
+14:36:12.519 request_id=GAjE7pOh9J05eCMAAAyj [info] GET request to /contact by User: anonymous at 2024-11-17 13:36:12.519609Z
+14:36:12.519 request_id=GAjE7pOh9J05eCMAAAyj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:36:12.525 request_id=GAjE7pOh9J05eCMAAAyj [info] GET request to /contact by User: anonymous at 2024-11-17 13:36:12.519609Z was successful.
+Status: 200
+
+14:36:12.525 request_id=GAjE7pOh9J05eCMAAAyj [info] Sent 200 in 6ms
+14:36:14.227 [info] CONNECTED TO Phoenix.LiveView.Socket in 368µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "OCISGywgdBAbB1E-MBNcbxh2eQo1Ki1pSLPnTz2gzod_FqjYo01RM_wP", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:36:58.745 request_id=GAjE-TwLfB-UBmYAAA2D [info] GET /contact
+14:36:58.746 request_id=GAjE-TwLfB-UBmYAAA2D [info] GET request to /contact by User: anonymous at 2024-11-17 13:36:58.746088Z
+14:36:58.746 request_id=GAjE-TwLfB-UBmYAAA2D [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:36:58.754 request_id=GAjE-TwLfB-UBmYAAA2D [info] GET request to /contact by User: anonymous at 2024-11-17 13:36:58.746088Z was successful.
+Status: 200
+
+14:36:58.754 request_id=GAjE-TwLfB-UBmYAAA2D [info] Sent 200 in 8ms
+14:37:01.320 [info] CONNECTED TO Phoenix.LiveView.Socket in 118µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "PiIURB8wDC9WOWxZLxpEUjIsHS8eGTdVULV1gjJX7QY8YxrdEjUwflml", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:37:12.591 request_id=GAjE_IbLHk9g2V8AAA3j [info] GET /contact
+14:37:12.591 request_id=GAjE_IbLHk9g2V8AAA3j [info] GET request to /contact by User: anonymous at 2024-11-17 13:37:12.591623Z
+14:37:12.591 request_id=GAjE_IbLHk9g2V8AAA3j [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:37:12.597 request_id=GAjE_IbLHk9g2V8AAA3j [info] GET request to /contact by User: anonymous at 2024-11-17 13:37:12.591623Z was successful.
+Status: 200
+
+14:37:12.597 request_id=GAjE_IbLHk9g2V8AAA3j [info] Sent 200 in 6ms
+14:37:14.154 [info] CONNECTED TO Phoenix.LiveView.Socket in 163µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "JkMAGEA_HzY7HwULAAFYeRQxJGgLPwhKM-Bm8eYAZw0jvcnOcwl0sJRs", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:48:17.170 request_id=GAjFl0-o4t6WkUcAAAZk [info] GET /contact
+14:48:17.170 request_id=GAjFl0-o4t6WkUcAAAZk [info] GET request to /contact by User: anonymous at 2024-11-17 13:48:17.170506Z
+14:48:17.171 request_id=GAjFl0-o4t6WkUcAAAZk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:48:17.177 request_id=GAjFl0-o4t6WkUcAAAZk [info] GET request to /contact by User: anonymous at 2024-11-17 13:48:17.170506Z was successful.
+Status: 200
+
+14:48:17.177 request_id=GAjFl0-o4t6WkUcAAAZk [info] Sent 200 in 7ms
+14:48:19.449 request_id=GAjFl9YrSfiACOEAAAgF [info] GET /your-image-url.jpg
+14:48:19.449 request_id=GAjFl9YrSfiACOEAAAgF [info] GET request to /your-image-url.jpg by User: anonymous at 2024-11-17 13:48:19.449473Z
+14:48:19.293 [info] CONNECTED TO Phoenix.LiveView.Socket in 184µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "JAomAAgwNg8kEV0xBiNyVC1xGg8cTXd3OddupjpxEyhPpADbZ7RWd8-N", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:49:10.842 request_id=GAjFo-q6YQIZ_agAAAbE [info] GET /contact
+14:49:10.842 request_id=GAjFo-q6YQIZ_agAAAbE [info] GET request to /contact by User: anonymous at 2024-11-17 13:49:10.842241Z
+14:49:10.842 request_id=GAjFo-q6YQIZ_agAAAbE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:49:10.850 request_id=GAjFo-q6YQIZ_agAAAbE [info] GET request to /contact by User: anonymous at 2024-11-17 13:49:10.842241Z was successful.
+Status: 200
+
+14:49:10.851 request_id=GAjFo-q6YQIZ_agAAAbE [info] Sent 200 in 8ms
+14:49:13.698 [info] CONNECTED TO Phoenix.LiveView.Socket in 80µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MUMHJEEyAhInW1ACFS5yQS8SKmEhJCJcZ-EQ9hDeF3eccLDwXTb9YQxe", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:49:37.698 request_id=GAjFqjk70dGS3GQAABOh [info] GET /contact
+14:49:37.698 request_id=GAjFqjk70dGS3GQAABOh [info] GET request to /contact by User: anonymous at 2024-11-17 13:49:37.698807Z
+14:49:37.699 request_id=GAjFqjk70dGS3GQAABOh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:49:37.706 request_id=GAjFqjk70dGS3GQAABOh [info] GET request to /contact by User: anonymous at 2024-11-17 13:49:37.698807Z was successful.
+Status: 200
+
+14:49:37.707 request_id=GAjFqjk70dGS3GQAABOh [info] Sent 200 in 8ms
+14:49:39.135 [info] CONNECTED TO Phoenix.LiveView.Socket in 140µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GC0yJQwCdS0LD3wgOy1AchUPKREoEShasCpPtX3ZjgIAMOvDbIaIPdrc", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:49:57.401 request_id=GAjFruG5N64Un0YAAA8j [info] GET /contact
+14:49:57.401 request_id=GAjFruG5N64Un0YAAA8j [info] GET request to /contact by User: anonymous at 2024-11-17 13:49:57.401386Z
+14:49:57.402 request_id=GAjFruG5N64Un0YAAA8j [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:49:57.409 request_id=GAjFruG5N64Un0YAAA8j [info] GET request to /contact by User: anonymous at 2024-11-17 13:49:57.401386Z was successful.
+Status: 200
+
+14:49:57.410 request_id=GAjFruG5N64Un0YAAA8j [info] Sent 200 in 8ms
+14:49:58.699 [info] CONNECTED TO Phoenix.LiveView.Socket in 64µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "KAA1PT8sKxg2OwM2ExJbYxIOBgcMQzgUCnwHGvmoWS6WepmUeHN_t6b-", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:50:50.924 request_id=GAjFu1Z0Jyo7hucAAA9j [info] GET /contact
+14:50:50.925 request_id=GAjFu1Z0Jyo7hucAAA9j [info] GET request to /contact by User: anonymous at 2024-11-17 13:50:50.925205Z
+14:50:50.925 request_id=GAjFu1Z0Jyo7hucAAA9j [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:50:50.937 request_id=GAjFu1Z0Jyo7hucAAA9j [info] GET request to /contact by User: anonymous at 2024-11-17 13:50:50.925205Z was successful.
+Status: 200
+
+14:50:50.938 request_id=GAjFu1Z0Jyo7hucAAA9j [info] Sent 200 in 14ms
+14:50:53.281 [info] CONNECTED TO Phoenix.LiveView.Socket in 75µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "OSkvIi88HAYHWFkbOlMHZB4UHmsnLB5XRGmWWfZqf0lzL11RiRV3_YDn", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:57:00.339 request_id=GAjGEf6r71dByxwAAAYm [info] GET /contact
+14:57:00.340 request_id=GAjGEf6r71dByxwAAAYm [info] GET request to /contact by User: anonymous at 2024-11-17 13:57:00.340234Z
+14:57:00.353 request_id=GAjGEf6r71dByxwAAAYm [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:57:00.359 request_id=GAjGEf6r71dByxwAAAYm [info] GET request to /contact by User: anonymous at 2024-11-17 13:57:00.340234Z was successful.
+Status: 200
+
+14:57:00.359 request_id=GAjGEf6r71dByxwAAAYm [info] Sent 200 in 19ms
+14:57:04.281 [info] CONNECTED TO Phoenix.LiveView.Socket in 257µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "LywEAUEuHw8TUFkCBjYPcB8ZHzsQNhNrDBFt9tYxr8lcpT9Fh_WchCIR", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:57:37.971 request_id=GAjGGuFIw4SnU6IAAA_D [info] GET /contact
+14:57:37.972 request_id=GAjGGuFIw4SnU6IAAA_D [info] GET request to /contact by User: anonymous at 2024-11-17 13:57:37.971954Z
+14:57:37.972 request_id=GAjGGuFIw4SnU6IAAA_D [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:57:37.977 request_id=GAjGGuFIw4SnU6IAAA_D [info] GET request to /contact by User: anonymous at 2024-11-17 13:57:37.971954Z was successful.
+Status: 200
+
+14:57:37.977 request_id=GAjGGuFIw4SnU6IAAA_D [info] Sent 200 in 6ms
+14:57:40.726 request_id=GAjGG4Pat9wtbFUAABSh [info] GET /images/foodies_3.jog
+14:57:40.726 request_id=GAjGG4Pat9wtbFUAABSh [info] GET request to /images/foodies_3.jog by User: anonymous at 2024-11-17 13:57:40.726524Z
+14:57:40.954 [info] CONNECTED TO Phoenix.LiveView.Socket in 177µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GT50BCsfcDwrG31QJiVzZFo3BxYZH29trP6qSE6KJsH1PGER-qONaj5T", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:57:53.737 request_id=GAjGHqWFgIlpldEAAAhE [info] GET /contact
+14:57:53.738 request_id=GAjGHqWFgIlpldEAAAhE [info] GET request to /contact by User: anonymous at 2024-11-17 13:57:53.738022Z
+14:57:53.738 request_id=GAjGHqWFgIlpldEAAAhE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:57:53.745 request_id=GAjGHqWFgIlpldEAAAhE [info] GET request to /contact by User: anonymous at 2024-11-17 13:57:53.738022Z was successful.
+Status: 200
+
+14:57:53.745 request_id=GAjGHqWFgIlpldEAAAhE [info] Sent 200 in 7ms
+14:57:55.276 [info] CONNECTED TO Phoenix.LiveView.Socket in 243µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Ci81NDcIETgoHkE4Lk9GbDgVZS0vMD1PaAwAORWOIvtYX-pZOS-uWEgv", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:58:04.933 request_id=GAjGITpQ6KDMXn4AAAei [info] GET /contact
+14:58:04.933 request_id=GAjGITpQ6KDMXn4AAAei [info] GET request to /contact by User: anonymous at 2024-11-17 13:58:04.933833Z
+14:58:04.934 request_id=GAjGITpQ6KDMXn4AAAei [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:58:04.954 request_id=GAjGITpQ6KDMXn4AAAei [info] GET request to /contact by User: anonymous at 2024-11-17 13:58:04.933833Z was successful.
+Status: 200
+
+14:58:04.955 request_id=GAjGITpQ6KDMXn4AAAei [info] Sent 200 in 21ms
+14:58:07.771 [info] CONNECTED TO Phoenix.LiveView.Socket in 279µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "PCBwQhUDARhZCVpQIAN-bB8oeTtPESB4WN27mYGo8ao1VaHZhn1c7dzA", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:58:33.825 request_id=GAjGKAaTogRcD4UAAAiE [info] GET /contact
+14:58:33.825 request_id=GAjGKAaTogRcD4UAAAiE [info] GET request to /contact by User: anonymous at 2024-11-17 13:58:33.825581Z
+14:58:33.826 request_id=GAjGKAaTogRcD4UAAAiE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:58:33.833 request_id=GAjGKAaTogRcD4UAAAiE [info] GET request to /contact by User: anonymous at 2024-11-17 13:58:33.825581Z was successful.
+Status: 200
+
+14:58:33.833 request_id=GAjGKAaTogRcD4UAAAiE [info] Sent 200 in 7ms
+14:58:35.602 [info] CONNECTED TO Phoenix.LiveView.Socket in 339µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MxkGFwsFMz8ZPlE0EzV4TCgzZQgZOD5rXwDbs_uHxVdUeWNz_u-PaMdR", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:58:49.250 request_id=GAjGK5UCsXEkAvEAAAhF [info] GET /contact
+14:58:49.251 request_id=GAjGK5UCsXEkAvEAAAhF [info] GET request to /contact by User: anonymous at 2024-11-17 13:58:49.251097Z
+14:58:49.251 request_id=GAjGK5UCsXEkAvEAAAhF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:58:49.258 request_id=GAjGK5UCsXEkAvEAAAhF [info] GET request to /contact by User: anonymous at 2024-11-17 13:58:49.251097Z was successful.
+Status: 200
+
+14:58:49.258 request_id=GAjGK5UCsXEkAvEAAAhF [info] Sent 200 in 7ms
+14:58:51.050 [info] CONNECTED TO Phoenix.LiveView.Socket in 166µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "PxwGGS0NLhIXDXYsAglMXyEBIjdLOT1hTrDlUWheveCMtkziVGjo3LgX", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:58:57.665 request_id=GAjGLag0_jBRRaoAABXB [info] GET /contact
+14:58:57.665 request_id=GAjGLag0_jBRRaoAABXB [info] GET request to /contact by User: anonymous at 2024-11-17 13:58:57.665411Z
+14:58:57.669 request_id=GAjGLag0_jBRRaoAABXB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:58:57.678 request_id=GAjGLag0_jBRRaoAABXB [info] GET request to /contact by User: anonymous at 2024-11-17 13:58:57.665411Z was successful.
+Status: 200
+
+14:58:57.678 request_id=GAjGLag0_jBRRaoAABXB [info] Sent 200 in 12ms
+14:58:58.793 [info] CONNECTED TO Phoenix.LiveView.Socket in 181µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Bl4NFwIPISIDH2MjElRHdRkfEBIOIyB-m0ObzUgUbwVBd6qCnYXJvVzG", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:59:08.004 request_id=GAjGMApzjXaU8EEAAAmF [info] GET /contact
+14:59:08.004 request_id=GAjGMApzjXaU8EEAAAmF [info] GET request to /contact by User: anonymous at 2024-11-17 13:59:08.004648Z
+14:59:08.006 request_id=GAjGMApzjXaU8EEAAAmF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:59:08.019 request_id=GAjGMApzjXaU8EEAAAmF [info] GET request to /contact by User: anonymous at 2024-11-17 13:59:08.004648Z was successful.
+Status: 200
+
+14:59:08.019 request_id=GAjGMApzjXaU8EEAAAmF [info] Sent 200 in 15ms
+14:59:09.909 [info] CONNECTED TO Phoenix.LiveView.Socket in 368µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Klh2DzE8FRYJXkwCJxpvVDoMDBoWQyJVA64zIfSah6ycQxYbMJDBn6xl", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+14:59:42.920 request_id=GAjGODqAPIVBZNoAABEj [info] GET /contact
+14:59:42.921 request_id=GAjGODqAPIVBZNoAABEj [info] GET request to /contact by User: anonymous at 2024-11-17 13:59:42.921034Z
+14:59:42.921 request_id=GAjGODqAPIVBZNoAABEj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+14:59:42.929 request_id=GAjGODqAPIVBZNoAABEj [info] GET request to /contact by User: anonymous at 2024-11-17 13:59:42.921034Z was successful.
+Status: 200
+
+14:59:42.930 request_id=GAjGODqAPIVBZNoAABEj [info] Sent 200 in 9ms
+14:59:45.247 [info] CONNECTED TO Phoenix.LiveView.Socket in 153µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "W1g4PRJuKi03A0FQWzsHQwYcOG5NIxt706zHj4lZVkt1-Y1uqZp65VAB", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+15:00:21.795 request_id=GAjGQVR-DBdLg_cAABbB [info] GET /contact
+15:00:21.795 request_id=GAjGQVR-DBdLg_cAABbB [info] GET request to /contact by User: anonymous at 2024-11-17 14:00:21.795264Z
+15:00:21.795 request_id=GAjGQVR-DBdLg_cAABbB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+15:00:21.803 request_id=GAjGQVR-DBdLg_cAABbB [info] GET request to /contact by User: anonymous at 2024-11-17 14:00:21.795264Z was successful.
+Status: 200
+
+15:00:21.803 request_id=GAjGQVR-DBdLg_cAABbB [info] Sent 200 in 8ms
+15:00:23.897 [info] CONNECTED TO Phoenix.LiveView.Socket in 3ms
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "L180HkAYEkJMDwc5EglZcQYyCQ0pFmJ4D1vk8BT5-g2XdkoGqtAUQc8A", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+15:00:49.885 request_id=GAjGR_HJaTn91rEAAAmE [info] GET /contact
+15:00:49.886 request_id=GAjGR_HJaTn91rEAAAmE [info] GET request to /contact by User: anonymous at 2024-11-17 14:00:49.886063Z
+15:00:49.886 request_id=GAjGR_HJaTn91rEAAAmE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+15:00:49.891 request_id=GAjGR_HJaTn91rEAAAmE [info] GET request to /contact by User: anonymous at 2024-11-17 14:00:49.886063Z was successful.
+Status: 200
+
+15:00:49.891 request_id=GAjGR_HJaTn91rEAAAmE [info] Sent 200 in 6ms
+15:00:51.595 [info] CONNECTED TO Phoenix.LiveView.Socket in 161µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "LwA4QzQLCzUnGAJSTisGRx0_BBUdIxdBDnz6LQMBFp738I0qjyLMeVMx", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
