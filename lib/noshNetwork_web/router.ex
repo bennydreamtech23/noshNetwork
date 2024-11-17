@@ -24,6 +24,7 @@ defmodule NoshNetworkWeb.Router do
     live "/", HomepageLive.Index
 
     live "/about", AboutLive.Index
+    live "/contact", ContactLive.Index
   end
 
   # Other scopes may use custom stacks.
