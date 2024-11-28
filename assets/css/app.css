@@ -52,7 +52,6 @@ input {
   border-radius: 0.375rem;
   padding: 1rem;
   background-color: #f7f8f7;
-  border-color: #e0e2e5 !important;
 }
 
 input::placeholder {
@@ -74,7 +73,6 @@ input:focus {
 
 .form-control {
   border-width: 1px;
-  height: 3rem;
   border-radius: 0.375rem;
   padding: 0.5rem 1rem;
   background-color: #f7f8f7;
@@ -108,10 +106,10 @@ right: 9px;
   border-color: transparent transparent black transparent;
 }
 .menu-item{
-  @apply block px-4 py-2 text-sm text-[#0B4927] font-brand font-regular
+  @apply block px-4 py-2 text-sm text-black font-brand font-bold
 }
 .menu-item:hover{
-  @apply hover:text-[#960E0E]
+  @apply hover:text-[#0b4927]
 }
 .round-image-padding{
   border-radius: 50%;
@@ -129,6 +127,11 @@ right: 9px;
   border-color: black transparent transparent transparent;
   border-style: solid;
 } */
+
+
+textarea.form-control {
+  resize: vertical; /* Allows vertical resizing */
+}
 
 
 .btn-primary{
