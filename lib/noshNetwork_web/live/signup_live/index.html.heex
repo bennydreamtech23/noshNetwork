@@ -1,0 +1,120 @@
+<div class="m-auto max-w-screen-xl overflow-hidden  font-brand">
+  <div class="flex lg:flex-row-reverse flex-col items-start">
+    <div class="lg:w-1/2 w-full lg:flex hidden items-center justify-center flex-col">
+      <img src="/images/auth_image.png" alt="registration page" class="rounded-b-md" />
+    </div>
+    <div class="w-full lg:w-1/2 flex flex-col p-6 gap-4 lg:mt-8 mt-0">
+      <div class="flex itemx-center justify-between gap-4 font-bold">
+        <button
+          class={[
+            "lg:text-xl md:text-base text-sm",
+            @tab == "user" && "text-[#0B4927] underline"
+          ]}
+          phx-click="change_tab"
+          phx-value-tab="user"
+        >
+          User Registration
+        </button>
+        <button
+          phx-click="change_tab"
+          class={[
+            "lg:text-xl md:text-base text-sm",
+            @tab == "caterer" && "text-[#0B4927] underline"
+          ]}
+          phx-value-tab="caterer"
+        >
+          Caterer Registration
+        </button>
+      </div>
+
+      <%= if @tab == "user" do %>
+        <div class="my-4">
+          <.header class="font-normal text-center text-black text-xl">
+            Register User
+            <:subtitle>
+              Already registered?
+              <.link
+                navigate={~p"/auth/log_in"}
+                class="text-base font-semibold text-[#0b4927] hover:underline hover:text-[#960e0e]"
+              >
+                Sign in
+              </.link>
+              to your account now.
+            </:subtitle>
+          </.header>
+          <.simple_form
+            for={@form}
+            id="registration_form"
+            phx-submit="save"
+            phx-change="validate"
+            phx-trigger-action={@trigger_submit}
+            action={~p"/auth/log_in?_action=registered"}
+            method="post"
+            class="bg-white bg-opacity-50 p-6 rounded-md shadow-sm shadow-gray-200 my-4"
+          >
+            <.error :if={@check_errors}>
+              Oops, something went wrong! Please check the errors below.
+            </.error>
+            <.input field={@form[:name]} type="text" label="Name" />
+            <.input field={@form[:username]} type="text" label="Username" />
+            <.input field={@form[:email]} type="email" label="Email" />
+
+            <.input field={@form[:password]} type="password" label="Password" />
+
+            <.input field={@form[:role]} type="hidden" value="user" />
+
+            <:actions>
+              <.button phx-disable-with="Creating account..." class="w-full my-3">
+                Create an account
+              </.button>
+            </:actions>
+          </.simple_form>
+        </div>
+      <% else %>
+        <div class="my-4">
+          <.header class="text-center text-black text-xl">
+            Register Cater
+            <:subtitle>
+              Already registered?
+              <.link
+                navigate={~p"/auth/log_in"}
+                class="text-base font-semibold text-[#0b4927] hover:underline hover:text-[#960e0e]"
+              >
+                Sign in
+              </.link>
+              to your account now.
+            </:subtitle>
+          </.header>
+
+          <.simple_form
+            for={@form}
+            id="registration_form"
+            phx-submit="save"
+            phx-change="validate"
+            phx-trigger-action={@trigger_submit}
+            action={~p"/auth/log_in?_action=registered"}
+            method="post"
+            class="bg-white bg-opacity-50 p-6 rounded-md shadow-sm shadow-gray-200 my-4"
+          >
+            <.error :if={@check_errors}>
+              Oops, something went wrong! Please check the errors below.
+            </.error>
+            <.input field={@form[:name]} type="text" label="Name" required />
+            <.input field={@form[:username]} type="text" label="Username" required />
+            <.input field={@form[:email]} type="email" label="Email" required />
+
+            <.input field={@form[:password]} type="password" label="Password" required />
+
+            <.input field={@form[:role]} type="hidden" required value="cater" />
+
+            <:actions>
+              <.button phx-disable-with="Creating account..." class="w-full">
+                Create an account
+              </.button>
+            </:actions>
+          </.simple_form>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

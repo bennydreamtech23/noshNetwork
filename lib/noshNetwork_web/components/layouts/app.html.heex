@@ -19,13 +19,13 @@
 
 
 		<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-			<li><a class="text-sm text-black hover:text-gray-500  font-bold" href="/about">About</a></li>
+			<li><a class="text-sm text-black hover:text-[#0b4927]  font-bold" href="/about">About</a></li>
 			<li class="text-gray-300">
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
 				</svg>
 			</li>
-			<li><a class="text-sm text-black hover:text-gray-500 font-bold"  href="/contact">Contact</a></li>
+			<li><a class="text-sm text-black hover:text-[#0b4927] font-bold"  href="/contact">Contact</a></li>
 			
 			
 		
@@ -80,7 +80,6 @@
     >
       <%= if @current_user do %>
         <.link
-          class="menu-item"
           href={~p"/users/dashboard"}
           class="menu-item border-b border-[#0B4927] border-opacity-50"
           tabindex="-1"
@@ -90,7 +89,6 @@
         </.link>
         <%= if @current_user.role == "user" do %>
           <.link
-            class="menu-item"
             href={~p"/users/user_booking"}
             class=" menu-item border-b border-white border-opacity-50"
             tabindex="-1"
@@ -148,21 +146,21 @@
   </a>
 				
 				<button class="navbar-close">
-					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<svg class="h-6 w-6 text-black cursor-pointer hover:text-[#0b4927]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
 					</svg>
 				</button>
 			</div>
 			<div>
 				<ul class='flex flex-col items-center justify-center gap-8'>
-				<li class="mb-1"><a class="text-sm text-black hover:text-gray-500 hover:font-bold text-center"  href="/contact">Contact</a></li>
-				<li class="mb-1"><a class="text-sm text-black hover:text-gray-500 hover:font-bold text-center"  href="/about">About</a></li>
+				<li class="mb-1"><a class="text-sm text-black hover:text-[#0b4927]  font-bold text-center"  href="/contact">Contact</a></li>
+				<li class="mb-1"><a class="text-sm text-black hover:text-[#0b4927]  font-bold text-center"  href="/about">About</a></li>
 
  <%= if @current_user do %>
         <.link
-          class="menu-item"
+         
           href={~p"/users/dashboard"}
-          class="text-sm text-black hover:text-gray-500 hover:font-bold text-center"
+          class="text-sm text-black hover:text-[#0b4927] hfont-bold text-center"
           tabindex="-1"
           id="user-menu-0"
         >
@@ -171,9 +169,8 @@
         <%= if @current_user.role == "user" do %>
             <li class="mb-1">
           <.link
-            class="menu-item"
             href={~p"/users/user_booking"}
-            class="text-sm text-black hover:text-gray-500 hover:font-bold text-center"
+            class="text-sm text-black hover:text-[#0b4927] font-bold text-center"
             tabindex="-1"
             id="user-menu-0"
           >
@@ -183,7 +180,7 @@
         <% end %>
             <li class="mb-1">
         <.link
-          class="text-sm text-black hover:text-gray-500 hover:font-bold text-center"
+          class="text-sm text-black hover:text-gray-500 font-bold text-center"
           href={~p"/users/settings"}
           tabindex="-1"
           id="user-menu-1"
@@ -194,7 +191,7 @@
         </li>
     <li class="mb-1">
         <.link
-          class="text-sm text-black hover:text-gray-500 hover:font-bold text-center"
+          class="text-sm text-black hover:text-[#0b4927] font-bold text-center"
           href={~p"/users/log_out"}
           method="delete"
           tabindex="-1"
@@ -207,7 +204,7 @@
       <% else %>
     <li class="mb-1">
         <a
-          class="text-sm text-black hover:text-gray-500 hover:font-bold text-center"
+          class="text-sm text-black hover:text-[#0b4927] font-bold text-center"
           href={~p"/auth/signup"}
           id="user-menu-0"
           tabindex="-1"
@@ -217,7 +214,7 @@
         </a>
         </li>
             <li class="mb-1">
-        <a href={~p"/auth/log_in"} class="menu-item" id="user-menu-1" role="menuitem">
+        <a href={~p"/auth/log_in"} class="text-sm text-black hover:text-[#0b4927] font-bold text-center" id="user-menu-1" role="menuitem">
           Login
         </a>
         </li>

@@ -56,9 +56,7 @@ defmodule NoshNetworkWeb.Router do
 
     live_session :redirect_if_user_is_authenticated,
       on_mount: [{NoshNetworkWeb.UserAuth, :redirect_if_user_is_authenticated}] do
-      live "/signup", SignupLogin.Index
-      live "/caters_signup", CatersSignupLive.Index
-      live "/register", Auth.UserRegistrationLive, :new
+      live "/signup", Signup.Index
       live "/log_in", Auth.UserLoginLive, :new
       live "/reset_password", Auth.UserForgotPasswordLive, :new
       live "/reset_password/:token", Auth.UserResetPasswordLive, :edit
