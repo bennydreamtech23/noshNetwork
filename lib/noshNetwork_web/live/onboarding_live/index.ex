@@ -62,6 +62,7 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
       |> Map.put("profile_picture", List.first(consume_files(socket)))
       |> Map.put("is_verified", true)
       |> Map.put("is_active", true)
+
     if socket.assigns.valid do
       case apply(
              Users,

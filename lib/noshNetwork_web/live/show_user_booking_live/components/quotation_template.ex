@@ -222,7 +222,7 @@ defmodule NoshNetworkWeb.ShowUserBookingLive.Components.QuotationTemplate do
     {:ok, socket}
   end
 
-  @impl Phoenix.LiveView
+  @impl true
   def handle_event("pay_quotation_money", _unsigned_params, socket) do
     # Extract user and amount from socket assigns
     user = socket.assigns.current_user

@@ -12,6 +12,7 @@ defmodule NoshNetwork.Application do
       NoshNetworkWeb.Telemetry,
       {DNSCluster, query: Application.get_env(:noshNetwork, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: NoshNetwork.PubSub},
+      {Cachex, name: :foodies_cache},
       # Start the Finch HTTP client for sending emails
       {Finch, name: NoshNetwork.Finch},
       # Start a worker by calling: NoshNetwork.Worker.start_link(arg)

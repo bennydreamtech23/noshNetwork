@@ -87,6 +87,12 @@ defmodule NoshNetworkWeb do
       import NoshNetworkWeb.CoreComponents
       import NoshNetworkWeb.Gettext
 
+      # Send User Notifications
+      import NoshNetworkWeb.Services.NotifyEvents
+
+      # Figours Application Cache
+      import NoshNetworkWeb.Services.Cache
+
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS
 

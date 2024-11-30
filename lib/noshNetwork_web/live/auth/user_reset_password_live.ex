@@ -31,7 +31,7 @@ defmodule NoshNetworkWeb.Auth.UserResetPasswordLive do
       </.simple_form>
 
       <p class="text-center text-sm mt-4">
-        <.link href={~p"/auth/register"}>Register</.link>
+        <.link href={~p"/auth/signup"}>Register</.link>
         | <.link href={~p"/auth/log_in"}>Log in</.link>
       </p>
     </div>
