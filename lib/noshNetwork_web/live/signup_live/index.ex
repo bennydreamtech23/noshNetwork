@@ -6,6 +6,7 @@ defmodule NoshNetworkWeb.Signup.Index do
 
   def mount(_params, _session, socket) do
     changeset = Users.change_user_registration(%User{})
+
     socket =
       socket
       |> assign(:tab, "user")
@@ -14,10 +15,6 @@ defmodule NoshNetworkWeb.Signup.Index do
 
     {:ok, socket}
   end
-
-
-
-
 
   def handle_event("save", %{"user" => user_params}, socket) do
     user_params = Map.put(user_params, "is_active", true)
@@ -42,9 +39,6 @@ defmodule NoshNetworkWeb.Signup.Index do
     changeset = Users.change_user_registration(%User{}, user_params)
     {:noreply, assign_form(socket, Map.put(changeset, :action, :validate))}
   end
-
-
-
 
   def handle_event("change_tab", %{"tab" => tab}, socket) do
     {:noreply, assign(socket, tab: tab)}

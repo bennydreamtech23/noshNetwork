@@ -7,7 +7,7 @@ defmodule NoshNetwork.Data.Context.Users do
   alias NoshNetwork.Repo
 
   alias NoshNetwork.Data.Context.Users.{UserToken, UserNotifier}
-  alias NoshNetwork.Data.Schema.{User, Cater}
+  alias NoshNetwork.Data.Schema.User
   ## Database getters
 
   @doc """

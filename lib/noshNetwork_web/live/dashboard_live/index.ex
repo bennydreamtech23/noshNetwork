@@ -4,7 +4,7 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
   alias NoshNetwork.Data.Context.{Bookings, Caters}
 
   @impl true
-  def mount(params, _session, socket) do
+  def mount(_params, _session, socket) do
     IO.inspect(socket, label: "socket available")
     current_user = socket.assigns.current_user
 
