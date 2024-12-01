@@ -17,28 +17,38 @@ defmodule NoshNetworkWeb.WelcomeLive.Welcome do
 
   def render(assigns) do
     ~H"""
-    <div class="flex items-center justify-center overflow-hidden lg:mt-12 mt-4">
-      <div class="flex flex-col items-center justify-center lg:gap-8 gap-4 font-brand max-w-[750px] p-6 text-center">
-        <h1 class="lg:text-4xl text-black text-2xl">
-          Welcome to
-          <strong class="text-[#960e0e]">Foodies<span class="text-[#0b4927]">Network</span></strong>
-        </h1>
-        <h2 class="font-bold lg:text-2xl text-xl text-[#0b4927] uppercase">
-          <%= @current_name %>
-        </h2>
+    <div class="h-screen flex items-center justify-center font-brand">
+      <div class="mt-16 max-w-sm flex flex-col gap-4 items-center justify-center p-6 border rounded-md shadow-lg" style='background-color: #FAFAFA;'>
 
-        <p class="text-base font-normal">
-          Find top caterers effortlessly and ensure your event is a culinary success. Simplify your search and start planning a memorable experience today!
+        <img
+          src="/icons/check_icon.png"
+          alt="img"
+          class="h-[100px] w-[100px]"
+        />
+
+        <h1 class="font-bold text-xl text-center">Woo-hoo, you're all set up!</h1>
+
+        <p class="font-normal text-center">
+          We're excited to have you onboard, <strong><%= @current_name %></strong>
         </p>
-        <%= if @current_user.role == "cater" do %>
-          <.link href={~p"/users/onboarding"} class="btn-secondary">
-            Continue
-          </.link>
-        <% else %>
-          <.link href={~p"/users/dashboard"} class="btn-secondary">
-            Continue
-          </.link>
-        <% end %>
+
+        <div class="my-4 w-full">
+          <%= if @current_user.role == "cater" do %>
+            <.link
+              href={~p"/users/onboarding"}
+              class="w-full px-4 py-2 bg-black text-white border border-black rounded hover:bg-transparent hover:text-black text-center block"
+            >
+              Continue
+            </.link>
+          <% else %>
+            <.link
+              href={~p"/users/dashboard"}
+              class="w-full px-4 py-2 bg-black text-white border border-black rounded hover:bg-transparent hover:text-black text-center block"
+            >
+              Continue
+            </.link>
+          <% end %>
+        </div>
       </div>
     </div>
     """

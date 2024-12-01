@@ -5,42 +5,52 @@ defmodule NoshNetworkWeb.Auth.UserResetPasswordLive do
 
   def render(assigns) do
     ~H"""
-    <div class="mx-auto max-w-sm">
-      <.header class="text-center">Reset Password</.header>
+    <div class="m-auto max-w-screen-xl overflow-hidden  font-brand">
+      <div class="flex lg:flex-row-reverse flex-col items-start">
+        <div class="lg:w-1/2 w-full h-auto lg:flex hidden items-center justify-center flex-col">
+          <img src="/images/auth_image.png" alt="registration page" class="rounded-b-md" />
+        </div>
 
-      <.simple_form
-        for={@form}
-        id="reset_password_form"
-        phx-submit="reset_password"
-        phx-change="validate"
-      >
-        <.error :if={@form.errors != []}>
-          Oops, something went wrong! Please check the errors below.
-        </.error>
+        <div class="w-full lg:w-1/2 flex flex-col p-6 gap-4 lg:mt-20 mt-0">
+          <.header  class="text-center text-[#0b4927]">Reset Password</.header>
 
-        <.input field={@form[:password]} type="password" label="New password" required />
-        <.input
-          field={@form[:password_confirmation]}
-          type="password"
-          label="Confirm new password"
-          required
-        />
-        <:actions>
-          <.button phx-disable-with="Resetting..." class="w-full">Reset Password</.button>
-        </:actions>
-      </.simple_form>
+          <.simple_form
+            for={@form}
+            id="reset_password_form"
+            phx-submit="reset_password"
+            phx-change="validate"
+          >
+            <.error :if={@form.errors != []}>
+              Oops, something went wrong! Please check the errors below.
+            </.error>
 
-      <p class="text-center text-sm mt-4">
-        <.link href={~p"/auth/signup"}>Register</.link>
-        | <.link href={~p"/auth/log_in"}>Log in</.link>
-      </p>
+            <.input field={@form[:password]} type="password" label="New password" required />
+            <.input
+              field={@form[:password_confirmation]}
+              type="password"
+              label="Confirm new password"
+              required
+            />
+            <:actions>
+              <.button phx-disable-with="Resetting..." class="w-full">Reset Password</.button>
+            </:actions>
+          </.simple_form>
+
+          <p class="text-center text-sm mt-4">
+            <.link href={~p"/auth/signup"} class="hover:text-[#0b4927]">Register</.link>
+            | <.link href={~p"/auth/log_in"} class="hover:text-[#0b4927]">Log in</.link>
+          </p>
+        </div>
+      </div>
     </div>
     """
   end
 
   def mount(params, _session, socket) do
+    IO.inspect(params, label: "params")
+    IO.inspect(socket, label: "socket oooo")
     socket = assign_user_and_token(socket, params)
-
+    IO.inspect(socket, label: "socket not found")
     form_source =
       case socket.assigns do
         %{user: user} ->
@@ -74,6 +84,7 @@ defmodule NoshNetworkWeb.Auth.UserResetPasswordLive do
   end
 
   defp assign_user_and_token(socket, %{"token" => token}) do
+    IO.inspect(token, label: "token available")
     if user = Users.get_user_by_reset_password_token(token) do
       assign(socket, user: user, token: token)
     else
