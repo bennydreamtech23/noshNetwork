@@ -8,6 +8,7 @@ defmodule NoshNetwork.Data.Context.Users do
 
   alias NoshNetwork.Data.Context.Users.{UserToken, UserNotifier}
   alias NoshNetwork.Data.Schema.User
+  alias NoshNetworkWeb.Services.NotifyEvents
   ## Database getters
 
   @doc """
@@ -352,7 +353,20 @@ defmodule NoshNetwork.Data.Context.Users do
       when is_function(reset_password_url_fun, 1) do
     {encoded_token, user_token} = UserToken.build_email_token(user, "reset_password")
     Repo.insert!(user_token)
-    UserNotifier.deliver_reset_password_instructions(user, reset_password_url_fun.(encoded_token))
+
+    NotifyEvents.put_user_alert(user.id, %{
+      kind: :info,
+      title: "Reset your password",
+      text: "Check email for more information",
+      subject: "Reset your password email",
+      template: "forgot_password.html",
+      email_args: %{
+        name: user.name,
+         url: reset_password_url_fun.(encoded_token)
+      },
+      event: :email_push
+    })
+    # UserNotifier.deliver_reset_password_instructions(user, reset_password_url_fun.(encoded_token))
   end
 
   @doc """
@@ -368,6 +382,7 @@ defmodule NoshNetwork.Data.Context.Users do
 
   """
   def get_user_by_reset_password_token(token) do
+    IO.inspect(token, label: "token")
     with {:ok, query} <- UserToken.verify_email_token_query(token, "reset_password"),
          %User{} = user <- Repo.one(query) do
       user

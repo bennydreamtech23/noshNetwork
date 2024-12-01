@@ -8,7 +8,7 @@ defmodule NoshNetwork.Data.Context.Users.UserToken do
 
   # It is very important to keep the reset password token expiry short,
   # since someone with access to the email may take over the account.
-  @reset_password_validity_in_days 1
+  @reset_password_validity_in_days 2
   @confirm_validity_in_days 7
   @change_email_validity_in_days 7
   @session_validity_in_days 60
@@ -113,6 +113,7 @@ defmodule NoshNetwork.Data.Context.Users.UserToken do
   see `verify_change_email_token_query/2`.
   """
   def verify_email_token_query(token, context) do
+    # IO.inspect(token, "is token available")
     case Base.url_decode64(token, padding: false) do
       {:ok, decoded_token} ->
         hashed_token = :crypto.hash(@hash_algorithm, decoded_token)

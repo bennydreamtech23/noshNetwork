@@ -41,32 +41,21 @@ defmodule NoshNetworkWeb.Auth.UserForgotPasswordLive do
 
   def handle_event("send_email", %{"user" => %{"email" => email}}, socket) do
     if user = Users.get_user_by_email(email) do
-      put_user_alert(user.id, %{
-        kind: :info,
-        title: "Reset your password",
-        text: "Check email for more information",
-        subject: "Reset your password email",
-        template: "forgot_password.html",
-        email_args: %{
-          name: user.name,
-           url: "http://localhost:4000/auth/reset_password/#{user.id}"
-        },
-        event: :email_push
-      })
+
+    Users.deliver_user_reset_password_instructions(
+      user,
+      &url(~p"/auth/reset_password/#{&1}")
+    )
     end
 
 
-    # info =
-    #   "If your email is in our system, you will receive instructions to reset your password shortly."
+    info =
+      "If your email is in our system, you will receive instructions to reset your password shortly."
 
-    # Users.deliver_user_reset_password_instructions(
-    #   user,
-    #   &url(~p"/auth/reset_password/#{&1}")
-    # )
 
     {:noreply,
      socket
-     #  |> put_flash(:info, info)
+      |> put_flash(:info, info)
      |> redirect(to: ~p"/")}
   end
 end
