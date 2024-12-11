@@ -4,7 +4,7 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
   alias NoshNetwork.Data.Context.Caters
   alias NoshNetwork.Data.Schema.Cater
   # alias NoshNetwork.Data.Schema.User
-  import Phoenix.HTML.Form
+
 
   @impl true
   def mount(_params, _session, socket) do
@@ -29,6 +29,7 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
       |> allow_upload(:photo, accept: ~w(.png .jpeg .jpg), max_entries: 1)
       |> assign(:valid, false)
       |> assign(:user_id, nil)
+      |> assign(:step, "one")
       |> assign(:specilaities_choice, [
         "Nigerian Cusine",
         "Chinese Cuisine",
@@ -82,7 +83,10 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
 
         {:ok, _user} ->
           {:noreply,
-           socket |> put_flash(:info, "Cater updated succesfully") |> assign(:valid, false)}
+           socket
+           |> put_flash(:info, "Cater updated succesfully")
+           |> assign(:valid, false)
+           |> assign(:step, "two")}
 
         {:error, %Ecto.Changeset{} = changeset} ->
           {:noreply, assign_form(socket, changeset)}
@@ -150,6 +154,32 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
     end
   end
 
+  def handle_event("change_step", %{"step" => step}, socket) do
+    IO.inspect(step, label: "step")
+    {:noreply, assign(socket, step: step)}
+  end
+
+
+
+
+  @impl true
+  def handle_event("live_select_change", %{"id" => id, "text" => text}, socket) do
+    options =
+      socket.assigns.specilaities_choice
+      |> Enum.filter(&(String.downcase(&1) |> String.contains?(String.downcase(text))))
+
+    send_update(LiveSelect.Component, options: options, id: id)
+
+    {:noreply, socket}
+  end
+
+  def handle_event("clear", %{"id" => id}, socket) do
+    send_update(LiveSelect.Component, options: [], id: id)
+
+    {:noreply, socket}
+  end
+
+
   defp consume_files(socket) do
     consume_uploaded_entries(socket, :profile_picture, fn %{path: path}, _entry ->
       dest = Path.join([:code.priv_dir(:noshNetwork), "static", "uploads", Path.basename(path)])
@@ -158,6 +188,11 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
       {:postpone, ~p"/uploads/#{Path.basename(dest)}"}
     end)
   end
+
+
+
+
+
 
   defp consume_file(socket) do
     consume_uploaded_entries(socket, :photo, fn %{path: path}, _entry ->
@@ -178,6 +213,6 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
     end
   end
 
-  defp button_valid(true), do: "btn-secondary"
-  defp button_valid(false), do: "bg-zinc-600 rounded-md py-4 px-3 w-full text-white"
+  defp button_valid(true), do: "my-4 btn-secondary w-full"
+  defp button_valid(false), do: "my-4 bg-zinc-600 rounded-md py-4 px-3 w-full text-white"
 end

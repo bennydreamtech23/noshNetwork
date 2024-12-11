@@ -135,7 +135,7 @@ textarea.form-control {
 
 
 .btn-primary{
-  @apply px-4 py-2 bg-transparent text-[#960e0e] border border-[#960e0e] rounded 
+  @apply px-4 py-2 bg-transparent text-[#960e0e] border border-[#960e0e] rounded w-full
 }
 .btn-primary:hover{
   @apply hover:bg-[#960e0e] hover:text-white
@@ -145,7 +145,7 @@ textarea.form-control {
 
 
 .btn-secondary{
-    @apply px-4 py-2 bg-transparent text-[#0B4927] border border-[#0b4927] rounded
+    @apply px-4 py-2 bg-transparent text-[#0B4927] border border-[#0b4927] rounded w-full
 }
 
 .btn-secondary:hover{

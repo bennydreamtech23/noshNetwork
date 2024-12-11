@@ -362,10 +362,11 @@ defmodule NoshNetwork.Data.Context.Users do
       template: "forgot_password.html",
       email_args: %{
         name: user.name,
-         url: reset_password_url_fun.(encoded_token)
+        url: reset_password_url_fun.(encoded_token)
       },
       event: :email_push
     })
+
     # UserNotifier.deliver_reset_password_instructions(user, reset_password_url_fun.(encoded_token))
   end
 
@@ -383,6 +384,7 @@ defmodule NoshNetwork.Data.Context.Users do
   """
   def get_user_by_reset_password_token(token) do
     IO.inspect(token, label: "token")
+
     with {:ok, query} <- UserToken.verify_email_token_query(token, "reset_password"),
          %User{} = user <- Repo.one(query) do
       user
