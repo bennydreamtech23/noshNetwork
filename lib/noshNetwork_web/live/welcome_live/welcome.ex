@@ -18,13 +18,11 @@ defmodule NoshNetworkWeb.WelcomeLive.Welcome do
   def render(assigns) do
     ~H"""
     <div class="h-screen flex items-center justify-center font-brand">
-      <div class="mt-16 max-w-sm flex flex-col gap-4 items-center justify-center p-6 border rounded-md shadow-lg" style='background-color: #FAFAFA;'>
-
-        <img
-          src="/icons/check_icon.png"
-          alt="img"
-          class="h-[100px] w-[100px]"
-        />
+      <div
+        class="max-w-sm flex flex-col gap-4 items-center justify-center p-6 border rounded-md shadow-lg"
+        style="background-color: #FAFAFA;"
+      >
+        <img src="/icons/check_icon.png" alt="img" class="h-[100px] w-[100px]" />
 
         <h1 class="font-bold text-xl text-center">Woo-hoo, you're all set up!</h1>
 

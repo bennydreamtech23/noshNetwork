@@ -12,7 +12,7 @@ defmodule NoshNetworkWeb.Auth.UserResetPasswordLive do
         </div>
 
         <div class="w-full lg:w-1/2 flex flex-col p-6 gap-4 lg:mt-20 mt-0">
-          <.header  class="text-center text-[#0b4927]">Reset Password</.header>
+          <.header class="text-center text-[#0b4927]">Reset Password</.header>
 
           <.simple_form
             for={@form}
@@ -51,6 +51,7 @@ defmodule NoshNetworkWeb.Auth.UserResetPasswordLive do
     IO.inspect(socket, label: "socket oooo")
     socket = assign_user_and_token(socket, params)
     IO.inspect(socket, label: "socket not found")
+
     form_source =
       case socket.assigns do
         %{user: user} ->
@@ -85,6 +86,7 @@ defmodule NoshNetworkWeb.Auth.UserResetPasswordLive do
 
   defp assign_user_and_token(socket, %{"token" => token}) do
     IO.inspect(token, label: "token available")
+
     if user = Users.get_user_by_reset_password_token(token) do
       assign(socket, user: user, token: token)
     else

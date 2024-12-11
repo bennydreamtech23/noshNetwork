@@ -41,7 +41,8 @@ defmodule NoshNetwork.MixProject do
       {:email_checker, "~> 0.1.3"},
       {:phoenix_pubsub, "~> 2.1"},
       {:premailex, "~> 0.3.0"},
-      {:phoenix_html, "~> 3.3"},
+      {:phoenix_html, "~> 4.1"},
+      {:phoenix_html_helpers, "~> 1.0"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_view, "~> 0.20.1"},
       {:floki, "~> 0.36.0"},
@@ -58,6 +59,7 @@ defmodule NoshNetwork.MixProject do
       {:jason, "~> 1.2"},
       {:httpoison, "~> 2.1"},
       {:dns_cluster, "~> 0.1.1"},
+      {:live_select, "~> 1.4"},
       {:plug_cowboy, "~> 2.5"}
     ]
   end

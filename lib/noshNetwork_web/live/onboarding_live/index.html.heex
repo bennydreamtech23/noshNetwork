@@ -1,159 +1,249 @@
-<div class="mx-auto max-w-sm my-4">
-  <.header class="text-center text-[#0b4927] font-bold lg:text-2xl text-lg">
-    <%= if @current_user.role == "user" do %>
-      User Onboarding
-    <% else %>
-      Caters Onboarding
-    <% end %>
-  </.header>
+<div class="m-auto max-w-screen-xl overflow-hidden  font-brand">
+  <div class="flex lg:flex-row flex-col items-start">
+    <div class="lg:w-1/2 w-full lg:flex hidden items-center justify-center flex-col">
+      <img src="/images/auth_image.png" alt="registration page" class="rounded-b-md" />
+    </div>
 
-  <div class="py-4 px-2">
-    <.simple_form
-      :let={_f}
-      for={@form}
-      id="user_contact_form"
-      phx-submit="update-user"
-      phx-change="validate"
-      class="bg-white p-4 rounded-md shadow-md border-0"
-    >
-      <div class="grid grid-cols-2 md:grid-cols-1  gap-3">
-        <.error :if={@check_errors}>
-          Oops, something went wrong! Please check the errors below.
-        </.error>
-        <%= if @current_user.role == "cater" do %>
+    <div class="w-full lg:w-1/2 flex flex-col p-6 gap-4 lg:mt-8 mt-0">
+      <.header>
+        <%= if @current_user.role == "user" do %>
           <div>
-            <.input
-              field={@form[:business_name]}
-              type="text"
-              label="Business Name"
-              autocomplete="off"
-            />
+            <h1 class="text-black font-bold text-xl">Complete Your Profile!</h1>
+            <p class="text-[#8692A6] my-2">
+              For the purpose of industry regulation, your details are required
+            </p>
           </div>
+        <% else %>
+          <%= if @step == "one" do %>
+            <div>
+              <div class="flex flex-col items-end gap-2">
+                <button
+                  class="text-[#BDBDBD] hover:text-black hover:underline"
+                  phx-click="change_step"
+                  phx-value-step="two"
+                >
+                  Step1
+                </button>
+                <p class="text-[#8692A6]">Residency Info</p>
+              </div>
+
+              <h1 class="text-black font-bold text-xl">Complete Your Profile!</h1>
+              <p class="text-[#8692A6] my-2">
+                For the purpose of industry regulation, your details are required
+              </p>
+            </div>
+          <% else %>
+            <div>
+              <div class="flex flex-col items-end gap-2">
+                <button
+                  class="text-[#BDBDBD] hover:text-black hover:underline"
+                  phx-click="change_step"
+                  phx-value-step="one"
+                >
+                  Step2
+                </button>
+                <p class="text-[#8692A6]">Residency Info</p>
+              </div>
+
+              <h1 class="text-black font-bold text-xl">Complete Your Business Profile!</h1>
+              <p class="text-[#8692A6] my-2">
+                For the purpose of industry regulation, your details are required
+              </p>
+            </div>
+          <% end %>
         <% end %>
-        <div>
-          <.input
-            field={@form[:phone_number]}
-            type="text"
-            label="Phone Number"
-            class="w-full"
-            autocomplete="off"
-          />
-          <.input field={@form[:address]} type="text" label="Address" autocomplete="off" />
+      </.header>
 
-          <.input
-            field={@form[:state]}
-            type="text"
-            label="state"
-            class="w-full"
-            autocomplete="off"
-          />
+      <%= if @step == "one" || @current_user.role == "user" do %>
+        <div class="py-4 px-2">
+          <.simple_form
+            :let={_f}
+            for={@form}
+            id="user_contact_form"
+            phx-submit="update-user"
+            phx-change="validate"
+            class="bg-white p-4 rounded-md shadow-md border-0"
+          >
+            <div class="grid grid-cols-2 md:grid-cols-1  gap-3">
+              <.error :if={@check_errors}>
+                Oops, something went wrong! Please check the errors below.
+              </.error>
+              <%= if @current_user.role == "cater" do %>
+                <div>
+                  <.input
+                    field={@form[:business_name]}
+                    type="text"
+                    label="Business Name"
+                    autocomplete="off"
+                  />
+                </div>
+              <% end %>
+              <div>
+                <.input
+                  field={@form[:phone_number]}
+                  type="text"
+                  label="Phone Number"
+                  class="w-full"
+                  autocomplete="off"
+                />
+                <.input field={@form[:address]} type="text" label="Address" autocomplete="off" />
 
-          <.input field={@form[:country]} type="text" label="country" autocomplete="off" />
+                <.input
+                  field={@form[:state]}
+                  type="text"
+                  label="state"
+                  class="w-full"
+                  autocomplete="off"
+                />
+
+                <.input field={@form[:country]} type="text" label="country" autocomplete="off" />
+              </div>
+              <.live_file_input upload={@uploads.profile_picture} />
+            </div>
+            <%= if @current_user.role == "user" do %>
+              <button
+                phx-disable-with="updating account..."
+                class={[button_valid(@valid), ""]}
+                disabled={@valid !== true}
+              >
+                Proceed
+              </button>
+            <% else %>
+              <button
+                phx-disable-with="updating account..."
+                class={[button_valid(@valid)]}
+                disabled={@valid !== true}
+              >
+                Next
+              </button>
+            <% end %>
+          </.simple_form>
         </div>
-        <.live_file_input upload={@uploads.profile_picture} />
-      </div>
-      <%= if @current_user.role == "user" do %>
-        <button
-          phx-disable-with="updating account..."
-          class={[button_valid(@valid), ""]}
-          disabled={@valid !== true}
-        >
-          Proceed
-        </button>
       <% else %>
-        <button
-          phx-disable-with="updating account..."
-          class={[button_valid(@valid)]}
-          disabled={@valid !== true}
-        >
-          Next
-        </button>
+        <%= if @current_user.role == "cater" do %>
+          <.simple_form
+            for={@cater_form}
+            id="user_contact_form"
+            phx-submit="update-cater"
+            phx-change="validate-cater"
+          >
+            <div class="grid grid-cols-1 gap-3">
+              <div>
+                <.input
+                  field={@cater_form[:about]}
+                  type="textarea"
+                  label="About"
+                  class="w-full"
+                  autocomplete="off"
+                />
+              </div>
+
+              <div>
+                <.input
+                  field={@cater_form[:business_policies]}
+                  type="textarea"
+                  label="Business Policies"
+                  class="w-full"
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="flex flex-col items-start justify-between gap-4 w-full">
+                <.label for="availability[emergency]">
+                  Social Media Link
+                </.label>
+
+                <input
+                  type="text"
+                  name="social_media[facebook]"
+                  placeholder="Facebook Link"
+                  phx-update="ignore"
+                  class="rounded border-zinc-300 text-zinc-900 focus:ring-0 w-full"
+                  id="facebook"
+                />
+                <input
+                  type="text"
+                  name="social_media[twitter]"
+                  placeholder="Twitter Link"
+                  phx-update="ignore"
+                  class="rounded border-zinc-300 text-zinc-900 focus:ring-0 w-full"
+                  id="twitter"
+                />
+                <input
+                  type="text"
+                  name="social_media[instagram]"
+                  placeholder="Instagram Link"
+                  phx-update="ignore"
+                  id="twitter"
+                  class="rounded border-zinc-300 text-zinc-900 focus:ring-0 w-full"
+                />
+              </div>
+
+              <.live_select
+                field={@cater_form[:specialties]}
+                options={@specilaities_choice}
+                label="Choose a Category"
+                mode={:tags}
+              />
+
+              <div class="flex flex-col items-start justify-between gap-4 w-full">
+                <.label for="availability[emergency]">
+                  Working Days
+                </.label>
+
+  
+                <input
+                  type="text"
+                  name="availability[working_time]"
+                  placeholder="Working Days"
+                  phx-update="ignore"
+                  id="availability[working_time]"
+                  class="rounded border-zinc-300 text-zinc-900 focus:ring-0 w-full"
+                />
+              </div>
+              <div class="flex flex-col items-start justify-between gap-4">
+                <.label for="availability[emergency]">
+                  How many days of notice
+                </.label>
+                <input
+                  type="text"
+                  name="availability[minium_notice]"
+                  placeholder="How many days of notice"
+                  phx-update="ignore"
+                  id="availability[minium_notice]"
+                  class="rounded border-zinc-300 text-zinc-900 focus:ring-0 w-full"
+                />
+              </div>
+              <div class="flex flex-col items-start justify-between gap-4">
+                <.label for="availability[emergency]">
+                  Availability for urgent work
+                </.label>
+                <input
+                  type="text"
+                  name="availability[emergency]"
+                  placeholder="provide services for last minute call"
+                  phx-update="ignore"
+                  id="availability[emergency]"
+                  class="rounded border-zinc-300 text-zinc-900 focus:ring-0 w-full"
+                />
+              </div>
+              <div class="flex flex-col items-start justify-between gap-4">
+                <.label for="photo">
+                  Please upload an image of your previous work
+                </.label>
+                <.live_file_input upload={@uploads.photo} />
+              </div>
+              <button
+                phx-disable-with="onboarding cater..."
+                class={[button_valid(@valid), "w-full text-white"]}
+                disabled={@valid !== true}
+              >
+                Continue
+              </button>
+            </div>
+          </.simple_form>
+        <% end %>
       <% end %>
-    </.simple_form>
+    </div>
   </div>
-
-  <%= if @current_user.role == "cater" do %>
-    <.simple_form
-      for={@cater_form}
-      id="user_contact_form"
-      phx-submit="update-cater"
-      phx-change="validate-cater"
-    >
-      <div class="grid grid-cols-1 gap-3">
-        <div>
-          <label>About</label>
-          <%= textarea(@cater_form, :about,
-            class: "w-full",
-            placeholder: "Tell us more about your business",
-            phx_debounce: "blur"
-          ) %>
-        </div>
-
-        <div>
-          <label>Business Policies</label>
-          <%= textarea(@cater_form, :business_policies,
-            class: "w-full",
-            placeholder: "Enter your business policies",
-            phx_debounce: "blur"
-          ) %>
-        </div>
-
-        <input
-          type="text"
-          name="social_media[facebook]"
-          placeholder="Facebook Link"
-          phx-update="ignore"
-          id="facebook"
-        />
-        <input
-          type="text"
-          name="social_media[twitter]"
-          placeholder="Twitter Link"
-          phx-update="ignore"
-          id="twitter"
-        />
-        <input
-          type="text"
-          name="social_media[instagram]"
-          placeholder="Instagram Link"
-          phx-update="ignore"
-          id="twitter"
-        />
-
-        <%= multiple_select(@cater_form, :specialties, @specilaities_choice) %>
-
-        <input
-          type="text"
-          name="availability[working_time]"
-          placeholder="Working Days"
-          phx-update="ignore"
-          id="availability[working_time]"
-        />
-        <input
-          type="text"
-          name="availability[minium_notice]"
-          placeholder="How many days of notice"
-          phx-update="ignore"
-          id="availability[minium_notice]"
-        />
-        <input
-          type="text"
-          name="availability[emergency]"
-          placeholder="provide services for last minute call"
-          phx-update="ignore"
-          id="availability[emergency]"
-        />
-        <div>
-          <.live_file_input upload={@uploads.photo} />
-        </div>
-        <button
-          phx-disable-with="onboarding cater..."
-          class={[button_valid(@valid), "w-full text-white"]}
-          disabled={@valid !== true}
-        >
-          Next
-        </button>
-      </div>
-    </.simple_form>
-  <% end %>
 </div>

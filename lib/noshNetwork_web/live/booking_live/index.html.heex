@@ -2,7 +2,9 @@
   <.simple_form for={@form} phx-change="validate" phx-submit="save_booking">
     <div class="flex  flex-col gap-4">
       <label>Event Type</label>
-      <%= select(@form, :event_type, @event_type) %>
+      <%!-- <%= select(@form, :event_type, @event_type) %> --%>
+
+      <.live_select field={@form[:event_type]} />
     </div>
     <div class="flex  flex-col gap-4">
       <.input
@@ -30,19 +32,43 @@
     </div>
     <div class="flex  flex-col gap-4">
       <label>Cusine Preference</label>
-      <%= multiple_select(@form, :cusine_preference, @cusine_preference) %>
+
+      <.live_select
+        field={@form[:cusine_preference]}
+        value_mapper={fn option -> %{id: option, name: option} end}
+        options={@cusine_preference}
+        mode={:tags}
+      />
     </div>
     <div class="flex  flex-col gap-4">
       <label>Specific Dishes</label>
-      <%= multiple_select(@form, :specific_dishes, @specific_dishes) %>
+
+      <.live_select
+        field={@form[:specific_dishes]}
+        value_mapper={fn option -> %{id: option, name: option} end}
+        options={@specific_dishes}
+        mode={:tags}
+      />
     </div>
     <div class="flex  flex-col gap-4">
       <label>Dietary Restriction</label>
-      <%= multiple_select(@form, :dietary_restriction, @dietary_restriction) %>
+
+      <.live_select
+        field={@form[:dietary_restriction]}
+        value_mapper={fn option -> %{id: option, name: option} end}
+        options={@dietary_restriction}
+        mode={:tags}
+      />
     </div>
     <div class="flex  flex-col gap-4">
       <label>Service Type</label>
-      <%= multiple_select(@form, :service_type, @service_type, class: "js-example-basic-multiple") %>
+
+      <.live_select
+        field={@form[:service_type]}
+        value_mapper={fn option -> %{id: option, name: option} end}
+        options={@service_type}
+        mode={:tags}
+      />
     </div>
     <div class="flex  flex-col gap-4">
       <.input
