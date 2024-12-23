@@ -27,7 +27,7 @@ defmodule NoshNetworkWeb.WelcomeLive.Welcome do
         <h1 class="font-bold text-xl text-center">Woo-hoo, you're all set up!</h1>
 
         <p class="font-normal text-center">
-          We're excited to have you onboard, <strong><%= @current_name %></strong>
+          We're excited to have you onboard, <strong><%= String.capitalize(@current_name) %></strong>
         </p>
 
         <div class="my-4 w-full">

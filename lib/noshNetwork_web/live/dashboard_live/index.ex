@@ -4,112 +4,62 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
   alias NoshNetwork.Data.Context.{Bookings, Caters}
 
   @impl true
-  def mount(_params, _session, socket) do
-    IO.inspect(socket, label: "socket available")
-    current_user = socket.assigns.current_user
+ def mount(_params, _session, socket) do
+  current_user = socket.assigns.current_user
+  caters = Users.get_all_caters()
+  links = [
+    %{label: "Dashboard", path: "/users/dashboard"},
+    %{label: "Caterers", path: "/caterers"},
+    %{label: "Orders", path: "/orders"}
+  ]
+  socket =
+  socket
+  |> assign(:current_user, current_user)
+  |> assign(:link, links)
+  |> assign(:caters, caters)
+  |> assign(current_path: "/users/dashboard")
+  {:ok, socket}
+ end
 
-    socket =
-      if current_user.role == "cater" do
-        # Fetch cater information based on the current user
-        cater = Caters.get_cater_by_user_id(current_user.id)
-        cater_id = cater.id
-        user_booking = if cater, do: Bookings.get_bookings_by_cater_id(cater.id), else: []
 
-        socket
-        |> assign(:current_user, current_user)
-        |> assign(:user_booking, user_booking)
-        |> assign(:cater_id, cater_id)
-        |> assign(:booking_id, nil)
-        |> assign(:booking_details, nil)
-        |> assign(:show_quotation_modal, false)
-        |> assign(:show_more, false)
-        |> assign(:caters, [])
-      else
-        # For non-cater users, fetch all caters
-        caters = Users.get_all_caters()
+ @impl true
+ def handle_event("get_caterer_details", %{"id" => id}, socket) do
+   current_user = socket.assigns.current_user
 
-        socket
-        |> assign(:current_user, current_user)
-        |> assign(:caters, caters)
-        |> assign(:show_quotation_modal, false)
-        |> assign(:show_more, false)
-        |> assign(:user_booking, [])
-      end
+   if current_user.is_verified and current_user.is_active do
+     socket =
+       socket
+       |> push_navigate(to: ~p"/users/cater?#{[id: id]}")
 
-    {:ok, socket}
-  end
+     {:noreply, socket}
+   else
+     socket =
+       socket
+       |> put_flash(:error, "Please complete the onboarding process to proceed with booking.")
+       |> push_navigate(to: ~p"/users/onboarding")
 
-  @impl true
-  def handle_event("cater_show", %{"id" => id}, socket) do
-    current_user = socket.assigns.current_user
+     {:noreply, socket}
+   end
+ end
 
-    if current_user.is_verified and current_user.is_active do
-      socket =
-        socket
-        |> push_navigate(to: ~p"/users/cater?#{[id: id]}")
 
-      {:noreply, socket}
-    else
-      socket =
-        socket
-        |> put_flash(:error, "Please complete the onboarding process to proceed with booking.")
-        |> push_navigate(to: ~p"/users/onboarding")
+ @impl true
+ def handle_event("booking_action", %{"cater_id" => id}, socket) do
+   current_user = socket.assigns.current_user
 
-      {:noreply, socket}
-    end
-  end
+   if current_user.is_verified and current_user.is_active do
+     socket =
+       socket
+       |> push_navigate(to: ~p"/users/booking?#{[id: id]}")
 
-  @impl true
-  def handle_event("booking_action", %{"id" => id}, socket) do
-    current_user = socket.assigns.current_user
+     {:noreply, socket}
+   else
+     socket =
+       socket
+       |> put_flash(:error, "Please complete the onboarding process to proceed with booking.")
+       |> push_navigate(to: ~p"/users/onboarding")
 
-    if current_user.is_verified and current_user.is_active do
-      socket =
-        socket
-        |> push_navigate(to: ~p"/users/booking?#{[id: id]}")
-
-      {:noreply, socket}
-    else
-      socket =
-        socket
-        |> put_flash(:error, "Please complete the onboarding process to proceed with booking.")
-        |> push_navigate(to: ~p"/users/onboarding")
-
-      {:noreply, socket}
-    end
-  end
-
-  @impl true
-  ##### approve functionality
-  def handle_event("approve", %{"id" => id}, socket) do
-    bookings = socket.assigns[:user_booking]
-
-    booking =
-      Enum.find(
-        bookings,
-        fn booking ->
-          booking.id == id
-        end
-      )
-
-    status = "approved"
-
-    Bookings.update_booking_status(booking, status)
-
-    {
-      :noreply,
-      socket
-      |> assign(:booking_details, booking)
-      |> assign(:show_quotation_modal, true)
-    }
-  end
-
-  def handle_event("show_more", %{"id" => id}, socket) do
-    {
-      :noreply,
-      socket
-      |> assign(:booking_id, id)
-      |> assign(:show_more, true)
-    }
-  end
+     {:noreply, socket}
+   end
+ end
 end
