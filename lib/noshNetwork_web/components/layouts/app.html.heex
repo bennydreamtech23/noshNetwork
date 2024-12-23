@@ -91,37 +91,12 @@
 
         <div
           id="dropdown_menu"
-          class="dropdown-menu-arrow absolute right right-0 mt-2 py-2 w-48 rounded-lg shadow-xl border border-white bg-[#f4f8f4]  z-50"
+          class="dropdown-menu-arrow absolute right right-0 py-2 w-48 rounded-lg shadow-xl border border-white bg-[#f4f8f4]  z-50"
           hidden="true"
         >
           <%= if @current_user do %>
-            <.link
-              href={~p"/users/dashboard"}
-              class="menu-item border-b border-[#0B4927] border-opacity-50"
-              tabindex="-1"
-              id="user-menu-0"
-            >
-              Dashboard
-            </.link>
-            <%= if @current_user.role == "user" do %>
-              <.link
-                href={~p"/users/user_booking"}
-                class=" menu-item border-b border-white border-opacity-50"
-                tabindex="-1"
-                id="user-menu-0"
-              >
-                Booking
-              </.link>
-            <% end %>
-            <.link
-              class="menu-item border-b border-[#0B4927] border-opacity-50"
-              href={~p"/users/settings"}
-              tabindex="-1"
-              id="user-menu-1"
-              role="menuitem"
-            >
-              settings
-            </.link>
+           
+           
 
             <.link
               class="menu-item"
