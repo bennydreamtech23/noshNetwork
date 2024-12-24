@@ -9,40 +9,51 @@
     />
     <!-- Main Content -->
     <div class="lg:ml-60 p-6 ">
-      <!-- Dashboard Stats -->
-      <section class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 p-4">
-        <div class="bg-white shadow rounded-lg p-4 text-center">
-          <p class="text-gray-500">Total Booking</p>
-          <h2 class="text-2xl font-bold">$0.00</h2>
-        </div>
-        <div class="bg-white shadow rounded-lg p-4 text-center">
-          <p class="text-gray-500">Total Paid</p>
-          <h2 class="text-2xl font-bold">$0.00</h2>
-        </div>
 
-        <div class="bg-white shadow rounded-lg p-4 text-center">
-          <p class="text-gray-500">Total Expenditure</p>
-          <h2 class="text-2xl font-bold">$0.00</h2>
-        </div>
-      </section>
 
-      <section class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
-        <%= for cater <- :lists.reverse(@caters) do %>
-          <.live_component
-            module={NoshNetworkWeb.CardComponent}
-            id={"card-#{cater.id}"}
-            image_url={cater.caters.photo}
-            alt_text="Outer Image"
-            title={cater.business_name}
-            description="This is the description for this card."
-            address={cater.address}
-            city={cater.state}
-            country={cater.country}
-            id={cater.id}
-            cater_id={cater.caters.id}
-          />
-        <% end %>
+    <%= if @current_user.role == "user" do %>
+      <section>
+        <!-- Dashboard Stats -->
+        <section class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 p-4">
+          <div class="bg-white shadow rounded-lg p-4 text-center">
+            <p class="text-gray-500">Total Booking</p>
+            <h2 class="text-2xl font-bold">$0.00</h2>
+          </div>
+          <div class="bg-white shadow rounded-lg p-4 text-center">
+            <p class="text-gray-500">Total Paid</p>
+            <h2 class="text-2xl font-bold">$0.00</h2>
+          </div>
+
+          <div class="bg-white shadow rounded-lg p-4 text-center">
+            <p class="text-gray-500">Total Expenditure</p>
+            <h2 class="text-2xl font-bold">$0.00</h2>
+          </div>
+        </section>
+
+        <section class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+          <%= for cater <- :lists.reverse(@caters) do %>
+            <.live_component
+              module={NoshNetworkWeb.CardComponent}
+              id={"card-#{cater.id}"}
+              image_url={cater.caters.photo}
+              alt_text="Outer Image"
+              title={cater.business_name}
+              description="This is the description for this card."
+              address={cater.address}
+              city={cater.state}
+              country={cater.country}
+              id={cater.id}
+              cater_id={cater.caters.id}
+            />
+          <% end %>
+        </section>
       </section>
+      <% else %>
+    <.live_component
+      module={NoshNetworkWeb.DashboardLive.Components.CaterDashboard }
+      id="cater_dashboard"
+    />
+      <% end %>
     </div>
   </div>
 </section>
