@@ -31,19 +31,19 @@ defmodule NoshNetworkWeb.WelcomeLive.Welcome do
         </p>
 
         <div class="my-4 w-full">
-          <%= if @current_user.role == "cater" do %>
+          <%= if @current_user.role == "cater" and not @current_user.is_active and not @current_user.is_verified do %>
             <.link
               href={~p"/users/onboarding"}
               class="w-full px-4 py-2 bg-black text-white border border-black rounded hover:bg-transparent hover:text-black text-center block"
             >
-              Continue
+              Continue to Onboarding
             </.link>
           <% else %>
             <.link
               href={~p"/users/dashboard"}
               class="w-full px-4 py-2 bg-black text-white border border-black rounded hover:bg-transparent hover:text-black text-center block"
             >
-              Continue
+              Continue to Dashboard
             </.link>
           <% end %>
         </div>

@@ -1,8 +1,8 @@
 defmodule NoshNetworkWeb.DashboardLive.Components.BookingDetails do
   use NoshNetworkWeb, :live_component
   alias NoshNetwork.Repo
-  alias NoshNetwork.Data.Context.{Bookings, Users}
-
+  alias NoshNetwork.Data.Context.{Bookings}
+@impl true
   def render(assigns) do
     ~H"""
     <div id="bookings_details" class="w-full fixed right-0 shadow-lg top-4 slider-overlay">
