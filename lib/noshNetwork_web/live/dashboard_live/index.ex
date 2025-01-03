@@ -1,7 +1,7 @@
 defmodule NoshNetworkWeb.DashboardLive.Index do
   use NoshNetworkWeb, :live_view
   alias NoshNetwork.Data.Context.Users
-  alias NoshNetwork.Data.Context.{Bookings, Caters}
+
 
   @impl true
  def mount(_params, _session, socket) do

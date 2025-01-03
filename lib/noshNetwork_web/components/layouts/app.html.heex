@@ -96,7 +96,16 @@
         >
           <%= if @current_user do %>
            
-           
+             <.link
+              class="menu-item"
+              href={~p"/users/dashboard"}
+          method='get'
+              tabindex="-1"
+              id="user-menu-2"
+              role="menuitem"
+            >
+           Dashboard
+            </.link>
 
             <.link
               class="menu-item"
@@ -109,7 +118,7 @@
               Logout
             </.link>
           <% else %>
-            <a
+            <.link
               class="menu-item border-b border-[#0B4927] border-opacity-50"
               href={~p"/auth/signup"}
               id="user-menu-0"
@@ -117,10 +126,10 @@
               role="menuitem"
             >
               Register
-            </a>
-            <a href={~p"/auth/log_in"} class="menu-item" id="user-menu-1" role="menuitem">
+            </.link>
+            <.link href={~p"/auth/log_in"} class="menu-item" id="user-menu-1" role="menuitem">
               Login
-            </a>
+            </.link>
           <% end %>
         </div>
       </div>
