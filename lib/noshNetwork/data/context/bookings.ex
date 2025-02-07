@@ -6,7 +6,6 @@ defmodule NoshNetwork.Data.Context.Bookings do
   import Ecto.Query, warn: false
   alias NoshNetwork.Repo
 
-
   alias NoshNetwork.Data.Schema.Booking
 
   @doc """
@@ -45,15 +44,14 @@ defmodule NoshNetwork.Data.Context.Bookings do
     |> Repo.all()
   end
 
-
   def get_recent_bookings_by_cater_id(cater_id, months_ago \\ 2) do
     from_date = Timex.shift(Timex.now(), months: -months_ago)
     IO.inspect(from_date, label: "From Date")
+
     Booking
     |> where([b], b.cater_id == ^cater_id and b.inserted_at >= ^from_date)
     |> Repo.all()
   end
-
 
   def get_bookings_by_cater_id(cater_id) do
     Booking

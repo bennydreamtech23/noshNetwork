@@ -38,7 +38,10 @@ defmodule NoshNetworkWeb.Telemetry do
       ),
       summary("phoenix.socket_connected.duration", unit: {:native, :millisecond}),
       summary("phoenix.channel_joined.duration", unit: {:native, :millisecond}),
-      summary("phoenix.channel_handled_in.duration", tags: [:event], unit: {:native, :millisecond}),
+      summary("phoenix.channel_handled_in.duration",
+        tags: [:event],
+        unit: {:native, :millisecond}
+      ),
 
       # Database Metrics
       summary("noshNetwork.repo.query.total_time",

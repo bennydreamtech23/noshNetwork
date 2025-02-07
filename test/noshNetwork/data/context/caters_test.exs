@@ -4,8 +4,6 @@ defmodule NoshNetwork.Data.Context.CatersTest do
   alias NoshNetwork.Data.Context.Caters
 
   describe "caters" do
-    alias NoshNetwork.Data.Context.Caters.Cater
-
     import NoshNetwork.Data.Context.CatersFixtures
 
     @invalid_attrs %{about: nil, gallery: nil, social_media: nil}

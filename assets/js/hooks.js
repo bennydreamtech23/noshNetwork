@@ -1,4 +1,3 @@
-// hooks.js
 import Chart from 'chart.js/auto'
 
 const Hooks = {};
@@ -19,8 +18,8 @@ Hooks.Chart = {
           label: '# of Incomes',
           data: this.dataset(),
           borderWidth: 1,
-        //   borderColor: '#36A2EB',
-          backgroundColor: '#960E0E',
+          borderColor: '#000',
+          backgroundColor: '#000',
         }]
       },
       options: {
@@ -46,4 +45,3 @@ Hooks.Chart = {
 };
 
 export default Hooks;
-

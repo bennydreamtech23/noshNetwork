@@ -1,110 +1,125 @@
-<section class="m-auto max-w-screen-xl p-6 overflow-hidden">
-  <.simple_form for={@form} phx-change="validate" phx-submit="save_booking">
-    <div class="flex  flex-col gap-4">
-      <label>Event Type</label>
-      <%!-- <%= select(@form, :event_type, @event_type) %> --%>
+<section class="m-auto max-w-screen-xl p-6 overflow-hidden font-brand">
+  <div class="relative min-h-screen">
+    <!-- Sidebar -->
+    <.live_component
+      module={NoshNetworkWeb.Sidebar}
+      id="sidebar"
+      links={@link}
+      current_path={@current_path}
+    />
+    <div class="flex lg:flex-row flex-col items-start lg:ml-60">
+      <div class="lg:w-1/2 w-full lg:flex hidden items-center justify-center flex-col">
+        <img src="/images/hero_image.png" alt="registration page" class="rounded-b-md" />
+      </div>
 
-      <.live_select field={@form[:event_type]} />
-    </div>
-    <div class="flex  flex-col gap-4">
-      <.input
-        field={@form[:event_date]}
-        type="datetime-local"
-        label="Event date"
-        autocomplete="off"
-      />
-    </div>
-    <div class="flex  flex-col gap-4">
-      <.input
-        field={@form[:event_duration]}
-        type="number"
-        label="Event Duration"
-        autocomplete="off"
-      />
-    </div>
-    <div class="flex  flex-col gap-4">
-      <.input
-        field={@form[:num_guests]}
-        type="number"
-        label="Number of Guests"
-        autocomplete="off"
-      />
-    </div>
-    <div class="flex  flex-col gap-4">
-      <label>Cusine Preference</label>
+      <div class="w-full lg:w-1/2 flex flex-col p-6 gap-4">
+        <.simple_form for={@form} phx-change="validate" phx-submit="save_booking">
+          <div class="flex items-center justify-normal gap-8">
+            <div class="flex  flex-col gap-4">
+              <.live_select
+                field={@form[:event_type]}
+                options={@event_type}
+                label="Choose an event type"
+                mode={:tags}
+              />
+            </div>
+            <div class="flex  flex-col gap-4">
+              <.input
+                field={@form[:event_date]}
+                type="datetime-local"
+                label="Event date"
+                autocomplete="off"
+              />
+            </div>
+          </div>
 
-      <.live_select
-        field={@form[:cusine_preference]}
-        value_mapper={fn option -> %{id: option, name: option} end}
-        options={@cusine_preference}
-        mode={:tags}
-      />
-    </div>
-    <div class="flex  flex-col gap-4">
-      <label>Specific Dishes</label>
+          <div class="flex  flex-col gap-4">
+            <.input
+              field={@form[:event_duration]}
+              type="number"
+              label="Event Duration"
+              autocomplete="off"
+            />
+          </div>
+          <div class="flex  flex-col gap-4">
+            <.input
+              field={@form[:num_guests]}
+              type="number"
+              label="Number of Guests"
+              autocomplete="off"
+            />
+          </div>
+          <div class="flex  flex-col gap-4">
+            <label>Cusine Preference</label>
 
-      <.live_select
-        field={@form[:specific_dishes]}
-        value_mapper={fn option -> %{id: option, name: option} end}
-        options={@specific_dishes}
-        mode={:tags}
-      />
-    </div>
-    <div class="flex  flex-col gap-4">
-      <label>Dietary Restriction</label>
+            <.live_select
+              field={@form[:cusine_preference]}
+              options={@cusine_preference}
+              label="Choose your cusine preference"
+              mode={:tags}
+            />
+          </div>
+          <div class="flex  flex-col gap-4">
+            <label>Specific Dishes</label>
 
-      <.live_select
-        field={@form[:dietary_restriction]}
-        value_mapper={fn option -> %{id: option, name: option} end}
-        options={@dietary_restriction}
-        mode={:tags}
-      />
-    </div>
-    <div class="flex  flex-col gap-4">
-      <label>Service Type</label>
+            <.live_select
+              field={@form[:specific_dishes]}
+              options={@specific_dishes}
+              label="Choose your specific dishes"
+              mode={:tags}
+            />
+          </div>
+          <div class="flex  flex-col gap-4">
+            <label>Dietary Restriction</label>
 
-      <.live_select
-        field={@form[:service_type]}
-        value_mapper={fn option -> %{id: option, name: option} end}
-        options={@service_type}
-        mode={:tags}
-      />
-    </div>
-    <div class="flex  flex-col gap-4">
-      <.input
-        field={@form[:venue_location]}
-        type="text"
-        label="Venue Location"
-        autocomplete="off"
-      />
-    </div>
+            <.live_select
+              field={@form[:dietary_restriction]}
+              options={@dietary_restriction}
+              label="Choose your dietary restriction"
+              mode={:tags}
+            />
+          </div>
+          <div class="flex  flex-col gap-4">
+            <label>Service Type</label>
+          </div>
+          <div class="flex  flex-col gap-4">
+            <.input
+              field={@form[:venue_location]}
+              type="text"
+              label="Venue Location"
+              autocomplete="off"
+            />
+          </div>
 
-    <div class="flex  flex-col gap-4">
-      <.input field={@form[:budget]} type="text" label="Budget" autocomplete="off" />
-    </div>
+          <div class="flex  flex-col gap-4">
+            <.input field={@form[:budget]} type="text" label="Budget" autocomplete="off" />
+          </div>
 
-    <div class="flex  flex-col gap-4">
-      <.input
-        field={@form[:special_request]}
-        type="text"
-        label="Special Request"
-        autocomplete="off"
-      />
+          <div class="flex  flex-col gap-4">
+            <.input
+              field={@form[:special_request]}
+              type="text"
+              label="Special Request"
+              autocomplete="off"
+            />
+          </div>
+          <div class="flex  flex-col gap-4">
+            <.input
+              field={@form[:additional_service]}
+              type="text"
+              label="Additional Service"
+              autocomplete="off"
+            />
+          </div>
+          <button
+            phx-disable-with="creating booking..."
+            class={[button_valid(@valid), "w-full text-white"]}
+            disabled={@valid !== true}
+          >
+            Create Booking
+          </button>
+        </.simple_form>
+      </div>
     </div>
-    <div class="flex  flex-col gap-4">
-      <.input
-        field={@form[:additional_service]}
-        type="text"
-        label="Additional Service"
-        autocomplete="off"
-      />
-    </div>
-    <button
-      phx-disable-with="creating booking..."
-      class={[button_valid(@valid), "w-full text-white"]}
-      disabled={@valid !== true}
-    >
-      Create Booking
-    </button>
-  </.simple_form>
+  </div>
 </section>

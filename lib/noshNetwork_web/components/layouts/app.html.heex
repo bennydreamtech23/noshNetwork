@@ -95,16 +95,15 @@
           hidden="true"
         >
           <%= if @current_user do %>
-           
-             <.link
+            <.link
               class="menu-item"
               href={~p"/users/dashboard"}
-          method='get'
+              method="get"
               tabindex="-1"
               id="user-menu-2"
               role="menuitem"
             >
-           Dashboard
+              Dashboard
             </.link>
 
             <.link

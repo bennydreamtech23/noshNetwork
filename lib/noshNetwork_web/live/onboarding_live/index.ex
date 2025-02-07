@@ -5,7 +5,6 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
   alias NoshNetwork.Data.Schema.Cater
   # alias NoshNetwork.Data.Schema.User
 
-
   @impl true
   def mount(_params, _session, socket) do
     current_user = socket.assigns.current_user
@@ -19,6 +18,16 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
         ]
       )
 
+    specialties_choice = [
+      %{label: "Nigerian Cuisine", value: "Nigerian Cuisine", tag_label: "Nigerian Cuisine"},
+      %{label: "Chinese Cuisine", value: "Chinese Cuisine", tag_label: "Chinese Cuisine"},
+      %{label: "American Cuisine", value: "American Cuisine", tag_label: "American Cuisine"},
+      %{label: "Italian Cuisine", value: "Italian Cuisine", tag_label: "Italian Cuisine"},
+      %{label: "Japanese Cuisine", value: "Japanese Cuisine", tag_label: "Japanese Cuisine"}
+    ]
+
+    IO.inspect(specialties_choice, label: "DEBUG: @specialties_choice before assign")
+
     socket =
       socket
       |> assign(:current_user, current_user)
@@ -30,13 +39,7 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
       |> assign(:valid, false)
       |> assign(:user_id, nil)
       |> assign(:step, "one")
-      |> assign(:specilaities_choice, [
-        "Nigerian Cusine",
-        "Chinese Cuisine",
-        "Americian Cuisine",
-        "Italian Cuisine",
-        "Japanese Cuisine"
-      ])
+      |> assign(:specialties_choice, specialties_choice)
 
     {:ok, socket}
   end
@@ -94,6 +97,13 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
     else
       {:noreply, socket}
     end
+  end
+
+  def handle_event("specialties_updated", %{"cater" => %{"specialties" => specialties}}, socket) do
+    IO.inspect(specialties, label: "DEBUG: Selected specialties")
+
+    changeset = Cater.changeset(socket.assigns.cater_form.data, %{"specialties" => specialties})
+    {:noreply, assign(socket, cater_form: to_form(changeset))}
   end
 
   # caters validation and creation
@@ -159,17 +169,34 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
     {:noreply, assign(socket, step: step)}
   end
 
-
-
-
   @impl true
+  # def handle_event("live_select_change", %{"id" => id, "text" => text}, socket) do
+  #   IO.inspect(text, label: "is text entered")
+  #   options =
+  #     socket.assigns.specilaities_choice
+  #     |> Enum.filter(&(String.downcase(&1) |> String.contains?(String.downcase(text))))
+
+  #   send_update(LiveSelect.Component, options: options, id: id)
+
+  #   {:noreply, socket}
+  # end
+
   def handle_event("live_select_change", %{"id" => id, "text" => text}, socket) do
     options =
-      socket.assigns.specilaities_choice
-      |> Enum.filter(&(String.downcase(&1) |> String.contains?(String.downcase(text))))
+      if text == "" do
+        socket.assigns.specilaities_choice
+      else
+        socket.assigns.specilaities_choice
+        |> Enum.filter(&(String.downcase(&1) |> String.contains?(String.downcase(text))))
+      end
 
     send_update(LiveSelect.Component, options: options, id: id)
 
+    {:noreply, socket}
+  end
+
+  def handle_event(event, params, socket) do
+    IO.inspect({event, params}, label: "LiveSelect Debug")
     {:noreply, socket}
   end
 
@@ -179,7 +206,6 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
     {:noreply, socket}
   end
 
-
   defp consume_files(socket) do
     consume_uploaded_entries(socket, :profile_picture, fn %{path: path}, _entry ->
       dest = Path.join([:code.priv_dir(:noshNetwork), "static", "uploads", Path.basename(path)])
@@ -188,11 +214,6 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
       {:postpone, ~p"/uploads/#{Path.basename(dest)}"}
     end)
   end
-
-
-
-
-
 
   defp consume_file(socket) do
     consume_uploaded_entries(socket, :photo, fn %{path: path}, _entry ->

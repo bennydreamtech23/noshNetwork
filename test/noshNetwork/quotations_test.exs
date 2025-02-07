@@ -1,10 +1,8 @@
 defmodule NoshNetwork.QuotationsTest do
   use NoshNetwork.DataCase
 
-  alias NoshNetwork.Quotations
-
   describe "quotations" do
-    alias NoshNetwork.Quotations.Quotation
+    alias NoshNetwork.Data.Context.Quotations
 
     import NoshNetwork.QuotationsFixtures
 

@@ -61,7 +61,8 @@ defmodule NoshNetwork.MixProject do
       {:httpoison, "~> 2.1"},
       {:dns_cluster, "~> 0.1.1"},
       {:live_select, "~> 1.4"},
-      {:plug_cowboy, "~> 2.5"}
+      {:plug_cowboy, "~> 2.5"},
+      {:ex_doc, "~> 0.29", only: :dev, runtime: false}
     ]
   end
 
