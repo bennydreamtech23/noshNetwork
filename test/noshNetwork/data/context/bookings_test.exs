@@ -4,8 +4,6 @@ defmodule NoshNetwork.Data.Context.BookingsTest do
   alias NoshNetwork.Data.Context.Bookings
 
   describe "reservations" do
-    alias NoshNetwork.Data.Context.Bookings.Reservation
-
     import NoshNetwork.Data.Context.BookingsFixtures
 
     @invalid_attrs %{event_date: nil, event_duration: nil, event_type: nil, num_guests: nil}

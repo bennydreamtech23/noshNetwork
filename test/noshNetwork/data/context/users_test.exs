@@ -2,9 +2,10 @@ defmodule NoshNetwork.Data.Context.UsersTest do
   use NoshNetwork.DataCase
 
   alias NoshNetwork.Data.Context.Users
+  alias NoshNetwork.Data.Schema.User
 
   import NoshNetwork.Data.Context.UsersFixtures
-  alias NoshNetwork.Data.Context.Users.{User, UserToken}
+  alias NoshNetwork.Data.Context.Users.{UserToken}
 
   describe "get_user_by_email/1" do
     test "does not return the user if the email does not exist" do

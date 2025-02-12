@@ -19,8 +19,13 @@ defmodule NoshNetworkWeb.CardComponent do
           <%= "#{@address}, #{@city}, #{@country}" %>
         </p>
 
-        <button id={"caterer-#{@cater_id}"} phx-click="booking_action" class="btn-primary my-4 w-full"   phx-value-cater_id={@cater_id}>
-      Book Now
+        <button
+          id={"caterer-#{@cater_id}"}
+          phx-click="booking_action"
+          class="btn-primary my-4 w-full"
+          phx-value-cater_id={@cater_id}
+        >
+          Book Now
         </button>
       </div>
     </div>

@@ -4,7 +4,7 @@ defmodule NoshNetwork.GallerysTest do
   alias NoshNetwork.Gallerys
 
   describe "galleries" do
-    alias NoshNetwork.Gallerys.Gallery
+    alias NoshNetwork.Data.Context.Images.Gallery
 
     import NoshNetwork.GallerysFixtures
 

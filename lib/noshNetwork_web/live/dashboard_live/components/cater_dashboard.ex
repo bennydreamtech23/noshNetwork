@@ -22,7 +22,7 @@ defmodule NoshNetworkWeb.DashboardLive.Components.CaterDashboard do
       </section>
 
       <section class="flex items-center gap-4 justify-between">
-        <div class='w-4/6 h-full'>
+        <div class="w-4/6 h-full">
           <h1 class="font-bold text-lg">Total Revenue</h1>
           <canvas id="my-chart" phx-hook="Chart" data-incomes={Jason.encode!(@incomes)}></canvas>
           <h1 class="font-bold text-lg">Performance Level</h1>
@@ -35,16 +35,15 @@ defmodule NoshNetworkWeb.DashboardLive.Components.CaterDashboard do
               <h2 class="font-bold text-base">Anastasia John</h2>
               <p class="text-xs">Naming ceremony</p>
             </div>
-            <h1 class='text-sm'>15th Feb 2025</h1>
+            <h1 class="text-sm">15th Feb 2025</h1>
           </div>
-
 
           <div class="flex items-center bg-[#D9D9D9] px-4 py-2 justify-between gap-4 border rounded-md">
             <div>
               <h2 class="font-bold text-base">Anastasia John</h2>
               <p class="text-xs">Naming ceremony</p>
             </div>
-            <h1 class='text-sm'>15th Feb 2025</h1>
+            <h1 class="text-sm">15th Feb 2025</h1>
           </div>
         </div>
       </section>
@@ -52,23 +51,18 @@ defmodule NoshNetworkWeb.DashboardLive.Components.CaterDashboard do
     """
   end
 
-
-
-
   @impl true
   def update(assigns, socket) do
-
     current_user = assigns.current_user
 
-cater  =  Caters.get_cater_by_user_id(current_user.id)
+    cater = Caters.get_cater_by_user_id(current_user.id)
 
+    user_booking = if cater, do: Bookings.get_recent_bookings_by_cater_id(cater.id), else: []
+    IO.inspect(user_booking, label: "booking")
 
-user_booking = if cater, do: Bookings.get_recent_bookings_by_cater_id(cater.id), else: []
-IO.inspect(user_booking, label: "booking")
     {:ok,
      socket
      |> assign(assigns)
-     |> assign(:incomes, [10000, 20000, 30000, 40000, 50000, 100000])
-     }
+     |> assign(:incomes, [10000, 20000, 30000, 40000, 50000, 100_000])}
   end
 end

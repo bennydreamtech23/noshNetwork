@@ -4,7 +4,7 @@ defmodule NoshNetwork.Data.Context.ServicesTest do
   alias NoshNetwork.Data.Context.Services
 
   describe "services" do
-    alias NoshNetwork.Data.Context.Services.Service
+    alias NoshNetwork.Data.Context.Services
 
     import NoshNetwork.Data.Context.ServicesFixtures
 

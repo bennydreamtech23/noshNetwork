@@ -3,8 +3,6 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
   alias NoshNetwork.Data.Context.Users
   alias NoshNetwork.Data.Context.Caters
   alias NoshNetwork.Data.Schema.Cater
-  # alias NoshNetwork.Data.Schema.User
-
 
   @impl true
   def mount(_params, _session, socket) do
@@ -19,6 +17,15 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
         ]
       )
 
+    specialties_choice = [
+      %{label: "Nigerian Cuisine", value: "Nigerian", tag_label: "Nigerian Cuisine"},
+      %{label: "Chinese Cuisine", value: "Chinese", tag_label: "Chinese Cuisine"},
+      %{label: "American Cuisine", value: "American", tag_label: "American Cuisine"},
+      %{label: "Italian Cuisine", value: "Italian", tag_label: "Italian Cuisine"},
+      %{label: "Japanese Cuisine", value: "Japanese", tag_label: "Japanese Cuisine"}
+    ]
+
+
     socket =
       socket
       |> assign(:current_user, current_user)
@@ -30,13 +37,9 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
       |> assign(:valid, false)
       |> assign(:user_id, nil)
       |> assign(:step, "one")
-      |> assign(:specilaities_choice, [
-        "Nigerian Cusine",
-        "Chinese Cuisine",
-        "Americian Cuisine",
-        "Italian Cuisine",
-        "Japanese Cuisine"
-      ])
+      |> assign(:specialties_choice, specialties_choice)
+      |> assign(:filtered_options, specialties_choice)
+      |> assign(:selected_specialty, nil)
 
     {:ok, socket}
   end
@@ -95,6 +98,7 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
       {:noreply, socket}
     end
   end
+
 
   # caters validation and creation
   @impl true
@@ -165,19 +169,32 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
   @impl true
   def handle_event("live_select_change", %{"id" => id, "text" => text}, socket) do
     options =
-      socket.assigns.specilaities_choice
-      |> Enum.filter(&(String.downcase(&1) |> String.contains?(String.downcase(text))))
+      socket.assigns.specialties_choice
+      |> Enum.filter(fn specialty ->
+        specialty_value = specialty[:value] || ""  # Ensure it's always a string
+        String.downcase(specialty_value) |> String.contains?(String.downcase(text))
+      end)
 
     send_update(LiveSelect.Component, options: options, id: id)
 
     {:noreply, socket}
   end
 
-  def handle_event("clear", %{"id" => id}, socket) do
-    send_update(LiveSelect.Component, options: [], id: id)
 
-    {:noreply, socket}
-  end
+
+  @impl true
+def handle_event("set-default", %{"id" => id}, socket) do
+  send_update(LiveSelect.Component, options: socket.assigns.specialties_choice, id: id)
+
+  {:noreply, socket}
+end
+
+@impl true
+def handle_event("clear", %{"id" => id}, socket) do
+  send_update(LiveSelect.Component, options: [], id: id)
+
+  {:noreply, socket}
+end
 
 
   defp consume_files(socket) do
@@ -188,11 +205,6 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
       {:postpone, ~p"/uploads/#{Path.basename(dest)}"}
     end)
   end
-
-
-
-
-
 
   defp consume_file(socket) do
     consume_uploaded_entries(socket, :photo, fn %{path: path}, _entry ->
@@ -212,6 +224,8 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
       assign(socket, form: form)
     end
   end
+
+
 
   defp button_valid(true), do: "my-4 btn-secondary w-full"
   defp button_valid(false), do: "my-4 bg-zinc-600 rounded-md py-4 px-3 w-full text-white"

@@ -1,11 +1,11 @@
 defmodule NoshNetwork.ImagesTest do
   use NoshNetwork.DataCase
 
-  alias NoshNetwork.Images
+  # alias NoshNetwork.Images
+  alias NoshNetwork.Data.Context.Images
+  alias NoshNetwork.Data.Schema.Image
 
   describe "images" do
-    alias NoshNetwork.Images.Image
-
     import NoshNetwork.ImagesFixtures
 
     @invalid_attrs %{image: nil, title: nil, type: nil}

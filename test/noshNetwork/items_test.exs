@@ -4,7 +4,7 @@ defmodule NoshNetwork.ItemsTest do
   alias NoshNetwork.Items
 
   describe "items" do
-    alias NoshNetwork.Items.Item
+    alias NoshNetwork.Data.Context.Items
 
     import NoshNetwork.ItemsFixtures
 

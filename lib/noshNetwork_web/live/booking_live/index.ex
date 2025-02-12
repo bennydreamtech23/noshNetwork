@@ -4,13 +4,20 @@ defmodule NoshNetworkWeb.BookingLive.Index do
   alias NoshNetwork.Data.Context.Bookings
   alias NoshNetwork.Data.Schema.Booking
   alias NoshNetwork.Data.Context.Caters
-  import Phoenix.HTML.Form
+
+  @impl true
 
   def mount(%{"id" => id}, _session, socket) do
     changeset = Bookings.change_booking(%Booking{})
     user_id = socket.assigns.current_user.id
     cater_id = Caters.get_cater!(id)
     IO.inspect(cater_id.id, label: "hello ooo")
+
+    links = [
+      %{label: "Dashboard", path: "/users/dashboard"},
+      %{label: "Caterers", path: "/caterers"},
+      %{label: "Orders", path: "/orders"}
+    ]
 
     socket =
       socket
@@ -53,6 +60,8 @@ defmodule NoshNetworkWeb.BookingLive.Index do
         "Jollof Rice"
       ])
       |> assign(:valid, false)
+      |> assign(:link, links)
+      |> assign(current_path: "/users/booking")
       |> assign(:cater_id, cater_id.id)
       |> assign(:user_id, user_id)
 
@@ -100,6 +109,23 @@ defmodule NoshNetworkWeb.BookingLive.Index do
       {:error, %Ecto.Changeset{} = changeset} ->
         {:noreply, assign_form(socket, changeset)}
     end
+  end
+
+  @impl true
+  def handle_event("live_select_change", %{"id" => id, "text" => text}, socket) do
+    options =
+      socket.assigns.cusine_preference
+      |> Enum.filter(&(String.downcase(&1) |> String.contains?(String.downcase(text))))
+
+    send_update(LiveSelect.Component, options: options, id: id)
+
+    {:noreply, socket}
+  end
+
+  def handle_event("clear", %{"id" => id}, socket) do
+    send_update(LiveSelect.Component, options: [], id: id)
+
+    {:noreply, socket}
   end
 
   defp assign_form(socket, %Ecto.Changeset{} = changeset) do
