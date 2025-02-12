@@ -3,7 +3,6 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
   alias NoshNetwork.Data.Context.Users
   alias NoshNetwork.Data.Context.Caters
   alias NoshNetwork.Data.Schema.Cater
-  # alias NoshNetwork.Data.Schema.User
 
   @impl true
   def mount(_params, _session, socket) do
@@ -19,14 +18,13 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
       )
 
     specialties_choice = [
-      %{label: "Nigerian Cuisine", value: "Nigerian Cuisine", tag_label: "Nigerian Cuisine"},
-      %{label: "Chinese Cuisine", value: "Chinese Cuisine", tag_label: "Chinese Cuisine"},
-      %{label: "American Cuisine", value: "American Cuisine", tag_label: "American Cuisine"},
-      %{label: "Italian Cuisine", value: "Italian Cuisine", tag_label: "Italian Cuisine"},
-      %{label: "Japanese Cuisine", value: "Japanese Cuisine", tag_label: "Japanese Cuisine"}
+      %{label: "Nigerian Cuisine", value: "Nigerian", tag_label: "Nigerian Cuisine"},
+      %{label: "Chinese Cuisine", value: "Chinese", tag_label: "Chinese Cuisine"},
+      %{label: "American Cuisine", value: "American", tag_label: "American Cuisine"},
+      %{label: "Italian Cuisine", value: "Italian", tag_label: "Italian Cuisine"},
+      %{label: "Japanese Cuisine", value: "Japanese", tag_label: "Japanese Cuisine"}
     ]
 
-    IO.inspect(specialties_choice, label: "DEBUG: @specialties_choice before assign")
 
     socket =
       socket
@@ -40,6 +38,8 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
       |> assign(:user_id, nil)
       |> assign(:step, "one")
       |> assign(:specialties_choice, specialties_choice)
+      |> assign(:filtered_options, specialties_choice)
+      |> assign(:selected_specialty, nil)
 
     {:ok, socket}
   end
@@ -99,12 +99,6 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
     end
   end
 
-  def handle_event("specialties_updated", %{"cater" => %{"specialties" => specialties}}, socket) do
-    IO.inspect(specialties, label: "DEBUG: Selected specialties")
-
-    changeset = Cater.changeset(socket.assigns.cater_form.data, %{"specialties" => specialties})
-    {:noreply, assign(socket, cater_form: to_form(changeset))}
-  end
 
   # caters validation and creation
   @impl true
@@ -169,42 +163,39 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
     {:noreply, assign(socket, step: step)}
   end
 
+
+
+
   @impl true
-  # def handle_event("live_select_change", %{"id" => id, "text" => text}, socket) do
-  #   IO.inspect(text, label: "is text entered")
-  #   options =
-  #     socket.assigns.specilaities_choice
-  #     |> Enum.filter(&(String.downcase(&1) |> String.contains?(String.downcase(text))))
-
-  #   send_update(LiveSelect.Component, options: options, id: id)
-
-  #   {:noreply, socket}
-  # end
-
   def handle_event("live_select_change", %{"id" => id, "text" => text}, socket) do
     options =
-      if text == "" do
-        socket.assigns.specilaities_choice
-      else
-        socket.assigns.specilaities_choice
-        |> Enum.filter(&(String.downcase(&1) |> String.contains?(String.downcase(text))))
-      end
+      socket.assigns.specialties_choice
+      |> Enum.filter(fn specialty ->
+        specialty_value = specialty[:value] || ""  # Ensure it's always a string
+        String.downcase(specialty_value) |> String.contains?(String.downcase(text))
+      end)
 
     send_update(LiveSelect.Component, options: options, id: id)
 
     {:noreply, socket}
   end
 
-  def handle_event(event, params, socket) do
-    IO.inspect({event, params}, label: "LiveSelect Debug")
-    {:noreply, socket}
-  end
 
-  def handle_event("clear", %{"id" => id}, socket) do
-    send_update(LiveSelect.Component, options: [], id: id)
 
-    {:noreply, socket}
-  end
+  @impl true
+def handle_event("set-default", %{"id" => id}, socket) do
+  send_update(LiveSelect.Component, options: socket.assigns.specialties_choice, id: id)
+
+  {:noreply, socket}
+end
+
+@impl true
+def handle_event("clear", %{"id" => id}, socket) do
+  send_update(LiveSelect.Component, options: [], id: id)
+
+  {:noreply, socket}
+end
+
 
   defp consume_files(socket) do
     consume_uploaded_entries(socket, :profile_picture, fn %{path: path}, _entry ->
@@ -233,6 +224,8 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
       assign(socket, form: form)
     end
   end
+
+
 
   defp button_valid(true), do: "my-4 btn-secondary w-full"
   defp button_valid(false), do: "my-4 bg-zinc-600 rounded-md py-4 px-3 w-full text-white"

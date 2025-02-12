@@ -175,18 +175,18 @@ defmodule NoshNetworkWeb.CoreComponents do
     """
   end
 
-  def live_select(%{field: %Phoenix.HTML.FormField{} = field, options: _options} = assigns) do
+
+  def live_select(%{field: %Phoenix.HTML.FormField{} = field} = assigns) do
     assigns =
       assigns
       |> assign(:errors, Enum.map(field.errors, &translate_error(&1)))
-      |> assign(:live_select_opts, assigns_to_attributes(assigns, [:errors, :label, :options]))
+      |> assign(:live_select_opts, assigns_to_attributes(assigns, [:errors, :label]))
 
     ~H"""
     <div phx-feedback-for={@field.name}>
       <.label for={@field.id}><%= @label %></.label>
       <LiveSelect.live_select
         field={@field}
-        options={@options}
         text_input_class={[
           "mt-2 block w-full rounded-lg border-zinc-300 py-[7px] px-[11px]",
           "text-zinc-900 focus:outline-none focus:ring-4 sm:text-sm sm:leading-6",

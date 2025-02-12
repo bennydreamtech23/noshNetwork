@@ -178,17 +178,27 @@
                   class="rounded border-zinc-300 text-zinc-900 focus:ring-0 w-full"
                 />
               </div>
-              
+
               <.live_select
                 field={@cater_form[:specialties]}
-                options={@specilaities_choice}
-                label="Choose a Category"
-                mode={:quick_tags}
-                id="specialitie"
-              
-              />
-
-           
+                label="Specialties"
+                mode={:tags}
+                phx-focus="set-default"
+                options={
+                  Enum.map(@specialties_choice, fn %{label: label, value: value} ->
+                    {label, value}
+                  end)
+                }
+              >
+                <:option :let={option}>
+                  <div class="flex">
+                    <i class="fa-solid fa-check"></i>&nbsp;<%= option.label %>
+                  </div>
+                </:option>
+                <:tag :let={option}>
+                  <i class="fa-solid fa-check"></i>&nbsp;<%= option.label %>
+                </:tag>
+              </.live_select>
 
               <div class="flex flex-col items-start justify-between gap-4 w-full">
                 <.label for="availability[emergency]">
