@@ -9,8 +9,8 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
 
     links = [
       %{label: "Dashboard", path: "/users/dashboard"},
-      %{label: "Caterers", path: "/caterers"},
-      %{label: "Orders", path: "/orders"}
+      %{label: "Booking", path: "/users/booking"},
+      %{label: "Setting", path: "/users/settings"}
     ]
 
     socket =
@@ -50,7 +50,7 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
     if current_user.is_verified and current_user.is_active do
       socket =
         socket
-        |> push_navigate(to: ~p"/users/booking?#{[id: id]}")
+        |> push_navigate(to: ~p"/users/create_booking?#{[id: id]}")
 
       {:noreply, socket}
     else

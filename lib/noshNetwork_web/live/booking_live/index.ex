@@ -100,7 +100,7 @@ defmodule NoshNetworkWeb.BookingLive.Index do
         socket =
           socket
           |> put_flash(:info, "Booking created successfully")
-          |> push_navigate(to: ~p"/users/user_booking")
+          |> push_navigate(to: ~p"/users/booking")
           |> assign(:valid, false)
           |> assign_form(changeset)
 
@@ -132,6 +132,6 @@ defmodule NoshNetworkWeb.BookingLive.Index do
     assign(socket, :form, to_form(changeset))
   end
 
-  defp button_valid(true), do: "bg-emOrange-dark"
-  defp button_valid(false), do: "bg-zinc-600"
+  defp button_valid(true), do: "bg-emOrange-dark p-4 rounded-lg"
+  defp button_valid(false), do: "bg-zinc-600 p-4 rounded-lg"
 end

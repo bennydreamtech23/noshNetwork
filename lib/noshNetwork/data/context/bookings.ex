@@ -39,8 +39,10 @@ defmodule NoshNetwork.Data.Context.Bookings do
 
   # get by user_id
   def get_bookings_by_user_id(user_id) do
-    Booking
-    |> where([b], b.user_id == ^user_id)
+    from(b in Booking,
+      where: b.user_id == ^user_id,
+      order_by: [asc: b.event_date]
+    )
     |> Repo.all()
   end
 

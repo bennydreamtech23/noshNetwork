@@ -175,7 +175,6 @@ defmodule NoshNetworkWeb.CoreComponents do
     """
   end
 
-
   def live_select(%{field: %Phoenix.HTML.FormField{} = field} = assigns) do
     assigns =
       assigns

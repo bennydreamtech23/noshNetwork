@@ -72,8 +72,8 @@ defmodule NoshNetworkWeb.Router do
       on_mount: [{NoshNetworkWeb.UserAuth, :ensure_authenticated}] do
       live "/dashboard", DashboardLive.Index
       live "/cater", CaterLive.Index
-      live "/booking", BookingLive.Index
-      live "/user_booking", ShowUserBookingLive.Index
+      live "/create_booking", BookingLive.Index
+      live "/booking", ShowUserBookingLive.Index
       live "/welcome", WelcomeLive.Welcome
       live "/onboarding", OnboardingLive.Index
       live "/settings", Auth.UserSettingsLive, :edit
