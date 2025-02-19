@@ -22,7 +22,7 @@ defmodule NoshNetwork.Data.Context.PaystackProvider do
     %{
       "email" => user.email,
       "amount" => Integer.to_string(amount * 100),
-      "callback_url" => "http://localhost:4000/users/user_booking"
+      "callback_url" => "http://localhost:4000/users/booking"
     }
   end
 

@@ -14,16 +14,16 @@
 
       <div class="w-full lg:w-1/2 flex flex-col p-6 gap-4">
         <.simple_form for={@form} phx-change="validate" phx-submit="save_booking">
-          <div class="flex items-center justify-normal gap-8">
-            <div class="flex  flex-col gap-4">
+          <div class="grid lg:grid-cols-2 grid-cols-1 gap-3 my-3">
+            <div>
               <.live_select
                 field={@form[:event_type]}
                 options={@event_type}
                 label="Choose an event type"
-                mode={:tags}
               />
             </div>
-            <div class="flex  flex-col gap-4">
+
+            <div>
               <.input
                 field={@form[:event_date]}
                 type="datetime-local"
@@ -33,82 +33,87 @@
             </div>
           </div>
 
-          <div class="flex  flex-col gap-4">
-            <.input
-              field={@form[:event_duration]}
-              type="number"
-              label="Event Duration"
-              autocomplete="off"
-            />
+          <div class="grid lg:grid-cols-2 grid-cols-1 gap-3">
+            <div>
+              <.input
+                field={@form[:event_duration]}
+                type="number"
+                label="Event Duration"
+                autocomplete="off"
+              />
+            </div>
+            <div>
+              <.input
+                field={@form[:num_guests]}
+                type="number"
+                label="Number of Guests"
+                autocomplete="off"
+              />
+            </div>
           </div>
-          <div class="flex  flex-col gap-4">
-            <.input
-              field={@form[:num_guests]}
-              type="number"
-              label="Number of Guests"
-              autocomplete="off"
-            />
-          </div>
-          <div class="flex  flex-col gap-4">
-            <label>Cusine Preference</label>
-
-            <.live_select
-              field={@form[:cusine_preference]}
-              options={@cusine_preference}
-              label="Choose your cusine preference"
-              mode={:tags}
-            />
-          </div>
-          <div class="flex  flex-col gap-4">
-            <label>Specific Dishes</label>
-
-            <.live_select
-              field={@form[:specific_dishes]}
-              options={@specific_dishes}
-              label="Choose your specific dishes"
-              mode={:tags}
-            />
-          </div>
-          <div class="flex  flex-col gap-4">
-            <label>Dietary Restriction</label>
-
-            <.live_select
-              field={@form[:dietary_restriction]}
-              options={@dietary_restriction}
-              label="Choose your dietary restriction"
-              mode={:tags}
-            />
-          </div>
-          <div class="flex  flex-col gap-4">
-            <label>Service Type</label>
-          </div>
-          <div class="flex  flex-col gap-4">
-            <.input
-              field={@form[:venue_location]}
-              type="text"
-              label="Venue Location"
-              autocomplete="off"
-            />
+          <div class="grid lg:grid-cols-2 grid-cols-1 gap-3 my-3">
+            <div>
+              <.live_select
+                field={@form[:cusine_preference]}
+                options={@cusine_preference}
+                label="Choose your Cusine preference"
+                mode={:tags}
+              />
+            </div>
+            <div>
+              <.live_select
+                field={@form[:specific_dishes]}
+                options={@specific_dishes}
+                label="Choose your specific dishes"
+                mode={:tags}
+              />
+            </div>
           </div>
 
-          <div class="flex  flex-col gap-4">
-            <.input field={@form[:budget]} type="text" label="Budget" autocomplete="off" />
+          <div class="grid lg:grid-cols-2 grid-cols-1 gap-3 my-3">
+            <div>
+              <.live_select
+                field={@form[:dietary_restriction]}
+                options={@dietary_restriction}
+                label="Choose your dietary restriction"
+                mode={:tags}
+              />
+            </div>
+
+            <div>
+              <.input
+                field={@form[:venue_location]}
+                type="text"
+                label="Venue Location"
+                autocomplete="off"
+              />
+            </div>
           </div>
 
-          <div class="flex  flex-col gap-4">
-            <.input
-              field={@form[:special_request]}
-              type="text"
-              label="Special Request"
-              autocomplete="off"
-            />
+          <div class="grid lg:grid-cols-2 grid-cols-1 gap-3 my-3">
+            <div>
+              <.input field={@form[:budget]} type="text" label="Budget" autocomplete="off" />
+            </div>
+
+            <div>
+              <.input
+                field={@form[:special_request]}
+                type="text"
+                label="Special Request"
+                autocomplete="off"
+              />
+            </div>
           </div>
-          <div class="flex  flex-col gap-4">
+
+          <div class="flex  flex-col gap-4 w-full">
             <.input
+              type="textarea"
               field={@form[:additional_service]}
               type="text"
+              class="w-full"
               label="Additional Service"
               autocomplete="off"
+              style="height: 100px;"
             />
           </div>
           <button

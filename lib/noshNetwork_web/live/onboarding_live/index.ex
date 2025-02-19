@@ -25,7 +25,6 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
       %{label: "Japanese Cuisine", value: "Japanese", tag_label: "Japanese Cuisine"}
     ]
 
-
     socket =
       socket
       |> assign(:current_user, current_user)
@@ -99,7 +98,6 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
     end
   end
 
-
   # caters validation and creation
   @impl true
   def handle_event(
@@ -163,15 +161,13 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
     {:noreply, assign(socket, step: step)}
   end
 
-
-
-
   @impl true
   def handle_event("live_select_change", %{"id" => id, "text" => text}, socket) do
     options =
       socket.assigns.specialties_choice
       |> Enum.filter(fn specialty ->
-        specialty_value = specialty[:value] || ""  # Ensure it's always a string
+        # Ensure it's always a string
+        specialty_value = specialty[:value] || ""
         String.downcase(specialty_value) |> String.contains?(String.downcase(text))
       end)
 
@@ -180,22 +176,19 @@ defmodule NoshNetworkWeb.OnboardingLive.Index do
     {:noreply, socket}
   end
 
+  @impl true
+  def handle_event("set-default", %{"id" => id}, socket) do
+    send_update(LiveSelect.Component, options: socket.assigns.specialties_choice, id: id)
 
+    {:noreply, socket}
+  end
 
   @impl true
-def handle_event("set-default", %{"id" => id}, socket) do
-  send_update(LiveSelect.Component, options: socket.assigns.specialties_choice, id: id)
+  def handle_event("clear", %{"id" => id}, socket) do
+    send_update(LiveSelect.Component, options: [], id: id)
 
-  {:noreply, socket}
-end
-
-@impl true
-def handle_event("clear", %{"id" => id}, socket) do
-  send_update(LiveSelect.Component, options: [], id: id)
-
-  {:noreply, socket}
-end
-
+    {:noreply, socket}
+  end
 
   defp consume_files(socket) do
     consume_uploaded_entries(socket, :profile_picture, fn %{path: path}, _entry ->
@@ -224,8 +217,6 @@ end
       assign(socket, form: form)
     end
   end
-
-
 
   defp button_valid(true), do: "my-4 btn-secondary w-full"
   defp button_valid(false), do: "my-4 bg-zinc-600 rounded-md py-4 px-3 w-full text-white"

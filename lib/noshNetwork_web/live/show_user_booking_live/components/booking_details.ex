@@ -1,8 +1,8 @@
-defmodule NoshNetworkWeb.DashboardLive.Components.BookingDetails do
+defmodule NoshNetworkWeb.ShowUserBookingLive.Components.BookingDetails do
   use NoshNetworkWeb, :live_component
   alias NoshNetwork.Repo
-  alias NoshNetwork.Data.Context.{Bookings}
-  @impl true
+  alias NoshNetwork.Data.Context.{Bookings, Users}
+
   def render(assigns) do
     ~H"""
     <div id="bookings_details" class="w-full fixed right-0 shadow-lg top-4 slider-overlay">
@@ -13,12 +13,10 @@ defmodule NoshNetworkWeb.DashboardLive.Components.BookingDetails do
               <div class="flex justify-between items-center">
                 <p>Booking Details</p>
                 <div class="my-4 flex justify-end ">
-                  <a
-                    phx-click={JS.navigate(~p"/users/dashboard")}
+                  <a  phx-click={JS.navigate(~p"/users/booking")}
                     href="#"
                     phx-target={@myself}
-                    class="font-bold text-2xl text-figcolor"
-                  >
+                     class="font-bold text-2xl text-figcolor">
                     <i class="fa-regular fa-xmark"></i>
                   </a>
                 </div>

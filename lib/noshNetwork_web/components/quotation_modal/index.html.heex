@@ -7,7 +7,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div
-        phx-click={JS.navigate(~p"/users/dashboard")}
+        phx-click={JS.navigate(~p"/users/booking")}
         data-toggle="modal"
         style="justify-content: end;"
         class="modal-header cursor-pointer"
@@ -368,7 +368,7 @@
                             </li>
                             <li>
                               <button
-                                class="btn"
+                                class="btn-primary"
                                 phx-target={@myself}
                                 phx-click="submit_quotation"
                               >
