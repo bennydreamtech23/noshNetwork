@@ -21,11 +21,24 @@ defmodule NoshNetworkWeb.DashboardLive.Components.CaterDashboard do
         </div>
       </section>
 
-      <section class="flex items-center gap-4 justify-between">
-        <div class="w-4/6 h-full">
-          <h1 class="font-bold text-lg">Total Revenue</h1>
-          <canvas id="my-chart" phx-hook="Chart" data-incomes={Jason.encode!(@incomes)}></canvas>
-          <h1 class="font-bold text-lg">Performance Level</h1>
+      <section class="flex md:flex-row flex-col items-start gap-0 md:gap-4 justify-between">
+        <div class="md:w-4/6 w-full flex flex-col gap-4">
+          <div class='w-full h-full'>
+            <h1 class="font-bold text-lg">Total Revenue</h1>
+            <canvas id="my-chart" phx-hook="Chart" data-incomes={Jason.encode!(@incomes)}></canvas>
+          </div>
+          <div style='wdith: 400px; height: 400px'>
+            <!-- Adjust width & height as needed -->
+            <h1 class="font-bold text-lg">Performance Level</h1>
+            <canvas
+              id="droghnut-chart"
+              phx-hook="DoughnutChart"
+              data-incomes={Jason.encode!(@incomes)}
+              class="w-full h-full"
+
+            >
+            </canvas>
+          </div>
         </div>
 
         <div>

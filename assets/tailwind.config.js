@@ -10,7 +10,10 @@ module.exports = {
     "./js/**/*.js",
     "../lib/noshNetwork_web.ex",
     "../lib/noshNetwork_web/**/*.*ex",
-    "../deps/live_select/lib/live_select/component.*ex"
+    "../deps/live_select/lib/live_select/component.*ex",
+    "./lib/**/*.{heex,leex,eex,ex}",
+    "./assets/**/*.js",
+    "./assets/**/*.html"
   ],
   theme: {
     extend: {

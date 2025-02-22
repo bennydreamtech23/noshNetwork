@@ -27719,3 +27719,1603 @@ Status: 200
   Transport: :websocket
   Serializer: Phoenix.Socket.V2.JSONSerializer
   Parameters: %{"_csrf_token" => "dR8BAzxIHScvCWNgMDwrDxp0X3Ntbjww8nJNe8HmGEP-cYDul5oF2WEg", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+17:58:40.977 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/usr/lib/wsl/drivers"}, []}}
+17:58:40.990 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core18/2846"}, []}}
+17:58:40.991 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2434"}, []}}
+17:58:40.991 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2496"}, []}}
+17:58:40.991 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core22/1748"}, []}}
+17:58:40.991 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/245"}, []}}
+17:58:40.991 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/250"}, []}}
+17:58:40.991 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23258"}, []}}
+17:58:40.992 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23545"}, []}}
+17:58:41.433 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.12.0 at 127.0.0.1:4000 (http)
+17:58:41.440 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+17:58:43.859 [info] CONNECTED TO Phoenix.LiveView.Socket in 36µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HSAedSoKFjxqK1R9c3QHKlsSDiEYVXoWuctXcRfV9zy44CNfkazNm88f", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+17:58:46.320 request_id=GCaWRFjqSdX5d1oAABTB [info] GET /users/dashboard
+17:58:46.343 request_id=GCaWRFjqSdX5d1oAABTB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 16:58:46.341849Z
+17:58:46.352 request_id=GCaWRFjqSdX5d1oAABTB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+17:58:46.374 request_id=GCaWRFjqSdX5d1oAABTB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 16:58:46.341849Z was successful.
+Status: 200
+
+17:58:46.375 request_id=GCaWRFjqSdX5d1oAABTB [info] Sent 200 in 54ms
+17:58:47.554 [info] CONNECTED TO Phoenix.LiveView.Socket in 74µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "WyQtAB0vKAtkC0p8E3U-OEAqEFgXKxsd3gG-TwXa7Zg5TBwtpYd7bFYm", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+17:59:46.062 [error] Task #PID<0.549.0> started from NoshNetworkWeb.Endpoint terminating
+** (RuntimeError) Couldn't fetch https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64: {true, {:error, {:failed_connect, [{:to_address, {~c"github.com", 443}}, {:inet, [:inet], :closed}]}}}
+
+This typically means we cannot reach the source or you are behind a proxy.
+You can try again later and, if that does not work, you might:
+
+  1. If behind a proxy, ensure your proxy is configured and that
+     your certificates are set via the cacerts_path configuration
+
+  2. Manually download the executable from the URL above and
+     place it inside "_build/tailwind-linux-x64"
+
+  3. Install and use Tailwind from npmJS. See our module documentation
+     to learn more: https://hexdocs.pm/tailwind
+
+    (tailwind 0.2.4) lib/tailwind.ex:315: Tailwind.fetch_body!/2
+    (tailwind 0.2.4) lib/tailwind.ex:230: Tailwind.install/1
+    (tailwind 0.2.4) lib/tailwind.ex:211: Tailwind.install_and_run/2
+    (phoenix 1.7.18) lib/phoenix/endpoint/watcher.ex:19: Phoenix.Endpoint.Watcher.watch/2
+    (elixir 1.18.1) lib/task/supervised.ex:101: Task.Supervised.invoke_mfa/2
+Function: &Phoenix.Endpoint.Watcher.watch/2
+    Args: ["tailwind", {Tailwind, :install_and_run, [:default, ["--watch"]]}]
+18:00:13.092 request_id=GCaWWI0GJzcqlpgAABZB [info] GET /users/dashboard
+18:00:13.095 request_id=GCaWWI0GJzcqlpgAABZB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:00:13.095047Z
+18:00:13.095 request_id=GCaWWI0GJzcqlpgAABZB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:00:13.108 request_id=GCaWWI0GJzcqlpgAABZB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:00:13.095047Z was successful.
+Status: 200
+
+18:00:13.108 request_id=GCaWWI0GJzcqlpgAABZB [info] Sent 200 in 16ms
+18:00:14.285 [info] CONNECTED TO Phoenix.LiveView.Socket in 25µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "EiQ6ZH8JRCUYY1cdLlATAB0jTCwzHAgxzgPI6Q4OK2zTigZL-P8CFqJA", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:02:02.892 request_id=GCaWch2jcFQXhAoAAAHk [info] GET /users/dashboard
+18:02:02.894 request_id=GCaWch2jcFQXhAoAAAHk [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:02:02.894708Z
+18:02:02.894 request_id=GCaWch2jcFQXhAoAAAHk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:02:02.900 request_id=GCaWch2jcFQXhAoAAAHk [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:02:02.894708Z was successful.
+Status: 200
+
+18:02:02.900 request_id=GCaWch2jcFQXhAoAAAHk [info] Sent 200 in 7ms
+18:02:05.232 [info] CONNECTED TO Phoenix.LiveView.Socket in 69µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "AAgIWHkPHl0BE3l8L3V5fmpDNRYcGwkAhKbu0Wn7RBT5hB02Z0AyivKp", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:02:36.100 request_id=GCaWedjwuQw8J2oAABgB [info] GET /users/dashboard
+18:02:36.101 request_id=GCaWedjwuQw8J2oAABgB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:02:36.101622Z
+18:02:36.101 request_id=GCaWedjwuQw8J2oAABgB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:02:36.110 request_id=GCaWedjwuQw8J2oAABgB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:02:36.101622Z was successful.
+Status: 200
+
+18:02:36.110 request_id=GCaWedjwuQw8J2oAABgB [info] Sent 200 in 10ms
+18:02:38.120 [info] CONNECTED TO Phoenix.LiveView.Socket in 28µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "JRVSWz8QNgU0MEQRPgR7dV0jLQwTPRY_MV8vvHFogaiXy329mPYcfPTO", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:02:41.250 request_id=GCaWewvzkfHpE5oAAABi [info] GET /users/dashboard
+18:02:41.252 request_id=GCaWewvzkfHpE5oAAABi [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:02:41.252238Z
+18:02:41.252 request_id=GCaWewvzkfHpE5oAAABi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:02:41.257 request_id=GCaWewvzkfHpE5oAAABi [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:02:41.252238Z was successful.
+Status: 200
+
+18:02:41.258 request_id=GCaWewvzkfHpE5oAAABi [info] Sent 200 in 7ms
+18:02:42.151 [info] CONNECTED TO Phoenix.LiveView.Socket in 22µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "DyQkYRE_CAQWPEUCMloNHHcGAxhEOAohggNLXgxnEmhKumDPGuww1UHQ", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:02:51.079 request_id=GCaWfVXIqTV5fWgAAAKD [info] GET /users/dashboard
+18:02:51.081 request_id=GCaWfVXIqTV5fWgAAAKD [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:02:51.081360Z
+18:02:51.081 request_id=GCaWfVXIqTV5fWgAAAKD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:02:51.089 request_id=GCaWfVXIqTV5fWgAAAKD [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:02:51.081360Z was successful.
+Status: 200
+
+18:02:51.089 request_id=GCaWfVXIqTV5fWgAAAKD [info] Sent 200 in 9ms
+18:02:52.673 [info] CONNECTED TO Phoenix.LiveView.Socket in 32µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BRMhGX08ACxrC2AHEkAPfloSBTssIQ40mPK44dpF8ZMNUwF2jaqTYLLD", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:03:26.037 request_id=GCaWhXlt4Ly1_LcAAAIF [info] GET /users/dashboard
+18:03:26.038 request_id=GCaWhXlt4Ly1_LcAAAIF [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:03:26.038943Z
+18:03:26.039 request_id=GCaWhXlt4Ly1_LcAAAIF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:03:26.047 request_id=GCaWhXlt4Ly1_LcAAAIF [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:03:26.038943Z was successful.
+Status: 200
+
+18:03:26.047 request_id=GCaWhXlt4Ly1_LcAAAIF [info] Sent 200 in 9ms
+18:03:27.722 [info] CONNECTED TO Phoenix.LiveView.Socket in 22µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "WXcyZR1pEiwXBV4-Nlo-IHJKOxozQCky14XHT1bFDTswqmwlB9OuF-kB", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:03:33.796 request_id=GCaWh0fhpZyho78AABih [info] GET /users/dashboard
+18:03:33.797 request_id=GCaWh0fhpZyho78AABih [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:03:33.797597Z
+18:03:33.797 request_id=GCaWh0fhpZyho78AABih [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:03:33.803 request_id=GCaWh0fhpZyho78AABih [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:03:33.797597Z was successful.
+Status: 200
+
+18:03:33.803 request_id=GCaWh0fhpZyho78AABih [info] Sent 200 in 7ms
+18:03:35.389 [info] CONNECTED TO Phoenix.LiveView.Socket in 31µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "XjAlGBweBi4XHmweHwcNNnI4Oy5YWyYi6sO5UFvDDOAWX0DzBKOA-6dR", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:05:02.884 request_id=GCaWnAX-ILhr9oQAABlB [info] GET /users/dashboard
+18:05:02.886 request_id=GCaWnAX-ILhr9oQAABlB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:05:02.886866Z
+18:05:02.887 request_id=GCaWnAX-ILhr9oQAABlB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:05:02.891 request_id=GCaWnAX-ILhr9oQAABlB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:05:02.886866Z was successful.
+Status: 200
+
+18:05:02.892 request_id=GCaWnAX-ILhr9oQAABlB [info] Sent 200 in 7ms
+18:05:03.717 [info] CONNECTED TO Phoenix.LiveView.Socket in 35µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GzkhQgE0HwU9FEsjH25-On84QyEkCHpHszKoHloonEfjXY7vOK7NQe87", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:07:31.162 request_id=GCaWvowLVUetkhAAAALD [info] GET /users/dashboard
+18:07:31.164 request_id=GCaWvowLVUetkhAAAALD [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:07:31.164498Z
+18:07:31.164 request_id=GCaWvowLVUetkhAAAALD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:07:31.172 request_id=GCaWvowLVUetkhAAAALD [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:07:31.164498Z was successful.
+Status: 200
+
+18:07:31.172 request_id=GCaWvowLVUetkhAAAALD [info] Sent 200 in 9ms
+18:07:33.428 [info] CONNECTED TO Phoenix.LiveView.Socket in 54µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GAQ7ThEwJgxkH0MuIV8DHngpQAMUXRI8pGQcXhVf7NngfhJRHZ4la0PL", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:08:10.146 request_id=GCaWx5-joJ0-Ee0AAALi [info] GET /users/dashboard
+18:08:10.148 request_id=GCaWx5-joJ0-Ee0AAALi [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:08:10.148457Z
+18:08:10.148 request_id=GCaWx5-joJ0-Ee0AAALi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:08:10.157 request_id=GCaWx5-joJ0-Ee0AAALi [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:08:10.148457Z was successful.
+Status: 200
+
+18:08:10.157 request_id=GCaWx5-joJ0-Ee0AAALi [info] Sent 200 in 11ms
+18:08:11.852 [info] CONNECTED TO Phoenix.LiveView.Socket in 34µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "RQEfaAcBIBg9E2QWd1AWNR1KBBwEARY5-BuENYPrnBI_0g_y-9psqlTI", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:13:34.270 request_id=GCaXExbvqFp1cFUAAAoE [info] GET /users/dashboard
+18:13:34.273 request_id=GCaXExbvqFp1cFUAAAoE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:13:34.273151Z
+18:13:34.273 request_id=GCaXExbvqFp1cFUAAAoE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:13:34.286 request_id=GCaXExbvqFp1cFUAAAoE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:13:34.273151Z was successful.
+Status: 200
+
+18:13:34.286 request_id=GCaXExbvqFp1cFUAAAoE [info] Sent 200 in 16ms
+18:13:38.108 [info] CONNECTED TO Phoenix.LiveView.Socket in 47µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "EBkEYQMTHhoAI2l5d0AGKFUVNTpEQBQBxZnLJKnpSrD00wOdefAU1-Vq", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:13:40.285 request_id=GCaXFH13DwKC3MwAABqB [info] GET /users/dashboard
+18:13:40.287 request_id=GCaXFH13DwKC3MwAABqB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:13:40.287849Z
+18:13:40.288 request_id=GCaXFH13DwKC3MwAABqB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:13:40.298 request_id=GCaXFH13DwKC3MwAABqB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:13:40.287849Z was successful.
+Status: 200
+
+18:13:40.298 request_id=GCaXFH13DwKC3MwAABqB [info] Sent 200 in 12ms
+18:13:42.078 [info] CONNECTED TO Phoenix.LiveView.Socket in 38µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "NzcndRk0GBJqfGkTPnw_PHheFSoWAxtd_tMXPlhx9-DZyKvpH-aEcnY-", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:15:15.735 request_id=GCaXKra2xgntvbMAAAuE [info] GET /users/dashboard
+18:15:15.737 request_id=GCaXKra2xgntvbMAAAuE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:15:15.737368Z
+18:15:15.737 request_id=GCaXKra2xgntvbMAAAuE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:15:15.753 request_id=GCaXKra2xgntvbMAAAuE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:15:15.737368Z was successful.
+Status: 200
+
+18:15:15.753 request_id=GCaXKra2xgntvbMAAAuE [info] Sent 200 in 18ms
+18:15:18.890 [info] CONNECTED TO Phoenix.LiveView.Socket in 33µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IBRcTjsZHykgHUwTMlobdHhERzw3JjpGHW6crAoCsLaZumR8H73SBKx6", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:15:26.975 request_id=GCaXLVS2HEa_YRMAABuB [info] GET /users/dashboard
+18:15:26.978 request_id=GCaXLVS2HEa_YRMAABuB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:15:26.978427Z
+18:15:26.978 request_id=GCaXLVS2HEa_YRMAABuB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:15:26.989 request_id=GCaXLVS2HEa_YRMAABuB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:15:26.978427Z was successful.
+Status: 200
+
+18:15:26.989 request_id=GCaXLVS2HEa_YRMAABuB [info] Sent 200 in 13ms
+18:15:28.749 [info] CONNECTED TO Phoenix.LiveView.Socket in 34µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "CgIoQjlqBzlhF2ElLn8KHgcnLgQ-PTU4bABop2wS2FLliHCR7TZkKPwH", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:15:36.183 request_id=GCaXL3mMMC7fP9EAABzh [info] GET /users/dashboard
+18:15:36.187 request_id=GCaXL3mMMC7fP9EAABzh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:15:36.187013Z
+18:15:36.187 request_id=GCaXL3mMMC7fP9EAABzh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:15:36.199 request_id=GCaXL3mMMC7fP9EAABzh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:15:36.187013Z was successful.
+Status: 200
+
+18:15:36.200 request_id=GCaXL3mMMC7fP9EAABzh [info] Sent 200 in 16ms
+18:15:37.524 [info] CONNECTED TO Phoenix.LiveView.Socket in 65µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "EQkuZw81Ah42OxoiGFN-IkUJBycgJAcvyJDJFmrtej7k_d7nuzsHUIE_", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:15:40.754 [error] Task #PID<0.647.0> started from NoshNetworkWeb.Endpoint terminating
+** (RuntimeError) Couldn't fetch https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64: {true, {:error, {:failed_connect, [{:to_address, {~c"objects.githubusercontent.com", 443}}, {:inet, [:inet], :closed}]}}}
+
+This typically means we cannot reach the source or you are behind a proxy.
+You can try again later and, if that does not work, you might:
+
+  1. If behind a proxy, ensure your proxy is configured and that
+     your certificates are set via the cacerts_path configuration
+
+  2. Manually download the executable from the URL above and
+     place it inside "_build/tailwind-linux-x64"
+
+  3. Install and use Tailwind from npmJS. See our module documentation
+     to learn more: https://hexdocs.pm/tailwind
+
+    (tailwind 0.2.4) lib/tailwind.ex:315: Tailwind.fetch_body!/2
+    (tailwind 0.2.4) lib/tailwind.ex:230: Tailwind.install/1
+    (tailwind 0.2.4) lib/tailwind.ex:211: Tailwind.install_and_run/2
+    (phoenix 1.7.18) lib/phoenix/endpoint/watcher.ex:19: Phoenix.Endpoint.Watcher.watch/2
+    (elixir 1.18.1) lib/task/supervised.ex:101: Task.Supervised.invoke_mfa/2
+Function: &Phoenix.Endpoint.Watcher.watch/2
+    Args: ["tailwind", {Tailwind, :install_and_run, [:default, ["--watch"]]}]
+18:16:36.457 request_id=GCaXPYIcjk32rcQAAAQD [info] GET /users/dashboard
+18:16:36.460 request_id=GCaXPYIcjk32rcQAAAQD [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:16:36.460072Z
+18:16:36.460 request_id=GCaXPYIcjk32rcQAAAQD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:16:36.473 request_id=GCaXPYIcjk32rcQAAAQD [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:16:36.460072Z was successful.
+Status: 200
+
+18:16:36.473 request_id=GCaXPYIcjk32rcQAAAQD [info] Sent 200 in 16ms
+18:16:38.417 [info] CONNECTED TO Phoenix.LiveView.Socket in 43µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "JiADbGQ2JVlmIncZC2QYfR09WQc6InNdNciA-nU35sZPLSQ1-N-hOO1-", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:16:43.640 request_id=GCaXPy5B6OvvdHkAAARD [info] GET /users/dashboard
+18:16:43.642 request_id=GCaXPy5B6OvvdHkAAARD [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:16:43.642298Z
+18:16:43.643 request_id=GCaXPy5B6OvvdHkAAARD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:16:43.652 request_id=GCaXPy5B6OvvdHkAAARD [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:16:43.642298Z was successful.
+Status: 200
+
+18:16:43.652 request_id=GCaXPy5B6OvvdHkAAARD [info] Sent 200 in 12ms
+18:16:45.860 [info] CONNECTED TO Phoenix.LiveView.Socket in 52µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "RRQmXB5uFx0dGBx4DmYvAgEjH18PJgYI-WLqW6gwNI11IQfN1Pk0zKDx", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:16:53.905 request_id=GCaXQZIZ9W2ItbgAAAWC [info] GET /users/dashboard
+18:16:53.907 request_id=GCaXQZIZ9W2ItbgAAAWC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:16:53.907536Z
+18:16:53.907 request_id=GCaXQZIZ9W2ItbgAAAWC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:16:53.920 request_id=GCaXQZIZ9W2ItbgAAAWC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:16:53.907536Z was successful.
+Status: 200
+
+18:16:53.920 request_id=GCaXQZIZ9W2ItbgAAAWC [info] Sent 200 in 15ms
+18:16:55.984 [info] CONNECTED TO Phoenix.LiveView.Socket in 34µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "RXcaQhM9OQYAZFQDfg8ndGo5OQUWNSwm-4poZeIlS5yJ98n8ZJMjcXnV", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:17:24.330 request_id=GCaXSKeWGpFAZw4AAAcC [info] GET /users/dashboard
+18:17:24.332 request_id=GCaXSKeWGpFAZw4AAAcC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:17:24.332396Z
+18:17:24.333 request_id=GCaXSKeWGpFAZw4AAAcC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:17:24.346 request_id=GCaXSKeWGpFAZw4AAAcC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:17:24.332396Z was successful.
+Status: 200
+
+18:17:24.346 request_id=GCaXSKeWGpFAZw4AAAcC [info] Sent 200 in 15ms
+18:17:26.556 [info] CONNECTED TO Phoenix.LiveView.Socket in 44µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "OhALHSx1HT5nYmA7EHYGGAleFxlNFwkERSa0e-mT43MrWAOT9-cv8zKt", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:17:52.912 request_id=GCaXT083cZsJlUgAAA4k [info] GET /users/dashboard
+18:17:52.915 request_id=GCaXT083cZsJlUgAAA4k [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:17:52.915007Z
+18:17:52.915 request_id=GCaXT083cZsJlUgAAA4k [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:17:52.921 request_id=GCaXT083cZsJlUgAAA4k [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:17:52.915007Z was successful.
+Status: 200
+
+18:17:52.922 request_id=GCaXT083cZsJlUgAAA4k [info] Sent 200 in 9ms
+18:17:55.418 [info] CONNECTED TO Phoenix.LiveView.Socket in 39µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GyIQVzARAhIjZ2IfPWEHdEZFADBFWxsEsazzyIrxp6OVzVN8v6t_06Yt", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:18:01.661 request_id=GCaXUViytOM_rHgAAAKG [info] GET /users/dashboard
+18:18:01.664 request_id=GCaXUViytOM_rHgAAAKG [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:18:01.664125Z
+18:18:01.664 request_id=GCaXUViytOM_rHgAAAKG [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:18:01.671 request_id=GCaXUViytOM_rHgAAAKG [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:18:01.664125Z was successful.
+Status: 200
+
+18:18:01.671 request_id=GCaXUViytOM_rHgAAAKG [info] Sent 200 in 10ms
+18:18:04.679 [info] CONNECTED TO Phoenix.LiveView.Socket in 35µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GDtHRggcEzg4CUsdH2g_fWIYEV8yJxhdpx-kADcRkXfTX_v1Rke0GJZ-", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:18:31.216 request_id=GCaXWDpJ01L2m7YAAAei [info] GET /users/dashboard
+18:18:31.218 request_id=GCaXWDpJ01L2m7YAAAei [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:18:31.218067Z
+18:18:31.218 request_id=GCaXWDpJ01L2m7YAAAei [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:18:31.231 request_id=GCaXWDpJ01L2m7YAAAei [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:18:31.218067Z was successful.
+Status: 200
+
+18:18:31.231 request_id=GCaXWDpJ01L2m7YAAAei [info] Sent 200 in 15ms
+18:18:33.789 [info] CONNECTED TO Phoenix.LiveView.Socket in 33µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "DhkbXiI_AVI9JE4QN30YfgU0JjsDOgw8fZqskgq8nucYpJQ25GRTvWNL", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:19:37.284 request_id=GCaXZ5xGVpe_uFgAAAhC [info] GET /users/dashboard
+18:19:37.286 request_id=GCaXZ5xGVpe_uFgAAAhC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:19:37.286439Z
+18:19:37.286 request_id=GCaXZ5xGVpe_uFgAAAhC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:19:37.302 request_id=GCaXZ5xGVpe_uFgAAAhC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:19:37.286439Z was successful.
+Status: 200
+
+18:19:37.302 request_id=GCaXZ5xGVpe_uFgAAAhC [info] Sent 200 in 18ms
+18:19:39.067 [info] CONNECTED TO Phoenix.LiveView.Socket in 45µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MHsgVHwXAhsgAk9_IlUOB2IiBRYnXSYWX8Jy5OrqsSb6ebGKRQqyR0df", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:19:43.519 request_id=GCaXaQ_on5DQNuQAAASG [info] GET /users/dashboard
+18:19:43.525 request_id=GCaXaQ_on5DQNuQAAASG [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:19:43.525612Z
+18:19:43.526 request_id=GCaXaQ_on5DQNuQAAASG [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:19:43.542 request_id=GCaXaQ_on5DQNuQAAASG [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:19:43.525612Z was successful.
+Status: 200
+
+18:19:43.543 request_id=GCaXaQ_on5DQNuQAAASG [info] Sent 200 in 23ms
+18:19:44.509 [info] CONNECTED TO Phoenix.LiveView.Socket in 38µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Eg1dejEREiJqPUgsNEJ-K1dCGV1AAwQ8zN7WxIbH9leesu7gg1m25nFL", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:21:42.998 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/usr/lib/wsl/drivers"}, []}}
+18:21:43.035 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core18/2846"}, []}}
+18:21:43.035 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2434"}, []}}
+18:21:43.036 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2496"}, []}}
+18:21:43.036 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core22/1748"}, []}}
+18:21:43.036 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/245"}, []}}
+18:21:43.036 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/250"}, []}}
+18:21:43.036 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23258"}, []}}
+18:21:43.037 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23545"}, []}}
+18:21:44.080 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.12.0 at 127.0.0.1:4000 (http)
+18:21:44.095 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+18:21:45.355 [info] CONNECTED TO Phoenix.LiveView.Socket in 124µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Eg1dejEREiJqPUgsNEJ-K1dCGV1AAwQ8zN7WxIbH9leesu7gg1m25nFL", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:21:46.219 request_id=GCaXhaEfNXeGPQoAAANC [info] GET /users/dashboard
+18:21:46.266 request_id=GCaXhaEfNXeGPQoAAANC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:21:46.261558Z
+18:21:46.287 request_id=GCaXhaEfNXeGPQoAAANC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:21:46.336 request_id=GCaXhaEfNXeGPQoAAANC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:21:46.261558Z was successful.
+Status: 200
+
+18:21:46.336 request_id=GCaXhaEfNXeGPQoAAANC [info] Sent 200 in 117ms
+18:21:48.060 [info] CONNECTED TO Phoenix.LiveView.Socket in 46µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MjVTWGQHJhM8I2BxAGEnGkJHFgc9HRMHZv9u-_VyorM8GVnVr4bhHpQw", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:23:01.666 request_id=GCaXlzJlQIwKOXkAABNB [info] GET /users/dashboard
+18:23:01.671 request_id=GCaXlzJlQIwKOXkAABNB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:23:01.671395Z
+18:23:01.671 request_id=GCaXlzJlQIwKOXkAABNB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:23:01.688 request_id=GCaXlzJlQIwKOXkAABNB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:23:01.671395Z was successful.
+Status: 200
+
+18:23:01.688 request_id=GCaXlzJlQIwKOXkAABNB [info] Sent 200 in 21ms
+18:23:06.223 [info] CONNECTED TO Phoenix.LiveView.Socket in 49µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "PAksXgouCkcSAE4ocQY6AkgZOTADG3YYTJFsCvz-AQca61sNxjM_vv4h", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:23:37.374 request_id=GCaXn4LAFf43F50AAACl [info] GET /users/dashboard
+18:23:37.380 request_id=GCaXn4LAFf43F50AAACl [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:23:37.380743Z
+18:23:37.381 request_id=GCaXn4LAFf43F50AAACl [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:23:37.399 request_id=GCaXn4LAFf43F50AAACl [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:23:37.380743Z was successful.
+Status: 200
+
+18:23:37.400 request_id=GCaXn4LAFf43F50AAACl [info] Sent 200 in 25ms
+18:23:39.642 [info] CONNECTED TO Phoenix.LiveView.Socket in 53µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HAtTcgIdQikEB1V_fkAWOQg-MBcGNyxDtH9_KE2CWVx69w_u8MDxsZn3", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:23:42.355 [error] GenServer #PID<0.764.0> terminating
+** (UndefinedFunctionError) function NoshNetworkWeb.Sidebar.__live__/0 is undefined (module NoshNetworkWeb.Sidebar is not available)
+    (noshNetwork 0.1.0) NoshNetworkWeb.Sidebar.__live__()
+    (phoenix_live_view 0.20.17) lib/phoenix_component.ex:1971: Phoenix.Component.live_component/1
+    (phoenix_live_view 0.20.17) lib/phoenix_live_view/tag_engine.ex:92: Phoenix.LiveView.TagEngine.component/3
+    (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:4: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+    (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+    (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+    (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+    (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+    (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+    (phoenix_live_view 0.20.17) lib/phoenix_live_view/channel.ex:963: anonymous fn/4 in Phoenix.LiveView.Channel.render_diff/3
+    (telemetry 1.3.0) /root/noshNetwork/deps/telemetry/src/telemetry.erl:324: :telemetry.span/3
+    (phoenix_live_view 0.20.17) lib/phoenix_live_view/channel.ex:958: Phoenix.LiveView.Channel.render_diff/3
+    (phoenix_live_view 0.20.17) lib/phoenix_live_view/channel.ex:555: Phoenix.LiveView.Channel.maybe_call_mount_handle_params/4
+    (phoenix_live_view 0.20.17) lib/phoenix_live_view/channel.ex:1179: Phoenix.LiveView.Channel.verified_mount/8
+    (phoenix_live_view 0.20.17) lib/phoenix_live_view/channel.ex:84: Phoenix.LiveView.Channel.handle_info/2
+    (stdlib 6.1.2) gen_server.erl:2345: :gen_server.try_handle_info/3
+    (stdlib 6.1.2) gen_server.erl:2433: :gen_server.handle_msg/6
+    (stdlib 6.1.2) proc_lib.erl:329: :proc_lib.init_p_do_apply/3
+Last message: {Phoenix.Channel, %{"params" => %{"_csrf_token" => "HAtTcgIdQikEB1V_fkAWOQg-MBcGNyxDtH9_KE2CWVx69w_u8MDxsZn3", "_mounts" => 0, "_track_static" => ["http://localhost:4000/assets/app.css", "http://localhost:4000/assets/app.js"]}, "session" => "SFMyNTY.g2gDaAJhBXQAAAAIdwJpZG0AAAAUcGh4LUdDYVhuNE9LcURJWG5RREZ3B3Nlc3Npb250AAAAAHcGcm91dGVydxxFbGl4aXIuTm9zaE5ldHdvcmtXZWIuUm91dGVydwpwYXJlbnRfcGlkdwNuaWx3BHZpZXd3KUVsaXhpci5Ob3NoTmV0d29ya1dlYi5EYXNoYm9hcmRMaXZlLkluZGV4dwhyb290X3BpZHcDbmlsdwxsaXZlX3Nlc3Npb25oAncacmVxdWlyZV9hdXRoZW50aWNhdGVkX3VzZXJuCADmS9fGyZEmGHcJcm9vdF92aWV3dylFbGl4aXIuTm9zaE5ldHdvcmtXZWIuRGFzaGJvYXJkTGl2ZS5JbmRleG4GADCjry6VAWIAAVGA.Xq4iR-EbDnZylIhC6PPoXcVPvlbzFYnQ4dXCSWK1BD8", "static" => "SFMyNTY.g2gDaAJhBXQAAAADdwJpZG0AAAAUcGh4LUdDYVhuNE9LcURJWG5RREZ3BWZsYXNodAAAAAB3CmFzc2lnbl9uZXdsAAAAAXcMY3VycmVudF91c2Vyam4GADCjry6VAWIAAVGA.kn96WH16Fn7ZQRpgNoC5ved3yxBadAoesdccGihgYzY", "url" => "http://localhost:4000/users/dashboard"}, {#PID<0.738.0>, #Reference<0.2210466561.3859021826.35301>}, %Phoenix.Socket{assigns: %{}, channel: Phoenix.LiveView.Channel, channel_pid: nil, endpoint: NoshNetworkWeb.Endpoint, handler: Phoenix.LiveView.Socket, id: "users_sessions:qXjXI4qGeRpcX9OJ3mxFJHjhplCRA5a0Fw4A4aWVv70=", joined: false, join_ref: "4", private: %{connect_info: %{session: %{"_csrf_token" => "hCj-IXpjSQ-IG7IL0stoumBp", "live_socket_id" => "users_sessions:qXjXI4qGeRpcX9OJ3mxFJHjhplCRA5a0Fw4A4aWVv70=", "user_token" => <<169, 120, 215, 35, 138, 134, 121, 26, 92, 95, 211, 137, 222, 108, 69, 36, 120, 225, 166, 80, 145, 3, 150, 180, 23, 14, 0, 225, 165, 149, 191, 189>>}}}, pubsub_server: NoshNetwork.PubSub, ref: nil, serializer: Phoenix.Socket.V2.JSONSerializer, topic: "lv:phx-GCaXn4OKqDIXnQDF", transport: :websocket, transport_pid: #PID<0.738.0>}}
+State: #Reference<0.2210466561.3859021826.35304>
+18:23:42.421 [error] an exception was raised:
+    ** (UndefinedFunctionError) function NoshNetworkWeb.Sidebar.__live__/0 is undefined (module NoshNetworkWeb.Sidebar is not available)
+        (noshNetwork 0.1.0) NoshNetworkWeb.Sidebar.__live__()
+        (phoenix_live_view 0.20.17) lib/phoenix_component.ex:1971: Phoenix.Component.live_component/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/tag_engine.ex:92: Phoenix.LiveView.TagEngine.component/3
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:4: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/channel.ex:963: anonymous fn/4 in Phoenix.LiveView.Channel.render_diff/3
+        (telemetry 1.3.0) /root/noshNetwork/deps/telemetry/src/telemetry.erl:324: :telemetry.span/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/channel.ex:958: Phoenix.LiveView.Channel.render_diff/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/channel.ex:555: Phoenix.LiveView.Channel.maybe_call_mount_handle_params/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/channel.ex:1179: Phoenix.LiveView.Channel.verified_mount/8
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/channel.ex:84: Phoenix.LiveView.Channel.handle_info/2
+        (stdlib 6.1.2) gen_server.erl:2345: :gen_server.try_handle_info/3
+        (stdlib 6.1.2) gen_server.erl:2433: :gen_server.handle_msg/6
+        (stdlib 6.1.2) proc_lib.erl:329: :proc_lib.init_p_do_apply/3
+18:24:08.041 request_id=GCaXpqallj0CjWAAABSh [info] GET /users/dashboard
+18:24:08.046 request_id=GCaXpqallj0CjWAAABSh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:24:08.046579Z
+18:24:08.046 request_id=GCaXpqallj0CjWAAABSh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:24:08.056 request_id=GCaXpqallj0CjWAAABSh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:24:08.046579Z was successful.
+Status: 200
+
+18:24:08.056 request_id=GCaXpqallj0CjWAAABSh [info] Sent 200 in 15ms
+18:24:09.948 [info] CONNECTED TO Phoenix.LiveView.Socket in 44µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "WzIuSQ9gMiEKDmAMPXJ4CggwRQI6Bgga3qDdF8BKY_MEzE1F8C1mOkJj", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:25:50.236 request_id=GCaXvnHvJ9g5HroAAAGE [info] GET /users/dashboard
+18:25:50.242 request_id=GCaXvnHvJ9g5HroAAAGE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:25:50.242636Z
+18:25:50.243 request_id=GCaXvnHvJ9g5HroAAAGE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:25:50.258 request_id=GCaXvnHvJ9g5HroAAAGE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:25:50.242636Z was successful.
+Status: 200
+
+18:25:50.258 request_id=GCaXvnHvJ9g5HroAAAGE [info] Sent 200 in 22ms
+18:25:52.740 [info] CONNECTED TO Phoenix.LiveView.Socket in 46µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Axs4VAYaHyFhC2gaPWg7KQUDLEI4X3MxkXRyOBoK2ZESz_re5pX-M21A", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:26:00.270 request_id=GCaXwMgD-QW-Dh0AAAGj [info] GET /users/dashboard
+18:26:00.274 request_id=GCaXwMgD-QW-Dh0AAAGj [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:26:00.274050Z
+18:26:00.274 request_id=GCaXwMgD-QW-Dh0AAAGj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:26:00.318 request_id=GCaXwMgD-QW-Dh0AAAGj [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:26:00.274050Z was successful.
+Status: 200
+
+18:26:00.318 request_id=GCaXwMgD-QW-Dh0AAAGj [info] Sent 200 in 47ms
+18:26:01.581 [info] CONNECTED TO Phoenix.LiveView.Socket in 49µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "PQJTVQgwRygeYGM4AkEcAGcKNQRYCAUJUA9xAh7BM1NqEvULWyAk-eGy", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:26:10.214 request_id=GCaXwxi-YXf38zsAAALj [info] GET /users/dashboard
+18:26:10.217 request_id=GCaXwxi-YXf38zsAAALj [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:26:10.217353Z
+18:26:10.218 request_id=GCaXwxi-YXf38zsAAALj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:26:10.238 request_id=GCaXwxi-YXf38zsAAALj [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:26:10.217353Z was successful.
+Status: 200
+
+18:26:10.238 request_id=GCaXwxi-YXf38zsAAALj [info] Sent 200 in 23ms
+18:26:12.223 [info] CONNECTED TO Phoenix.LiveView.Socket in 48µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "XXcjaQ0KFyI3BXgWJU0AAkMkGgw7XSwH54IDDRgHdTU_bzINsWncN0nw", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:27:45.205 request_id=GCaX2TahdzGr5BUAAAIl [info] GET /users/dashboard
+18:27:45.208 request_id=GCaX2TahdzGr5BUAAAIl [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:27:45.208236Z
+18:27:45.208 request_id=GCaX2TahdzGr5BUAAAIl [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:27:45.222 request_id=GCaX2TahdzGr5BUAAAIl [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:27:45.208236Z was successful.
+Status: 200
+
+18:27:45.222 request_id=GCaX2TahdzGr5BUAAAIl [info] Sent 200 in 17ms
+18:27:50.629 [info] CONNECTED TO Phoenix.LiveView.Socket in 54µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "LA8oTnlpAC8wNkE4HXQdCnwRDiQ_Miw6DLBc01pEcglqZCTFLbzKJ_nJ", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:27:51.269 request_id=GCaX2qAY-I74rVQAAAji [info] GET /users/dashboard
+18:27:51.272 request_id=GCaX2qAY-I74rVQAAAji [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:27:51.272923Z
+18:27:51.273 request_id=GCaX2qAY-I74rVQAAAji [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:27:51.285 request_id=GCaX2qAY-I74rVQAAAji [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:27:51.272923Z was successful.
+Status: 200
+
+18:27:51.286 request_id=GCaX2qAY-I74rVQAAAji [info] Sent 200 in 16ms
+18:27:53.399 [info] CONNECTED TO Phoenix.LiveView.Socket in 46µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "JhkAGXEuQitgZB44FU1-FUZeGAZMDCQYNZj48v2A353qRz7Yv-li9afh", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:28:13.511 request_id=GCaX383GWBXkE6YAAAJl [info] GET /users/dashboard
+18:28:13.516 request_id=GCaX383GWBXkE6YAAAJl [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:28:13.516459Z
+18:28:13.517 request_id=GCaX383GWBXkE6YAAAJl [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:28:13.532 request_id=GCaX383GWBXkE6YAAAJl [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:28:13.516459Z was successful.
+Status: 200
+
+18:28:13.533 request_id=GCaX383GWBXkE6YAAAJl [info] Sent 200 in 21ms
+18:28:14.031 request_id=GCaX3-zF6-yThk8AAAQE [info] GET /users/dashboard
+18:28:14.034 request_id=GCaX3-zF6-yThk8AAAQE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:28:14.033905Z
+18:28:14.035 request_id=GCaX3-zF6-yThk8AAAQE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:28:14.045 request_id=GCaX3-zF6-yThk8AAAQE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:28:14.033905Z was successful.
+Status: 200
+
+18:28:14.045 request_id=GCaX3-zF6-yThk8AAAQE [info] Sent 200 in 14ms
+18:28:15.358 [info] CONNECTED TO Phoenix.LiveView.Socket in 36µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GAYLWiUKAzoaJGcxE1EdBVIEN1xALHAHpEawlRsPIuJxTfTIbwC35A2w", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:28:31.268 request_id=GCaX4_ArnFasAlcAABgh [info] GET /users/dashboard
+18:28:31.270 request_id=GCaX4_ArnFasAlcAABgh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:28:31.270369Z
+18:28:31.270 request_id=GCaX4_ArnFasAlcAABgh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:28:31.281 request_id=GCaX4_ArnFasAlcAABgh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:28:31.270369Z was successful.
+Status: 200
+
+18:28:31.281 request_id=GCaX4_ArnFasAlcAABgh [info] Sent 200 in 13ms
+18:28:34.215 [info] CONNECTED TO Phoenix.LiveView.Socket in 34µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IzQLWHASRSICHlcjBnUnCVMkJgkPXRQHKwau9J5HQOzjABnEcWRfz0Vw", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:28:51.158 request_id=GCaX6JG8nArsgzYAAATE [info] GET /users/dashboard
+18:28:51.160 request_id=GCaX6JG8nArsgzYAAATE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:28:51.160871Z
+18:28:51.161 request_id=GCaX6JG8nArsgzYAAATE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:28:51.172 request_id=GCaX6JG8nArsgzYAAATE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:28:51.160871Z was successful.
+Status: 200
+
+18:28:51.172 request_id=GCaX6JG8nArsgzYAAATE [info] Sent 200 in 13ms
+18:28:53.160 [info] CONNECTED TO Phoenix.LiveView.Socket in 44µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "N3AaWzwOAzsfOEUxAE8zGmU_GRwtBRYT_3pvuVsQLihxGxzVULmsXhTc", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:32:06.710 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/usr/lib/wsl/drivers"}, []}}
+18:32:06.736 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core18/2846"}, []}}
+18:32:06.737 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2434"}, []}}
+18:32:06.737 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2496"}, []}}
+18:32:06.738 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core22/1748"}, []}}
+18:32:06.739 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/245"}, []}}
+18:32:06.739 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/250"}, []}}
+18:32:06.740 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23258"}, []}}
+18:32:06.740 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23545"}, []}}
+18:32:07.490 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.12.0 at 127.0.0.1:4000 (http)
+18:32:07.502 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+18:32:11.012 [info] CONNECTED TO Phoenix.LiveView.Socket in 87µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "N3AaWzwOAzsfOEUxAE8zGmU_GRwtBRYT_3pvuVsQLihxGxzVULmsXhTc", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:32:16.027 request_id=GCaYGESsB3byb58AABUB [info] GET /users/dashboard
+18:32:16.096 request_id=GCaYGESsB3byb58AABUB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:32:16.090736Z
+18:32:16.123 request_id=GCaYGESsB3byb58AABUB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:32:16.173 request_id=GCaYGESsB3byb58AABUB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:32:16.090736Z was successful.
+Status: 200
+
+18:32:16.173 request_id=GCaYGESsB3byb58AABUB [info] Sent 200 in 145ms
+18:32:18.151 request_id=GCaYGMN2imkfBX4AABWB [info] GET /users/dashboard
+18:32:18.162 request_id=GCaYGMN2imkfBX4AABWB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:32:18.162179Z
+18:32:18.162 request_id=GCaYGMN2imkfBX4AABWB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:32:18.181 request_id=GCaYGMN2imkfBX4AABWB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:32:18.162179Z was successful.
+Status: 200
+
+18:32:18.181 request_id=GCaYGMN2imkfBX4AABWB [info] Sent 200 in 30ms
+18:32:19.890 [info] CONNECTED TO Phoenix.LiveView.Socket in 34µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "XSU4ZRZpNQlmO2gdP2UYfAU2AwcvXzM85fRH_1Ec5jETxRQ05EwhZ2qL", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:34:43.944 request_id=GCaYOrVwLVgVjFQAABbh [info] GET /users/dashboard
+18:34:43.947 request_id=GCaYOrVwLVgVjFQAABbh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:34:43.947559Z
+18:34:43.947 request_id=GCaYOrVwLVgVjFQAABbh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:34:43.962 request_id=GCaYOrVwLVgVjFQAABbh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:34:43.947559Z was successful.
+Status: 200
+
+18:34:43.963 request_id=GCaYOrVwLVgVjFQAABbh [info] Sent 200 in 18ms
+18:34:48.517 [info] CONNECTED TO Phoenix.LiveView.Socket in 46µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HxlabCYCBEcMJFsFA38EGFNBDAw2WylAwZ0AoZt-_uvLDHMTc2xcC6k0", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:34:51.985 request_id=GCaYPJSxhqPqi60AABih [info] GET /users/dashboard
+18:34:51.988 request_id=GCaYPJSxhqPqi60AABih [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:34:51.988316Z
+18:34:51.988 request_id=GCaYPJSxhqPqi60AABih [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:34:52.000 request_id=GCaYPJSxhqPqi60AABih [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:34:51.988316Z was successful.
+Status: 200
+
+18:34:52.001 request_id=GCaYPJSxhqPqi60AABih [info] Sent 200 in 15ms
+18:34:55.405 [info] CONNECTED TO Phoenix.LiveView.Socket in 64µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "XTkYZgEzNDsAA2EfH0EBLUU6OF8cKAEh5zrKHkDQSRLVXvHauIL0iECQ", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:35:10.203 request_id=GCaYQNKMTJpNj58AABrB [info] GET /users/dashboard
+18:35:10.206 request_id=GCaYQNKMTJpNj58AABrB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:35:10.206608Z
+18:35:10.207 request_id=GCaYQNKMTJpNj58AABrB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:35:10.222 request_id=GCaYQNKMTJpNj58AABrB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:35:10.206608Z was successful.
+Status: 200
+
+18:35:10.222 request_id=GCaYQNKMTJpNj58AABrB [info] Sent 200 in 19ms
+18:35:13.360 [info] CONNECTED TO Phoenix.LiveView.Socket in 32µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Im5fQCYfJwcWDkg9flg6egU9MFlBKiYAJ-5moGWmE_et9os65ND64Gdp", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:35:34.188 request_id=GCaYRmgt_b3hF4sAABsh [info] GET /users/dashboard
+18:35:34.193 request_id=GCaYRmgt_b3hF4sAABsh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:35:34.193302Z
+18:35:34.193 request_id=GCaYRmgt_b3hF4sAABsh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:35:34.206 request_id=GCaYRmgt_b3hF4sAABsh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:35:34.193302Z was successful.
+Status: 200
+
+18:35:34.207 request_id=GCaYRmgt_b3hF4sAABsh [info] Sent 200 in 18ms
+18:35:37.367 [info] CONNECTED TO Phoenix.LiveView.Socket in 38µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "WXQybzsQPw0lN1pxF189LXdLIyEzO3td17XBrHOgvfw8PhtaG8WNFV9-", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:36:07.305 request_id=GCaYTh4cx7G4CBsAABxh [info] GET /users/dashboard
+18:36:07.308 request_id=GCaYTh4cx7G4CBsAABxh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:36:07.307981Z
+18:36:07.308 request_id=GCaYTh4cx7G4CBsAABxh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:36:07.323 request_id=GCaYTh4cx7G4CBsAABxh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:36:07.307981Z was successful.
+Status: 200
+
+18:36:07.324 request_id=GCaYTh4cx7G4CBsAABxh [info] Sent 200 in 18ms
+18:36:09.028 [info] CONNECTED TO Phoenix.LiveView.Socket in 42µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "OiQYankLNhlkN2InflQRJXpeNR9GCDEZRgrG0SFs7fOn9cXiJ-Ap3esi", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:36:35.214 request_id=GCaYVJ2hWKJy_38AAADF [info] GET /users/dashboard
+18:36:35.216 request_id=GCaYVJ2hWKJy_38AAADF [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:36:35.216878Z
+18:36:35.217 request_id=GCaYVJ2hWKJy_38AAADF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:36:35.229 request_id=GCaYVJ2hWKJy_38AAADF [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:36:35.216878Z was successful.
+Status: 200
+
+18:36:35.230 request_id=GCaYVJ2hWKJy_38AAADF [info] Sent 200 in 15ms
+18:36:37.241 [info] CONNECTED TO Phoenix.LiveView.Socket in 42µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IXI1Sgc7M1oAC2IBJVV-HwIRGgcqCjQVI1_gNcC0SZOHbb7S2bnh_gve", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:37:20.263 request_id=GCaYXxrIg1I2BH0AAB0B [info] GET /users/dashboard
+18:37:20.266 request_id=GCaYXxrIg1I2BH0AAB0B [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:37:20.266803Z
+18:37:20.267 request_id=GCaYXxrIg1I2BH0AAB0B [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:37:20.282 request_id=GCaYXxrIg1I2BH0AAB0B [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:37:20.266803Z was successful.
+Status: 200
+
+18:37:20.282 request_id=GCaYXxrIg1I2BH0AAB0B [info] Sent 200 in 18ms
+18:37:22.863 [info] CONNECTED TO Phoenix.LiveView.Socket in 33µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "WhkYVBgSQx89IU4bKhoLK0UDTSYvKjoj2ZryQJ3unpcRm-Bgup9IZGxS", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:37:32.060 request_id=GCaYYdnwY3PtbNYAAB7B [info] GET /users/dashboard
+18:37:32.065 request_id=GCaYYdnwY3PtbNYAAB7B [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:37:32.065797Z
+18:37:32.066 request_id=GCaYYdnwY3PtbNYAAB7B [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:37:32.077 request_id=GCaYYdnwY3PtbNYAAB7B [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:37:32.065797Z was successful.
+Status: 200
+
+18:37:32.078 request_id=GCaYYdnwY3PtbNYAAB7B [info] Sent 200 in 17ms
+18:37:34.165 [info] CONNECTED TO Phoenix.LiveView.Socket in 37µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "WzMuVzpoCT0CHmQWJAEjGERePQMxKCo23pDzs0yWQOI_c6jTt-IlDEhF", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:37:49.471 request_id=GCaYZeerwwr5SpwAAANE [info] GET /users/dashboard
+18:37:49.473 request_id=GCaYZeerwwr5SpwAAANE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:37:49.473562Z
+18:37:49.473 request_id=GCaYZeerwwr5SpwAAANE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:37:49.494 request_id=GCaYZeerwwr5SpwAAANE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:37:49.473562Z was successful.
+Status: 200
+
+18:37:49.494 request_id=GCaYZeerwwr5SpwAAANE [info] Sent 200 in 23ms
+18:37:51.626 [info] CONNECTED TO Phoenix.LiveView.Socket in 50µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "OCcuQgsMLx8wAVkdAnoAGmgJMActFQcSPdDoBT_ucPtTEMIVXzDhXxEb", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:38:19.271 request_id=GCaYbNfhj7gPU7QAAAPk [info] GET /users/dashboard
+18:38:19.275 request_id=GCaYbNfhj7gPU7QAAAPk [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:38:19.275342Z
+18:38:19.275 request_id=GCaYbNfhj7gPU7QAAAPk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:38:19.287 request_id=GCaYbNfhj7gPU7QAAAPk [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:38:19.275342Z was successful.
+Status: 200
+
+18:38:19.287 request_id=GCaYbNfhj7gPU7QAAAPk [info] Sent 200 in 16ms
+18:38:22.190 [info] CONNECTED TO Phoenix.LiveView.Socket in 44µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "US8nYjNsOA0mNlR-GHV4FFwZBSotDBQp9lMOz4Hgugy7_B1XljqEXaVY", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:38:34.266 request_id=GCaYcFWxQKLSrNkAAATj [info] GET /users/dashboard
+18:38:34.270 request_id=GCaYcFWxQKLSrNkAAATj [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:38:34.270418Z
+18:38:34.270 request_id=GCaYcFWxQKLSrNkAAATj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:38:34.283 request_id=GCaYcFWxQKLSrNkAAATj [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:38:34.270418Z was successful.
+Status: 200
+
+18:38:34.283 request_id=GCaYcFWxQKLSrNkAAATj [info] Sent 200 in 16ms
+18:38:35.969 [info] CONNECTED TO Phoenix.LiveView.Socket in 75µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "WXUORX8KPgs6HFkcM2I4HXgUHg4-Jnsk16dh6RNaiMtUtUqQHgjaKK9T", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:38:50.254 request_id=GCaYdA6fs_VXT6sAAAdC [info] GET /users/dashboard
+18:38:50.256 request_id=GCaYdA6fs_VXT6sAAAdC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:38:50.256632Z
+18:38:50.257 request_id=GCaYdA6fs_VXT6sAAAdC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:38:50.269 request_id=GCaYdA6fs_VXT6sAAAdC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:38:50.256632Z was successful.
+Status: 200
+
+18:38:50.269 request_id=GCaYdA6fs_VXT6sAAAdC [info] Sent 200 in 14ms
+18:38:52.306 [info] CONNECTED TO Phoenix.LiveView.Socket in 34µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MSoiews5PTNhfH0IIE0DA3khWTgUXxgxYiHVBaMY2-PAgzJOIR-Wa2ZA", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:40:24.098 request_id=GCaYiegr8eXZJ9kAAAVE [info] GET /users/dashboard
+18:40:24.099 request_id=GCaYiegr8eXZJ9kAAAVE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:40:24.099658Z
+18:40:24.099 request_id=GCaYiegr8eXZJ9kAAAVE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:40:24.106 request_id=GCaYiegr8eXZJ9kAAAVE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:40:24.099658Z was successful.
+Status: 200
+
+18:40:24.106 request_id=GCaYiegr8eXZJ9kAAAVE [info] Sent 200 in 7ms
+18:40:26.534 [info] CONNECTED TO Phoenix.LiveView.Socket in 39µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Ii8ORwIcAS8hElpkAlkqCUMXLlhCByEEJldjKDqErCw-EncEsdZ77jct", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:41:22.218 request_id=GCaYl3Bg1sZLOM8AAAZk [info] GET /users/booking
+18:41:22.219 request_id=GCaYl3Bg1sZLOM8AAAZk [info] GET request to /users/booking by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:41:22.219491Z
+18:41:22.219 request_id=GCaYl3Bg1sZLOM8AAAZk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:41:22.245 request_id=GCaYl3Bg1sZLOM8AAAZk [info] GET request to /users/booking by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:41:22.219491Z was successful.
+Status: 200
+
+18:41:22.246 request_id=GCaYl3Bg1sZLOM8AAAZk [info] Sent 200 in 27ms
+18:41:23.408 [info] CONNECTED TO Phoenix.LiveView.Socket in 21µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HRUBFDwAOhI_GHg9cXU9NXIRLgsYGTY6uVk9uXJxlIUt6BtyBbZdmttJ", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:41:27.734 request_id=GCaYmLkuGjHXU6wAAAYj [info] GET /users/dashboard
+18:41:27.736 request_id=GCaYmLkuGjHXU6wAAAYj [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:41:27.736061Z
+18:41:27.736 request_id=GCaYmLkuGjHXU6wAAAYj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:41:27.741 request_id=GCaYmLkuGjHXU6wAAAYj [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:41:27.736061Z was successful.
+Status: 200
+
+18:41:27.742 request_id=GCaYmLkuGjHXU6wAAAYj [info] Sent 200 in 7ms
+18:41:28.562 [info] CONNECTED TO Phoenix.LiveView.Socket in 18µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "CwU4QBMOPRkFHUooak15fXw3ATdFPjI3cFRmZVMsVLga-z01LDuX0SpG", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:41:42.595 request_id=GCaYnC7xX1_bOe8AAAfE [info] POST /users/log_out
+18:41:42.596 request_id=GCaYnC7xX1_bOe8AAAfE [info] DELETE request to /users/log_out by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:41:42.596831Z
+18:41:42.597 request_id=GCaYnC7xX1_bOe8AAAfE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:41:42.611 request_id=GCaYnC7xX1_bOe8AAAfE [info] DELETE request to /users/log_out by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-22 17:41:42.596831Z was successful.
+Status: 302
+
+18:41:42.611 request_id=GCaYnC7xX1_bOe8AAAfE [info] Sent 302 in 16ms
+18:41:42.630 request_id=GCaYnDEHwjA-a5IAAB_B [info] GET /
+18:41:42.630 request_id=GCaYnDEHwjA-a5IAAB_B [info] GET request to / by User: anonymous at 2025-02-22 17:41:42.630454Z
+18:41:42.630 request_id=GCaYnDEHwjA-a5IAAB_B [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:41:42.634 request_id=GCaYnDEHwjA-a5IAAB_B [info] GET request to / by User: anonymous at 2025-02-22 17:41:42.630454Z was successful.
+Status: 200
+
+18:41:42.634 request_id=GCaYnDEHwjA-a5IAAB_B [info] Sent 200 in 4ms
+18:41:43.448 [info] CONNECTED TO Phoenix.LiveView.Socket in 26µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Llg0UBgcGQQYGGYpCh0pSWsuYykBcwA7K1_1viVvWs3Lnun09_6fLKrq", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:41:46.587 request_id=GCaYnRzfVX52rlwAAAdj [info] GET /auth/log_in
+18:41:46.587 request_id=GCaYnRzfVX52rlwAAAdj [info] GET request to /auth/log_in by User: anonymous at 2025-02-22 17:41:46.587215Z
+18:41:46.587 request_id=GCaYnRzfVX52rlwAAAdj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:41:46.599 request_id=GCaYnRzfVX52rlwAAAdj [info] GET request to /auth/log_in by User: anonymous at 2025-02-22 17:41:46.587215Z was successful.
+Status: 200
+
+18:41:46.599 request_id=GCaYnRzfVX52rlwAAAdj [info] Sent 200 in 12ms
+18:41:47.364 [info] CONNECTED TO Phoenix.LiveView.Socket in 19µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Fj8BOzswBhgkMxFVFAcyOCVEGCQdfzQBsVjZUEIjkXD0pouAw5MkPGFK", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:41:55.533 request_id=GCaYnzIcqSGVeuQAACIh [info] POST /auth/log_in
+18:41:55.533 request_id=GCaYnzIcqSGVeuQAACIh [info] POST request to /auth/log_in by User: anonymous at 2025-02-22 17:41:55.533629Z
+18:41:55.533 request_id=GCaYnzIcqSGVeuQAACIh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:41:55.789 request_id=GCaYnzIcqSGVeuQAACIh [info] POST request to /auth/log_in by User: anonymous at 2025-02-22 17:41:55.533629Z was successful.
+Status: 302
+
+18:41:55.789 request_id=GCaYnzIcqSGVeuQAACIh [info] Sent 302 in 256ms
+18:41:55.809 request_id=GCaYn0KZ7dwjpYcAAAhi [info] GET /users/welcome
+18:41:55.811 request_id=GCaYn0KZ7dwjpYcAAAhi [info] GET request to /users/welcome by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 17:41:55.811624Z
+18:41:55.811 request_id=GCaYn0KZ7dwjpYcAAAhi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:41:55.817 request_id=GCaYn0KZ7dwjpYcAAAhi [info] GET request to /users/welcome by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 17:41:55.811624Z was successful.
+Status: 200
+
+18:41:55.817 request_id=GCaYn0KZ7dwjpYcAAAhi [info] Sent 200 in 8ms
+18:41:56.627 [info] CONNECTED TO Phoenix.LiveView.Socket in 19µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "AUA0GncdHwZZEz9_Bz9DGwYDIDErFBY2PwzLNZMm-tk02xpqowmbmFxi", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:41:59.317 request_id=GCaYoBOrFUUnTFkAACPB [info] GET /users/dashboard
+18:41:59.318 request_id=GCaYoBOrFUUnTFkAACPB [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 17:41:59.318781Z
+18:41:59.318 request_id=GCaYoBOrFUUnTFkAACPB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:41:59.337 request_id=GCaYoBOrFUUnTFkAACPB [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 17:41:59.318781Z was successful.
+Status: 200
+
+18:41:59.337 request_id=GCaYoBOrFUUnTFkAACPB [info] Sent 200 in 20ms
+18:42:00.112 [info] CONNECTED TO Phoenix.LiveView.Socket in 18µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IEEXYm4JHjJNEyckeAlfGFsiBgYNJyAPqvY4WNLY9tskMNlr2VKUKuNP", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:45:14.725 request_id=GCaYzZLnXXhT6OsAACVh [info] GET /users/dashboard
+18:45:14.727 request_id=GCaYzZLnXXhT6OsAACVh [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 17:45:14.727864Z
+18:45:14.728 request_id=GCaYzZLnXXhT6OsAACVh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:45:14.739 request_id=GCaYzZLnXXhT6OsAACVh [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 17:45:14.727864Z was successful.
+Status: 200
+
+18:45:14.740 request_id=GCaYzZLnXXhT6OsAACVh [info] Sent 200 in 14ms
+18:45:15.603 [info] CONNECTED TO Phoenix.LiveView.Socket in 130µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "JnZ-G24sJwIRET52XCxlATlCfCkvOCoIwA0MWkuievj9ikVkP61zijDW", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:45:34.877 request_id=GCaY0kQK5MkVqOYAACah [info] GET /users/dashboard
+18:45:34.878 request_id=GCaY0kQK5MkVqOYAACah [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 17:45:34.878763Z
+18:45:34.878 request_id=GCaY0kQK5MkVqOYAACah [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:45:34.887 request_id=GCaY0kQK5MkVqOYAACah [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 17:45:34.878763Z was successful.
+Status: 200
+
+18:45:34.887 request_id=GCaY0kQK5MkVqOYAACah [info] Sent 200 in 10ms
+18:45:36.381 [info] CONNECTED TO Phoenix.LiveView.Socket in 17µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "NQAhB342PzxZKWJiQCUeIQQXOSMTEDY8d7oQGqmW-N6-ub-KmctpUBXc", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:47:10.885 request_id=GCaY6J6XLNHHMakAAChB [info] GET /users/dashboard
+18:47:10.887 request_id=GCaY6J6XLNHHMakAAChB [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 17:47:10.887299Z
+18:47:10.887 request_id=GCaY6J6XLNHHMakAAChB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:47:10.900 request_id=GCaY6J6XLNHHMakAAChB [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 17:47:10.887299Z was successful.
+Status: 200
+
+18:47:10.900 request_id=GCaY6J6XLNHHMakAAChB [info] Sent 200 in 14ms
+18:47:12.818 [info] CONNECTED TO Phoenix.LiveView.Socket in 23µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "M3ktM1QeCiwQIyIFVgREOl45NCUoHRgmbNcemYXGdDvJcCwP7MyvnOvy", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:47:50.995 [error] Task #PID<0.550.0> started from NoshNetworkWeb.Endpoint terminating
+** (RuntimeError) Couldn't fetch https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64: {true, {:error, {:failed_connect, [{:to_address, {~c"objects.githubusercontent.com", 443}}, {:inet, [:inet], :closed}]}}}
+
+This typically means we cannot reach the source or you are behind a proxy.
+You can try again later and, if that does not work, you might:
+
+  1. If behind a proxy, ensure your proxy is configured and that
+     your certificates are set via the cacerts_path configuration
+
+  2. Manually download the executable from the URL above and
+     place it inside "_build/tailwind-linux-x64"
+
+  3. Install and use Tailwind from npmJS. See our module documentation
+     to learn more: https://hexdocs.pm/tailwind
+
+    (tailwind 0.2.4) lib/tailwind.ex:315: Tailwind.fetch_body!/2
+    (tailwind 0.2.4) lib/tailwind.ex:230: Tailwind.install/1
+    (tailwind 0.2.4) lib/tailwind.ex:211: Tailwind.install_and_run/2
+    (phoenix 1.7.18) lib/phoenix/endpoint/watcher.ex:19: Phoenix.Endpoint.Watcher.watch/2
+    (elixir 1.18.1) lib/task/supervised.ex:101: Task.Supervised.invoke_mfa/2
+Function: &Phoenix.Endpoint.Watcher.watch/2
+    Args: ["tailwind", {Tailwind, :install_and_run, [:default, ["--watch"]]}]
+18:54:25.933 request_id=GCaZTel3BCK-1icAAClB [info] GET /users/dashboard
+18:54:25.935 request_id=GCaZTel3BCK-1icAAClB [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 17:54:25.935305Z
+18:54:25.935 request_id=GCaZTel3BCK-1icAAClB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:54:25.945 request_id=GCaZTel3BCK-1icAAClB [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 17:54:25.935305Z was successful.
+Status: 200
+
+18:54:25.945 request_id=GCaZTel3BCK-1icAAClB [info] Sent 200 in 11ms
+18:54:28.920 [info] CONNECTED TO Phoenix.LiveView.Socket in 32µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HGgXJWkQBVMVEQQDTRhKWy8tLAMSIg8FM_YsPWW8avPLx_y1FYaPTpaZ", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:55:22.962 request_id=GCaZWzCemh5e7qEAAApC [info] GET /users/dashboard
+18:55:22.964 request_id=GCaZWzCemh5e7qEAAApC [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 17:55:22.964001Z
+18:55:22.964 request_id=GCaZWzCemh5e7qEAAApC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:55:22.975 request_id=GCaZWzCemh5e7qEAAApC [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 17:55:22.964001Z was successful.
+Status: 200
+
+18:55:22.975 request_id=GCaZWzCemh5e7qEAAApC [info] Sent 200 in 13ms
+18:55:25.748 [info] CONNECTED TO Phoenix.LiveView.Socket in 23µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "OVAsZFgOPg4GBmE3eiBqO1sVBmYHCBsZhgb2aIlera5xOgYQ2aK5AZuF", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+18:59:22.134 request_id=GCaZkuBj0xD9Yp8AAAqi [info] GET /users/dashboard
+18:59:22.135 request_id=GCaZkuBj0xD9Yp8AAAqi [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 17:59:22.135349Z
+18:59:22.135 request_id=GCaZkuBj0xD9Yp8AAAqi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+18:59:22.145 request_id=GCaZkuBj0xD9Yp8AAAqi [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 17:59:22.135349Z was successful.
+Status: 200
+
+18:59:22.145 request_id=GCaZkuBj0xD9Yp8AAAqi [info] Sent 200 in 10ms
+18:59:23.328 [info] CONNECTED TO Phoenix.LiveView.Socket in 35µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "A2YtJ141ETE-IgQiRw9qOAsDIzwlHR9pRQcqgrCZJEPmrHYRbwnocOq6", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:00:23.943 request_id=GCaZoUR9siRIxzsAAAsC [info] GET /users/dashboard
+19:00:23.944 request_id=GCaZoUR9siRIxzsAAAsC [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:00:23.944242Z
+19:00:23.944 request_id=GCaZoUR9siRIxzsAAAsC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:00:23.952 request_id=GCaZoUR9siRIxzsAAAsC [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:00:23.944242Z was successful.
+Status: 200
+
+19:00:23.952 request_id=GCaZoUR9siRIxzsAAAsC [info] Sent 200 in 9ms
+19:00:25.655 [info] CONNECTED TO Phoenix.LiveView.Socket in 20µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BEEKGGAhMxkcVSBiXBVmJTAhEgU2YiEsUvDNYfarh2t-iRUOYU_Vp0Os", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:00:29.371 request_id=GCaZoogR7rwmw0QAAAvC [info] GET /users/dashboard
+19:00:29.373 request_id=GCaZoogR7rwmw0QAAAvC [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:00:29.373018Z
+19:00:29.373 request_id=GCaZoogR7rwmw0QAAAvC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:00:29.381 request_id=GCaZoogR7rwmw0QAAAvC [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:00:29.373018Z was successful.
+Status: 200
+
+19:00:29.381 request_id=GCaZoogR7rwmw0QAAAvC [info] Sent 200 in 9ms
+19:00:30.177 [info] CONNECTED TO Phoenix.LiveView.Socket in 21µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "YnoBDE89Px49MDl5Qj1lDx0iFzg3NBdt3MOZvzmuIWm6wzVetVZkqfy2", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:00:48.892 request_id=GCaZpxOXwdHGZX4AAC-B [info] GET /users/dashboard
+19:00:48.894 request_id=GCaZpxOXwdHGZX4AAC-B [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:00:48.894205Z
+19:00:48.894 request_id=GCaZpxOXwdHGZX4AAC-B [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:00:48.904 request_id=GCaZpxOXwdHGZX4AAC-B [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:00:48.894205Z was successful.
+Status: 200
+
+19:00:48.904 request_id=GCaZpxOXwdHGZX4AAC-B [info] Sent 200 in 11ms
+19:00:50.928 [info] CONNECTED TO Phoenix.LiveView.Socket in 25µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "aH8_O1gDNQ4ZIA4sZTFkWFkxISITK1g89HqmaDgemGZcPvW20ElqUy6c", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:01:53.012 request_id=GCaZtgFyfCeB7i4AADAB [info] GET /users/dashboard
+19:01:53.014 request_id=GCaZtgFyfCeB7i4AADAB [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:01:53.014550Z
+19:01:53.015 request_id=GCaZtgFyfCeB7i4AADAB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:01:53.029 request_id=GCaZtgFyfCeB7i4AADAB [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:01:53.014550Z was successful.
+Status: 200
+
+19:01:53.029 request_id=GCaZtgFyfCeB7i4AADAB [info] Sent 200 in 17ms
+19:01:55.445 [info] CONNECTED TO Phoenix.LiveView.Socket in 20µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "PFwqNA0fFh0rEzk5VgpdXlACIScuP1cJmkdb4XDv_tmvcMn49vlthm9V", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:03:29.935 request_id=GCaZzJJ4VmDV3gIAADCB [info] GET /users/dashboard
+19:03:29.936 request_id=GCaZzJJ4VmDV3gIAADCB [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:03:29.936494Z
+19:03:29.936 request_id=GCaZzJJ4VmDV3gIAADCB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:03:29.946 request_id=GCaZzJJ4VmDV3gIAADCB [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:03:29.936494Z was successful.
+Status: 200
+
+19:03:29.946 request_id=GCaZzJJ4VmDV3gIAADCB [info] Sent 200 in 11ms
+19:03:31.515 [info] CONNECTED TO Phoenix.LiveView.Socket in 21µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IQApN0oyNF4TMzZ7Vi96K1EtezZrClwlp7gasuf5gTb4chIA8Y6e-X2z", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:03:38.195 [error] Task #PID<0.1750.0> started from NoshNetworkWeb.Endpoint terminating
+** (RuntimeError) Couldn't fetch https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64: {true, {:error, {:failed_connect, [{:to_address, {~c"objects.githubusercontent.com", 443}}, {:inet, [:inet], :closed}]}}}
+
+This typically means we cannot reach the source or you are behind a proxy.
+You can try again later and, if that does not work, you might:
+
+  1. If behind a proxy, ensure your proxy is configured and that
+     your certificates are set via the cacerts_path configuration
+
+  2. Manually download the executable from the URL above and
+     place it inside "_build/tailwind-linux-x64"
+
+  3. Install and use Tailwind from npmJS. See our module documentation
+     to learn more: https://hexdocs.pm/tailwind
+
+    (tailwind 0.2.4) lib/tailwind.ex:315: Tailwind.fetch_body!/2
+    (tailwind 0.2.4) lib/tailwind.ex:230: Tailwind.install/1
+    (tailwind 0.2.4) lib/tailwind.ex:211: Tailwind.install_and_run/2
+    (phoenix 1.7.18) lib/phoenix/endpoint/watcher.ex:19: Phoenix.Endpoint.Watcher.watch/2
+    (elixir 1.18.1) lib/task/supervised.ex:101: Task.Supervised.invoke_mfa/2
+Function: &Phoenix.Endpoint.Watcher.watch/2
+    Args: ["tailwind", {Tailwind, :install_and_run, [:default, ["--watch"]]}]
+19:04:18.041 request_id=GCaZ18XSr43S8NoAAA_i [info] GET /users/dashboard
+19:04:18.042 request_id=GCaZ18XSr43S8NoAAA_i [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:04:18.042384Z
+19:04:18.042 request_id=GCaZ18XSr43S8NoAAA_i [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:04:18.053 request_id=GCaZ18XSr43S8NoAAA_i [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:04:18.042384Z was successful.
+Status: 200
+
+19:04:18.053 request_id=GCaZ18XSr43S8NoAAA_i [info] Sent 200 in 12ms
+19:04:20.474 [info] CONNECTED TO Phoenix.LiveView.Socket in 25µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HwcpMlJzAi0EUh12BwF0WB0eOWUZMVYAN0gdk4PFp5I92FG2tjt6_c8_", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:05:07.108 request_id=GCaZ4zJ20HQMd6IAAAZF [info] GET /users/dashboard
+19:05:07.110 request_id=GCaZ4zJ20HQMd6IAAAZF [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:05:07.110242Z
+19:05:07.110 request_id=GCaZ4zJ20HQMd6IAAAZF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:05:07.126 request_id=GCaZ4zJ20HQMd6IAAAZF [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:05:07.110242Z was successful.
+Status: 200
+
+19:05:07.127 request_id=GCaZ4zJ20HQMd6IAAAZF [info] Sent 200 in 18ms
+19:05:09.271 [info] CONNECTED TO Phoenix.LiveView.Socket in 19µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Pxp7LwA9BQAVLTIheAMLXgI4HhADAgIQn-5y9zWkaJfnMD84kLSCEPlO", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:05:22.007 request_id=GCaZ5qqHBrDHdAUAADCh [info] GET /users/dashboard
+19:05:22.008 request_id=GCaZ5qqHBrDHdAUAADCh [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:05:22.008750Z
+19:05:22.008 request_id=GCaZ5qqHBrDHdAUAADCh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:05:22.021 request_id=GCaZ5qqHBrDHdAUAADCh [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:05:22.008750Z was successful.
+Status: 200
+
+19:05:22.021 request_id=GCaZ5qqHBrDHdAUAADCh [info] Sent 200 in 14ms
+19:05:23.152 [info] CONNECTED TO Phoenix.LiveView.Socket in 38µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "YFwZMk5_fyY7IQ4lTX5nODpFPDR-EAA21kWdw8-MOFZjx9TRS1qg8Bni", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:05:52.919 request_id=GCaZ7d0Gocy221UAAAll [info] GET /users/dashboard
+19:05:52.921 request_id=GCaZ7d0Gocy221UAAAll [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:05:52.921204Z
+19:05:52.921 request_id=GCaZ7d0Gocy221UAAAll [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:05:52.930 request_id=GCaZ7d0Gocy221UAAAll [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:05:52.921204Z was successful.
+Status: 200
+
+19:05:52.931 request_id=GCaZ7d0Gocy221UAAAll [info] Sent 200 in 11ms
+19:05:54.905 [info] CONNECTED TO Phoenix.LiveView.Socket in 19µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GHQUAXMvADk4VDEsVnVKHgMtHSELEF4wICZWJhRRL3ecc2ytjYPrMB0o", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:06:36.897 request_id=GCaZ-BpT4Pxcym4AADFh [info] GET /users/dashboard
+19:06:36.899 request_id=GCaZ-BpT4Pxcym4AADFh [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:06:36.899578Z
+19:06:36.899 request_id=GCaZ-BpT4Pxcym4AADFh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:06:36.908 request_id=GCaZ-BpT4Pxcym4AADFh [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:06:36.899578Z was successful.
+Status: 200
+
+19:06:36.908 request_id=GCaZ-BpT4Pxcym4AADFh [info] Sent 200 in 10ms
+19:06:39.455 [info] CONNECTED TO Phoenix.LiveView.Socket in 21µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "C1IsN1UzNllCMjImTwhyHBoyeTE3FRw3Zebaltd26UfizOAvsF4bqGrh", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:06:40.806 [error] Task #PID<0.2102.0> started from NoshNetworkWeb.Endpoint terminating
+** (RuntimeError) Couldn't fetch https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64: {true, {:error, {:failed_connect, [{:to_address, {~c"github.com", 443}}, {:inet, [:inet], :closed}]}}}
+
+This typically means we cannot reach the source or you are behind a proxy.
+You can try again later and, if that does not work, you might:
+
+  1. If behind a proxy, ensure your proxy is configured and that
+     your certificates are set via the cacerts_path configuration
+
+  2. Manually download the executable from the URL above and
+     place it inside "_build/tailwind-linux-x64"
+
+  3. Install and use Tailwind from npmJS. See our module documentation
+     to learn more: https://hexdocs.pm/tailwind
+
+    (tailwind 0.2.4) lib/tailwind.ex:315: Tailwind.fetch_body!/2
+    (tailwind 0.2.4) lib/tailwind.ex:230: Tailwind.install/1
+    (tailwind 0.2.4) lib/tailwind.ex:211: Tailwind.install_and_run/2
+    (phoenix 1.7.18) lib/phoenix/endpoint/watcher.ex:19: Phoenix.Endpoint.Watcher.watch/2
+    (elixir 1.18.1) lib/task/supervised.ex:101: Task.Supervised.invoke_mfa/2
+Function: &Phoenix.Endpoint.Watcher.watch/2
+    Args: ["tailwind", {Tailwind, :install_and_run, [:default, ["--watch"]]}]
+19:06:54.181 [error] Task #PID<0.2355.0> started from NoshNetworkWeb.Endpoint terminating
+** (RuntimeError) Couldn't fetch https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64: {true, {:error, {:failed_connect, [{:to_address, {~c"github.com", 443}}, {:inet, [:inet], :closed}]}}}
+
+This typically means we cannot reach the source or you are behind a proxy.
+You can try again later and, if that does not work, you might:
+
+  1. If behind a proxy, ensure your proxy is configured and that
+     your certificates are set via the cacerts_path configuration
+
+  2. Manually download the executable from the URL above and
+     place it inside "_build/tailwind-linux-x64"
+
+  3. Install and use Tailwind from npmJS. See our module documentation
+     to learn more: https://hexdocs.pm/tailwind
+
+    (tailwind 0.2.4) lib/tailwind.ex:315: Tailwind.fetch_body!/2
+    (tailwind 0.2.4) lib/tailwind.ex:230: Tailwind.install/1
+    (tailwind 0.2.4) lib/tailwind.ex:211: Tailwind.install_and_run/2
+    (phoenix 1.7.18) lib/phoenix/endpoint/watcher.ex:19: Phoenix.Endpoint.Watcher.watch/2
+    (elixir 1.18.1) lib/task/supervised.ex:101: Task.Supervised.invoke_mfa/2
+Function: &Phoenix.Endpoint.Watcher.watch/2
+    Args: ["tailwind", {Tailwind, :install_and_run, [:default, ["--watch"]]}]
+19:07:13.372 [error] Task #PID<0.2361.0> started from NoshNetworkWeb.Endpoint terminating
+** (RuntimeError) Couldn't fetch https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64: {true, {:error, {:failed_connect, [{:to_address, {~c"github.com", 443}}, {:inet, [:inet], :closed}]}}}
+
+This typically means we cannot reach the source or you are behind a proxy.
+You can try again later and, if that does not work, you might:
+
+  1. If behind a proxy, ensure your proxy is configured and that
+     your certificates are set via the cacerts_path configuration
+
+  2. Manually download the executable from the URL above and
+     place it inside "_build/tailwind-linux-x64"
+
+  3. Install and use Tailwind from npmJS. See our module documentation
+     to learn more: https://hexdocs.pm/tailwind
+
+    (tailwind 0.2.4) lib/tailwind.ex:315: Tailwind.fetch_body!/2
+    (tailwind 0.2.4) lib/tailwind.ex:230: Tailwind.install/1
+    (tailwind 0.2.4) lib/tailwind.ex:211: Tailwind.install_and_run/2
+    (phoenix 1.7.18) lib/phoenix/endpoint/watcher.ex:19: Phoenix.Endpoint.Watcher.watch/2
+    (elixir 1.18.1) lib/task/supervised.ex:101: Task.Supervised.invoke_mfa/2
+Function: &Phoenix.Endpoint.Watcher.watch/2
+    Args: ["tailwind", {Tailwind, :install_and_run, [:default, ["--watch"]]}]
+19:07:29.296 [error] Task #PID<0.2367.0> started from NoshNetworkWeb.Endpoint terminating
+** (RuntimeError) Couldn't fetch https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64: {true, {:error, {:failed_connect, [{:to_address, {~c"github.com", 443}}, {:inet, [:inet], :closed}]}}}
+
+This typically means we cannot reach the source or you are behind a proxy.
+You can try again later and, if that does not work, you might:
+
+  1. If behind a proxy, ensure your proxy is configured and that
+     your certificates are set via the cacerts_path configuration
+
+  2. Manually download the executable from the URL above and
+     place it inside "_build/tailwind-linux-x64"
+
+  3. Install and use Tailwind from npmJS. See our module documentation
+     to learn more: https://hexdocs.pm/tailwind
+
+    (tailwind 0.2.4) lib/tailwind.ex:315: Tailwind.fetch_body!/2
+    (tailwind 0.2.4) lib/tailwind.ex:230: Tailwind.install/1
+    (tailwind 0.2.4) lib/tailwind.ex:211: Tailwind.install_and_run/2
+    (phoenix 1.7.18) lib/phoenix/endpoint/watcher.ex:19: Phoenix.Endpoint.Watcher.watch/2
+    (elixir 1.18.1) lib/task/supervised.ex:101: Task.Supervised.invoke_mfa/2
+Function: &Phoenix.Endpoint.Watcher.watch/2
+    Args: ["tailwind", {Tailwind, :install_and_run, [:default, ["--watch"]]}]
+19:07:44.518 request_id=GCaaB9jR_7fkLOwAAAjj [info] GET /users/dashboard
+19:07:44.519 request_id=GCaaB9jR_7fkLOwAAAjj [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:07:44.519838Z
+19:07:44.520 request_id=GCaaB9jR_7fkLOwAAAjj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:07:44.528 request_id=GCaaB9jR_7fkLOwAAAjj [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:07:44.519838Z was successful.
+Status: 200
+
+19:07:44.528 request_id=GCaaB9jR_7fkLOwAAAjj [info] Sent 200 in 10ms
+19:07:45.802 [info] CONNECTED TO Phoenix.LiveView.Socket in 18µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IW4ibkMWIhE1Mgd7WxhaLwJNfGNyJCMxpYl8zQpzAUS4n_iEk9104vMn", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:13:06.689 [error] Task #PID<0.2373.0> started from NoshNetworkWeb.Endpoint terminating
+** (RuntimeError) Couldn't fetch https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64: {true, {:error, {:failed_connect, [{:to_address, {~c"github.com", 443}}, {:inet, [:inet], :closed}]}}}
+
+This typically means we cannot reach the source or you are behind a proxy.
+You can try again later and, if that does not work, you might:
+
+  1. If behind a proxy, ensure your proxy is configured and that
+     your certificates are set via the cacerts_path configuration
+
+  2. Manually download the executable from the URL above and
+     place it inside "_build/tailwind-linux-x64"
+
+  3. Install and use Tailwind from npmJS. See our module documentation
+     to learn more: https://hexdocs.pm/tailwind
+
+    (tailwind 0.2.4) lib/tailwind.ex:315: Tailwind.fetch_body!/2
+    (tailwind 0.2.4) lib/tailwind.ex:230: Tailwind.install/1
+    (tailwind 0.2.4) lib/tailwind.ex:211: Tailwind.install_and_run/2
+    (phoenix 1.7.18) lib/phoenix/endpoint/watcher.ex:19: Phoenix.Endpoint.Watcher.watch/2
+    (elixir 1.18.1) lib/task/supervised.ex:101: Task.Supervised.invoke_mfa/2
+Function: &Phoenix.Endpoint.Watcher.watch/2
+    Args: ["tailwind", {Tailwind, :install_and_run, [:default, ["--watch"]]}]
+19:14:35.931 request_id=GCaaZ6L5PgMeBi0AAAlj [info] GET /users/dashboard
+19:14:35.934 request_id=GCaaZ6L5PgMeBi0AAAlj [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:14:35.934539Z
+19:14:35.934 request_id=GCaaZ6L5PgMeBi0AAAlj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:14:35.953 request_id=GCaaZ6L5PgMeBi0AAAlj [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:14:35.934539Z was successful.
+Status: 200
+
+19:14:35.953 request_id=GCaaZ6L5PgMeBi0AAAlj [info] Sent 200 in 21ms
+19:14:38.165 [info] CONNECTED TO Phoenix.LiveView.Socket in 22µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "FkQ4BG83Oxs7Cw0JYARDOS43PCt2NB8yGsvRVpipOlYFUCpSGCqx0fqm", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:14:54.864 request_id=GCaabAtr-zIWTnkAAAmj [info] GET /users/dashboard
+19:14:54.865 request_id=GCaabAtr-zIWTnkAAAmj [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:14:54.865292Z
+19:14:54.865 request_id=GCaabAtr-zIWTnkAAAmj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:14:54.873 request_id=GCaabAtr-zIWTnkAAAmj [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:14:54.865292Z was successful.
+Status: 200
+
+19:14:54.874 request_id=GCaabAtr-zIWTnkAAAmj [info] Sent 200 in 10ms
+19:14:56.662 [info] CONNECTED TO Phoenix.LiveView.Socket in 21µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Dnk3FQlxFB03BQNiY39qNQgVOwN-MS9y_NyC06FvCbW-V8Y_aavP8cA-", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:15:43.945 request_id=GCaad3jtplqZGJIAADWh [info] GET /users/dashboard
+19:15:43.949 request_id=GCaad3jtplqZGJIAADWh [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:15:43.949069Z
+19:15:43.949 request_id=GCaad3jtplqZGJIAADWh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:15:43.962 request_id=GCaad3jtplqZGJIAADWh [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:15:43.949069Z was successful.
+Status: 200
+
+19:15:43.962 request_id=GCaad3jtplqZGJIAADWh [info] Sent 200 in 16ms
+19:15:46.283 [info] CONNECTED TO Phoenix.LiveView.Socket in 19µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "NHwBP34CZzQtMSR3fCFkBzkHJSQxMyhueKOiGE5_YVp8IfWmPshwwaF1", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:16:07.936 request_id=GCaafQ7l2hJFTdEAABNi [info] GET /users/dashboard
+19:16:07.937 request_id=GCaafQ7l2hJFTdEAABNi [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:16:07.937913Z
+19:16:07.938 request_id=GCaafQ7l2hJFTdEAABNi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:16:07.945 request_id=GCaafQ7l2hJFTdEAABNi [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:16:07.937913Z was successful.
+Status: 200
+
+19:16:07.946 request_id=GCaafQ7l2hJFTdEAABNi [info] Sent 200 in 9ms
+19:16:09.498 [info] CONNECTED TO Phoenix.LiveView.Socket in 29µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "JXEaL0MIOSVDNB8jdyBsBB0OIQd-IjkJtFTyzOkN7SKlBg_ntzlT8pWV", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:16:44.017 request_id=GCaahXV-MF7ZQQAAADZh [info] GET /users/dashboard
+19:16:44.019 request_id=GCaahXV-MF7ZQQAAADZh [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:16:44.019189Z
+19:16:44.019 request_id=GCaahXV-MF7ZQQAAADZh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:16:44.032 request_id=GCaahXV-MF7ZQQAAADZh [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:16:44.019189Z was successful.
+Status: 200
+
+19:16:44.032 request_id=GCaahXV-MF7ZQQAAADZh [info] Sent 200 in 14ms
+19:16:45.918 [info] CONNECTED TO Phoenix.LiveView.Socket in 25µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Fw53F2tzCBwxUSR9fwN2DwQ7Gx0nFFoIF99AR4ZwE6p2JDEemOVNaF4W", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:18:49.060 request_id=GCaaopKgjZ5kZ1UAADdh [info] GET /users/dashboard
+19:18:49.063 request_id=GCaaopKgjZ5kZ1UAADdh [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:18:49.063032Z
+19:18:49.063 request_id=GCaaopKgjZ5kZ1UAADdh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:18:49.085 request_id=GCaaopKgjZ5kZ1UAADdh [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:18:49.063032Z was successful.
+Status: 200
+
+19:18:49.085 request_id=GCaaopKgjZ5kZ1UAADdh [info] Sent 200 in 24ms
+19:18:50.417 [info] CONNECTED TO Phoenix.LiveView.Socket in 34µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "OUB3Y0ozGAcFAC0uA39CPQYQG2oPAhgphw95stJlqgya68qWodV9IPvv", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:19:04.055 request_id=GCaaphBeJGiU1j8AADjB [info] GET /users/dashboard
+19:19:04.056 request_id=GCaaphBeJGiU1j8AADjB [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:19:04.056814Z
+19:19:04.057 request_id=GCaaphBeJGiU1j8AADjB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:19:04.071 request_id=GCaaphBeJGiU1j8AADjB [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:19:04.056814Z was successful.
+Status: 200
+
+19:19:04.071 request_id=GCaaphBeJGiU1j8AADjB [info] Sent 200 in 16ms
+19:19:04.980 [info] CONNECTED TO Phoenix.LiveView.Socket in 33µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "YWcLElY2HgcBVRMWcxR3Dig3ORsREAwu0PEDoqLlu2GYFSDdACtHWBbq", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:19:13.936 request_id=GCaaqF1RRPOEPU0AABcC [info] GET /users/dashboard
+19:19:13.937 request_id=GCaaqF1RRPOEPU0AABcC [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:19:13.937365Z
+19:19:13.937 request_id=GCaaqF1RRPOEPU0AABcC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:19:13.947 request_id=GCaaqF1RRPOEPU0AABcC [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:19:13.937365Z was successful.
+Status: 200
+
+19:19:13.947 request_id=GCaaqF1RRPOEPU0AABcC [info] Sent 200 in 11ms
+19:19:14.946 [info] CONNECTED TO Phoenix.LiveView.Socket in 24µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MHUBOEwGNjosNzU2WiNCMzgCLh4pGSANaBOnuAdQXPayodqYQvcMoKNR", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:19:19.594 request_id=GCaaqa6UYALD76UAAAqD [info] GET /users/dashboard
+19:19:19.598 request_id=GCaaqa6UYALD76UAAAqD [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:19:19.598744Z
+19:19:19.599 request_id=GCaaqa6UYALD76UAAAqD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:19:19.611 request_id=GCaaqa6UYALD76UAAAqD [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:19:19.598744Z was successful.
+Status: 200
+
+19:19:19.611 request_id=GCaaqa6UYALD76UAAAqD [info] Sent 200 in 17ms
+19:19:21.301 [info] CONNECTED TO Phoenix.LiveView.Socket in 33µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "CQYvAmg1FgkxM2cBfhVEOD0yeWMgBy8lX1aTQrDbET3NKRwRTF40fUAz", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:19:32.107 request_id=GCaarJhjgiTCygsAABgC [info] GET /users/dashboard
+19:19:32.108 request_id=GCaarJhjgiTCygsAABgC [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:19:32.108488Z
+19:19:32.108 request_id=GCaarJhjgiTCygsAABgC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:19:32.131 request_id=GCaarJhjgiTCygsAABgC [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:19:32.108488Z was successful.
+Status: 200
+
+19:19:32.131 request_id=GCaarJhjgiTCygsAABgC [info] Sent 200 in 24ms
+19:19:33.108 [info] CONNECTED TO Phoenix.LiveView.Socket in 34µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ZWc2NXMPDQISMzwCUD91MBADCTciK1oI4PxcJH_ifThMexFZywDddy4W", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:20:16.043 request_id=GCaattMyv2DQoSkAABji [info] GET /users/dashboard
+19:20:16.044 request_id=GCaattMyv2DQoSkAABji [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:20:16.044657Z
+19:20:16.044 request_id=GCaattMyv2DQoSkAABji [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:20:16.056 request_id=GCaattMyv2DQoSkAABji [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:20:16.044657Z was successful.
+Status: 200
+
+19:20:16.056 request_id=GCaattMyv2DQoSkAABji [info] Sent 200 in 13ms
+19:20:17.678 [info] CONNECTED TO Phoenix.LiveView.Socket in 26µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MwAfO0BxZTxZPQEDTHUHJA9AKgUsax8ub7Qmy67W-ZULy24Nf4gVj9qq", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:20:29.033 request_id=GCaaudl_OgFtqW0AAAvD [info] GET /users/dashboard
+19:20:29.035 request_id=GCaaudl_OgFtqW0AAAvD [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:20:29.035021Z
+19:20:29.035 request_id=GCaaudl_OgFtqW0AAAvD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:20:29.047 request_id=GCaaudl_OgFtqW0AAAvD [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:20:29.035021Z was successful.
+Status: 200
+
+19:20:29.047 request_id=GCaaudl_OgFtqW0AAAvD [info] Sent 200 in 13ms
+19:20:30.455 [info] CONNECTED TO Phoenix.LiveView.Socket in 28µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "I3InMngXMCguXjwLXixlG1w6JjhyASsTrEidAPbCZ9hDkkVq5Nkk4SEL", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:21:19.905 request_id=GCaaxbGop4lfLWgAABmi [info] GET /users/dashboard
+19:21:19.906 request_id=GCaaxbGop4lfLWgAABmi [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:21:19.906500Z
+19:21:19.906 request_id=GCaaxbGop4lfLWgAABmi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:21:19.914 request_id=GCaaxbGop4lfLWgAABmi [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:21:19.906500Z was successful.
+Status: 200
+
+19:21:19.914 request_id=GCaaxbGop4lfLWgAABmi [info] Sent 200 in 9ms
+19:21:22.604 [info] CONNECTED TO Phoenix.LiveView.Socket in 28µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GVh6GWl-ESQtAyElZH5jOzMsHQUINgY2Ho4OP9COYdujQ9PQZXPVNdhi", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:21:47.914 request_id=GCaazDcmc5Ywv_sAAAqk [info] GET /users/dashboard
+19:21:47.916 request_id=GCaazDcmc5Ywv_sAAAqk [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:21:47.916364Z
+19:21:47.916 request_id=GCaazDcmc5Ywv_sAAAqk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:21:47.924 request_id=GCaazDcmc5Ywv_sAAAqk [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:21:47.916364Z was successful.
+Status: 200
+
+19:21:47.924 request_id=GCaazDcmc5Ywv_sAAAqk [info] Sent 200 in 9ms
+19:21:50.085 [info] CONNECTED TO Phoenix.LiveView.Socket in 65µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ZmEUOGwDBQg3KxA1DDJcByoxPxcgf18Q7VZnUDWcCLDz9uomCErDf-1O", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:22:53.154 request_id=GCaa22e7kltcWVEAAA4D [info] GET /users/dashboard
+19:22:53.156 request_id=GCaa22e7kltcWVEAAA4D [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:22:53.156338Z
+19:22:53.156 request_id=GCaa22e7kltcWVEAAA4D [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:22:53.175 request_id=GCaa22e7kltcWVEAAA4D [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:22:53.156338Z was successful.
+Status: 200
+
+19:22:53.176 request_id=GCaa22e7kltcWVEAAA4D [info] Sent 200 in 21ms
+19:22:55.771 [info] CONNECTED TO Phoenix.LiveView.Socket in 37µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "EFF9GVgvGiczLxEsXypSGCQjK2QiOCo-Af3OahHLGHEcjmarMWf7djDa", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:25:03.109 request_id=GCaa-amt5by6shsAAArF [info] GET /users/dashboard
+19:25:03.111 request_id=GCaa-amt5by6shsAAArF [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:25:03.111662Z
+19:25:03.114 request_id=GCaa-amt5by6shsAAArF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:25:03.133 request_id=GCaa-amt5by6shsAAArF [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:25:03.111662Z was successful.
+Status: 200
+
+19:25:03.133 request_id=GCaa-amt5by6shsAAArF [info] Sent 200 in 23ms
+19:25:04.910 [info] CONNECTED TO Phoenix.LiveView.Socket in 25µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "JVAYMgoSMR44FTZ5AyEBEhExewsJCgc4tgVd3UcuLrb66f2xxE6XOXig", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:25:10.585 request_id=GCaa-2dMY8Irlx4AAByi [info] GET /users/dashboard
+19:25:10.587 request_id=GCaa-2dMY8Irlx4AAByi [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:25:10.587281Z
+19:25:10.587 request_id=GCaa-2dMY8Irlx4AAByi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:25:10.600 request_id=GCaa-2dMY8Irlx4AAByi [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:25:10.587281Z was successful.
+Status: 200
+
+19:25:10.600 request_id=GCaa-2dMY8Irlx4AAByi [info] Sent 200 in 14ms
+19:25:12.411 [info] CONNECTED TO Phoenix.LiveView.Socket in 20µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "KX98YFo0CggkXzgbTxFmHAo1FykLNSIGxH26csXcP8lTzVUvcAZzMgLY", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:25:16.742 request_id=GCaa_NZCi9_Cx7MAAA9j [info] GET /users/dashboard
+19:25:16.744 request_id=GCaa_NZCi9_Cx7MAAA9j [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:25:16.744154Z
+19:25:16.744 request_id=GCaa_NZCi9_Cx7MAAA9j [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:25:16.757 request_id=GCaa_NZCi9_Cx7MAAA9j [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:25:16.744154Z was successful.
+Status: 200
+
+19:25:16.758 request_id=GCaa_NZCi9_Cx7MAAA9j [info] Sent 200 in 15ms
+19:25:18.617 [info] CONNECTED TO Phoenix.LiveView.Socket in 37µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HnYFORQ_GFo4NRwcTTBXAV0FBBwVKDcKOAKo-xJ1LRHSxwdk4qIOSzYU", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:25:27.178 request_id=GCaa_0RFvMrDBsQAABAj [info] GET /users/dashboard
+19:25:27.179 request_id=GCaa_0RFvMrDBsQAABAj [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:25:27.179080Z
+19:25:27.179 request_id=GCaa_0RFvMrDBsQAABAj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:25:27.186 request_id=GCaa_0RFvMrDBsQAABAj [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:25:27.179080Z was successful.
+Status: 200
+
+19:25:27.186 request_id=GCaa_0RFvMrDBsQAABAj [info] Sent 200 in 8ms
+19:25:28.037 [info] CONNECTED TO Phoenix.LiveView.Socket in 32µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "EHgJJ3gPHzohAAA_AD1qUw8bEhYSMzg0AOGqAHMQUgTp5zY9fo_ETaVk", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:25:39.024 request_id=GCabAgZey-yQJQ4AABFD [info] GET /users/dashboard
+19:25:39.025 request_id=GCabAgZey-yQJQ4AABFD [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:25:39.025568Z
+19:25:39.025 request_id=GCabAgZey-yQJQ4AABFD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:25:39.037 request_id=GCabAgZey-yQJQ4AABFD [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:25:39.025568Z was successful.
+Status: 200
+
+19:25:39.037 request_id=GCabAgZey-yQJQ4AABFD [info] Sent 200 in 13ms
+19:25:40.384 [info] CONNECTED TO Phoenix.LiveView.Socket in 35µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "KQc9NAA2F1orV2V4Wz0CBytZIwQeOx1tx0sb9qE1_017nz1mB-nWXis2", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:25:54.034 request_id=GCabBYUPj1tMsAwAAD2B [info] GET /users/dashboard
+19:25:54.036 request_id=GCabBYUPj1tMsAwAAD2B [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:25:54.036197Z
+19:25:54.036 request_id=GCabBYUPj1tMsAwAAD2B [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:25:54.049 request_id=GCabBYUPj1tMsAwAAD2B [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:25:54.036197Z was successful.
+Status: 200
+
+19:25:54.050 request_id=GCabBYUPj1tMsAwAAD2B [info] Sent 200 in 15ms
+19:25:56.500 [info] CONNECTED TO Phoenix.LiveView.Socket in 26µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "M2ctIgslNyUsCiR4Rg5iBScmIn4vOFYybPct2beNXmp7sIQoNRo-ij8m", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:26:04.591 request_id=GCabB_pPuFfTi10AAD4B [info] GET /users/dashboard
+19:26:04.593 request_id=GCabB_pPuFfTi10AAD4B [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:26:04.593732Z
+19:26:04.594 request_id=GCabB_pPuFfTi10AAD4B [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:26:04.605 request_id=GCabB_pPuFfTi10AAD4B [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:26:04.593732Z was successful.
+Status: 200
+
+19:26:04.605 request_id=GCabB_pPuFfTi10AAD4B [info] Sent 200 in 13ms
+19:26:05.521 [info] CONNECTED TO Phoenix.LiveView.Socket in 20µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "CQQAE29xYg0dFzUrBw9dKxgmISYjOVowX3NEV60fipad2HnAqRluek4o", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:26:10.010 request_id=GCabCT1Kh62hLQwAAA0E [info] GET /users/dashboard
+19:26:10.012 request_id=GCabCT1Kh62hLQwAAA0E [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:26:10.012417Z
+19:26:10.012 request_id=GCabCT1Kh62hLQwAAA0E [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:26:10.021 request_id=GCabCT1Kh62hLQwAAA0E [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:26:10.012417Z was successful.
+Status: 200
+
+19:26:10.021 request_id=GCabCT1Kh62hLQwAAA0E [info] Sent 200 in 10ms
+19:26:10.877 [info] CONNECTED TO Phoenix.LiveView.Socket in 26µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Elg5Iwx_IB0TFSYoYA0BLwo2HTA8A1YcCowu58rvgrrgUJ2EcBPczQ8C", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:27:00.720 request_id=GCabFQvcZtkdADAAACAi [info] GET /users/dashboard
+19:27:00.722 request_id=GCabFQvcZtkdADAAACAi [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:27:00.722402Z
+19:27:00.722 request_id=GCabFQvcZtkdADAAACAi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:27:00.730 request_id=GCabFQvcZtkdADAAACAi [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:27:00.722402Z was successful.
+Status: 200
+
+19:27:00.730 request_id=GCabFQvcZtkdADAAACAi [info] Sent 200 in 10ms
+19:27:01.987 [info] CONNECTED TO Phoenix.LiveView.Socket in 18µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "OF57bm1qHRkwMQMnZH5hJjAxKisfZSAmii58T-OrDVWhQ9RLYEgxY7Ny", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:27:15.055 request_id=GCabGGJIbYT44twAAA3E [info] GET /users/dashboard
+19:27:15.057 request_id=GCabGGJIbYT44twAAA3E [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:27:15.057468Z
+19:27:15.058 request_id=GCabGGJIbYT44twAAA3E [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:27:15.073 request_id=GCabGGJIbYT44twAAA3E [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:27:15.057468Z was successful.
+Status: 200
+
+19:27:15.073 request_id=GCabGGJIbYT44twAAA3E [info] Sent 200 in 18ms
+19:27:16.066 [info] CONNECTED TO Phoenix.LiveView.Socket in 34µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HmUENWsRGjEaMg09eSxZWAQEI2cuIjwsORJcRVHZnUYrLkj2mpn4hpRs", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:27:25.263 request_id=GCabGsKw7MMSWHoAAAxl [info] GET /users/dashboard
+19:27:25.264 request_id=GCabGsKw7MMSWHoAAAxl [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:27:25.264426Z
+19:27:25.264 request_id=GCabGsKw7MMSWHoAAAxl [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:27:25.282 request_id=GCabGsKw7MMSWHoAAAxl [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:27:25.264426Z was successful.
+Status: 200
+
+19:27:25.282 request_id=GCabGsKw7MMSWHoAAAxl [info] Sent 200 in 19ms
+19:27:26.330 [info] CONNECTED TO Phoenix.LiveView.Socket in 40µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "AX94NFEQCB5MIBYJTDFwCxs3PGYiZx1tPH6bhWZu8GBFyvCarCq5d5s2", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:27:37.064 request_id=GCabHYITws59BNcAAA9E [info] GET /users/dashboard
+19:27:37.065 request_id=GCabHYITws59BNcAAA9E [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:27:37.065467Z
+19:27:37.065 request_id=GCabHYITws59BNcAAA9E [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:27:37.078 request_id=GCabHYITws59BNcAAA9E [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:27:37.065467Z was successful.
+Status: 200
+
+19:27:37.078 request_id=GCabHYITws59BNcAAA9E [info] Sent 200 in 14ms
+19:27:38.563 [info] CONNECTED TO Phoenix.LiveView.Socket in 35µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HEcdH0kTOTEgP20tASpeBS0wIAwfMzdoMpSIpTkZTX9b4mmoDDm_YaY7", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:27:52.095 request_id=GCabIQIBDfUDVs0AABEE [info] GET /users/dashboard
+19:27:52.097 request_id=GCabIQIBDfUDVs0AABEE [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:27:52.096971Z
+19:27:52.098 request_id=GCabIQIBDfUDVs0AABEE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:27:52.117 request_id=GCabIQIBDfUDVs0AABEE [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:27:52.096971Z was successful.
+Status: 200
+
+19:27:52.117 request_id=GCabIQIBDfUDVs0AABEE [info] Sent 200 in 22ms
+19:27:53.384 [info] CONNECTED TO Phoenix.LiveView.Socket in 32µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "CUM5AFEENyRNLyB2dyVpBRkSYAMHBQIVXtwVhCeO9Ht9BbZopf-PAWlJ", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:28:09.046 request_id=GCabJPRdh107VLUAABPD [info] GET /users/dashboard
+19:28:09.047 request_id=GCabJPRdh107VLUAABPD [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:28:09.047325Z
+19:28:09.047 request_id=GCabJPRdh107VLUAABPD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:28:09.061 request_id=GCabJPRdh107VLUAABPD [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:28:09.047325Z was successful.
+Status: 200
+
+19:28:09.062 request_id=GCabJPRdh107VLUAABPD [info] Sent 200 in 15ms
+19:28:10.688 [info] CONNECTED TO Phoenix.LiveView.Socket in 30µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "M08rGXgEAT0HXmI9anNRBVERFws0aysAbxeOACSVs96r_4bo8eZXr9E_", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:28:20.061 request_id=GCabJ4Tq3jD9e5cAAA7l [info] GET /users/dashboard
+19:28:20.062 request_id=GCabJ4Tq3jD9e5cAAA7l [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:28:20.062394Z
+19:28:20.062 request_id=GCabJ4Tq3jD9e5cAAA7l [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:28:20.076 request_id=GCabJ4Tq3jD9e5cAAA7l [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:28:20.062394Z was successful.
+Status: 200
+
+19:28:20.076 request_id=GCabJ4Tq3jD9e5cAAA7l [info] Sent 200 in 15ms
+19:28:21.520 [info] CONNECTED TO Phoenix.LiveView.Socket in 23µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Y2J6IGYePAcGLQY9QgNAPgwbJTw-MQso2U4v_YnlrJRrwDsTeohoxcew", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:28:49.032 request_id=GCabLkO7rMm1VTsAABKk [info] GET /users/dashboard
+19:28:49.033 request_id=GCabLkO7rMm1VTsAABKk [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:28:49.033946Z
+19:28:49.034 request_id=GCabLkO7rMm1VTsAABKk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:28:49.047 request_id=GCabLkO7rMm1VTsAABKk [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:28:49.033946Z was successful.
+Status: 200
+
+19:28:49.047 request_id=GCabLkO7rMm1VTsAABKk [info] Sent 200 in 14ms
+19:28:50.529 [info] CONNECTED TO Phoenix.LiveView.Socket in 19µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "E0A5NQ03GCg7Eh9-cnYKCDMcKmc1E0MWBwwc4pJCOuK1G19bZhg4sA-I", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:28:53.725 [error] Task #PID<0.2423.0> started from NoshNetworkWeb.Endpoint terminating
+** (RuntimeError) Couldn't fetch https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64: {true, {:error, {:failed_connect, [{:to_address, {~c"objects.githubusercontent.com", 443}}, {:inet, [:inet], :closed}]}}}
+
+This typically means we cannot reach the source or you are behind a proxy.
+You can try again later and, if that does not work, you might:
+
+  1. If behind a proxy, ensure your proxy is configured and that
+     your certificates are set via the cacerts_path configuration
+
+  2. Manually download the executable from the URL above and
+     place it inside "_build/tailwind-linux-x64"
+
+  3. Install and use Tailwind from npmJS. See our module documentation
+     to learn more: https://hexdocs.pm/tailwind
+
+    (tailwind 0.2.4) lib/tailwind.ex:315: Tailwind.fetch_body!/2
+    (tailwind 0.2.4) lib/tailwind.ex:230: Tailwind.install/1
+    (tailwind 0.2.4) lib/tailwind.ex:211: Tailwind.install_and_run/2
+    (phoenix 1.7.18) lib/phoenix/endpoint/watcher.ex:19: Phoenix.Endpoint.Watcher.watch/2
+    (elixir 1.18.1) lib/task/supervised.ex:101: Task.Supervised.invoke_mfa/2
+Function: &Phoenix.Endpoint.Watcher.watch/2
+    Args: ["tailwind", {Tailwind, :install_and_run, [:default, ["--watch"]]}]
+19:28:58.993 request_id=GCabMJVzlLUSym8AABMk [info] GET /users/dashboard
+19:28:58.994 request_id=GCabMJVzlLUSym8AABMk [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:28:58.994570Z
+19:28:58.994 request_id=GCabMJVzlLUSym8AABMk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:28:59.008 request_id=GCabMJVzlLUSym8AABMk [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:28:58.994570Z was successful.
+Status: 200
+
+19:28:59.008 request_id=GCabMJVzlLUSym8AABMk [info] Sent 200 in 15ms
+19:29:00.157 [info] CONNECTED TO Phoenix.LiveView.Socket in 32µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "JlAlEWEWFTRECDcQVwNEHQA6DAweBFYSwgkGXQG_0oc_bDwwiNA_XV8M", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:29:12.109 request_id=GCabM6M9RDWzvBcAABGF [info] GET /users/dashboard
+19:29:12.110 request_id=GCabM6M9RDWzvBcAABGF [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:29:12.110805Z
+19:29:12.111 request_id=GCabM6M9RDWzvBcAABGF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:29:12.125 request_id=GCabM6M9RDWzvBcAABGF [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:29:12.110805Z was successful.
+Status: 200
+
+19:29:12.125 request_id=GCabM6M9RDWzvBcAABGF [info] Sent 200 in 16ms
+19:29:13.092 [info] CONNECTED TO Phoenix.LiveView.Socket in 27µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Am0bGXUCJw01UwImGGpDLCwCfxEiZiwqSZUOLEufA4Vi--pFEv2Bd4Bu", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:29:40.586 request_id=GCabOkSZFHWKglYAACNC [info] GET /users/dashboard
+19:29:40.588 request_id=GCabOkSZFHWKglYAACNC [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:29:40.588577Z
+19:29:40.589 request_id=GCabOkSZFHWKglYAACNC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:29:40.597 request_id=GCabOkSZFHWKglYAACNC [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:29:40.588577Z was successful.
+Status: 200
+
+19:29:40.598 request_id=GCabOkSZFHWKglYAACNC [info] Sent 200 in 11ms
+19:29:41.459 [info] CONNECTED TO Phoenix.LiveView.Socket in 22µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GkN3ZHgMKh5AUyx8WXZlAyNGOQEyBS07Kt92AKxu44x3l1ViJ2tRtWCd", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:30:47.941 request_id=GCabSfM73DF093MAABQk [info] GET /users/dashboard
+19:30:47.942 request_id=GCabSfM73DF093MAABQk [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:30:47.942244Z
+19:30:47.942 request_id=GCabSfM73DF093MAABQk [info] User agent: "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36"
+19:30:47.951 request_id=GCabSfM73DF093MAABQk [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:30:47.942244Z was successful.
+Status: 200
+
+19:30:47.951 request_id=GCabSfM73DF093MAABQk [info] Sent 200 in 10ms
+19:30:50.810 [info] CONNECTED TO Phoenix.LiveView.Socket in 35µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Pm19JQAKZAAAPQI-eyRgJhAsAipxNw0JoZ3s9M6ktZVqNcSLyXOy7ecV", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:31:11.015 request_id=GCabT1KUHVNX9BsAACPC [info] GET /users/dashboard
+19:31:11.016 request_id=GCabT1KUHVNX9BsAACPC [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:31:11.016669Z
+19:31:11.016 request_id=GCabT1KUHVNX9BsAACPC [info] User agent: "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36"
+19:31:11.030 request_id=GCabT1KUHVNX9BsAACPC [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:31:11.016669Z was successful.
+Status: 200
+
+19:31:11.030 request_id=GCabT1KUHVNX9BsAACPC [info] Sent 200 in 15ms
+19:31:13.427 [info] CONNECTED TO Phoenix.LiveView.Socket in 27µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "PU0EB10wDTwxCSc8RyB7WyhNLyUkKCoplzJQdw_WEnssrgH1A9bvbzDv", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:31:47.070 request_id=GCabV7ebQ5KmouIAABRE [info] GET /users/dashboard
+19:31:47.071 request_id=GCabV7ebQ5KmouIAABRE [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:31:47.071237Z
+19:31:47.071 request_id=GCabV7ebQ5KmouIAABRE [info] User agent: "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36"
+19:31:47.085 request_id=GCabV7ebQ5KmouIAABRE [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:31:47.071237Z was successful.
+Status: 200
+
+19:31:47.085 request_id=GCabV7ebQ5KmouIAABRE [info] Sent 200 in 15ms
+19:31:50.087 [info] CONNECTED TO Phoenix.LiveView.Socket in 36µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ZHwCEX4VZSkkERchcRZFJwFHEmVzfygU5KLGGR7BPvCnDQvMh3_65-FK", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:32:03.047 request_id=GCabW2_nJ3vunocAACUC [info] GET /users/dashboard
+19:32:03.048 request_id=GCabW2_nJ3vunocAACUC [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:32:03.048485Z
+19:32:03.048 request_id=GCabW2_nJ3vunocAACUC [info] User agent: "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36"
+19:32:03.064 request_id=GCabW2_nJ3vunocAACUC [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:32:03.048485Z was successful.
+Status: 200
+
+19:32:03.064 request_id=GCabW2_nJ3vunocAACUC [info] Sent 200 in 17ms
+19:32:05.253 [info] CONNECTED TO Phoenix.LiveView.Socket in 23µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "PlA-Dkt1KxpGEzJ5YC0HL10dNGN3IDczogpXr2yq2tf6Uj4E4iy01rYl", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:32:58.030 request_id=GCabaD0uiMPFggUAABej [info] GET /users/dashboard
+19:32:58.032 request_id=GCabaD0uiMPFggUAABej [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:32:58.032138Z
+19:32:58.032 request_id=GCabaD0uiMPFggUAABej [info] User agent: "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36"
+19:32:58.046 request_id=GCabaD0uiMPFggUAABej [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:32:58.032138Z was successful.
+Status: 200
+
+19:32:58.046 request_id=GCabaD0uiMPFggUAABej [info] Sent 200 in 16ms
+19:33:00.266 [info] CONNECTED TO Phoenix.LiveView.Socket in 31µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MF0UZVEtPiUrA2IDdDIBBBM_FD0WHD8najZ3hjlN_d6LAu2nzKYnPNQx", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:33:50.891 request_id=GCabdIvy8iBWAsYAABfj [info] GET /users/dashboard
+19:33:50.893 request_id=GCabdIvy8iBWAsYAABfj [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:33:50.893154Z
+19:33:50.893 request_id=GCabdIvy8iBWAsYAABfj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:33:50.902 request_id=GCabdIvy8iBWAsYAABfj [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:33:50.893154Z was successful.
+Status: 200
+
+19:33:50.902 request_id=GCabdIvy8iBWAsYAABfj [info] Sent 200 in 10ms
+19:33:53.399 [info] CONNECTED TO Phoenix.LiveView.Socket in 33µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "fFkIMX9zBVIEAD41dwoFMlkbGCsCBCYW-nFgF4W9pgjzBM6X0oUxDVHI", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:33:57.869 request_id=GCabdivbty7rjkAAABak [info] GET /users/dashboard
+19:33:57.871 request_id=GCabdivbty7rjkAAABak [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:33:57.871183Z
+19:33:57.871 request_id=GCabdivbty7rjkAAABak [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+19:33:57.892 request_id=GCabdivbty7rjkAAABak [info] GET request to /users/dashboard by User: e6fecbde-3d29-46a4-98cf-81beac37dfc3 at 2025-02-22 18:33:57.871183Z was successful.
+Status: 200
+
+19:33:57.892 request_id=GCabdivbty7rjkAAABak [info] Sent 200 in 22ms
+19:34:00.058 [info] CONNECTED TO Phoenix.LiveView.Socket in 25µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ZX0eJw8xOiEHNCANZgJsKzgDLDICFjow4JPq6vhJsStBSE_AQwaaDDTo", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
