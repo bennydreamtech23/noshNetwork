@@ -183,9 +183,11 @@ defmodule NoshNetworkWeb.ShowUserBookingLive.Components.QuotationTemplate do
             <p class="text-xs"><%= @quotations_details.note %></p>
           <% end %>
 
-          <div class='flex items-center gap-4 justify-normal'>
-            <button class='btn-primary' phx-click="pay_quotation_money" phx-target={@myself}>Pay</button>
-            <button class='btn-secondary'>Request Negotation</button>
+          <div class="flex items-center gap-4 justify-normal">
+            <button class="btn-primary" phx-click="pay_quotation_money" phx-target={@myself}>
+              Pay
+            </button>
+            <button class="btn-secondary">Request Negotation</button>
           </div>
 
           <div

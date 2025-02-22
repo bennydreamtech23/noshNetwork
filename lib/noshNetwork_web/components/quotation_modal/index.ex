@@ -167,7 +167,8 @@ defmodule NoshNetworkWeb.Components.QuotationModal.Index do
 
             booking_details = socket.assigns.booking_details
             items = remove_item_ids_for_new_invoice(socket.assigns.quotation_items)
-IO.inspect(quotation_total, label: "quotation_total")
+            IO.inspect(quotation_total, label: "quotation_total")
+
             quotation_params = %Quotation{
               reference_id: Quotations.get_new_quotation_number(),
               total: quotation_total,

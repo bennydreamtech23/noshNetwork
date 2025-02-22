@@ -13,10 +13,12 @@ defmodule NoshNetworkWeb.ShowUserBookingLive.Components.BookingDetails do
               <div class="flex justify-between items-center">
                 <p>Booking Details</p>
                 <div class="my-4 flex justify-end ">
-                  <a  phx-click={JS.navigate(~p"/users/booking")}
+                  <a
+                    phx-click={JS.navigate(~p"/users/booking")}
                     href="#"
                     phx-target={@myself}
-                     class="font-bold text-2xl text-figcolor">
+                    class="font-bold text-2xl text-figcolor"
+                  >
                     <i class="fa-regular fa-xmark"></i>
                   </a>
                 </div>

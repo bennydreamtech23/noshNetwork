@@ -63,7 +63,6 @@ defmodule NoshNetworkWeb.ShowUserBookingLive.Index do
     }
   end
 
-
   @impl true
   ##### approve functionality
   def handle_event("approve", %{"id" => id}, socket) do
