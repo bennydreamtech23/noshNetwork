@@ -108,6 +108,9 @@ right: 9px;
 .menu-item{
   @apply block px-4 py-2 text-sm text-black font-brand font-bold
 }
+
+
+
 .menu-item:hover{
   @apply hover:text-[#0b4927]
 }
