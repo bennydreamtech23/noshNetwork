@@ -29319,3 +29319,1812 @@ Status: 200
   Transport: :websocket
   Serializer: Phoenix.Socket.V2.JSONSerializer
   Parameters: %{"_csrf_token" => "ZX0eJw8xOiEHNCANZgJsKzgDLDICFjow4JPq6vhJsStBSE_AQwaaDDTo", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+19:39:53.887 [info] CONNECTED TO Phoenix.LiveView.Socket in 136µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ZX0eJw8xOiEHNCANZgJsKzgDLDICFjow4JPq6vhJsStBSE_AQwaaDDTo", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:32:18.412 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/usr/lib/wsl/drivers"}, []}}
+20:32:18.487 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core18/2846"}, []}}
+20:32:18.488 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2434"}, []}}
+20:32:18.488 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core22/1748"}, []}}
+20:32:18.488 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2496"}, []}}
+20:32:18.488 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/245"}, []}}
+20:32:18.492 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/250"}, []}}
+20:32:18.492 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23545"}, []}}
+20:32:18.493 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23258"}, []}}
+20:32:21.603 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.12.0 at 127.0.0.1:4000 (http)
+20:32:21.632 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+20:32:41.422 request_id=GCc707HI2AMVjAEAAADC [info] GET /
+20:32:41.579 request_id=GCc707HI2AMVjAEAAADC [info] GET request to / by User: anonymous at 2025-02-24 19:32:41.547619Z
+20:32:41.691 request_id=GCc707HI2AMVjAEAAADC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:32:42.244 request_id=GCc707HI2AMVjAEAAADC [info] GET request to / by User: anonymous at 2025-02-24 19:32:41.547619Z was successful.
+Status: 200
+
+20:32:42.247 request_id=GCc707HI2AMVjAEAAADC [info] Sent 200 in 825ms
+20:32:50.021 [info] CONNECTED TO Phoenix.LiveView.Socket in 87µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "KS8cHnwyCy8SUSEALm0MMlgQGgYmCx06pvq_Ka2Ap5XQKXiY9vxrsADr", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:33:43.424 request_id=GCc74iI5TvYSPmoAAAFi [info] GET /
+20:33:43.426 request_id=GCc74iI5TvYSPmoAAAFi [info] GET request to / by User: anonymous at 2025-02-24 19:33:43.426830Z
+20:33:43.429 request_id=GCc74iI5TvYSPmoAAAFi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:33:43.434 request_id=GCc74iI5TvYSPmoAAAFi [info] GET request to / by User: anonymous at 2025-02-24 19:33:43.426830Z was successful.
+Status: 200
+
+20:33:43.435 request_id=GCc74iI5TvYSPmoAAAFi [info] Sent 200 in 10ms
+20:33:45.429 [info] CONNECTED TO Phoenix.LiveView.Socket in 31µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "CRgDLQIhDzcAJUo5AHRSCTg1CkQsJWAjPAnl5r6YbA3heA7bYSh0yo9k", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:34:07.785 request_id=GCc75849aSSPGq4AAAKC [info] GET /auth/log_in
+20:34:07.786 request_id=GCc75849aSSPGq4AAAKC [info] GET request to /auth/log_in by User: anonymous at 2025-02-24 19:34:07.786619Z
+20:34:07.787 request_id=GCc75849aSSPGq4AAAKC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:34:07.858 request_id=GCc75849aSSPGq4AAAKC [info] GET request to /auth/log_in by User: anonymous at 2025-02-24 19:34:07.786619Z was successful.
+Status: 200
+
+20:34:07.859 request_id=GCc75849aSSPGq4AAAKC [info] Sent 200 in 73ms
+20:34:09.019 [info] CONNECTED TO Phoenix.LiveView.Socket in 41µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "aiEaMXNlb0MvKRUkXH0TMwBWDzxjBggY3xwpD6V-MMlu9HvXa0mH6LQP", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:34:22.782 request_id=GCc760wWodc5_poAAANC [info] GET /
+20:34:22.782 request_id=GCc760wWodc5_poAAANC [info] GET request to / by User: anonymous at 2025-02-24 19:34:22.782835Z
+20:34:22.783 request_id=GCc760wWodc5_poAAANC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:34:22.788 request_id=GCc760wWodc5_poAAANC [info] GET request to / by User: anonymous at 2025-02-24 19:34:22.782835Z was successful.
+Status: 200
+
+20:34:22.788 request_id=GCc760wWodc5_poAAANC [info] Sent 200 in 6ms
+20:34:23.927 [info] CONNECTED TO Phoenix.LiveView.Socket in 54µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "OC0aFn0fUAoVHTVgE1IdCRU0WxA9fCsqatwWJLidwyL1vgxbtR9dh6rb", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:35:49.374 request_id=GCc7_3VqSUi6xbwAAA7h [info] GET /
+20:35:49.375 request_id=GCc7_3VqSUi6xbwAAA7h [info] GET request to / by User: anonymous at 2025-02-24 19:35:49.375005Z
+20:35:49.375 request_id=GCc7_3VqSUi6xbwAAA7h [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:35:49.383 request_id=GCc7_3VqSUi6xbwAAA7h [info] GET request to / by User: anonymous at 2025-02-24 19:35:49.375005Z was successful.
+Status: 200
+
+20:35:49.383 request_id=GCc7_3VqSUi6xbwAAA7h [info] Sent 200 in 9ms
+20:35:52.717 [info] CONNECTED TO Phoenix.LiveView.Socket in 57µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "KztZCw5nbjswXC01Fn4cUwIhFzYwMxQOrb4J94WUR8TdsKy8cGuBeyMF", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:35:55.720 request_id=GCc8AO-lU98tDrUAAARC [info] GET /
+20:35:55.720 request_id=GCc8AO-lU98tDrUAAARC [info] GET request to / by User: anonymous at 2025-02-24 19:35:55.720808Z
+20:35:55.721 request_id=GCc8AO-lU98tDrUAAARC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:35:55.724 request_id=GCc8AO-lU98tDrUAAARC [info] GET request to / by User: anonymous at 2025-02-24 19:35:55.720808Z was successful.
+Status: 200
+
+20:35:55.725 request_id=GCc8AO-lU98tDrUAAARC [info] Sent 200 in 4ms
+20:35:56.964 [info] CONNECTED TO Phoenix.LiveView.Socket in 39µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MW5VMVY4dg8bMDsdUVERAAIBOhUEMy0Yh78pakOayTBL4dtkcgXaQytP", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:36:06.883 request_id=GCc8A4kB6s45bMQAABCB [info] GET /
+20:36:06.883 request_id=GCc8A4kB6s45bMQAABCB [info] GET request to / by User: anonymous at 2025-02-24 19:36:06.883480Z
+20:36:06.883 request_id=GCc8A4kB6s45bMQAABCB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:36:06.885 request_id=GCc8A4kB6s45bMQAABCB [info] GET request to / by User: anonymous at 2025-02-24 19:36:06.883480Z was successful.
+Status: 200
+
+20:36:06.885 request_id=GCc8A4kB6s45bMQAABCB [info] Sent 200 in 2ms
+20:36:08.280 [info] CONNECTED TO Phoenix.LiveView.Socket in 45µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "OzReI3AiayQPDEs2UmQdGwkyICM9fx98bm3bGqRJmh2g7QxphTBWh5F4", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:36:36.138 request_id=GCc8Cli-bQ_Joe4AABDB [info] GET /
+20:36:36.138 request_id=GCc8Cli-bQ_Joe4AABDB [info] GET request to / by User: anonymous at 2025-02-24 19:36:36.138541Z
+20:36:36.139 request_id=GCc8Cli-bQ_Joe4AABDB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:36:36.144 request_id=GCc8Cli-bQ_Joe4AABDB [info] GET request to / by User: anonymous at 2025-02-24 19:36:36.138541Z was successful.
+Status: 200
+
+20:36:36.144 request_id=GCc8Cli-bQ_Joe4AABDB [info] Sent 200 in 6ms
+20:36:38.165 [info] CONNECTED TO Phoenix.LiveView.Socket in 133µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "DgAjMV0BVBQ3NwEfNQUhNFkjDw0cPg8KWYNpjRmzUSxNP0D_8EmyItVB", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:36:53.119 request_id=GCc8DkzqHAHlL48AAAAG [info] GET /
+20:36:53.120 request_id=GCc8DkzqHAHlL48AAAAG [info] GET request to / by User: anonymous at 2025-02-24 19:36:53.120009Z
+20:36:53.120 request_id=GCc8DkzqHAHlL48AAAAG [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:36:53.128 request_id=GCc8DkzqHAHlL48AAAAG [info] GET request to / by User: anonymous at 2025-02-24 19:36:53.120009Z was successful.
+Status: 200
+
+20:36:53.128 request_id=GCc8DkzqHAHlL48AAAAG [info] Sent 200 in 8ms
+20:36:54.613 [info] CONNECTED TO Phoenix.LiveView.Socket in 43µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "KhEMKn9-fjE4Cjg4L0QnWFhXTwIQPjt7sHakH-G_ZnAiJqB391-vEtb3", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:37:15.605 request_id=GCc8E4koC9YntXgAAADl [info] GET /
+20:37:15.605 request_id=GCc8E4koC9YntXgAAADl [info] GET request to / by User: anonymous at 2025-02-24 19:37:15.605506Z
+20:37:15.606 request_id=GCc8E4koC9YntXgAAADl [info] User agent: "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36"
+20:37:15.608 request_id=GCc8E4koC9YntXgAAADl [info] GET request to / by User: anonymous at 2025-02-24 19:37:15.605506Z was successful.
+Status: 200
+
+20:37:15.608 request_id=GCc8E4koC9YntXgAAADl [info] Sent 200 in 3ms
+20:37:17.900 [info] CONNECTED TO Phoenix.LiveView.Socket in 77µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MD4kM3sFDy8ANQM6HQIIExFeMDFhPgkDigIrLV6AbQzkx7mxp8RE4tPK", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:37:56.185 request_id=GCc8HPvvtvtdcxUAAAmi [info] GET /
+20:37:56.186 request_id=GCc8HPvvtvtdcxUAAAmi [info] GET request to / by User: anonymous at 2025-02-24 19:37:56.186480Z
+20:37:56.190 request_id=GCc8HPvvtvtdcxUAAAmi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:37:56.199 request_id=GCc8HPvvtvtdcxUAAAmi [info] GET request to / by User: anonymous at 2025-02-24 19:37:56.186480Z was successful.
+Status: 200
+
+20:37:56.199 request_id=GCc8HPvvtvtdcxUAAAmi [info] Sent 200 in 13ms
+20:37:59.401 [info] CONNECTED TO Phoenix.LiveView.Socket in 35µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "YB8dcnkWX11XUkg4H2ZRJDULIRAAOTIy9Fp3NEf3561izS4OTmCdUskz", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:38:24.738 request_id=GCc8I6HMeWwiNGkAABEB [info] GET /
+20:38:24.738 request_id=GCc8I6HMeWwiNGkAABEB [info] GET request to / by User: anonymous at 2025-02-24 19:38:24.738434Z
+20:38:24.738 request_id=GCc8I6HMeWwiNGkAABEB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:38:24.743 request_id=GCc8I6HMeWwiNGkAABEB [info] GET request to / by User: anonymous at 2025-02-24 19:38:24.738434Z was successful.
+Status: 200
+
+20:38:24.743 request_id=GCc8I6HMeWwiNGkAABEB [info] Sent 200 in 5ms
+20:38:26.637 [info] CONNECTED TO Phoenix.LiveView.Socket in 38µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "KwZbEV0KARwuMg4YXGQVLwIWMzIaPhsCr_6PjY8rLVwI9QpDcpQFOtBJ", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:38:32.363 request_id=GCc8JWhSgAcIx18AAAJm [info] GET /
+20:38:32.364 request_id=GCc8JWhSgAcIx18AAAJm [info] GET request to / by User: anonymous at 2025-02-24 19:38:32.364357Z
+20:38:32.364 request_id=GCc8JWhSgAcIx18AAAJm [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:38:32.377 request_id=GCc8JWhSgAcIx18AAAJm [info] GET request to / by User: anonymous at 2025-02-24 19:38:32.364357Z was successful.
+Status: 200
+
+20:38:32.377 request_id=GCc8JWhSgAcIx18AAAJm [info] Sent 200 in 13ms
+20:38:34.884 [info] CONNECTED TO Phoenix.LiveView.Socket in 39µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "DTwcB1UbbCgOCAonUQE0KDdfES0ZOA4aTeqFbHUFllsv44QCV9sYLrWR", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:38:58.104 request_id=GCc8K2aWTPGzVJAAABJh [info] GET /
+20:38:58.104 request_id=GCc8K2aWTPGzVJAAABJh [info] GET request to / by User: anonymous at 2025-02-24 19:38:58.104725Z
+20:38:58.105 request_id=GCc8K2aWTPGzVJAAABJh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:38:58.111 request_id=GCc8K2aWTPGzVJAAABJh [info] GET request to / by User: anonymous at 2025-02-24 19:38:58.104725Z was successful.
+Status: 200
+
+20:38:58.111 request_id=GCc8K2aWTPGzVJAAABJh [info] Sent 200 in 6ms
+20:39:01.354 [info] CONNECTED TO Phoenix.LiveView.Socket in 41µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "YSBAJ30laT8kUwMOFEIDNEwAMBsHIA0l8y-fJvPQF7z_qwf_-fRoRjTm", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:39:24.091 request_id=GCc8MXOH_a3NmNkAAALF [info] GET /
+20:39:24.091 request_id=GCc8MXOH_a3NmNkAAALF [info] GET request to / by User: anonymous at 2025-02-24 19:39:24.091774Z
+20:39:24.092 request_id=GCc8MXOH_a3NmNkAAALF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:39:24.097 request_id=GCc8MXOH_a3NmNkAAALF [info] GET request to / by User: anonymous at 2025-02-24 19:39:24.091774Z was successful.
+Status: 200
+
+20:39:24.097 request_id=GCc8MXOH_a3NmNkAAALF [info] Sent 200 in 6ms
+20:39:26.376 [info] CONNECTED TO Phoenix.LiveView.Socket in 59µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "OgkMK3gfaAQEIDUjUlEtKCAAKUQfMGoGcPajOLQjfDLr7dHCAfK0Jz3N", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:39:33.967 request_id=GCc8M8ArbLjUxcwAABOB [info] GET /about
+20:39:33.967 request_id=GCc8M8ArbLjUxcwAABOB [info] GET request to /about by User: anonymous at 2025-02-24 19:39:33.967366Z
+20:39:33.967 request_id=GCc8M8ArbLjUxcwAABOB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:39:33.969 request_id=GCc8M8ArbLjUxcwAABOB [info] GET request to /about by User: anonymous at 2025-02-24 19:39:33.967366Z was successful.
+Status: 200
+
+20:39:33.969 request_id=GCc8M8ArbLjUxcwAABOB [info] Sent 200 in 2ms
+20:39:35.134 [info] CONNECTED TO Phoenix.LiveView.Socket in 30µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ESkLbFtjfxcDHDYlPUwEHCs-LhVkCGt5Hpf-l0FyaxOtXyawJXLa1B21", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:39:37.246 request_id=GCc8NIOkz8iVtK0AAAEE [info] GET /contact
+20:39:37.246 request_id=GCc8NIOkz8iVtK0AAAEE [info] GET request to /contact by User: anonymous at 2025-02-24 19:39:37.246900Z
+20:39:37.247 request_id=GCc8NIOkz8iVtK0AAAEE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:39:37.249 request_id=GCc8NIOkz8iVtK0AAAEE [info] GET request to /contact by User: anonymous at 2025-02-24 19:39:37.246900Z was successful.
+Status: 200
+
+20:39:37.249 request_id=GCc8NIOkz8iVtK0AAAEE [info] Sent 200 in 3ms
+20:39:38.260 [info] CONNECTED TO Phoenix.LiveView.Socket in 40µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "NzcyMgIaXwk9JQozPHIzPyhUJy5kEwsrnn_s5Ifg_AsbYGVTI2EZ1YRc", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:39:44.287 request_id=GCc8NidR2qTFVTYAABOh [info] GET /auth/log_in
+20:39:44.288 request_id=GCc8NidR2qTFVTYAABOh [info] GET request to /auth/log_in by User: anonymous at 2025-02-24 19:39:44.288156Z
+20:39:44.289 request_id=GCc8NidR2qTFVTYAABOh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:39:44.294 request_id=GCc8NidR2qTFVTYAABOh [info] GET request to /auth/log_in by User: anonymous at 2025-02-24 19:39:44.288156Z was successful.
+Status: 200
+
+20:39:44.294 request_id=GCc8NidR2qTFVTYAABOh [info] Sent 200 in 7ms
+20:39:45.314 [info] CONNECTED TO Phoenix.LiveView.Socket in 38µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Bi0MLXBlazsISSg0FGUpBxMBVkFhEm0F_talG6RUj-QeqPLlrg454X4M", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:40:53.244 request_id=GCc8RjVxgsz6uEoAABFC [info] GET /auth/log_in
+20:40:53.244 request_id=GCc8RjVxgsz6uEoAABFC [info] GET request to /auth/log_in by User: anonymous at 2025-02-24 19:40:53.244468Z
+20:40:53.245 request_id=GCc8RjVxgsz6uEoAABFC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:40:53.255 request_id=GCc8RjVxgsz6uEoAABFC [info] GET request to /auth/log_in by User: anonymous at 2025-02-24 19:40:53.244468Z was successful.
+Status: 200
+
+20:40:53.255 request_id=GCc8RjVxgsz6uEoAABFC [info] Sent 200 in 11ms
+20:40:57.063 [info] CONNECTED TO Phoenix.LiveView.Socket in 44µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Hjw5B3EnDyoyVjwUBHggGignOhE9KS0GGeTFFt6DP2EEaMEqIAXehctN", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:41:02.931 request_id=GCc8SHbhVcD10YIAABTB [info] GET /auth/log_in
+20:41:02.932 request_id=GCc8SHbhVcD10YIAABTB [info] GET request to /auth/log_in by User: anonymous at 2025-02-24 19:41:02.932298Z
+20:41:02.932 request_id=GCc8SHbhVcD10YIAABTB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:41:02.934 request_id=GCc8SHbhVcD10YIAABTB [info] GET request to /auth/log_in by User: anonymous at 2025-02-24 19:41:02.932298Z was successful.
+Status: 200
+
+20:41:02.934 request_id=GCc8SHbhVcD10YIAABTB [info] Sent 200 in 3ms
+20:41:04.704 [info] CONNECTED TO Phoenix.LiveView.Socket in 43µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "NBsvLVgKUj4QIjIZXGQxHwQRI00aAhAAmBBloYkPrFKH9QTtewA9OHIH", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:41:13.116 request_id=GCc8StXtS3gBEBYAABUB [info] POST /auth/log_in
+20:41:13.117 request_id=GCc8StXtS3gBEBYAABUB [info] POST request to /auth/log_in by User: anonymous at 2025-02-24 19:41:13.117052Z
+20:41:13.117 request_id=GCc8StXtS3gBEBYAABUB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:41:13.702 request_id=GCc8StXtS3gBEBYAABUB [info] POST request to /auth/log_in by User: anonymous at 2025-02-24 19:41:13.117052Z was successful.
+Status: 302
+
+20:41:13.702 request_id=GCc8StXtS3gBEBYAABUB [info] Sent 302 in 586ms
+20:41:13.743 request_id=GCc8SvtPj4KC1w4AABVB [info] GET /users/welcome
+20:41:13.778 request_id=GCc8SvtPj4KC1w4AABVB [info] GET request to /users/welcome by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:41:13.778924Z
+20:41:13.779 request_id=GCc8SvtPj4KC1w4AABVB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:41:13.792 request_id=GCc8SvtPj4KC1w4AABVB [info] GET request to /users/welcome by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:41:13.778924Z was successful.
+Status: 200
+
+20:41:13.792 request_id=GCc8SvtPj4KC1w4AABVB [info] Sent 200 in 49ms
+20:41:14.890 [info] CONNECTED TO Phoenix.LiveView.Socket in 33µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "DQYGGgc0Lzg_cB8gG38fKDxpGAB_FmcMOvCrfRGKyBLgX5qZz_uA3oJH", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:41:23.157 request_id=GCc8TSxv3cexT_kAAAGE [info] GET /users/dashboard
+20:41:23.164 request_id=GCc8TSxv3cexT_kAAAGE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:41:23.164155Z
+20:41:23.165 request_id=GCc8TSxv3cexT_kAAAGE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:41:23.270 request_id=GCc8TSxv3cexT_kAAAGE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:41:23.164155Z was successful.
+Status: 200
+
+20:41:23.271 request_id=GCc8TSxv3cexT_kAAAGE [info] Sent 200 in 113ms
+20:41:24.614 [info] CONNECTED TO Phoenix.LiveView.Socket in 30µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BDsSBC4xCRkOez0rNQQINjFxIAB4Pn08FKWlOWajHInlvNfDwGMA4GPx", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:43:06.225 request_id=GCc8ZSu-RWgZQsUAAAVl [info] GET /users/dashboard
+20:43:06.229 request_id=GCc8ZSu-RWgZQsUAAAVl [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:43:06.229497Z
+20:43:06.229 request_id=GCc8ZSu-RWgZQsUAAAVl [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:43:06.243 request_id=GCc8ZSu-RWgZQsUAAAVl [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:43:06.229497Z was successful.
+Status: 200
+
+20:43:06.243 request_id=GCc8ZSu-RWgZQsUAAAVl [info] Sent 200 in 18ms
+20:43:09.149 [info] CONNECTED TO Phoenix.LiveView.Socket in 55µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "LhQhICgrGzQAa2IMKhI-Jh4PQCggIUM1lddHIMsGFY1KiXPTX9-ilXnq", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:43:19.145 request_id=GCc8aC3aA7oC66cAABVi [info] GET /users/dashboard
+20:43:19.150 request_id=GCc8aC3aA7oC66cAABVi [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:43:19.150191Z
+20:43:19.151 request_id=GCc8aC3aA7oC66cAABVi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:43:19.176 request_id=GCc8aC3aA7oC66cAABVi [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:43:19.150191Z was successful.
+Status: 200
+
+20:43:19.176 request_id=GCc8aC3aA7oC66cAABVi [info] Sent 200 in 30ms
+20:43:21.875 [info] CONNECTED TO Phoenix.LiveView.Socket in 42µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "AUQ0OxBWIwAxXX4NLBgXHBleWTl1FVoiC4qSq0Kswo-JoRyn_h4x9lwf", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:43:25.370 request_id=GCc8aaDjOtIV5TAAABYi [info] GET /users/dashboard
+20:43:25.372 request_id=GCc8aaDjOtIV5TAAABYi [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:43:25.372911Z
+20:43:25.373 request_id=GCc8aaDjOtIV5TAAABYi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:43:25.380 request_id=GCc8aaDjOtIV5TAAABYi [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:43:25.372911Z was successful.
+Status: 200
+
+20:43:25.381 request_id=GCc8aaDjOtIV5TAAABYi [info] Sent 200 in 10ms
+20:43:26.587 [info] CONNECTED TO Phoenix.LiveView.Socket in 43µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "FEgqLFkEN0oCUTsrJ3oXPwNRPSJ7IXl9V8oD8b_9Dchld0yMEgPc7XT9", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:43:34.257 request_id=GCc8a7Ka_cFkM2MAABei [info] GET /users/dashboard
+20:43:34.260 request_id=GCc8a7Ka_cFkM2MAABei [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:43:34.260712Z
+20:43:34.261 request_id=GCc8a7Ka_cFkM2MAABei [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:43:34.275 request_id=GCc8a7Ka_cFkM2MAABei [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:43:34.260712Z was successful.
+Status: 200
+
+20:43:34.275 request_id=GCc8a7Ka_cFkM2MAABei [info] Sent 200 in 17ms
+20:43:35.429 [info] CONNECTED TO Phoenix.LiveView.Socket in 82µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "BictDhsRCRYHWDQMMCwCOSFxHyQPEEsvDWhfzwaeAjgKsflKgGreCifk", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:43:48.545 request_id=GCc8bwY4dmS9zqIAAAYj [info] GET /users/dashboard
+20:43:48.551 request_id=GCc8bwY4dmS9zqIAAAYj [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:43:48.551648Z
+20:43:48.552 request_id=GCc8bwY4dmS9zqIAAAYj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:43:48.571 request_id=GCc8bwY4dmS9zqIAAAYj [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:43:48.551648Z was successful.
+Status: 200
+
+20:43:48.571 request_id=GCc8bwY4dmS9zqIAAAYj [info] Sent 200 in 26ms
+20:43:50.331 [info] CONNECTED TO Phoenix.LiveView.Socket in 30µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "NjsEAwhTAhBxCyMUAAkqFgFAJHAIPlsRtKAki5jc79pSCCDdGvI1DGvU", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:43:56.004 request_id=GCc8cMLKBU3WWaoAAAZj [info] GET /users/dashboard
+20:43:56.006 request_id=GCc8cMLKBU3WWaoAAAZj [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:43:56.006769Z
+20:43:56.007 request_id=GCc8cMLKBU3WWaoAAAZj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:43:56.017 request_id=GCc8cMLKBU3WWaoAAAZj [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:43:56.006769Z was successful.
+Status: 200
+
+20:43:56.017 request_id=GCc8cMLKBU3WWaoAAAZj [info] Sent 200 in 13ms
+20:43:59.298 [info] CONNECTED TO Phoenix.LiveView.Socket in 43µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "FkEIHVdWOzczeTQ1eiskNX5TXXEBOlwmT1Mu60SDuKgr9aJG8e00MCqb", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:44:19.303 request_id=GCc8di-K_Fq_YHIAABhB [info] GET /users/dashboard
+20:44:19.306 request_id=GCc8di-K_Fq_YHIAABhB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:44:19.306270Z
+20:44:19.306 request_id=GCc8di-K_Fq_YHIAABhB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:44:19.320 request_id=GCc8di-K_Fq_YHIAABhB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:44:19.306270Z was successful.
+Status: 200
+
+20:44:19.320 request_id=GCc8di-K_Fq_YHIAABhB [info] Sent 200 in 17ms
+20:44:21.910 [info] CONNECTED TO Phoenix.LiveView.Socket in 32µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "JzkNCQ4uEjlrXiMVcCcvLQRFMnMIH2MweIHaoHzJ-lpR3mA_Bs_2DfNt", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:44:31.236 request_id=GCc8ePbSUZbVod4AAAak [info] GET /users/dashboard
+20:44:31.239 request_id=GCc8ePbSUZbVod4AAAak [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:44:31.238970Z
+20:44:31.239 request_id=GCc8ePbSUZbVod4AAAak [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:44:31.250 request_id=GCc8ePbSUZbVod4AAAak [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:44:31.238970Z was successful.
+Status: 200
+
+20:44:31.250 request_id=GCc8ePbSUZbVod4AAAak [info] Sent 200 in 14ms
+20:44:33.501 [info] CONNECTED TO Phoenix.LiveView.Socket in 30µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ekANBDFQKkEwfR5-cXo4XzwPCXg1T2MT80HlP6B2vOM920V-z9d9y6NW", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:44:44.241 request_id=GCc8e_36bPnLrN8AABiB [info] GET /users/dashboard
+20:44:44.243 request_id=GCc8e_36bPnLrN8AABiB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:44:44.243910Z
+20:44:44.244 request_id=GCc8e_36bPnLrN8AABiB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:44:44.253 request_id=GCc8e_36bPnLrN8AABiB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:44:44.243910Z was successful.
+Status: 200
+
+20:44:44.253 request_id=GCc8e_36bPnLrN8AABiB [info] Sent 200 in 11ms
+20:44:47.152 [info] CONNECTED TO Phoenix.LiveView.Socket in 48µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "DQYSBg8nOhkqa2QUBwwdSwhZVRsJK1kbOvWnnARjlY7SDFs9No8ZERt_", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:44:58.506 request_id=GCc8f1A5il9vvqoAAAjE [info] GET /users/booking
+20:44:58.510 request_id=GCc8f1A5il9vvqoAAAjE [info] GET request to /users/booking by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:44:58.510079Z
+20:44:58.511 request_id=GCc8f1A5il9vvqoAAAjE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:44:58.575 request_id=GCc8f1A5il9vvqoAAAjE [info] GET request to /users/booking by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:44:58.510079Z was successful.
+Status: 200
+
+20:44:58.575 request_id=GCc8f1A5il9vvqoAAAjE [info] Sent 200 in 69ms
+20:44:59.964 [info] CONNECTED TO Phoenix.LiveView.Socket in 47µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "LzQtJCAfCREcYj8QICs2Xw5DGTh6En8tmDhLAyabZPlWcaX-Huty6kRi", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:45:06.610 request_id=GCc8gTM7rzu7sYkAAApF [info] GET /users/dashboard
+20:45:06.612 request_id=GCc8gTM7rzu7sYkAAApF [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:45:06.612561Z
+20:45:06.613 request_id=GCc8gTM7rzu7sYkAAApF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:45:06.621 request_id=GCc8gTM7rzu7sYkAAApF [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:45:06.612561Z was successful.
+Status: 200
+
+20:45:06.621 request_id=GCc8gTM7rzu7sYkAAApF [info] Sent 200 in 11ms
+20:45:07.795 [info] CONNECTED TO Phoenix.LiveView.Socket in 34µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "GhIAByAQHyQXShF-dic2CzNzBi0HAGp0XbEoAvwWQxB95mXyuEklKyG0", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:48:07.713 [error] Task #PID<0.549.0> started from NoshNetworkWeb.Endpoint terminating
+** (RuntimeError) Couldn't fetch https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64: {true, {:error, {:failed_connect, [{:to_address, {~c"objects.githubusercontent.com", 443}}, {:inet, [:inet], :closed}]}}}
+
+This typically means we cannot reach the source or you are behind a proxy.
+You can try again later and, if that does not work, you might:
+
+  1. If behind a proxy, ensure your proxy is configured and that
+     your certificates are set via the cacerts_path configuration
+
+  2. Manually download the executable from the URL above and
+     place it inside "_build/tailwind-linux-x64"
+
+  3. Install and use Tailwind from npmJS. See our module documentation
+     to learn more: https://hexdocs.pm/tailwind
+
+    (tailwind 0.2.4) lib/tailwind.ex:315: Tailwind.fetch_body!/2
+    (tailwind 0.2.4) lib/tailwind.ex:230: Tailwind.install/1
+    (tailwind 0.2.4) lib/tailwind.ex:211: Tailwind.install_and_run/2
+    (phoenix 1.7.18) lib/phoenix/endpoint/watcher.ex:19: Phoenix.Endpoint.Watcher.watch/2
+    (elixir 1.18.1) lib/task/supervised.ex:101: Task.Supervised.invoke_mfa/2
+Function: &Phoenix.Endpoint.Watcher.watch/2
+    Args: ["tailwind", {Tailwind, :install_and_run, [:default, ["--watch"]]}]
+20:55:20.578 request_id=GCc9ECaeenTucaUAABzB [info] GET /users/dashboard
+20:55:20.580 request_id=GCc9ECaeenTucaUAABzB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:55:20.580931Z
+20:55:20.581 request_id=GCc9ECaeenTucaUAABzB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:55:20.594 request_id=GCc9ECaeenTucaUAABzB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:55:20.580931Z was successful.
+Status: 200
+
+20:55:20.594 request_id=GCc9ECaeenTucaUAABzB [info] Sent 200 in 16ms
+20:55:27.427 [info] CONNECTED TO Phoenix.LiveView.Socket in 50µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Cx02Wy0MWUIsfD80Nw4sGitTCiQCMUY0Ims3Lj11jNlstDBhmegeNHkp", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:55:41.593 request_id=GCc9FQstbbgggRkAAAlD [info] GET /users/dashboard
+20:55:41.598 request_id=GCc9FQstbbgggRkAAAlD [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:55:41.598255Z
+20:55:41.599 request_id=GCc9FQstbbgggRkAAAlD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:55:41.617 request_id=GCc9FQstbbgggRkAAAlD [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:55:41.598255Z was successful.
+Status: 200
+
+20:55:41.617 request_id=GCc9FQstbbgggRkAAAlD [info] Sent 200 in 24ms
+20:55:44.880 [info] CONNECTED TO Phoenix.LiveView.Socket in 41µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "CkAqHyU3PgUpeWEGEnksHhl_KhkUEGAHH0owDQVvoK2AQ3Bl_IGXXiMC", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:56:13.190 request_id=GCc9HGaKj_GnbcwAAB3h [info] GET /users/dashboard
+20:56:13.192 request_id=GCc9HGaKj_GnbcwAAB3h [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:56:13.192860Z
+20:56:13.193 request_id=GCc9HGaKj_GnbcwAAB3h [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:56:13.205 request_id=GCc9HGaKj_GnbcwAAB3h [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:56:13.192860Z was successful.
+Status: 200
+
+20:56:13.205 request_id=GCc9HGaKj_GnbcwAAB3h [info] Sent 200 in 14ms
+20:56:16.312 [info] CONNECTED TO Phoenix.LiveView.Socket in 44µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ATMKJCcfXxUWZhcLNzMkOhIDO3cDF2oGCCOLFy7fPTDLtyJHT5V6OnGB", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+20:56:38.071 request_id=GCc9IjGGcR2qLKMAAB5h [info] GET /users/dashboard
+20:56:38.072 request_id=GCc9IjGGcR2qLKMAAB5h [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:56:38.072853Z
+20:56:38.073 request_id=GCc9IjGGcR2qLKMAAB5h [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+20:56:38.084 request_id=GCc9IjGGcR2qLKMAAB5h [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 19:56:38.072853Z was successful.
+Status: 200
+
+20:56:38.084 request_id=GCc9IjGGcR2qLKMAAB5h [info] Sent 200 in 13ms
+20:56:40.919 [info] CONNECTED TO Phoenix.LiveView.Socket in 45µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "HSZwGRUOA0QScwd2N2cMASBxBhU2OAAq_V5qthk7TAT1t-bsfGkTzA-n", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+21:00:00.013 request_id=GCc9UTY86ff5JvoAAB9h [info] GET /users/dashboard
+21:00:00.016 request_id=GCc9UTY86ff5JvoAAB9h [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:00:00.016150Z
+21:00:00.016 request_id=GCc9UTY86ff5JvoAAB9h [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:00:00.029 request_id=GCc9UTY86ff5JvoAAB9h [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:00:00.016150Z was successful.
+Status: 200
+
+21:00:00.029 request_id=GCc9UTY86ff5JvoAAB9h [info] Sent 200 in 15ms
+21:00:07.027 [info] CONNECTED TO Phoenix.LiveView.Socket in 49µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "EkgmPyMSJB4AUTIKAi5cCxRpHAYYTH93P8cWBtLmFcaMAd2yR_qGT5R3", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+21:00:35.863 request_id=GCc9WY8TkvrEvbQAACHB [info] GET /users/dashboard
+21:00:35.866 request_id=GCc9WY8TkvrEvbQAACHB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:00:35.866600Z
+21:00:35.866 request_id=GCc9WY8TkvrEvbQAACHB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:00:35.877 request_id=GCc9WY8TkvrEvbQAACHB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:00:35.866600Z was successful.
+Status: 200
+
+21:00:35.877 request_id=GCc9WY8TkvrEvbQAACHB [info] Sent 200 in 13ms
+21:00:38.409 [info] CONNECTED TO Phoenix.LiveView.Socket in 65µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "cUUwBzQcWEt-fxRxKDoURgd6J3k2DH8o35uoUz088MG6kpz4ALJ8zuRl", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+21:02:18.432 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core18/2855"}, []}}
+21:02:45.120 request_id=GCc9d6dhHWkSO9IAACAi [info] GET /users/dashboard
+21:02:45.123 request_id=GCc9d6dhHWkSO9IAACAi [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:02:45.123085Z
+21:02:45.123 request_id=GCc9d6dhHWkSO9IAACAi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:02:45.134 request_id=GCc9d6dhHWkSO9IAACAi [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:02:45.123085Z was successful.
+Status: 200
+
+21:02:45.134 request_id=GCc9d6dhHWkSO9IAACAi [info] Sent 200 in 13ms
+21:02:49.367 [info] CONNECTED TO Phoenix.LiveView.Socket in 34µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "DTUUKiMCDjIsRAN1FCwUPAoGKCcTMRgrOEQBBdfAjvP2WfzNL0Ef_H5o", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+21:03:03.002 request_id=GCc9e9E9qBOjCagAAA6j [info] GET /users/dashboard
+21:03:03.005 request_id=GCc9e9E9qBOjCagAAA6j [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:03:03.005853Z
+21:03:03.006 request_id=GCc9e9E9qBOjCagAAA6j [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:03:03.019 request_id=GCc9e9E9qBOjCagAAA6j [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:03:03.005853Z was successful.
+Status: 200
+
+21:03:03.020 request_id=GCc9e9E9qBOjCagAAA6j [info] Sent 200 in 17ms
+21:03:05.955 [info] CONNECTED TO Phoenix.LiveView.Socket in 41µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IEV2AwxXWDoZQRYhMR4YPg0ELnEJS3wAb53km10I_sEfrTvLK2C0E2QD", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+21:05:01.473 [error] Task #PID<0.2259.0> started from NoshNetworkWeb.Endpoint terminating
+** (RuntimeError) Couldn't fetch https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64: {true, {:error, {:failed_connect, [{:to_address, {~c"objects.githubusercontent.com", 443}}, {:inet, [:inet], :closed}]}}}
+
+This typically means we cannot reach the source or you are behind a proxy.
+You can try again later and, if that does not work, you might:
+
+  1. If behind a proxy, ensure your proxy is configured and that
+     your certificates are set via the cacerts_path configuration
+
+  2. Manually download the executable from the URL above and
+     place it inside "_build/tailwind-linux-x64"
+
+  3. Install and use Tailwind from npmJS. See our module documentation
+     to learn more: https://hexdocs.pm/tailwind
+
+    (tailwind 0.2.4) lib/tailwind.ex:315: Tailwind.fetch_body!/2
+    (tailwind 0.2.4) lib/tailwind.ex:230: Tailwind.install/1
+    (tailwind 0.2.4) lib/tailwind.ex:211: Tailwind.install_and_run/2
+    (phoenix 1.7.18) lib/phoenix/endpoint/watcher.ex:19: Phoenix.Endpoint.Watcher.watch/2
+    (elixir 1.18.1) lib/task/supervised.ex:101: Task.Supervised.invoke_mfa/2
+Function: &Phoenix.Endpoint.Watcher.watch/2
+    Args: ["tailwind", {Tailwind, :install_and_run, [:default, ["--watch"]]}]
+21:05:28.094 request_id=GCc9nZlbBzo69MkAACGC [info] GET /users/dashboard
+21:05:28.096 request_id=GCc9nZlbBzo69MkAACGC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:05:28.096579Z
+21:05:28.097 request_id=GCc9nZlbBzo69MkAACGC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:05:28.111 request_id=GCc9nZlbBzo69MkAACGC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:05:28.096579Z was successful.
+Status: 200
+
+21:05:28.111 request_id=GCc9nZlbBzo69MkAACGC [info] Sent 200 in 17ms
+21:05:31.426 [info] CONNECTED TO Phoenix.LiveView.Socket in 44µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Ixg3W0wSOhQjYBIqCD5aNyhjNCMALR4Dahr3-tRgeRAmKt4EnUYbLT3G", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+21:09:49.975 request_id=GCc92pK4RqI_qYUAACkh [info] GET /users/dashboard
+21:09:49.982 request_id=GCc92pK4RqI_qYUAACkh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:09:49.982331Z
+21:09:49.983 request_id=GCc92pK4RqI_qYUAACkh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:09:50.006 request_id=GCc92pK4RqI_qYUAACkh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:09:49.982331Z was successful.
+Status: 200
+
+21:09:50.006 request_id=GCc92pK4RqI_qYUAACkh [info] Sent 200 in 30ms
+21:09:52.626 [info] CONNECTED TO Phoenix.LiveView.Socket in 47µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "FT91LBM_GSQ0QQIXDXpdRjVCJGwKHkYzWO0DrYqWrsQPN034stI-Fgkw", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+21:25:12.477 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/usr/lib/wsl/drivers"}, []}}
+21:25:12.505 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core18/2846"}, []}}
+21:25:12.505 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2434"}, []}}
+21:25:12.505 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core22/1748"}, []}}
+21:25:12.506 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2496"}, []}}
+21:25:12.506 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/245"}, []}}
+21:25:12.506 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/250"}, []}}
+21:25:12.506 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23545"}, []}}
+21:25:12.507 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23258"}, []}}
+21:25:12.507 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core18/2855"}, []}}
+21:25:13.498 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.12.0 at 127.0.0.1:4000 (http)
+21:25:13.513 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+21:25:16.805 request_id=GCc-sl3ghhkukywAABTB [info] GET /users/dashboard
+21:25:16.967 request_id=GCc-sl3ghhkukywAABTB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:25:16.964560Z
+21:25:17.005 request_id=GCc-sl3ghhkukywAABTB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:25:17.233 request_id=GCc-sl3ghhkukywAABTB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:25:16.964560Z was successful.
+Status: 500
+
+21:25:17.233 request_id=GCc-sl3ghhkukywAABTB [info] Sent 500 in 428ms
+21:25:17.247 [error] #PID<0.560.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.559.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function Books.paginate_books/1 is undefined (module Books is not available). Make sure the module name is correct and has been specified in full (or that an alias has been defined)
+        Books.paginate_books(%{})
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.ex:11: NoshNetworkWeb.DashboardLive.Index.mount/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/utils.ex:343: anonymous fn/6 in Phoenix.LiveView.Utils.maybe_call_live_view_mount!/5
+        (telemetry 1.3.0) /root/noshNetwork/deps/telemetry/src/telemetry.erl:324: :telemetry.span/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:281: Phoenix.LiveView.Static.call_mount_and_handle_params!/5
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:116: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.2) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 6.1.2) proc_lib.erl:329: :proc_lib.init_p_do_apply/3
+21:25:18.548 request_id=GCc-ssX0C-N0bekAAAAC [info] GET /users/dashboard
+21:25:18.554 request_id=GCc-ssX0C-N0bekAAAAC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:25:18.554113Z
+21:25:18.554 request_id=GCc-ssX0C-N0bekAAAAC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:25:18.638 request_id=GCc-ssX0C-N0bekAAAAC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:25:18.554113Z was successful.
+Status: 500
+
+21:25:18.638 request_id=GCc-ssX0C-N0bekAAAAC [info] Sent 500 in 90ms
+21:25:18.640 [error] #PID<0.570.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.559.0>, stream id 2) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function Books.paginate_books/1 is undefined (module Books is not available). Make sure the module name is correct and has been specified in full (or that an alias has been defined)
+        Books.paginate_books(%{})
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.ex:11: NoshNetworkWeb.DashboardLive.Index.mount/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/utils.ex:343: anonymous fn/6 in Phoenix.LiveView.Utils.maybe_call_live_view_mount!/5
+        (telemetry 1.3.0) /root/noshNetwork/deps/telemetry/src/telemetry.erl:324: :telemetry.span/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:281: Phoenix.LiveView.Static.call_mount_and_handle_params!/5
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:116: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.2) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 6.1.2) proc_lib.erl:329: :proc_lib.init_p_do_apply/3
+21:25:34.466 request_id=GCc-tnq-PVkGm5UAAAFC [info] GET /users/dashboard
+21:25:34.473 request_id=GCc-tnq-PVkGm5UAAAFC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:25:34.473689Z
+21:25:34.474 request_id=GCc-tnq-PVkGm5UAAAFC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:25:34.546 request_id=GCc-tnq-PVkGm5UAAAFC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:25:34.473689Z was successful.
+Status: 500
+
+21:25:34.546 request_id=GCc-tnq-PVkGm5UAAAFC [info] Sent 500 in 80ms
+21:25:34.547 [error] #PID<0.599.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.598.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (Protocol.UndefinedError) protocol Scrivener.Paginater not implemented for type Atom. There are no implementations for this protocol.
+
+Got value:
+
+    Book
+
+        (scrivener 2.7.2) lib/scrivener/paginater.ex:1: Scrivener.Paginater.impl_for!/1
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.ex:11: NoshNetworkWeb.DashboardLive.Index.mount/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/utils.ex:343: anonymous fn/6 in Phoenix.LiveView.Utils.maybe_call_live_view_mount!/5
+        (telemetry 1.3.0) /root/noshNetwork/deps/telemetry/src/telemetry.erl:324: :telemetry.span/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:281: Phoenix.LiveView.Static.call_mount_and_handle_params!/5
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:116: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.2) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 6.1.2) proc_lib.erl:329: :proc_lib.init_p_do_apply/3
+21:25:42.959 request_id=GCc-uHUBmdmPGq4AABah [info] GET /users/dashboard
+21:25:42.963 request_id=GCc-uHUBmdmPGq4AABah [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:25:42.963279Z
+21:25:42.963 request_id=GCc-uHUBmdmPGq4AABah [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:25:43.013 request_id=GCc-uHUBmdmPGq4AABah [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:25:42.963279Z was successful.
+Status: 500
+
+21:25:43.013 request_id=GCc-uHUBmdmPGq4AABah [info] Sent 500 in 53ms
+21:25:43.014 [error] #PID<0.661.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.598.0>, stream id 4) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (Protocol.UndefinedError) protocol Scrivener.Paginater not implemented for type Atom. There are no implementations for this protocol.
+
+Got value:
+
+    Book
+
+        (scrivener 2.7.2) lib/scrivener/paginater.ex:1: Scrivener.Paginater.impl_for!/1
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.ex:11: NoshNetworkWeb.DashboardLive.Index.mount/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/utils.ex:343: anonymous fn/6 in Phoenix.LiveView.Utils.maybe_call_live_view_mount!/5
+        (telemetry 1.3.0) /root/noshNetwork/deps/telemetry/src/telemetry.erl:324: :telemetry.span/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:281: Phoenix.LiveView.Static.call_mount_and_handle_params!/5
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:116: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.2) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 6.1.2) proc_lib.erl:329: :proc_lib.init_p_do_apply/3
+21:25:47.735 request_id=GCc-uZGpQl2BkLkAABbB [info] GET /users/dashboard
+21:25:47.738 request_id=GCc-uZGpQl2BkLkAABbB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:25:47.738648Z
+21:25:47.739 request_id=GCc-uZGpQl2BkLkAABbB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:25:47.787 request_id=GCc-uZGpQl2BkLkAABbB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:25:47.738648Z was successful.
+Status: 500
+
+21:25:47.787 request_id=GCc-uZGpQl2BkLkAABbB [info] Sent 500 in 51ms
+21:25:47.788 [error] #PID<0.683.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.598.0>, stream id 7) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (Protocol.UndefinedError) protocol Scrivener.Paginater not implemented for type Atom. There are no implementations for this protocol.
+
+Got value:
+
+    Book
+
+        (scrivener 2.7.2) lib/scrivener/paginater.ex:1: Scrivener.Paginater.impl_for!/1
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.ex:11: NoshNetworkWeb.DashboardLive.Index.mount/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/utils.ex:343: anonymous fn/6 in Phoenix.LiveView.Utils.maybe_call_live_view_mount!/5
+        (telemetry 1.3.0) /root/noshNetwork/deps/telemetry/src/telemetry.erl:324: :telemetry.span/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:281: Phoenix.LiveView.Static.call_mount_and_handle_params!/5
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:116: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.2) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 6.1.2) proc_lib.erl:329: :proc_lib.init_p_do_apply/3
+21:26:29.309 request_id=GCc-wz-gORPTQngAAACD [info] GET /users/dashboard
+21:26:29.326 request_id=GCc-wz-gORPTQngAAACD [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:26:29.326930Z
+21:26:29.336 request_id=GCc-wz-gORPTQngAAACD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:26:29.397 request_id=GCc-wz-gORPTQngAAACD [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:26:29.326930Z was successful.
+Status: 500
+
+21:26:29.397 request_id=GCc-wz-gORPTQngAAACD [info] Sent 500 in 88ms
+21:26:29.398 [error] #PID<0.759.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.758.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (Protocol.UndefinedError) protocol Scrivener.Paginater not implemented for type Atom. There are no implementations for this protocol.
+
+Got value:
+
+    NoshNetwork.Data.Schema.User
+
+        (scrivener 2.7.2) lib/scrivener/paginater.ex:1: Scrivener.Paginater.impl_for!/1
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.ex:11: NoshNetworkWeb.DashboardLive.Index.mount/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/utils.ex:343: anonymous fn/6 in Phoenix.LiveView.Utils.maybe_call_live_view_mount!/5
+        (telemetry 1.3.0) /root/noshNetwork/deps/telemetry/src/telemetry.erl:324: :telemetry.span/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:281: Phoenix.LiveView.Static.call_mount_and_handle_params!/5
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:116: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.2) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 6.1.2) proc_lib.erl:329: :proc_lib.init_p_do_apply/3
+21:26:33.244 request_id=GCc-xCoufG2BYRQAAAbC [info] GET /users/dashboard
+21:26:33.247 request_id=GCc-xCoufG2BYRQAAAbC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:26:33.247219Z
+21:26:33.247 request_id=GCc-xCoufG2BYRQAAAbC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:26:33.294 request_id=GCc-xCoufG2BYRQAAAbC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:26:33.247219Z was successful.
+Status: 500
+
+21:26:33.294 request_id=GCc-xCoufG2BYRQAAAbC [info] Sent 500 in 50ms
+21:26:33.296 [error] #PID<0.774.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.758.0>, stream id 2) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (Protocol.UndefinedError) protocol Scrivener.Paginater not implemented for type Atom. There are no implementations for this protocol.
+
+Got value:
+
+    NoshNetwork.Data.Schema.User
+
+        (scrivener 2.7.2) lib/scrivener/paginater.ex:1: Scrivener.Paginater.impl_for!/1
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.ex:11: NoshNetworkWeb.DashboardLive.Index.mount/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/utils.ex:343: anonymous fn/6 in Phoenix.LiveView.Utils.maybe_call_live_view_mount!/5
+        (telemetry 1.3.0) /root/noshNetwork/deps/telemetry/src/telemetry.erl:324: :telemetry.span/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:281: Phoenix.LiveView.Static.call_mount_and_handle_params!/5
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:116: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.2) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 6.1.2) proc_lib.erl:329: :proc_lib.init_p_do_apply/3
+21:28:24.184 request_id=GCc-3f65Cj6ncGAAABeh [info] GET /users/dashboard
+21:28:24.187 request_id=GCc-3f65Cj6ncGAAABeh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:28:24.187407Z
+21:28:24.187 request_id=GCc-3f65Cj6ncGAAABeh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:28:24.241 request_id=GCc-3f65Cj6ncGAAABeh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:28:24.187407Z was successful.
+Status: 500
+
+21:28:24.241 request_id=GCc-3f65Cj6ncGAAABeh [info] Sent 500 in 57ms
+21:28:24.243 [error] #PID<0.798.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.797.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (Protocol.UndefinedError) protocol Scrivener.Paginater not implemented for type Atom. There are no implementations for this protocol.
+
+Got value:
+
+    NoshNetwork.Data.Schema.User
+
+        (scrivener 2.7.2) lib/scrivener/paginater.ex:1: Scrivener.Paginater.impl_for!/1
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.ex:11: NoshNetworkWeb.DashboardLive.Index.mount/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/utils.ex:343: anonymous fn/6 in Phoenix.LiveView.Utils.maybe_call_live_view_mount!/5
+        (telemetry 1.3.0) /root/noshNetwork/deps/telemetry/src/telemetry.erl:324: :telemetry.span/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:281: Phoenix.LiveView.Static.call_mount_and_handle_params!/5
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:116: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.2) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 6.1.2) proc_lib.erl:329: :proc_lib.init_p_do_apply/3
+21:28:36.861 [info] CONNECTED TO Phoenix.LiveView.Socket in 42µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "LzQtJCAfCREcYj8QICs2Xw5DGTh6En8tmDhLAyabZPlWcaX-Huty6kRi", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+21:28:40.715 request_id=GCc-4dgKM2dUYDEAABfh [info] GET /users/dashboard
+21:28:40.722 request_id=GCc-4dgKM2dUYDEAABfh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:28:40.722671Z
+21:28:40.723 request_id=GCc-4dgKM2dUYDEAABfh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:28:40.773 request_id=GCc-4dgKM2dUYDEAABfh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:28:40.722671Z was successful.
+Status: 500
+
+21:28:40.773 request_id=GCc-4dgKM2dUYDEAABfh [info] Sent 500 in 58ms
+21:28:40.774 [error] #PID<0.894.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.893.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (Protocol.UndefinedError) protocol Scrivener.Paginater not implemented for type Atom. There are no implementations for this protocol.
+
+Got value:
+
+    NoshNetwork.Data.Schema.User
+
+        (scrivener 2.7.2) lib/scrivener/paginater.ex:1: Scrivener.Paginater.impl_for!/1
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.ex:11: NoshNetworkWeb.DashboardLive.Index.mount/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/utils.ex:343: anonymous fn/6 in Phoenix.LiveView.Utils.maybe_call_live_view_mount!/5
+        (telemetry 1.3.0) /root/noshNetwork/deps/telemetry/src/telemetry.erl:324: :telemetry.span/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:281: Phoenix.LiveView.Static.call_mount_and_handle_params!/5
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:116: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.2) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 6.1.2) proc_lib.erl:329: :proc_lib.init_p_do_apply/3
+21:32:14.281 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/usr/lib/wsl/drivers"}, []}}
+21:32:14.307 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core18/2846"}, []}}
+21:32:14.308 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2434"}, []}}
+21:32:14.308 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core22/1748"}, []}}
+21:32:14.308 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2496"}, []}}
+21:32:14.308 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/245"}, []}}
+21:32:14.309 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/250"}, []}}
+21:32:14.309 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23545"}, []}}
+21:32:14.310 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23258"}, []}}
+21:32:14.310 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core18/2855"}, []}}
+21:32:15.144 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.12.0 at 127.0.0.1:4000 (http)
+21:32:15.157 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+21:32:21.390 request_id=GCc_FTkAEwCGPQoAAALh [info] GET /users/dashboard
+21:32:21.523 request_id=GCc_FTkAEwCGPQoAAALh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:32:21.517266Z
+21:32:21.558 request_id=GCc_FTkAEwCGPQoAAALh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:32:21.832 request_id=GCc_FTkAEwCGPQoAAALh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:32:21.517266Z was successful.
+Status: 200
+
+21:32:21.833 request_id=GCc_FTkAEwCGPQoAAALh [info] Sent 200 in 443ms
+21:32:23.074 [info] CONNECTED TO Phoenix.LiveView.Socket in 40µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "Iz0vJlQlJyUJHyZ-FxILATZ1JBEaCwB8aMjN5COVO-u9TXespCIPVr-8", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+21:35:00.387 request_id=GCc_Oj5M2W4KOXkAAAED [info] GET /users/dashboard
+21:35:00.395 request_id=GCc_Oj5M2W4KOXkAAAED [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:35:00.395152Z
+21:35:00.395 request_id=GCc_Oj5M2W4KOXkAAAED [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:35:00.558 request_id=GCc_Oj5M2W4KOXkAAAED [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:35:00.395152Z was successful.
+Status: 500
+
+21:35:00.559 request_id=GCc_Oj5M2W4KOXkAAAED [info] Sent 500 in 171ms
+21:35:00.565 [error] #PID<0.617.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.616.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (KeyError) key :photo not found in: #Ecto.Association.NotLoaded<association :caters is not loaded>
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:43: anonymous fn/1 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:39: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.2) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+21:35:30.180 request_id=GCc_QS4ZcNssEh0AAAOh [info] GET /users/dashboard
+21:35:30.182 request_id=GCc_QS4ZcNssEh0AAAOh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:35:30.182842Z
+21:35:30.183 request_id=GCc_QS4ZcNssEh0AAAOh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:35:30.298 request_id=GCc_QS4ZcNssEh0AAAOh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:35:30.182842Z was successful.
+Status: 500
+
+21:35:30.299 request_id=GCc_QS4ZcNssEh0AAAOh [info] Sent 500 in 118ms
+21:35:30.300 [error] #PID<0.658.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.657.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (KeyError) key :photo not found in: #Ecto.Association.NotLoaded<association :caters is not loaded>
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:43: anonymous fn/1 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:39: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.2) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+21:35:38.556 request_id=GCc_QyFSvVVxNeEAAA1C [info] GET /users/dashboard
+21:35:38.562 request_id=GCc_QyFSvVVxNeEAAA1C [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:35:38.562255Z
+21:35:38.562 request_id=GCc_QyFSvVVxNeEAAA1C [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:35:38.645 request_id=GCc_QyFSvVVxNeEAAA1C [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:35:38.562255Z was successful.
+Status: 500
+
+21:35:38.645 request_id=GCc_QyFSvVVxNeEAAA1C [info] Sent 500 in 88ms
+21:35:38.646 [error] #PID<0.694.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.657.0>, stream id 4) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (KeyError) key :photo not found in: #Ecto.Association.NotLoaded<association :caters is not loaded>
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:43: anonymous fn/1 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:39: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.2) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+21:35:42.880 request_id=GCc_RCMGkPUyXuoAAA1i [info] GET /users/dashboard
+21:35:42.885 request_id=GCc_RCMGkPUyXuoAAA1i [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:35:42.885778Z
+21:35:42.886 request_id=GCc_RCMGkPUyXuoAAA1i [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:35:42.975 request_id=GCc_RCMGkPUyXuoAAA1i [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:35:42.885778Z was successful.
+Status: 500
+
+21:35:42.975 request_id=GCc_RCMGkPUyXuoAAA1i [info] Sent 500 in 95ms
+21:35:42.976 [error] #PID<0.716.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.657.0>, stream id 7) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (KeyError) key :photo not found in: #Ecto.Association.NotLoaded<association :caters is not loaded>
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:43: anonymous fn/1 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:39: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.2) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+21:35:44.569 request_id=GCc_RIe2qrnKRDEAAAIF [info] GET /users/dashboard
+21:35:44.571 request_id=GCc_RIe2qrnKRDEAAAIF [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:35:44.571585Z
+21:35:44.571 request_id=GCc_RIe2qrnKRDEAAAIF [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:35:44.646 request_id=GCc_RIe2qrnKRDEAAAIF [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:35:44.571585Z was successful.
+Status: 500
+
+21:35:44.647 request_id=GCc_RIe2qrnKRDEAAAIF [info] Sent 500 in 77ms
+21:35:44.647 [error] #PID<0.726.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.657.0>, stream id 9) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (KeyError) key :photo not found in: #Ecto.Association.NotLoaded<association :caters is not loaded>
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:43: anonymous fn/1 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:39: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.2) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+21:38:59.658 request_id=GCc_cfPqzNO3qIAAAAZB [info] GET /users/dashboard
+21:38:59.676 request_id=GCc_cfPqzNO3qIAAAAZB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:38:59.675909Z
+21:38:59.685 request_id=GCc_cfPqzNO3qIAAAAZB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:38:59.780 request_id=GCc_cfPqzNO3qIAAAAZB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:38:59.675909Z was successful.
+Status: 200
+
+21:38:59.780 request_id=GCc_cfPqzNO3qIAAAAZB [info] Sent 200 in 122ms
+21:39:01.109 [info] CONNECTED TO Phoenix.LiveView.Socket in 47µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "eikmLAM3Cx0oYBoYGQMAP3BgHi4JKlUN8YcDbQcnnRI_ZInM6VsoESxI", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+21:39:01.531 request_id=GCc_cmOaDpA7bFQAAAbB [info] GET /users/dashboard
+21:39:01.534 request_id=GCc_cmOaDpA7bFQAAAbB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:39:01.534750Z
+21:39:01.535 request_id=GCc_cmOaDpA7bFQAAAbB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:39:01.572 request_id=GCc_cmOaDpA7bFQAAAbB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:39:01.534750Z was successful.
+Status: 200
+
+21:39:01.572 request_id=GCc_cmOaDpA7bFQAAAbB [info] Sent 200 in 40ms
+21:39:02.741 [info] CONNECTED TO Phoenix.LiveView.Socket in 47µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "O0YRGixLBgQrShA-AQAfFjFSDBU1PBUFy6TrM-nwmxCyBJqdwdaTyE8A", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+21:42:18.317 request_id=GCc_oDTzoiD38zsAAAZE [info] GET /users/dashboard
+21:42:18.321 request_id=GCc_oDTzoiD38zsAAAZE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:42:18.321585Z
+21:42:18.322 request_id=GCc_oDTzoiD38zsAAAZE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:42:18.551 request_id=GCc_oDTzoiD38zsAAAZE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:42:18.321585Z was successful.
+Status: 500
+
+21:42:18.552 request_id=GCc_oDTzoiD38zsAAAZE [info] Sent 500 in 234ms
+21:42:18.553 [error] #PID<0.983.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.982.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (FunctionClauseError) no function clause matching in NoshNetworkWeb.DashboardLive.Index.apply_action/3
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.ex:98: NoshNetworkWeb.DashboardLive.Index.apply_action(#Phoenix.LiveView.Socket<id: "phx-GCc_oDV0h8fzOwDG", endpoint: NoshNetworkWeb.Endpoint, view: NoshNetworkWeb.DashboardLive.Index, parent_pid: nil, root_pid: nil, router: NoshNetworkWeb.Router, assigns: %{link: [%{label: "Dashboard", path: "/users/dashboard"}, %{label: "Booking", path: "/users/booking"}, %{label: "Setting", path: "/users/settings"}], __changed__: %{link: true, current_user: true, caters: true, current_path: true, page_number: true, total_entries: true, total_pages: true}, current_user: #NoshNetwork.Data.Schema.User<__meta__: #Ecto.Schema.Metadata<:loaded, "users">, id: "aa155d66-7581-44be-867c-2ec6b86caecc", email: "ijeomababy@gmail.com", confirmed_at: nil, username: "ijeomababy", name: "ijeoma john", phone_number: "08089861478", role: "user", business_name: nil, address: "adele street ogombo town", profile_picture: nil, is_notification: nil, country: "Nigeria", state: "Lagos", is_active: true, is_verified: true, caters: #Ecto.Association.NotLoaded<association :caters is not loaded>, inserted_at: ~U[2024-11-28 06:20:33Z], updated_at: ~U[2024-12-23 07:51:13Z], ...>, flash: %{}, caters: [#NoshNetwork.Data.Schema.User<__meta__: #Ecto.Schema.Metadata<:loaded, "users">, id: "e6fecbde-3d29-46a4-98cf-81beac37dfc3", email: "gracehub@gmail.com", confirmed_at: nil, username: "Gracehub", name: "Grace Hub", phone_number: "08089876700", role: "cater", business_name: "Grace Hub", address: "westbrook mall chisco", profile_picture: "/uploads/live_view_upload-1735065263-376681295350-5", is_notification: nil, country: "Nigeria", state: "Lagos", is_active: true, is_verified: true, caters: %NoshNetwork.Data.Schema.Cater{__meta__: #Ecto.Schema.Metadata<:loaded, "caters">, id: "cb57b2d7-2418-46fb-9781-9132e6554df8", about: "gracehub", photo: "/uploads/live_view_upload-1730742721-303726963592-2", social_media: %{"facebook" => "https://preprod.figours.com/", "instagram" => "https://preprod.figours.com/", "twitter" => "https://preprod.figours.com/"}, specialties: ["Chinese Cuisine"], average_rating: nil, availability: %{"emergency" => "nond", "minium_notice" => "78", "working_time" => "56"}, business_policies: "hiii", user_id: "e6fecbde-3d29-46a4-98cf-81beac37dfc3", user: #Ecto.Association.NotLoaded<association :user is not loaded>, services: #Ecto.Association.NotLoaded<association :services is not loaded>, inserted_at: ~U[2024-11-04 17:52:01Z], updated_at: ~U[2024-11-04 17:52:01Z]}, inserted_at: ~U[2024-11-04 17:48:51Z], updated_at: ~U[2024-12-24 18:34:24Z], ...>, #NoshNetwork.Data.Schema.User<__meta__: #Ecto.Schema.Metadata<:loaded, "users">, id: "dbac6263-2d5b-4fe6-be4f-274d7fc22504", email: "vivian23@gmail.com", confirmed_at: nil, username: "viviangold", name: "vivian Gold", phone_number: "0899007767889", role: "cater", business_name: "vGolds", address: "charlie street ikorodu road", profile_picture: "/uploads/live_view_upload-1735828749-731125884240-1", is_notification: nil, country: "Nigeria", state: "Imo state", is_active: true, is_verified: true, caters: %NoshNetwork.Data.Schema.Cater{__meta__: #Ecto.Schema.Metadata<:loaded, "caters">, id: "273b8722-70d9-4190-83de-42351a086a4d", about: "ffgg", photo: "/uploads/live_view_upload-1735828791-135951674914-2", social_media: %{"facebook" => "", "instagram" => "", "twitter" => ""}, specialties: ["Nigerian Cusine"], average_rating: nil, availability: %{"emergency" => "", "minium_notice" => "", "working_time" => ""}, business_policies: "rtt", user_id: "dbac6263-2d5b-4fe6-be4f-274d7fc22504", user: #Ecto.Association.NotLoaded<association :user is not loaded>, services: #Ecto.Association.NotLoaded<association :services is not loaded>, inserted_at: ~U[2025-01-02 14:39:52Z], updated_at: ~U[2025-01-02 14:39:52Z]}, inserted_at: ~U[2024-11-04 17:55:39Z], updated_at: ~U[2025-01-02 14:39:10Z], ...>, #NoshNetwork.Data.Schema.User<__meta__: #Ecto.Schema.Metadata<:loaded, "users">, id: "c1916aad-1475-471a-ae4d-949f215812a2", email: "lushfoodies@foodies.com", confirmed_at: nil, username: "lushfoodies", name: "Lush foodies", phone_number: "08089861489", role: "cater", business_name: "LushFoodies", address: "westbrook mall", profile_picture: "/uploads/live_view_upload-1739428408-158011079985-1", is_notification: nil, country: "nigeria", state: "lagos", is_active: true, is_verified: true, caters: %NoshNetwork.Data.Schema.Cater{__meta__: #Ecto.Schema.Metadata<:loaded, "caters">, id: "dab3402b-57ed-4011-9ede-f7426634e13a", about: "I own a succesful catering business, have been a cater for three years now", photo: "/uploads/live_view_upload-1739428506-714884661956-1", social_media: %{"facebook" => "https://x.com/i/account_analytics", "instagram" => "https://x.com/i/account_analytics", "twitter" => "https://x.com/i/account_analytics"}, specialties: ["Chinese", "American", "Italian"], average_rating: nil, availability: %{"emergency" => "no", "minium_notice" => "9", "working_time" => "3"}, business_policies: "I own a succesful catering business, have been a cater for three years now", user_id: "c1916aad-1475-471a-ae4d-949f215812a2", user: #Ecto.Association.NotLoaded<association :user is not loaded>, services: #Ecto.Association.NotLoaded<association :services is not loaded>, inserted_at: ~U[2025-02-13 06:35:08Z], updated_at: ~U[2025-02-13 06:35:08Z]}, inserted_at: ~U[2025-02-13 06:27:58Z], updated_at: ~U[2025-02-13 06:33:28Z], ...>], current_path: "/users/dashboard", live_action: nil, page_number: 1, total_entries: 3, total_pages: 1}, transport_pid: nil, ...>, nil, %{})
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.ex:94: NoshNetworkWeb.DashboardLive.Index.handle_params/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/utils.ex:451: anonymous fn/5 in Phoenix.LiveView.Utils.call_handle_params!/5
+        (telemetry 1.3.0) /root/noshNetwork/deps/telemetry/src/telemetry.erl:324: :telemetry.span/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:282: Phoenix.LiveView.Static.call_mount_and_handle_params!/5
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:116: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.2) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 6.1.2) proc_lib.erl:329: :proc_lib.init_p_do_apply/3
+21:42:24.549 request_id=GCc_oahfFV8zwq8AAA3i [info] GET /users/dashboard
+21:42:24.552 request_id=GCc_oahfFV8zwq8AAA3i [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:42:24.552507Z
+21:42:24.553 request_id=GCc_oahfFV8zwq8AAA3i [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:42:24.680 request_id=GCc_oahfFV8zwq8AAA3i [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:42:24.552507Z was successful.
+Status: 500
+
+21:42:24.680 request_id=GCc_oahfFV8zwq8AAA3i [info] Sent 500 in 131ms
+21:42:24.681 [error] #PID<0.1009.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.982.0>, stream id 4) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (FunctionClauseError) no function clause matching in NoshNetworkWeb.DashboardLive.Index.apply_action/3
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.ex:98: NoshNetworkWeb.DashboardLive.Index.apply_action(#Phoenix.LiveView.Socket<id: "phx-GCc_oajkeWjCrwbE", endpoint: NoshNetworkWeb.Endpoint, view: NoshNetworkWeb.DashboardLive.Index, parent_pid: nil, root_pid: nil, router: NoshNetworkWeb.Router, assigns: %{link: [%{label: "Dashboard", path: "/users/dashboard"}, %{label: "Booking", path: "/users/booking"}, %{label: "Setting", path: "/users/settings"}], __changed__: %{link: true, current_user: true, caters: true, current_path: true, page_number: true, total_entries: true, total_pages: true}, current_user: #NoshNetwork.Data.Schema.User<__meta__: #Ecto.Schema.Metadata<:loaded, "users">, id: "aa155d66-7581-44be-867c-2ec6b86caecc", email: "ijeomababy@gmail.com", confirmed_at: nil, username: "ijeomababy", name: "ijeoma john", phone_number: "08089861478", role: "user", business_name: nil, address: "adele street ogombo town", profile_picture: nil, is_notification: nil, country: "Nigeria", state: "Lagos", is_active: true, is_verified: true, caters: #Ecto.Association.NotLoaded<association :caters is not loaded>, inserted_at: ~U[2024-11-28 06:20:33Z], updated_at: ~U[2024-12-23 07:51:13Z], ...>, flash: %{}, caters: [#NoshNetwork.Data.Schema.User<__meta__: #Ecto.Schema.Metadata<:loaded, "users">, id: "e6fecbde-3d29-46a4-98cf-81beac37dfc3", email: "gracehub@gmail.com", confirmed_at: nil, username: "Gracehub", name: "Grace Hub", phone_number: "08089876700", role: "cater", business_name: "Grace Hub", address: "westbrook mall chisco", profile_picture: "/uploads/live_view_upload-1735065263-376681295350-5", is_notification: nil, country: "Nigeria", state: "Lagos", is_active: true, is_verified: true, caters: %NoshNetwork.Data.Schema.Cater{__meta__: #Ecto.Schema.Metadata<:loaded, "caters">, id: "cb57b2d7-2418-46fb-9781-9132e6554df8", about: "gracehub", photo: "/uploads/live_view_upload-1730742721-303726963592-2", social_media: %{"facebook" => "https://preprod.figours.com/", "instagram" => "https://preprod.figours.com/", "twitter" => "https://preprod.figours.com/"}, specialties: ["Chinese Cuisine"], average_rating: nil, availability: %{"emergency" => "nond", "minium_notice" => "78", "working_time" => "56"}, business_policies: "hiii", user_id: "e6fecbde-3d29-46a4-98cf-81beac37dfc3", user: #Ecto.Association.NotLoaded<association :user is not loaded>, services: #Ecto.Association.NotLoaded<association :services is not loaded>, inserted_at: ~U[2024-11-04 17:52:01Z], updated_at: ~U[2024-11-04 17:52:01Z]}, inserted_at: ~U[2024-11-04 17:48:51Z], updated_at: ~U[2024-12-24 18:34:24Z], ...>, #NoshNetwork.Data.Schema.User<__meta__: #Ecto.Schema.Metadata<:loaded, "users">, id: "dbac6263-2d5b-4fe6-be4f-274d7fc22504", email: "vivian23@gmail.com", confirmed_at: nil, username: "viviangold", name: "vivian Gold", phone_number: "0899007767889", role: "cater", business_name: "vGolds", address: "charlie street ikorodu road", profile_picture: "/uploads/live_view_upload-1735828749-731125884240-1", is_notification: nil, country: "Nigeria", state: "Imo state", is_active: true, is_verified: true, caters: %NoshNetwork.Data.Schema.Cater{__meta__: #Ecto.Schema.Metadata<:loaded, "caters">, id: "273b8722-70d9-4190-83de-42351a086a4d", about: "ffgg", photo: "/uploads/live_view_upload-1735828791-135951674914-2", social_media: %{"facebook" => "", "instagram" => "", "twitter" => ""}, specialties: ["Nigerian Cusine"], average_rating: nil, availability: %{"emergency" => "", "minium_notice" => "", "working_time" => ""}, business_policies: "rtt", user_id: "dbac6263-2d5b-4fe6-be4f-274d7fc22504", user: #Ecto.Association.NotLoaded<association :user is not loaded>, services: #Ecto.Association.NotLoaded<association :services is not loaded>, inserted_at: ~U[2025-01-02 14:39:52Z], updated_at: ~U[2025-01-02 14:39:52Z]}, inserted_at: ~U[2024-11-04 17:55:39Z], updated_at: ~U[2025-01-02 14:39:10Z], ...>, #NoshNetwork.Data.Schema.User<__meta__: #Ecto.Schema.Metadata<:loaded, "users">, id: "c1916aad-1475-471a-ae4d-949f215812a2", email: "lushfoodies@foodies.com", confirmed_at: nil, username: "lushfoodies", name: "Lush foodies", phone_number: "08089861489", role: "cater", business_name: "LushFoodies", address: "westbrook mall", profile_picture: "/uploads/live_view_upload-1739428408-158011079985-1", is_notification: nil, country: "nigeria", state: "lagos", is_active: true, is_verified: true, caters: %NoshNetwork.Data.Schema.Cater{__meta__: #Ecto.Schema.Metadata<:loaded, "caters">, id: "dab3402b-57ed-4011-9ede-f7426634e13a", about: "I own a succesful catering business, have been a cater for three years now", photo: "/uploads/live_view_upload-1739428506-714884661956-1", social_media: %{"facebook" => "https://x.com/i/account_analytics", "instagram" => "https://x.com/i/account_analytics", "twitter" => "https://x.com/i/account_analytics"}, specialties: ["Chinese", "American", "Italian"], average_rating: nil, availability: %{"emergency" => "no", "minium_notice" => "9", "working_time" => "3"}, business_policies: "I own a succesful catering business, have been a cater for three years now", user_id: "c1916aad-1475-471a-ae4d-949f215812a2", user: #Ecto.Association.NotLoaded<association :user is not loaded>, services: #Ecto.Association.NotLoaded<association :services is not loaded>, inserted_at: ~U[2025-02-13 06:35:08Z], updated_at: ~U[2025-02-13 06:35:08Z]}, inserted_at: ~U[2025-02-13 06:27:58Z], updated_at: ~U[2025-02-13 06:33:28Z], ...>], current_path: "/users/dashboard", live_action: nil, page_number: 1, total_entries: 3, total_pages: 1}, transport_pid: nil, ...>, nil, %{})
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.ex:94: NoshNetworkWeb.DashboardLive.Index.handle_params/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/utils.ex:451: anonymous fn/5 in Phoenix.LiveView.Utils.call_handle_params!/5
+        (telemetry 1.3.0) /root/noshNetwork/deps/telemetry/src/telemetry.erl:324: :telemetry.span/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:282: Phoenix.LiveView.Static.call_mount_and_handle_params!/5
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:116: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+        (plug_cowboy 2.7.2) lib/plug/cowboy/handler.ex:11: Plug.Cowboy.Handler.init/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_handler.erl:37: :cowboy_handler.execute/2
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:306: :cowboy_stream_h.execute/3
+        (cowboy 2.12.0) /root/noshNetwork/deps/cowboy/src/cowboy_stream_h.erl:295: :cowboy_stream_h.request_process/3
+        (stdlib 6.1.2) proc_lib.erl:329: :proc_lib.init_p_do_apply/3
+21:43:51.582 request_id=GCc_tev8KMOWWdsAAAij [info] GET /users/dashboard
+21:43:51.602 request_id=GCc_tev8KMOWWdsAAAij [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:43:51.602430Z
+21:43:51.613 request_id=GCc_tev8KMOWWdsAAAij [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:43:51.730 request_id=GCc_tev8KMOWWdsAAAij [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:43:51.602430Z was successful.
+Status: 200
+
+21:43:51.731 request_id=GCc_tev8KMOWWdsAAAij [info] Sent 200 in 148ms
+21:43:52.967 [info] CONNECTED TO Phoenix.LiveView.Socket in 45µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MiASAQMgXAIEfwsSFCAnBjdPHSAHG3oPpPWibF4qBMXUWjItqypaKbWK", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+21:44:32.977 request_id=GCc_v49REjV8A9IAABDi [info] GET /users/dashboard
+21:44:32.985 request_id=GCc_v49REjV8A9IAABDi [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:44:32.985589Z
+21:44:32.985 request_id=GCc_v49REjV8A9IAABDi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:44:33.041 request_id=GCc_v49REjV8A9IAABDi [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:44:32.985589Z was successful.
+Status: 200
+
+21:44:33.042 request_id=GCc_v49REjV8A9IAABDi [info] Sent 200 in 64ms
+21:44:35.734 [info] CONNECTED TO Phoenix.LiveView.Socket in 57µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "CzwPGBgEJ0ELQmUkBTxcBj5vORk_F14IILJpybO2Mp6cFv2txYTXsnsL", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+21:47:53.778 request_id=GCc_7k_7GAknWYEAAAkE [info] GET /users/dashboard
+21:47:53.783 request_id=GCc_7k_7GAknWYEAAAkE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:47:53.783180Z
+21:47:53.783 request_id=GCc_7k_7GAknWYEAAAkE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:47:53.914 request_id=GCc_7k_7GAknWYEAAAkE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:47:53.783180Z was successful.
+Status: 500
+
+21:47:53.915 request_id=GCc_7k_7GAknWYEAAAkE [info] Sent 500 in 136ms
+21:47:53.916 [error] #PID<0.1257.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.1256.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function Routes.book_index_path/3 is undefined (module Routes is not available). Make sure the module name is correct and has been specified in full (or that an alias has been defined)
+        Routes.book_index_path(#Phoenix.LiveView.Socket<id: "phx-GCc_7lBx8plZgQkk", endpoint: NoshNetworkWeb.Endpoint, view: NoshNetworkWeb.DashboardLive.Index, parent_pid: nil, root_pid: nil, router: NoshNetworkWeb.Router, assigns: #Phoenix.LiveView.Socket.AssignsNotInSocket<>, transport_pid: nil, ...>, :index, [page: 1])
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:76: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:74: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+21:48:05.645 request_id=GCc_8RNRhGgMpr4AABNC [info] GET /users/dashboard
+21:48:05.650 request_id=GCc_8RNRhGgMpr4AABNC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:48:05.650122Z
+21:48:05.650 request_id=GCc_8RNRhGgMpr4AABNC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:48:05.882 request_id=GCc_8RNRhGgMpr4AABNC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:48:05.650122Z was successful.
+Status: 500
+
+21:48:05.882 request_id=GCc_8RNRhGgMpr4AABNC [info] Sent 500 in 237ms
+21:48:05.884 [error] #PID<0.1299.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.1296.0>, stream id 2) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function Routes.dashboard_index_path/3 is undefined (module Routes is not available). Make sure the module name is correct and has been specified in full (or that an alias has been defined)
+        Routes.dashboard_index_path(#Phoenix.LiveView.Socket<id: "phx-GCc_8RPQMImmvhNi", endpoint: NoshNetworkWeb.Endpoint, view: NoshNetworkWeb.DashboardLive.Index, parent_pid: nil, root_pid: nil, router: NoshNetworkWeb.Router, assigns: #Phoenix.LiveView.Socket.AssignsNotInSocket<>, transport_pid: nil, ...>, :index, [page: 1])
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:76: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:74: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+21:48:21.343 request_id=GCc_9Lr2KxxvhE0AABUh [info] GET /users/dashboard
+21:48:21.345 request_id=GCc_9Lr2KxxvhE0AABUh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:48:21.345592Z
+21:48:21.346 request_id=GCc_9Lr2KxxvhE0AABUh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:48:21.482 request_id=GCc_9Lr2KxxvhE0AABUh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:48:21.345592Z was successful.
+Status: 500
+
+21:48:21.482 request_id=GCc_9Lr2KxxvhE0AABUh [info] Sent 500 in 139ms
+21:48:21.483 [error] #PID<0.1340.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.1339.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function Routes.dashboard_index_path/3 is undefined (module Routes is not available). Make sure the module name is correct and has been specified in full (or that an alias has been defined)
+        Routes.dashboard_index_path(#Phoenix.LiveView.Socket<id: "phx-GCc_9LtAziSETROi", endpoint: NoshNetworkWeb.Endpoint, view: NoshNetworkWeb.DashboardLive.Index, parent_pid: nil, root_pid: nil, router: NoshNetworkWeb.Router, assigns: #Phoenix.LiveView.Socket.AssignsNotInSocket<>, transport_pid: nil, ...>, :index, [page: 1])
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:76: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:74: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+21:48:22.432 [error] Task #PID<0.550.0> started from NoshNetworkWeb.Endpoint terminating
+** (RuntimeError) Couldn't fetch https://github.com/tailwindlabs/tailwindcss/releases/download/v3.3.2/tailwindcss-linux-x64: {true, {:error, {:failed_connect, [{:to_address, {~c"objects.githubusercontent.com", 443}}, {:inet, [:inet], :closed}]}}}
+
+This typically means we cannot reach the source or you are behind a proxy.
+You can try again later and, if that does not work, you might:
+
+  1. If behind a proxy, ensure your proxy is configured and that
+     your certificates are set via the cacerts_path configuration
+
+  2. Manually download the executable from the URL above and
+     place it inside "_build/tailwind-linux-x64"
+
+  3. Install and use Tailwind from npmJS. See our module documentation
+     to learn more: https://hexdocs.pm/tailwind
+
+    (tailwind 0.2.4) lib/tailwind.ex:315: Tailwind.fetch_body!/2
+    (tailwind 0.2.4) lib/tailwind.ex:230: Tailwind.install/1
+    (tailwind 0.2.4) lib/tailwind.ex:211: Tailwind.install_and_run/2
+    (phoenix 1.7.18) lib/phoenix/endpoint/watcher.ex:19: Phoenix.Endpoint.Watcher.watch/2
+    (elixir 1.18.1) lib/task/supervised.ex:101: Task.Supervised.invoke_mfa/2
+Function: &Phoenix.Endpoint.Watcher.watch/2
+    Args: ["tailwind", {Tailwind, :install_and_run, [:default, ["--watch"]]}]
+21:48:31.887 request_id=GCc_9y9tOttxuuIAABWh [info] GET /users/dashboard
+21:48:31.889 request_id=GCc_9y9tOttxuuIAABWh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:48:31.889475Z
+21:48:31.889 request_id=GCc_9y9tOttxuuIAABWh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:48:31.991 request_id=GCc_9y9tOttxuuIAABWh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:48:31.889475Z was successful.
+Status: 500
+
+21:48:31.991 request_id=GCc_9y9tOttxuuIAABWh [info] Sent 500 in 104ms
+21:48:31.992 [error] #PID<0.1420.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.1339.0>, stream id 4) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function Routes.dashboard_index_path/3 is undefined (module Routes is not available). Make sure the module name is correct and has been specified in full (or that an alias has been defined)
+        Routes.dashboard_index_path(#Phoenix.LiveView.Socket<id: "phx-GCc_9y--04e64hXB", endpoint: NoshNetworkWeb.Endpoint, view: NoshNetworkWeb.DashboardLive.Index, parent_pid: nil, root_pid: nil, router: NoshNetworkWeb.Router, assigns: #Phoenix.LiveView.Socket.AssignsNotInSocket<>, transport_pid: nil, ...>, :index, [page: 1])
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:76: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:74: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+21:50:02.147 request_id=GCdADDNfsvruCwsAABZB [info] GET /users/dashboard
+21:50:02.150 request_id=GCdADDNfsvruCwsAABZB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:50:02.150931Z
+21:50:02.151 request_id=GCdADDNfsvruCwsAABZB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:50:02.336 request_id=GCdADDNfsvruCwsAABZB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:50:02.150931Z was successful.
+Status: 500
+
+21:50:02.337 request_id=GCdADDNfsvruCwsAABZB [info] Sent 500 in 189ms
+21:50:02.341 [error] #PID<0.1443.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.1442.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function NoshNetworkWeb.Router.Helpers.dashboard_index_path/3 is undefined (module NoshNetworkWeb.Router.Helpers is not available)
+        NoshNetworkWeb.Router.Helpers.dashboard_index_path(#Phoenix.LiveView.Socket<id: "phx-GCdADDPGFL8LCwsk", endpoint: NoshNetworkWeb.Endpoint, view: NoshNetworkWeb.DashboardLive.Index, parent_pid: nil, root_pid: nil, router: NoshNetworkWeb.Router, assigns: #Phoenix.LiveView.Socket.AssignsNotInSocket<>, transport_pid: nil, ...>, :index, [page: 1])
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:76: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:74: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+21:50:12.053 request_id=GCdADoHGnRas7nYAABZh [info] GET /users/dashboard
+21:50:12.055 request_id=GCdADoHGnRas7nYAABZh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:50:12.055376Z
+21:50:12.056 request_id=GCdADoHGnRas7nYAABZh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:50:12.158 request_id=GCdADoHGnRas7nYAABZh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:50:12.055376Z was successful.
+Status: 500
+
+21:50:12.158 request_id=GCdADoHGnRas7nYAABZh [info] Sent 500 in 105ms
+21:50:12.159 [error] #PID<0.1512.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.1442.0>, stream id 4) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function NoshNetworkWeb.Router.Helpers.dashboard_index_path/3 is undefined (module NoshNetworkWeb.Router.Helpers is not available)
+        NoshNetworkWeb.Router.Helpers.dashboard_index_path(#Phoenix.LiveView.Socket<id: "phx-GCdADoIbh17udhXC", endpoint: NoshNetworkWeb.Endpoint, view: NoshNetworkWeb.DashboardLive.Index, parent_pid: nil, root_pid: nil, router: NoshNetworkWeb.Router, assigns: #Phoenix.LiveView.Socket.AssignsNotInSocket<>, transport_pid: nil, ...>, :index, [page: 1])
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:76: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:74: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+21:53:33.546 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/usr/lib/wsl/drivers"}, []}}
+21:53:33.579 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core18/2846"}, []}}
+21:53:33.579 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2434"}, []}}
+21:53:33.580 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core22/1748"}, []}}
+21:53:33.580 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2496"}, []}}
+21:53:33.580 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/245"}, []}}
+21:53:33.581 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/250"}, []}}
+21:53:33.582 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23545"}, []}}
+21:53:33.582 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23258"}, []}}
+21:53:33.582 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core18/2855"}, []}}
+21:53:34.463 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.12.0 at 127.0.0.1:4000 (http)
+21:53:34.475 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+21:55:31.581 request_id=GCdAWObzc053344AAABj [info] GET /users/dashboard
+21:55:31.717 request_id=GCdAWObzc053344AAABj [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:55:31.713461Z
+21:55:31.747 request_id=GCdAWObzc053344AAABj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+21:55:32.084 request_id=GCdAWObzc053344AAABj [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 20:55:31.713461Z was successful.
+Status: 500
+
+21:55:32.084 request_id=GCdAWObzc053344AAABj [info] Sent 500 in 503ms
+21:55:32.091 [error] #PID<0.581.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.580.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function NoshNetworkWeb.Router.dashboard_index_path/3 is undefined or private
+        (noshNetwork 0.1.0) NoshNetworkWeb.Router.dashboard_index_path(#Phoenix.LiveView.Socket<id: "phx-GCdAWPMo9effjgCD", endpoint: NoshNetworkWeb.Endpoint, view: NoshNetworkWeb.DashboardLive.Index, parent_pid: nil, root_pid: nil, router: NoshNetworkWeb.Router, assigns: #Phoenix.LiveView.Socket.AssignsNotInSocket<>, transport_pid: nil, ...>, :index, [page: 1])
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:76: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:74: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+22:03:53.870 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/usr/lib/wsl/drivers"}, []}}
+22:03:53.900 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core18/2846"}, []}}
+22:03:53.901 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2434"}, []}}
+22:03:53.901 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core22/1748"}, []}}
+22:03:53.902 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2496"}, []}}
+22:03:53.902 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/245"}, []}}
+22:03:53.902 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/250"}, []}}
+22:03:53.902 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23545"}, []}}
+22:03:53.902 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23258"}, []}}
+22:03:53.903 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core18/2855"}, []}}
+22:03:54.787 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.12.0 at 127.0.0.1:4000 (http)
+22:03:54.802 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+22:04:48.706 request_id=GCdA2p45Oxp3344AABWB [info] GET /users/dashboard
+22:04:48.841 request_id=GCdA2p45Oxp3344AABWB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:04:48.838606Z
+22:04:48.868 request_id=GCdA2p45Oxp3344AABWB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:04:49.221 request_id=GCdA2p45Oxp3344AABWB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:04:48.838606Z was successful.
+Status: 500
+
+22:04:49.221 request_id=GCdA2p45Oxp3344AABWB [info] Sent 500 in 515ms
+22:04:49.230 [error] #PID<0.581.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.580.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function NoshNetworkWeb.Router.dashboard_path/3 is undefined or private
+        (noshNetwork 0.1.0) NoshNetworkWeb.Router.dashboard_path(#Phoenix.LiveView.Socket<id: "phx-GCdA2qoQJrzfjhXB", endpoint: NoshNetworkWeb.Endpoint, view: NoshNetworkWeb.DashboardLive.Index, parent_pid: nil, root_pid: nil, router: NoshNetworkWeb.Router, assigns: #Phoenix.LiveView.Socket.AssignsNotInSocket<>, transport_pid: nil, ...>, :index, [page: 1])
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:76: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:74: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+22:04:57.848 request_id=GCdA3L9FAdDC8-wAAAHC [info] GET /users/dashboard
+22:04:57.852 request_id=GCdA3L9FAdDC8-wAAAHC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:04:57.851984Z
+22:04:57.852 request_id=GCdA3L9FAdDC8-wAAAHC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:04:57.957 request_id=GCdA3L9FAdDC8-wAAAHC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:04:57.851984Z was successful.
+Status: 500
+
+22:04:57.958 request_id=GCdA3L9FAdDC8-wAAAHC [info] Sent 500 in 110ms
+22:04:57.959 [error] #PID<0.651.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.580.0>, stream id 4) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function NoshNetworkWeb.Router.dashboard_path/3 is undefined or private
+        (noshNetwork 0.1.0) NoshNetworkWeb.Router.dashboard_path(#Phoenix.LiveView.Socket<id: "phx-GCdA3L-kIDTz7BZB", endpoint: NoshNetworkWeb.Endpoint, view: NoshNetworkWeb.DashboardLive.Index, parent_pid: nil, root_pid: nil, router: NoshNetworkWeb.Router, assigns: #Phoenix.LiveView.Socket.AssignsNotInSocket<>, transport_pid: nil, ...>, :index, [page: 1])
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:76: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:74: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+22:05:45.844 request_id=GCdA5-wQVXu8M_sAAABk [info] GET /users/dashboard
+22:05:45.851 request_id=GCdA5-wQVXu8M_sAAABk [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:05:45.851823Z
+22:05:45.852 request_id=GCdA5-wQVXu8M_sAAABk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:05:46.079 request_id=GCdA5-wQVXu8M_sAAABk [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:05:45.851823Z was successful.
+Status: 500
+
+22:05:46.079 request_id=GCdA5-wQVXu8M_sAAABk [info] Sent 500 in 235ms
+22:05:46.081 [error] #PID<0.674.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.673.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function NoshNetworkWeb.Router.dashboard_path/3 is undefined or private
+        (noshNetwork 0.1.0) NoshNetworkWeb.Router.dashboard_path(#Phoenix.LiveView.Socket<id: "phx-GCdA5-zH-fsz-wCE", endpoint: NoshNetworkWeb.Endpoint, view: NoshNetworkWeb.DashboardLive.Index, parent_pid: nil, root_pid: nil, router: NoshNetworkWeb.Router, assigns: #Phoenix.LiveView.Socket.AssignsNotInSocket<>, transport_pid: nil, ...>, :index, [page: 1])
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:76: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:74: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+22:06:46.768 request_id=GCdA9ht1_Aa4wVwAABdh [info] GET /users/dashboard
+22:06:46.776 request_id=GCdA9ht1_Aa4wVwAABdh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:06:46.776004Z
+22:06:46.776 request_id=GCdA9ht1_Aa4wVwAABdh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:06:47.036 request_id=GCdA9ht1_Aa4wVwAABdh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:06:46.776004Z was successful.
+Status: 500
+
+22:06:47.037 request_id=GCdA9ht1_Aa4wVwAABdh [info] Sent 500 in 268ms
+22:06:47.039 [error] #PID<0.731.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.723.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function NoshNetworkWeb.Router.dashboard_path/3 is undefined or private
+        (noshNetwork 0.1.0) NoshNetworkWeb.Router.dashboard_path(NoshNetwork.Endpoint, :index, [page: 1])
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:76: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:74: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+22:06:57.159 request_id=GCdA-IbI8d0VQiEAABgB [info] GET /users/dashboard
+22:06:57.165 request_id=GCdA-IbI8d0VQiEAABgB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:06:57.165703Z
+22:06:57.166 request_id=GCdA-IbI8d0VQiEAABgB [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:06:57.283 request_id=GCdA-IbI8d0VQiEAABgB [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:06:57.165703Z was successful.
+Status: 500
+
+22:06:57.283 request_id=GCdA-IbI8d0VQiEAABgB [info] Sent 500 in 124ms
+22:06:57.284 [error] #PID<0.793.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.723.0>, stream id 4) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function NoshNetworkWeb.Router.dashboard_path/3 is undefined or private
+        (noshNetwork 0.1.0) NoshNetworkWeb.Router.dashboard_path(NoshNetwork.Endpoint, :index, [page: 1])
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:76: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:74: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+22:11:33.722 request_id=GCdBOOsxTnZudXwAABkh [info] GET /users/dashboard
+22:11:33.729 request_id=GCdBOOsxTnZudXwAABkh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:11:33.729582Z
+22:11:33.730 request_id=GCdBOOsxTnZudXwAABkh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:11:33.883 request_id=GCdBOOsxTnZudXwAABkh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:11:33.729582Z was successful.
+Status: 500
+
+22:11:33.883 request_id=GCdBOOsxTnZudXwAABkh [info] Sent 500 in 161ms
+22:11:33.885 [error] #PID<0.818.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.817.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function NoshNetworkWeb.Router.dashboard_path/3 is undefined or private
+        (noshNetwork 0.1.0) NoshNetworkWeb.Router.dashboard_path(#Phoenix.LiveView.Socket<id: "phx-GCdBOOwWjfV1fAQC", endpoint: NoshNetworkWeb.Endpoint, view: NoshNetworkWeb.DashboardLive.Index, parent_pid: nil, root_pid: nil, router: NoshNetworkWeb.Router, assigns: #Phoenix.LiveView.Socket.AssignsNotInSocket<>, transport_pid: nil, ...>, :index, [page: 1])
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:76: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:74: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+22:11:43.216 request_id=GCdBOyEk6-dMC2EAAASC [info] GET /users/dashboard
+22:11:43.219 request_id=GCdBOyEk6-dMC2EAAASC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:11:43.219531Z
+22:11:43.219 request_id=GCdBOyEk6-dMC2EAAASC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:11:43.444 request_id=GCdBOyEk6-dMC2EAAASC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:11:43.219531Z was successful.
+Status: 500
+
+22:11:43.445 request_id=GCdBOyEk6-dMC2EAAASC [info] Sent 500 in 228ms
+22:11:43.447 [error] #PID<0.857.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.817.0>, stream id 4) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function NoshNetworkWeb.Router.dashboard_path/3 is undefined or private
+        (noshNetwork 0.1.0) NoshNetworkWeb.Router.dashboard_path(#Phoenix.LiveView.Socket<id: "phx-GCdBOyGAL_cLYQAH", endpoint: NoshNetworkWeb.Endpoint, view: NoshNetworkWeb.DashboardLive.Index, parent_pid: nil, root_pid: nil, router: NoshNetworkWeb.Router, assigns: #Phoenix.LiveView.Socket.AssignsNotInSocket<>, transport_pid: nil, ...>, :index, [page: 1])
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:76: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:74: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+22:15:13.895 request_id=GCdBbC6RHdYBOqYAAAUC [info] GET /users/dashboard
+22:15:13.899 request_id=GCdBbC6RHdYBOqYAAAUC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:15:13.899536Z
+22:15:13.900 request_id=GCdBbC6RHdYBOqYAAAUC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:15:14.032 request_id=GCdBbC6RHdYBOqYAAAUC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:15:13.899536Z was successful.
+Status: 500
+
+22:15:14.032 request_id=GCdBbC6RHdYBOqYAAAUC [info] Sent 500 in 137ms
+22:15:14.034 [error] #PID<0.900.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.899.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function NoshNetworkWeb.Router.dashboard_path/3 is undefined or private
+        (noshNetwork 0.1.0) NoshNetworkWeb.Router.dashboard_path(#Phoenix.LiveView.Socket<id: "phx-GCdBbC8E3kI6phmh", endpoint: NoshNetworkWeb.Endpoint, view: NoshNetworkWeb.DashboardLive.Index, parent_pid: nil, root_pid: nil, router: NoshNetworkWeb.Router, assigns: #Phoenix.LiveView.Socket.AssignsNotInSocket<>, transport_pid: nil, ...>, :index, [page: 1])
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:76: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:74: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+22:18:08.283 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/usr/lib/wsl/drivers"}, []}}
+22:18:08.306 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core18/2846"}, []}}
+22:18:08.307 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2434"}, []}}
+22:18:08.307 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core22/1748"}, []}}
+22:18:08.307 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core20/2496"}, []}}
+22:18:08.307 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/245"}, []}}
+22:18:08.308 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/ngrok/250"}, []}}
+22:18:08.308 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23545"}, []}}
+22:18:08.308 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/snapd/23258"}, []}}
+22:18:08.308 [info]     :alarm_handler: {:set, {{:disk_almost_full, ~c"/snap/core18/2855"}, []}}
+22:18:09.124 [info] Running NoshNetworkWeb.Endpoint with cowboy 2.12.0 at 127.0.0.1:4000 (http)
+22:18:09.139 [info] Access NoshNetworkWeb.Endpoint at http://localhost:4000
+22:18:14.440 request_id=GCdBlje3AbdfEDcAAABD [info] GET /users/dashboard
+22:18:14.571 request_id=GCdBlje3AbdfEDcAAABD [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:18:14.568517Z
+22:18:14.608 request_id=GCdBlje3AbdfEDcAAABD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:18:15.044 request_id=GCdBlje3AbdfEDcAAABD [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:18:14.568517Z was successful.
+Status: 500
+
+22:18:15.044 request_id=GCdBlje3AbdfEDcAAABD [info] Sent 500 in 604ms
+22:18:15.050 [error] #PID<0.584.0> running Phoenix.Endpoint.SyncCodeReloadPlug (connection #PID<0.583.0>, stream id 1) terminated
+Server: localhost:4000 (http)
+Request: GET /users/dashboard
+** (exit) an exception was raised:
+    ** (UndefinedFunctionError) function NoshNetworkWeb.Router.dashboard_index_path/3 is undefined or private
+        (noshNetwork 0.1.0) NoshNetworkWeb.Router.dashboard_index_path(#Phoenix.LiveView.Socket<id: "phx-GCdBlkTPYxYQNwDi", endpoint: NoshNetworkWeb.Endpoint, view: NoshNetworkWeb.DashboardLive.Index, parent_pid: nil, root_pid: nil, router: NoshNetworkWeb.Router, assigns: #Phoenix.LiveView.Socket.AssignsNotInSocket<>, transport_pid: nil, ...>, :index, [page: 1])
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:76: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (elixir 1.18.1) lib/enum.ex:1714: Enum."-map/2-lists^map/1-1-"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/live/dashboard_live/index.html.heex:74: anonymous fn/2 in NoshNetworkWeb.DashboardLive.Index.render/1
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:391: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:532: anonymous fn/4 in Phoenix.LiveView.Diff.traverse_dynamic/7
+        (elixir 1.18.1) lib/enum.ex:2546: Enum."-reduce/3-lists^foldl/2-0-"/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:389: Phoenix.LiveView.Diff.traverse/7
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/diff.ex:136: Phoenix.LiveView.Diff.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:249: Phoenix.LiveView.Static.to_rendered_content_tag/4
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/static.ex:132: Phoenix.LiveView.Static.render/3
+        (phoenix_live_view 0.20.17) lib/phoenix_live_view/controller.ex:39: Phoenix.LiveView.Controller.live_render/3
+        (phoenix 1.7.18) lib/phoenix/router.ex:484: Phoenix.Router.__call__/5
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.plug_builder_call/2
+        (noshNetwork 0.1.0) deps/plug/lib/plug/debugger.ex:136: NoshNetworkWeb.Endpoint."call (overridable 3)"/2
+        (noshNetwork 0.1.0) lib/noshNetwork_web/endpoint.ex:1: NoshNetworkWeb.Endpoint.call/2
+        (phoenix 1.7.18) lib/phoenix/endpoint/sync_code_reload_plug.ex:22: Phoenix.Endpoint.SyncCodeReloadPlug.do_call/4
+22:19:05.589 request_id=GCdBoiCROS1HxBgAAACj [info] GET /users/dashboard
+22:19:05.595 request_id=GCdBoiCROS1HxBgAAACj [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:19:05.595419Z
+22:19:05.595 request_id=GCdBoiCROS1HxBgAAACj [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:19:05.687 request_id=GCdBoiCROS1HxBgAAACj [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:19:05.595419Z was successful.
+Status: 200
+
+22:19:05.688 request_id=GCdBoiCROS1HxBgAAACj [info] Sent 200 in 99ms
+22:19:11.864 [info] CONNECTED TO Phoenix.LiveView.Socket in 80µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "FRE0WSojPCUwSGdxBiEjER58KQQeLUscWaq1KETVvz46EkMcXJDERTfX", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+22:19:26.799 request_id=GCdBpxDRA1JYHbUAAALC [info] GET /users/dashboard
+22:19:26.812 request_id=GCdBpxDRA1JYHbUAAALC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:19:26.811994Z
+22:19:26.812 request_id=GCdBpxDRA1JYHbUAAALC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:19:26.895 request_id=GCdBpxDRA1JYHbUAAALC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:19:26.811994Z was successful.
+Status: 200
+
+22:19:26.895 request_id=GCdBpxDRA1JYHbUAAALC [info] Sent 200 in 96ms
+22:19:30.526 [info] CONNECTED TO Phoenix.LiveView.Socket in 67µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "MhEtMiQ-JksBfTl0LhNXQgx7PDcpCh8upahZEXN8GOj3mY90JMQves2j", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+22:22:02.961 request_id=GCdBy2zGEkG1QLsAAAPi [info] GET /users/dashboard
+22:22:02.967 request_id=GCdBy2zGEkG1QLsAAAPi [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:22:02.967056Z
+22:22:02.969 request_id=GCdBy2zGEkG1QLsAAAPi [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:22:03.064 request_id=GCdBy2zGEkG1QLsAAAPi [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:22:02.967056Z was successful.
+Status: 200
+
+22:22:03.065 request_id=GCdBy2zGEkG1QLsAAAPi [info] Sent 200 in 103ms
+22:22:59.532 request_id=GCdB2Jipwr7wYt4AAAGE [info] GET /users/dashboard
+22:22:59.535 request_id=GCdB2Jipwr7wYt4AAAGE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:22:59.535862Z
+22:22:59.536 request_id=GCdB2Jipwr7wYt4AAAGE [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:22:59.601 request_id=GCdB2Jipwr7wYt4AAAGE [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:22:59.535862Z was successful.
+Status: 200
+
+22:22:59.601 request_id=GCdB2Jipwr7wYt4AAAGE [info] Sent 200 in 69ms
+22:23:00.263 request_id=GCdB2MRJpmAFCRoAAAWC [info] GET /users/dashboard
+22:23:00.268 request_id=GCdB2MRJpmAFCRoAAAWC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:23:00.268885Z
+22:23:00.276 request_id=GCdB2MRJpmAFCRoAAAWC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:23:00.372 request_id=GCdB2MRJpmAFCRoAAAWC [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:23:00.268885Z was successful.
+Status: 200
+
+22:23:00.373 request_id=GCdB2MRJpmAFCRoAAAWC [info] Sent 200 in 109ms
+22:23:02.184 [info] CONNECTED TO Phoenix.LiveView.Socket in 103µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "EghoWC4OJUYHUDwzLgUCIzEOJDIPLG4QPx-0OhM5AbotmOlQw8IsCUCT", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+22:23:22.441 request_id=GCdB3e4wRqElgE8AAAFD [info] GET /users/dashboard
+22:23:22.448 request_id=GCdB3e4wRqElgE8AAAFD [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:23:22.448845Z
+22:23:22.449 request_id=GCdB3e4wRqElgE8AAAFD [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:23:22.506 request_id=GCdB3e4wRqElgE8AAAFD [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:23:22.448845Z was successful.
+Status: 200
+
+22:23:22.507 request_id=GCdB3e4wRqElgE8AAAFD [info] Sent 200 in 65ms
+22:23:24.575 [info] CONNECTED TO Phoenix.LiveView.Socket in 109µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "IwYwElISLxIMSwU2Oyg5JAdCCAZ4Tkwdavuz3tGaJyVqxbWVAteG47aY", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+22:23:50.356 request_id=GCdB5G4D9GUM1HEAABAh [info] GET /users/dashboard
+22:23:50.362 request_id=GCdB5G4D9GUM1HEAABAh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:23:50.362117Z
+22:23:50.362 request_id=GCdB5G4D9GUM1HEAABAh [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:23:50.414 request_id=GCdB5G4D9GUM1HEAABAh [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:23:50.362117Z was successful.
+Status: 200
+
+22:23:50.414 request_id=GCdB5G4D9GUM1HEAABAh [info] Sent 200 in 58ms
+22:23:54.110 [info] CONNECTED TO Phoenix.LiveView.Socket in 39µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "ETF3EVZSBh0nWQEDBS0bGH5CBgMeDnoBSA2y74nnakRDFguj8tkBRwWE", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+22:24:09.342 request_id=GCdB6NmyxaMJ8OUAAAQk [info] GET /users/dashboard
+22:24:09.349 request_id=GCdB6NmyxaMJ8OUAAAQk [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:24:09.349521Z
+22:24:09.355 request_id=GCdB6NmyxaMJ8OUAAAQk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:24:09.426 request_id=GCdB6NmyxaMJ8OUAAAQk [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:24:09.349521Z was successful.
+Status: 200
+
+22:24:09.427 request_id=GCdB6NmyxaMJ8OUAAAQk [info] Sent 200 in 84ms
+22:24:12.828 [info] CONNECTED TO Phoenix.LiveView.Socket in 51µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "dyUKLjteWj9rRiMVcj4MJA5iPjR1N2ol5UOFZ82L-tpR1tbVHTSu9NGa", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+22:24:17.672 request_id=GCdB6so0uMUJ0bQAAAmC [info] GET /users/booking
+22:24:17.676 request_id=GCdB6so0uMUJ0bQAAAmC [info] GET request to /users/booking by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:24:17.676694Z
+22:24:17.677 request_id=GCdB6so0uMUJ0bQAAAmC [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:24:17.707 request_id=GCdB6so0uMUJ0bQAAAmC [info] GET request to /users/booking by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:24:17.676694Z was successful.
+Status: 200
+
+22:24:17.707 request_id=GCdB6so0uMUJ0bQAAAmC [info] Sent 200 in 34ms
+22:24:18.928 [info] CONNECTED TO Phoenix.LiveView.Socket in 99µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "dQoSJCAvPSAPQQo1BzwlMH54HwcgA1kF7zWLAIUSIsYrDvKB8NrFlztA", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}
+22:24:23.863 request_id=GCdB7DsuoyT1B-YAAAUk [info] GET /users/dashboard
+22:24:23.869 request_id=GCdB7DsuoyT1B-YAAAUk [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:24:23.869672Z
+22:24:23.870 request_id=GCdB7DsuoyT1B-YAAAUk [info] User agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+22:24:23.926 request_id=GCdB7DsuoyT1B-YAAAUk [info] GET request to /users/dashboard by User: aa155d66-7581-44be-867c-2ec6b86caecc at 2025-02-24 21:24:23.869672Z was successful.
+Status: 200
+
+22:24:23.926 request_id=GCdB7DsuoyT1B-YAAAUk [info] Sent 200 in 63ms
+22:24:25.083 [info] CONNECTED TO Phoenix.LiveView.Socket in 43µs
+  Transport: :websocket
+  Serializer: Phoenix.Socket.V2.JSONSerializer
+  Parameters: %{"_csrf_token" => "LDonW1QvOT4PcwAlMH4jQSdTLioGTh90nJb35IQMIASbs4M3aeCkJ720", "_live_referer" => "undefined", "_mounts" => "0", "_track_static" => %{"0" => "http://localhost:4000/assets/app.css", "1" => "http://localhost:4000/assets/app.js"}, "vsn" => "2.0.0"}

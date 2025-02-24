@@ -48,6 +48,13 @@ defmodule NoshNetwork.Data.Context.Users do
     |> Repo.preload(:caters)
   end
 
+
+  def paginate_caters(params) do
+    from(u in User, where: u.role == "cater", preload: [:caters])
+    |> Repo.paginate(params)
+  end
+
+
   def get_cater(id) do
     from(u in User, where: u.role == "cater")
 
@@ -415,4 +422,6 @@ defmodule NoshNetwork.Data.Context.Users do
       {:error, :user, changeset, _} -> {:error, changeset}
     end
   end
+
+
 end

@@ -14,10 +14,6 @@
           <!-- Dashboard Stats -->
           <section class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 p-4">
             <div class="bg-gray-100 shadow rounded-lg p-6 text-center">
-              <p class="text-gray-500">Total Booking</p>
-              <h2 class="text-2xl font-bold">$0.00</h2>
-            </div>
-            <div class="bg-gray-100 shadow rounded-lg p-6 text-center">
               <p class="text-gray-500">Total Paid</p>
               <h2 class="text-2xl font-bold">$0.00</h2>
             </div>
@@ -26,7 +22,18 @@
               <p class="text-gray-500">Total Expenditure</p>
               <h2 class="text-2xl font-bold">$0.00</h2>
             </div>
+
+            <div class="bg-gray-100 shadow rounded-lg p-6 text-center">
+              <p class="text-gray-500">Total Caterers</p>
+              <h2 class="text-2xl font-bold"><%= length(@caters) %></h2>
+            </div>
           </section>
+
+          <div style="display: flex; justify-content: flex-end; padding: 20px; gap: 1rem;">
+            <div>
+              <input placeholder="search caters" />
+            </div>
+          </div>
 
           <section class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
             <%= for cater <- :lists.reverse(@caters) do %>
@@ -45,6 +52,57 @@
               />
             <% end %>
           </section>
+
+
+          <div  style="display: flex; flex-direction: row; padding: 2px;">
+       
+        <div>
+        <%= if @page_number > 1 do %>
+          <%= live_patch(
+            to: Routes.dashboard_index_path(@socket, :index, page: @page_number - 1),
+             class: "pagination-link bg-black text-white rounded-md shadow-md"
+          ) do %>
+            <div class="flex gap-2 items-center ">
+              Previous
+            </div>
+          <% end %>
+        <% end %>
+        </div>
+
+        <div  style="display: flex; flex-direction: row; padding: 2px;">
+
+        <%= for idx <-  Enum.to_list(1..@total_pages) do %>
+          <%= live_patch(
+            to: Routes.dashboard_index_path(@socket, :index, page: idx),
+            class: "pagination-link bg-black text-white rounded-md shadow-md"
+          ) do %>
+            <%= if @page_number == idx do %>
+              <p style="border: 1px solid black; padding-left: 5px; padding-right: 5px;">
+                <%= idx %>
+              </p>
+            <% else %>
+              <p style="padding-left: 5px; padding-right: 5px;">
+                <%= idx %>
+              </p>
+            <% end %>
+          <% end %>
+        <% end %>
+        </div>
+
+        <div>
+
+        <%= if @page_number < @total_pages do %>
+          <%= live_patch(
+            to: Routes.dashboard_index_path(@socket, :index, page: @page_number + 1),
+            class: "pagination-link bg-black text-white rounded-md shadow-md"
+          )  do %>
+            <div class="flex gap-2 items-center ">
+              Next
+            </div>
+          <% end %>
+        <% end %>
+        </div>
+      </div>
         </section>
       <% else %>
         <.live_component
