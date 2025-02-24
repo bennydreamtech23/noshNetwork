@@ -1,5 +1,6 @@
 defmodule NoshNetworkWeb.Router do
   use NoshNetworkWeb, :router
+  use Phoenix.Router, helpers: true
 
   import NoshNetworkWeb.UserAuth
 
@@ -70,7 +71,7 @@ defmodule NoshNetworkWeb.Router do
 
     live_session :require_authenticated_user,
       on_mount: [{NoshNetworkWeb.UserAuth, :ensure_authenticated}] do
-      live "/dashboard", DashboardLive.Index
+      live "/dashboard", DashboardLive.Index, :index
       live "/cater", CaterLive.Index
       live "/create_booking", BookingLive.Index
       live "/booking", ShowUserBookingLive.Index

@@ -59,6 +59,7 @@ defmodule NoshNetwork.MixProject do
       {:number, "~> 1.0.1"},
       {:jason, "~> 1.2"},
       {:httpoison, "~> 2.1"},
+      {:scrivener_ecto, "~> 2.7"},
       {:dns_cluster, "~> 0.1.1"},
       {:live_select, "~> 1.5"},
       {:plug_cowboy, "~> 2.5"},
