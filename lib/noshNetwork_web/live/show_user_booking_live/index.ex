@@ -7,7 +7,12 @@ defmodule NoshNetworkWeb.ShowUserBookingLive.Index do
   def mount(_params, _session, socket) do
     IO.inspect(socket, label: "socket available")
     current_user = socket.assigns.current_user
-
+    links = [
+      %{label: "Dashboard", path: "/users/dashboard"},
+      %{label: "Caterers", path: "/caterers"},
+      %{label: "Orders", path: "/orders"},
+      %{label: "Booking", path: "/users/booking"}
+    ]
     socket =
       if current_user.role == "cater" do
         # Fetch cater information based on the current user
@@ -19,6 +24,8 @@ defmodule NoshNetworkWeb.ShowUserBookingLive.Index do
         |> assign(:current_user, current_user)
         |> assign(:user_booking, user_booking)
         |> assign(:cater_id, cater_id)
+        |> assign(:link, links)
+        |> assign(current_path: "/users/booking")
         |> assign(:booking_id, nil)
         |> assign(:booking_details, nil)
         |> assign(:show_quotation, false)
@@ -35,6 +42,8 @@ defmodule NoshNetworkWeb.ShowUserBookingLive.Index do
         |> assign(:user_booking, user_booking)
         |> assign(:booking_id, nil)
         |> assign(:show_more, false)
+        |> assign(:link, links)
+        |> assign(current_path: "/users/booking")
         |> assign(:show_quotation_modal, false)
         |> assign(:show_quotation, false)
         |> assign(:current_user, current_user)

@@ -3,37 +3,35 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
   alias NoshNetwork.Data.Context.Users
   alias NoshNetworkWeb.Router.Helpers, as: Routes
 
-
   @moduledoc """
   LiveView module for the dashboard index page.
   """
 
   @impl true
   def mount(params, _session, socket) do
-    IO.inspect(Users.paginate_caters(params))
     current_user = socket.assigns.current_user
     # caters = Users.get_all_caters()
-   caters = Users.paginate_caters(params).entries
+    caters = Users.paginate_caters(params).entries
     total_pages = Users.paginate_caters(params).total_pages
     page_number = Users.paginate_caters(params).page_number
     total_entries = Users.paginate_caters(params).total_entries
 
-
     links = [
       %{label: "Dashboard", path: "/users/dashboard"},
       %{label: "Booking", path: "/users/booking"},
-      %{label: "Setting", path: "/users/settings"}
+      %{label: "Setting", path: "/users/settings"},
+      %{label: "Booking", path: "/users/booking"}
     ]
 
     socket =
       socket
       |> assign(:current_user, current_user)
+      |> assign(:search_query, "")
       |> assign(:link, links)
       |> assign(:caters, caters)
       |> assign(:total_pages, total_pages)
       |> assign(:page_number, page_number)
-  |> assign(:total_entries, total_entries)
-
+      |> assign(:total_entries, total_entries)
       |> assign(current_path: "/users/dashboard")
 
     {:ok, socket}
@@ -60,6 +58,13 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
   end
 
   @impl true
+  def handle_event("search", %{"search" => query}, socket) do
+    IO.inspect(query, label: "query oooo")
+    caters = Users.paginate_caters(%{"search" => query}).entries
+    {:noreply, assign(socket, caters: caters, search_query: query)}
+  end
+
+  @impl true
   def handle_event("booking_action", %{"cater_id" => id}, socket) do
     current_user = socket.assigns.current_user
 
@@ -79,13 +84,12 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
     end
   end
 
-
+  @impl true
   def handle_params(params, _url, socket) do
     caters = Users.paginate_caters(params).entries
     total_pages = Users.paginate_caters(params).total_pages
     page_number = Users.paginate_caters(params).page_number
     total_entries = Users.paginate_caters(params).total_entries
-
 
     {:noreply,
      socket
@@ -96,10 +100,7 @@ defmodule NoshNetworkWeb.DashboardLive.Index do
      |> apply_action(socket.assigns.live_action, params)}
   end
 
-
   defp apply_action(socket, :index, _params) do
     socket
   end
-
-
 end

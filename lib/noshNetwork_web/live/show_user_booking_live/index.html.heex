@@ -1,10 +1,16 @@
-<div class="m-auto max-w-screen-xl p-6 overflow-hidden">
+
+   <.live_component
+      module={NoshNetworkWeb.Sidebar}
+      id="sidebar"
+      links={@link}
+      current_path={@current_path}
+    />
+
+<div class="m-auto max-w-screen-xl p-6 overflow-hidden lg:ml-60" style="margin-top: 4.75rem;">
   <%= if @current_user.role == "user" do %>
     <%= if !@show_quotation do %>
       <div>
-        <p class="text-black font-medium text-lg">
-          Booking
-        </p>
+     
 
         <%= if @user_booking != [] do %>
           <section class="overflow-x-auto w-full bg-white mt-4">

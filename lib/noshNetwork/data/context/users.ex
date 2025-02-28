@@ -48,12 +48,20 @@ defmodule NoshNetwork.Data.Context.Users do
     |> Repo.preload(:caters)
   end
 
+  def paginate_caters(%{"search" => search} = params) do
+    query =
+      from u in User,
+        where: u.role == "cater",
+        where: ilike(u.business_name, ^"%#{search}%") or ilike(u.address, ^"%#{search}%"),
+        preload: [:caters]
+
+    Repo.paginate(query, params)
+  end
 
   def paginate_caters(params) do
     from(u in User, where: u.role == "cater", preload: [:caters])
     |> Repo.paginate(params)
   end
-
 
   def get_cater(id) do
     from(u in User, where: u.role == "cater")
@@ -422,6 +430,4 @@ defmodule NoshNetwork.Data.Context.Users do
       {:error, :user, changeset, _} -> {:error, changeset}
     end
   end
-
-
 end
