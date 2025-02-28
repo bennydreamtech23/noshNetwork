@@ -16,7 +16,8 @@ defmodule NoshNetworkWeb.BookingLive.Index do
     links = [
       %{label: "Dashboard", path: "/users/dashboard"},
       %{label: "Caterers", path: "/caterers"},
-      %{label: "Orders", path: "/orders"}
+      %{label: "Orders", path: "/orders"},
+      %{label: "Booking", path: "/users/booking"}
     ]
 
     socket =
