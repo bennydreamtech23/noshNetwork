@@ -8,22 +8,28 @@
       current_path={@current_path}
     />
     <!-- Main Content -->
-    <div class="lg:ml-60 p-6" style="margin-top: 4.75rem;">
+    <div class="lg:ml-60 p-6" style="margin-top: 3.5rem;">
       <%= if @current_user.role == "user" do %>
         <section>
           <!-- Dashboard Stats -->
           <section class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 p-4">
-            <div class="shadow rounded-lg p-6 text-center" style='background-color: #fef9c3;'>
+            <div class="shadow rounded-lg p-6 text-center" style="background-color: #fef9c3;">
               <p class="text-gray-500">Total Paid</p>
               <h2 class="text-2xl font-bold">$0.00</h2>
             </div>
 
-            <div class="bg-gray-100 shadow rounded-lg p-6 text-center" style='background-color: #fee2e2;'>
+            <div
+              class="bg-gray-100 shadow rounded-lg p-6 text-center"
+              style="background-color: #fee2e2;"
+            >
               <p class="text-gray-500">Total Expenditure</p>
               <h2 class="text-2xl font-bold">$0.00</h2>
             </div>
 
-            <div class="bg-gray-100 shadow rounded-lg p-6 text-center" style='background-color: #dcfce7'>
+            <div
+              class="bg-gray-100 shadow rounded-lg p-6 text-center"
+              style="background-color: #dcfce7"
+            >
               <p class="text-gray-500">Total Caterers</p>
               <h2 class="text-2xl font-bold"><%= length(@caters) %></h2>
             </div>

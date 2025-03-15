@@ -3,7 +3,7 @@ defmodule NoshNetworkWeb.Sidebar do
 
   def render(assigns) do
     ~H"""
-    <div class="bg-gray-100 sidebar fixed top-16 left-0 z-40 w-60 p-4 border rounded-md shadow-md text-black mt-4 overflow-y-auto h-[calc(100vh-5rem)]">
+    <div class="bg-gray-100 sidebar fixed top-16 left-0 z-10 w-60 p-4 border rounded-md shadow-md text-black mt-4 overflow-y-auto h-[calc(100vh-5rem)]">
       <!-- Navigation Links -->
       <nav class="space-y-8 mt-4">
         <%= for link <- @links do %>

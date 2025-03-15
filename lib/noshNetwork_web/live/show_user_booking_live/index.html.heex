@@ -1,17 +1,14 @@
+<.live_component
+  module={NoshNetworkWeb.Sidebar}
+  id="sidebar"
+  links={@link}
+  current_path={@current_path}
+/>
 
-   <.live_component
-      module={NoshNetworkWeb.Sidebar}
-      id="sidebar"
-      links={@link}
-      current_path={@current_path}
-    />
-
-<div class="m-auto max-w-screen-xl p-6 overflow-hidden lg:ml-60" style="margin-top: 4.75rem;">
+<div class="m-auto max-w-screen-xl p-6 overflow-hidden lg:ml-60"  style="margin-top: 3.5rem;">
   <%= if @current_user.role == "user" do %>
     <%= if !@show_quotation do %>
       <div>
-     
-
         <%= if @user_booking != [] do %>
           <section class="overflow-x-auto w-full bg-white mt-4">
             <table class="table-auto border-collapse min-w-full shadow-md rounded-md">
@@ -207,7 +204,7 @@
                 <td class="px-5 py-6 text-left text-xs text-primaryColor">
                   <div class="flex gap-2 items-center">
                     <button
-                      class="bg-black text-white p-3 rounded-md shadow-sm"
+                      class="bg-green-400 text-white p-3 rounded-md shadow-sm"
                       phx-click="approve"
                       phx-value-id={booking.id}
                     >

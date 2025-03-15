@@ -24,7 +24,7 @@ defmodule NoshNetworkWeb.WelcomeLive.Welcome do
       >
         <img src="/icons/check_icon.png" alt="img" class="h-[100px] w-[100px]" />
 
-        <h1 class="font-bold text-xl text-center">Woo-hoo, you're all set up!</h1>
+        <h1 class="font-bold text-xl text-center">Your setup is complete</h1>
 
         <p class="font-normal text-center">
           We're excited to have you onboard, <strong><%= String.capitalize(@current_name) %></strong>
