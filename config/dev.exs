@@ -25,8 +25,8 @@ config :noshNetwork, NoshNetworkWeb.Endpoint,
   debug_errors: true,
   secret_key_base: "V1ycz67i23nPhInFQAupzbhPwW87QRePwbYeaytB+6n/CqNmYHZoKu4nk1mKM2NC",
   watchers: [
-    esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
-    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
+    esbuild: {Esbuild, :install_and_run, [:noshNetwork, ~w(--sourcemap=inline --watch)]},
+    tailwind: {Tailwind, :install_and_run, [:noshNetwork, ~w(--watch)]}
   ]
 
 config :noshNetwork,

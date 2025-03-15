@@ -4,7 +4,7 @@ defmodule NoshNetworkWeb.Auth.UserLoginLive do
   def render(assigns) do
     ~H"""
     <div class="m-auto max-w-screen-xl overflow-hidden  font-brand">
-      <div class="flex lg:flex-row-reverse flex-col items-start" style="margin-top: 6rem;">
+      <div class="flex lg:flex-row-reverse flex-col items-start">
         <div class="lg:w-1/2 w-full h-auto lg:flex hidden items-center justify-center flex-col">
           <img src="/images/auth_image.png" alt="registration page" class="rounded-b-md" />
         </div>
